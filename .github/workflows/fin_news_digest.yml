@@ -25,43 +25,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r fin_news_digest/requirements.txt
 
+      - name: Write .env from MAIL_FIN
+        run: |
+          printf "%s" "${{ secrets.MAIL_FIN }}" > .env
+
       - name: Run digest (manual)
         if: ${{ github.event_name == 'workflow_dispatch' }}
         env:
-          RECIPIENTS: ${{ secrets.FIN_RECIPIENTS }}
-          SMTP_HOST: ${{ secrets.FIN_SMTP_HOST }}
-          SMTP_PORT: ${{ secrets.FIN_SMTP_PORT }}
-          SMTP_USER: ${{ secrets.FIN_SMTP_USER }}
-          SMTP_PASS: ${{ secrets.FIN_SMTP_PASS }}
-          SMTP_FROM: ${{ secrets.FIN_SMTP_FROM }}
-          SMTP_USE_TLS: ${{ secrets.FIN_SMTP_USE_TLS }}
-          TRANSLATE_PROVIDER: ${{ secrets.FIN_TRANSLATE_PROVIDER }}
-          TRANSLATE_ENDPOINT: ${{ secrets.FIN_TRANSLATE_ENDPOINT }}
-          TRANSLATE_API_KEY: ${{ secrets.FIN_TRANSLATE_API_KEY }}
-          TRANSLATE_SLEEP_SECONDS: "1.0"
-          LOOKBACK_HOURS: "36"
-          STATE_TTL_HOURS: "72"
-          MAX_ITEMS: "40"
           FORCE_SEND: "true"
         run: |
           python -m fin_news_digest.run_actions
 
       - name: Run digest (schedule)
         if: ${{ github.event_name == 'schedule' }}
-        env:
-          RECIPIENTS: ${{ secrets.FIN_RECIPIENTS }}
-          SMTP_HOST: ${{ secrets.FIN_SMTP_HOST }}
-          SMTP_PORT: ${{ secrets.FIN_SMTP_PORT }}
-          SMTP_USER: ${{ secrets.FIN_SMTP_USER }}
-          SMTP_PASS: ${{ secrets.FIN_SMTP_PASS }}
-          SMTP_FROM: ${{ secrets.FIN_SMTP_FROM }}
-          SMTP_USE_TLS: ${{ secrets.FIN_SMTP_USE_TLS }}
-          TRANSLATE_PROVIDER: ${{ secrets.FIN_TRANSLATE_PROVIDER }}
-          TRANSLATE_ENDPOINT: ${{ secrets.FIN_TRANSLATE_ENDPOINT }}
-          TRANSLATE_API_KEY: ${{ secrets.FIN_TRANSLATE_API_KEY }}
-          TRANSLATE_SLEEP_SECONDS: "1.0"
-          LOOKBACK_HOURS: "36"
-          STATE_TTL_HOURS: "72"
-          MAX_ITEMS: "40"
         run: |
           python -m fin_news_digest.run_actions
