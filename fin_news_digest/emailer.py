@@ -1,5 +1,6 @@
 import logging
 import smtplib
+from datetime import datetime, timezone
 from email.message import EmailMessage
 from pathlib import Path
 
@@ -22,9 +23,12 @@ def build_message(
     items: list[NewsItem],
     edition_label: str,
 ) -> EmailMessage:
+    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     context = {
         "items": items,
         "edition_label": edition_label,
+        "date_str": date_str,
+        "count": len(items),
     }
     text_body = _render_template("fin_news_digest/templates/email.txt", context)
     html_body = _render_template("fin_news_digest/templates/email.html", context)

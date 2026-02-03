@@ -1,11 +1,12 @@
-Global Finance Digest - {{ edition_label }}
+Global Finance Digest — {{ edition_label }}
+{{ date_str }} | Total highlights: {{ count }}
 
 {% for item in items %}
-- {{ item.source }}
-  EN: {{ item.title_en }}
-  EN Summary: {{ item.summary_en }}
-  CN: {{ item.title_zh }}
-  CN Summary: {{ item.summary_zh }}
-  Link: {{ item.link }}
-
+Source: {{ item.source }}
+EN: {{ item.title_en }}
+EN Summary: {{ item.summary_en }}
+CN: {{ item.title_zh }}
+CN Summary: {{ item.summary_zh }}
+Link: {{ item.link }}
+---
 {% endfor %}

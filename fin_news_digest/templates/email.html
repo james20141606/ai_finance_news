@@ -4,24 +4,62 @@
     <meta charset="utf-8" />
     <title>Global Finance Digest</title>
     <style>
-      body { font-family: Arial, sans-serif; color: #111; line-height: 1.5; }
-      .item { margin-bottom: 18px; }
-      .source { font-weight: bold; }
-      .label { font-weight: bold; color: #444; }
-      .link { color: #0b5fff; text-decoration: none; }
+      body { margin: 0; padding: 0; background: #0b0f16; }
+      table { border-collapse: collapse; }
+      .container { width: 100%; background: #0b0f16; padding: 24px 0; }
+      .card { width: 680px; max-width: 680px; background: #ffffff; border-radius: 14px; }
+      .header { padding: 28px 32px 20px 32px; background: #0f172a; color: #ffffff; }
+      .title { font-family: "Georgia", "Times New Roman", serif; font-size: 22px; letter-spacing: 0.3px; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 12px; color: #cbd5f5; margin-top: 6px; }
+      .meta { font-family: Arial, sans-serif; font-size: 12px; color: #94a3b8; margin-top: 10px; }
+      .section { padding: 22px 32px; background: #ffffff; }
+      .section-title { font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 1.4px; color: #1f2937; font-weight: bold; text-transform: uppercase; }
+      .divider { height: 1px; background: #e5e7eb; margin: 14px 0 20px 0; }
+      .item { padding: 16px 18px; border-left: 4px solid #0b5fff; background: #f8fafc; border-radius: 10px; margin-bottom: 14px; }
+      .source { font-family: Arial, sans-serif; font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; }
+      .headline { font-family: "Georgia", "Times New Roman", serif; font-size: 16px; color: #0f172a; margin-top: 6px; }
+      .summary { font-family: Arial, sans-serif; font-size: 13px; color: #334155; margin-top: 6px; }
+      .label { font-weight: bold; color: #0f172a; }
+      .cta { display: inline-block; margin-top: 10px; padding: 8px 12px; background: #0b5fff; color: #ffffff; text-decoration: none; font-family: Arial, sans-serif; font-size: 12px; border-radius: 6px; }
+      .footer { padding: 20px 32px 28px 32px; font-family: Arial, sans-serif; font-size: 11px; color: #94a3b8; }
     </style>
   </head>
   <body>
-    <h2>Global Finance Digest - {{ edition_label }}</h2>
-    {% for item in items %}
-      <div class="item">
-        <div class="source">{{ item.source }}</div>
-        <div><span class="label">EN:</span> {{ item.title_en }}</div>
-        <div><span class="label">EN Summary:</span> {{ item.summary_en }}</div>
-        <div><span class="label">CN:</span> {{ item.title_zh }}</div>
-        <div><span class="label">CN Summary:</span> {{ item.summary_zh }}</div>
-        <div><a class="link" href="{{ item.link }}">Read</a></div>
-      </div>
-    {% endfor %}
+    <table class="container" width="100%" role="presentation">
+      <tr>
+        <td align="center">
+          <table class="card" role="presentation">
+            <tr>
+              <td class="header">
+                <div class="title">Global Finance Digest</div>
+                <div class="subtitle">{{ edition_label }} · {{ date_str }}</div>
+                <div class="meta">Total highlights: {{ count }}</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <div class="section-title">Top Briefing</div>
+                <div class="divider"></div>
+                {% for item in items %}
+                  <div class="item">
+                    <div class="source">{{ item.source }}</div>
+                    <div class="headline">{{ item.title_en }}</div>
+                    <div class="summary"><span class="label">EN:</span> {{ item.summary_en }}</div>
+                    <div class="headline" style="margin-top:10px;">{{ item.title_zh }}</div>
+                    <div class="summary"><span class="label">CN:</span> {{ item.summary_zh }}</div>
+                    <a class="cta" href="{{ item.link }}">Read source</a>
+                  </div>
+                {% endfor %}
+              </td>
+            </tr>
+            <tr>
+              <td class="footer">
+                You are receiving this because you subscribed to Global Finance Digest.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
