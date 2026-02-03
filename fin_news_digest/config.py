@@ -49,21 +49,28 @@ class Config:
     log_level: str
 
 
+def _env(primary: str, fallback: str) -> str:
+    value = os.getenv(primary, "")
+    if value:
+        return value
+    return os.getenv(fallback, "")
+
+
 def load_config() -> Config:
-    recipients_raw = os.getenv("RECIPIENTS", "")
+    recipients_raw = _env("RECIPIENTS", "FIN_RECIPIENTS")
     recipients = [r.strip() for r in recipients_raw.split(",") if r.strip()]
 
     return Config(
         recipients=recipients,
-        smtp_host=os.getenv("SMTP_HOST", ""),
-        smtp_port=_get_int(os.getenv("SMTP_PORT"), 587),
-        smtp_user=os.getenv("SMTP_USER", ""),
-        smtp_pass=os.getenv("SMTP_PASS", ""),
-        smtp_from=os.getenv("SMTP_FROM", ""),
-        smtp_use_tls=_get_bool(os.getenv("SMTP_USE_TLS"), True),
-        translate_provider=os.getenv("TRANSLATE_PROVIDER", "mymemory"),
-        translate_endpoint=os.getenv("TRANSLATE_ENDPOINT", ""),
-        translate_api_key=os.getenv("TRANSLATE_API_KEY", ""),
+        smtp_host=_env("SMTP_HOST", "FIN_SMTP_HOST"),
+        smtp_port=_get_int(_env("SMTP_PORT", "FIN_SMTP_PORT"), 587),
+        smtp_user=_env("SMTP_USER", "FIN_SMTP_USER"),
+        smtp_pass=_env("SMTP_PASS", "FIN_SMTP_PASS"),
+        smtp_from=_env("SMTP_FROM", "FIN_SMTP_FROM"),
+        smtp_use_tls=_get_bool(_env("SMTP_USE_TLS", "FIN_SMTP_USE_TLS"), True),
+        translate_provider=_env("TRANSLATE_PROVIDER", "FIN_TRANSLATE_PROVIDER") or "mymemory",
+        translate_endpoint=_env("TRANSLATE_ENDPOINT", "FIN_TRANSLATE_ENDPOINT"),
+        translate_api_key=_env("TRANSLATE_API_KEY", "FIN_TRANSLATE_API_KEY"),
         translate_sleep_seconds=_get_float(os.getenv("TRANSLATE_SLEEP_SECONDS"), 1.0),
         lookback_hours=_get_int(os.getenv("LOOKBACK_HOURS"), 36),
         state_ttl_hours=_get_int(os.getenv("STATE_TTL_HOURS"), 72),
