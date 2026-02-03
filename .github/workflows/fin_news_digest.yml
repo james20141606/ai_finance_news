@@ -32,11 +32,14 @@ jobs:
       - name: Run digest (manual)
         if: ${{ github.event_name == 'workflow_dispatch' }}
         env:
+          MAIL_FIN: ${{ secrets.MAIL_FIN }}
           FORCE_SEND: "true"
         run: |
           python -m fin_news_digest.run_actions
 
       - name: Run digest (schedule)
         if: ${{ github.event_name == 'schedule' }}
+        env:
+          MAIL_FIN: ${{ secrets.MAIL_FIN }}
         run: |
           python -m fin_news_digest.run_actions
