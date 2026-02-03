@@ -1,0 +1,1 @@
+"""Financial headlines digest package."""

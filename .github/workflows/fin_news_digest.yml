@@ -1,0 +1,45 @@
+name: Financial Headlines Digest
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 08:00 Asia/Shanghai
+    - cron: "0 12 * * *"  # 08:00 America/New_York during DST
+    - cron: "0 13 * * *"  # 08:00 America/New_York during Standard Time
+  workflow_dispatch: {}
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r fin_news_digest/requirements.txt
+
+      - name: Run digest
+        env:
+          RECIPIENTS: ${{ secrets.FIN_RECIPIENTS }}
+          SMTP_HOST: ${{ secrets.FIN_SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.FIN_SMTP_PORT }}
+          SMTP_USER: ${{ secrets.FIN_SMTP_USER }}
+          SMTP_PASS: ${{ secrets.FIN_SMTP_PASS }}
+          SMTP_FROM: ${{ secrets.FIN_SMTP_FROM }}
+          SMTP_USE_TLS: ${{ secrets.FIN_SMTP_USE_TLS }}
+          TRANSLATE_PROVIDER: ${{ secrets.FIN_TRANSLATE_PROVIDER }}
+          TRANSLATE_ENDPOINT: ${{ secrets.FIN_TRANSLATE_ENDPOINT }}
+          TRANSLATE_API_KEY: ${{ secrets.FIN_TRANSLATE_API_KEY }}
+          TRANSLATE_SLEEP_SECONDS: "1.0"
+          LOOKBACK_HOURS: "36"
+          STATE_TTL_HOURS: "72"
+          MAX_ITEMS: "40"
+        run: |
+          python fin_news_digest/run_actions.py

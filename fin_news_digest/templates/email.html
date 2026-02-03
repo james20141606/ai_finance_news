@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Global Finance Digest</title>
+    <style>
+      body { font-family: Arial, sans-serif; color: #111; line-height: 1.5; }
+      .item { margin-bottom: 18px; }
+      .source { font-weight: bold; }
+      .label { font-weight: bold; color: #444; }
+      .link { color: #0b5fff; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <h2>Global Finance Digest - {{ edition_label }}</h2>
+    {% for item in items %}
+      <div class="item">
+        <div class="source">{{ item.source }}</div>
+        <div><span class="label">EN:</span> {{ item.title_en }}</div>
+        <div><span class="label">EN Summary:</span> {{ item.summary_en }}</div>
+        <div><span class="label">CN:</span> {{ item.title_zh }}</div>
+        <div><span class="label">CN Summary:</span> {{ item.summary_zh }}</div>
+        <div><a class="link" href="{{ item.link }}">Read</a></div>
+      </div>
+    {% endfor %}
+  </body>
+</html>
