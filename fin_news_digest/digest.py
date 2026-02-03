@@ -40,7 +40,7 @@ def run_digest(edition_label: str) -> None:
     state = load_state(cfg.state_file)
     fresh, state = filter_sent(deduped, state, cfg.state_ttl_hours)
 
-    ranked = rank_items(fresh, cfg.max_items)
+    ranked = rank_items(fresh, cfg.max_items, edition_label)
     if not ranked:
         logger.warning("No items to send for %s", edition_label)
         return

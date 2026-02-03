@@ -32,6 +32,7 @@ Set `TRANSLATE_PROVIDER` to:
 
 - Only headlines + short summaries + links are sent. No full-text content.
 - `fin_news_digest/state.json` is used to avoid resending items across runs.
+- Beijing 08:00 edition boosts China-related keywords; New York 08:00 boosts U.S./global keywords.
 
 ## GitHub Actions (No Local Machine Required)
 
