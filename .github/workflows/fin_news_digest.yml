@@ -42,4 +42,4 @@ jobs:
           STATE_TTL_HOURS: "72"
           MAX_ITEMS: "40"
         run: |
-          python fin_news_digest/run_actions.py
+          python -m fin_news_digest.run_actions
