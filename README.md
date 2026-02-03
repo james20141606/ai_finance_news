@@ -24,12 +24,12 @@ A twice-daily, bilingual (EN/CN) financial headlines digest with short summaries
 2. Paste the config below (replace the password):
 
 ```
-FIN_RECIPIENTS=james20141606@gmail.com,xc1490@nyu.edu,sm13533@nyu.edu
+FIN_RECIPIENTS=your_email@gmail.com,other@example.com
 FIN_SMTP_HOST=smtp.gmail.com
 FIN_SMTP_PORT=587
-FIN_SMTP_USER=james20141606@gmail.com
+FIN_SMTP_USER=your_email@gmail.com
 FIN_SMTP_PASS=YOUR_16_CHAR_APP_PASSWORD
-FIN_SMTP_FROM=Global Finance Digest <james20141606@gmail.com>
+FIN_SMTP_FROM=Global Finance Digest <your_email@gmail.com>
 FIN_SMTP_USE_TLS=true
 FIN_TRANSLATE_PROVIDER=mymemory
 ```
