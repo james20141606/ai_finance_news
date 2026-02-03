@@ -1,6 +1,7 @@
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
+import os
 import sys
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +17,11 @@ def _should_run(tz_name: str) -> bool:
 
 
 def main() -> None:
+    if os.getenv("FORCE_SEND", "").strip().lower() in {"1", "true", "yes", "y"}:
+        run_digest("NY 08:00")
+        run_digest("BJ 08:00")
+        return
+
     ran = False
     if _should_run("America/New_York"):
         run_digest("NY 08:00")
