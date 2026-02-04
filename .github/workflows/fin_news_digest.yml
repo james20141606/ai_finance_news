@@ -41,5 +41,6 @@ jobs:
         if: ${{ github.event_name == 'schedule' }}
         env:
           MAIL_FIN: ${{ secrets.MAIL_FIN }}
+          SCHEDULED_RUN: "true"
         run: |
           python -m fin_news_digest.run_actions

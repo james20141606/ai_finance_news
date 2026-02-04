@@ -19,9 +19,20 @@ def _should_run(tz_name: str) -> bool:
     return now.hour == 8 and 0 <= now.minute <= _WINDOW_MINUTES
 
 
+def _truthy(value: str) -> bool:
+    return value.strip().lower() in {"1", "true", "yes", "y"}
+
+
 def main() -> None:
-    if os.getenv("FORCE_SEND", "").strip().lower() in {"1", "true", "yes", "y"}:
+    if _truthy(os.getenv("FORCE_SEND", "")):
         print("FORCE_SEND enabled: sending both editions.")
+        run_digest("NY 08:00")
+        run_digest("BJ 08:00")
+        return
+
+    if _truthy(os.getenv("SCHEDULED_RUN", "")):
+        print("SCHEDULED_RUN enabled: sending scheduled editions.")
+        # Send both editions on schedule to avoid delay skips
         run_digest("NY 08:00")
         run_digest("BJ 08:00")
         return
