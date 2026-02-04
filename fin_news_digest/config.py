@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 
 def _get_bool(value: str, default: bool) -> bool:
-    if value is None:
+    if value is None or not value.strip():
         return default
     return value.strip().lower() in {"1", "true", "yes", "y", "on"}
 
@@ -51,6 +51,8 @@ class Config:
     alpha_vantage_api_key: str
     alpha_vantage_sleep_seconds: float
     market_snapshot: bool
+    min_items: int
+    fallback_lookback_hours: int
 
     lookback_hours: int
     state_ttl_hours: int
@@ -127,6 +129,12 @@ def load_config() -> Config:
         ),
         market_snapshot=_get_bool(
             _env("MARKET_SNAPSHOT", "FIN_MARKET_SNAPSHOT", mail_fin), True
+        ),
+        min_items=_get_int(
+            _env("MIN_ITEMS", "FIN_MIN_ITEMS", mail_fin), 6
+        ),
+        fallback_lookback_hours=_get_int(
+            _env("FALLBACK_LOOKBACK_HOURS", "FIN_FALLBACK_LOOKBACK_HOURS", mail_fin), 72
         ),
         lookback_hours=_get_int(os.getenv("LOOKBACK_HOURS"), 36),
         state_ttl_hours=_get_int(os.getenv("STATE_TTL_HOURS"), 72),

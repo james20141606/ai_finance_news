@@ -43,6 +43,24 @@ def run_digest(edition_label: str) -> None:
     state = load_state(cfg.state_file)
     fresh, state = filter_sent(deduped, state, cfg.state_ttl_hours)
 
+    if len(fresh) < cfg.min_items and cfg.fallback_lookback_hours > cfg.lookback_hours:
+        logger.info(
+            "Only %s items; expanding lookback to %sh",
+            len(fresh),
+            cfg.fallback_lookback_hours,
+        )
+        recent_items = filter_recent(raw_items, cfg.fallback_lookback_hours)
+        deduped = dedupe_items(recent_items)
+        fresh, state = filter_sent(deduped, state, cfg.state_ttl_hours)
+
+    if len(fresh) < cfg.min_items:
+        logger.warning(
+            "Only %s items after fallback (min=%s). Skipping send.",
+            len(fresh),
+            cfg.min_items,
+        )
+        return
+
     heuristic_ranked = rank_items(fresh, cfg.max_items, edition_label)
 
     ranked = heuristic_ranked

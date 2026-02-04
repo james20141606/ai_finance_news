@@ -60,6 +60,7 @@ Enable a short Chinese summary paragraph at the top:
 - Only headlines + short summaries + links are sent. No full-text content.
 - `fin_news_digest/state.json` is used to avoid resending items across runs.
 - Beijing 08:00 edition boosts China-related keywords; New York 08:00 boosts U.S./global keywords.
+- If fewer than `MIN_ITEMS` are available, the pipeline expands the lookback to `FALLBACK_LOOKBACK_HOURS`.
 
 ## GitHub Actions (No Local Machine Required)
 
