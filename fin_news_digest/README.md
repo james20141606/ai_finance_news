@@ -41,11 +41,9 @@ The pipeline will first do heuristic ranking, then call the model to re-rank the
 
 ## Market Snapshot (Prev Close)
 
-Enable a daily market snapshot section with major US / Europe indices (Alpha Vantage),
-China indices (Eastmoney, no key), crypto, gold & silver.
+Enable a daily market snapshot section with major US / Europe indices (Stooq, no key),
+China indices (Eastmoney, no key), crypto (CoinGecko), gold & silver (GLD/SLV).
 
-- `ALPHA_VANTAGE_API_KEY` (required for market data)
-- `ALPHA_VANTAGE_SLEEP_SECONDS=12` (rate-limit friendly)
 - `MARKET_SNAPSHOT=true`
 
 ## Daily Chinese Outlook

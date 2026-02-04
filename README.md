@@ -10,7 +10,7 @@ A twice-daily, bilingual (EN/CN) financial headlines digest with short summaries
 - **Bilingual summaries**: English + Chinese for every item
 - **Curated sources**: Mainstream financial media + macro policy feeds
 - **Email-ready**: Clean, mobile-friendly HTML with a matching plain-text fallback
-- **Market snapshot**: US/EU (Alpha Vantage), China indices (Eastmoney), crypto (CoinGecko), metals
+- **Market snapshot**: US/EU (Stooq, no key), China indices (Eastmoney), crypto (CoinGecko), metals (GLD/SLV)
 
 ## How It Works
 
@@ -38,8 +38,6 @@ OPENAI_MODEL=gpt-5-mini
 OPENAI_RERANK=true
 OPENAI_CANDIDATES=50
 OPENAI_SUMMARY=true
-ALPHA_VANTAGE_API_KEY=YOUR_ALPHA_VANTAGE_KEY
-ALPHA_VANTAGE_SLEEP_SECONDS=12
 MARKET_SNAPSHOT=true
 ```
 
@@ -62,7 +60,7 @@ assets/hero.svg
 
 - GitHub Actions runners are stateless. If you want cross-run dedupe persistence, we can add S3/Redis.
 - You can customize sources in `fin_news_digest/sources.json`.
-- China indices are pulled from Eastmoney (no key). US/EU + metals use Alpha Vantage.
+- China indices are pulled from Eastmoney (no key). US/EU + metals use Stooq (no key).
 - Email template lives in `fin_news_digest/templates/email.html`.
 
 ## Customization Ideas

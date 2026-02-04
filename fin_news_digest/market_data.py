@@ -2,6 +2,8 @@ import logging
 import time
 from dataclasses import dataclass
 from datetime import datetime
+import csv
+import io
 from typing import Any
 
 import requests
@@ -81,6 +83,57 @@ def fetch_alpha_vantage_quote(
         change=change,
         change_percent=change_pct,
         currency="USD",
+        as_of=as_of,
+        change_color=_change_color(change),
+    )
+
+
+def fetch_stooq_daily(
+    symbol: str,
+    label: str,
+    currency: str,
+    sleep_seconds: float,
+) -> MarketItem | None:
+    url = f"https://stooq.com/q/d/l/?s={symbol.lower()}&i=d"
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/121.0.0.0 Safari/537.36"
+        )
+    }
+    resp = requests.get(url, headers=headers, timeout=20)
+    resp.raise_for_status()
+    text = resp.text.strip()
+    if not text or "No data" in text:
+        logger.warning("Stooq empty for %s", symbol)
+        return None
+
+    reader = csv.DictReader(io.StringIO(text))
+    rows = list(reader)
+    if not rows:
+        logger.warning("Stooq rows empty for %s", symbol)
+        return None
+
+    latest = rows[-1]
+    prev = rows[-2] if len(rows) > 1 else None
+    price = _parse_float(latest.get("Close"))
+    prev_price = _parse_float(prev.get("Close")) if prev else None
+    change = price - prev_price if (price is not None and prev_price is not None) else None
+    change_pct = (
+        (change / prev_price * 100) if (change is not None and prev_price) else None
+    )
+    as_of = latest.get("Date", "")
+
+    _sleep(sleep_seconds)
+
+    return MarketItem(
+        name=label,
+        symbol=symbol.upper(),
+        price=price,
+        change=change,
+        change_percent=change_pct,
+        currency=currency,
         as_of=as_of,
         change_color=_change_color(change),
     )
@@ -255,9 +308,10 @@ def build_market_snapshot(
     api_key: str,
     sleep_seconds: float,
 ) -> list[MarketSection]:
-    # Alpha Vantage (US/EU + metals) + Eastmoney (China indices)
-    us_symbols = [("SPY", "S&P 500"), ("QQQ", "Nasdaq 100"), ("DIA", "Dow Jones")]
-    eu_symbols = [("VGK", "Europe"), ("FEZ", "Euro Stoxx 50"), ("EWU", "UK FTSE")]
+    # Stooq (US/EU + metals ETFs, no API key) + Eastmoney (China indices) + CoinGecko (crypto)
+    us_symbols = [("SPY.US", "S&P 500"), ("QQQ.US", "Nasdaq 100"), ("DIA.US", "Dow Jones")]
+    eu_symbols = [("VGK.US", "Europe"), ("FEZ.US", "Euro Stoxx 50"), ("EWU.US", "UK FTSE")]
+    metal_symbols = [("GLD.US", "Gold"), ("SLV.US", "Silver")]
     cn_secids = [
         ("1.000001", "SSE Composite 上证指数"),
         ("0.399001", "SZSE Component 深证成指"),
@@ -265,32 +319,30 @@ def build_market_snapshot(
         ("1.000300", "CSI 300 沪深300"),
     ]
 
-    def fetch_group(symbols: list[tuple[str, str]]) -> list[MarketItem]:
+    def fetch_group_stooq(symbols: list[tuple[str, str]], currency: str) -> list[MarketItem]:
         results = []
         for symbol, label in symbols:
-            item = fetch_alpha_vantage_quote(symbol, api_key, sleep_seconds)
+            item = fetch_stooq_daily(symbol, label, currency, sleep_seconds)
             if item:
                 item.name = _format_name(symbol, label)
                 results.append(item)
         return results
 
     sections: list[MarketSection] = []
-    if api_key:
-        sections.append(MarketSection(title="US Major Markets", items=fetch_group(us_symbols)))
-        sections.append(MarketSection(title="Europe Major Markets", items=fetch_group(eu_symbols)))
+    sections.append(
+        MarketSection(title="US Major Markets", items=fetch_group_stooq(us_symbols, "USD"))
+    )
+    sections.append(
+        MarketSection(title="Europe Major Markets", items=fetch_group_stooq(eu_symbols, "USD"))
+    )
 
     china_items = fetch_eastmoney_indices(cn_secids, sleep_seconds)
     if china_items:
         sections.append(MarketSection(title="China Major Markets", items=china_items))
 
-    if api_key:
-        metals = []
-        for metal in ["GOLD", "SILVER"]:
-            item = fetch_alpha_vantage_metal(metal, api_key, sleep_seconds)
-            if item:
-                metals.append(item)
-        if metals:
-            sections.append(MarketSection(title="Gold & Silver", items=metals))
+    metals = fetch_group_stooq(metal_symbols, "USD")
+    if metals:
+        sections.append(MarketSection(title="Gold & Silver", items=metals))
 
     crypto = fetch_coingecko_prices()
     if crypto:
