@@ -185,17 +185,85 @@ def _format_name(symbol: str, label: str | None) -> str:
     return label or symbol
 
 
+def fetch_eastmoney_indices(
+    secid_labels: list[tuple[str, str]],
+    sleep_seconds: float,
+) -> list[MarketItem]:
+    if not secid_labels:
+        return []
+
+    url = "https://push2.eastmoney.com/api/qt/ulist.np/get"
+    secids = ",".join(secid for secid, _ in secid_labels)
+    params = {
+        "fltt": "2",
+        "invt": "2",
+        "fields": "f12,f14,f2,f3,f4",
+        "secids": secids,
+    }
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/121.0.0.0 Safari/537.36"
+        )
+    }
+    resp = requests.get(url, params=params, headers=headers, timeout=20)
+    resp.raise_for_status()
+    payload = resp.json()
+    diff = payload.get("data", {}).get("diff", []) or []
+
+    code_to_secid = {secid.split(".", 1)[1]: secid for secid, _ in secid_labels}
+    label_by_code = {
+        secid.split(".", 1)[1]: label for secid, label in secid_labels
+    }
+    items_by_code: dict[str, MarketItem] = {}
+    as_of = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    for row in diff:
+        code = str(row.get("f12", "")).strip()
+        if not code:
+            continue
+        price = _parse_float(row.get("f2"))
+        change_pct = _parse_float(row.get("f3"))
+        change = _parse_float(row.get("f4"))
+        label = label_by_code.get(code) or str(row.get("f14", code))
+        secid = code_to_secid.get(code, "")
+        market_prefix = "SH" if secid.startswith("1.") else "SZ"
+        symbol = f"{market_prefix}{code}"
+        items_by_code[code] = MarketItem(
+            name=label,
+            symbol=symbol,
+            price=price,
+            change=change,
+            change_percent=change_pct,
+            currency="CNY",
+            as_of=as_of,
+            change_color=_change_color(change),
+        )
+
+    ordered_items = []
+    for secid, _ in secid_labels:
+        code = secid.split(".", 1)[1]
+        item = items_by_code.get(code)
+        if item:
+            ordered_items.append(item)
+
+    _sleep(min(sleep_seconds, 1.0))
+    return ordered_items
+
+
 def build_market_snapshot(
     api_key: str,
     sleep_seconds: float,
 ) -> list[MarketSection]:
-    if not api_key:
-        return []
-
-    # ETF proxies for indices (cost-effective and available via Alpha Vantage)
+    # Alpha Vantage (US/EU + metals) + Eastmoney (China indices)
     us_symbols = [("SPY", "S&P 500"), ("QQQ", "Nasdaq 100"), ("DIA", "Dow Jones")]
     eu_symbols = [("VGK", "Europe"), ("FEZ", "Euro Stoxx 50"), ("EWU", "UK FTSE")]
-    cn_symbols = [("FXI", "China Large Cap"), ("KWEB", "China Tech"), ("ASHR", "China A-Shares")]
+    cn_secids = [
+        ("1.000001", "SSE Composite 上证指数"),
+        ("0.399001", "SZSE Component 深证成指"),
+        ("0.399006", "ChiNext 创业板指"),
+        ("1.000300", "CSI 300 沪深300"),
+    ]
 
     def fetch_group(symbols: list[tuple[str, str]]) -> list[MarketItem]:
         results = []
@@ -206,19 +274,23 @@ def build_market_snapshot(
                 results.append(item)
         return results
 
-    sections = [
-        MarketSection(title="US Major Markets", items=fetch_group(us_symbols)),
-        MarketSection(title="Europe Major Markets", items=fetch_group(eu_symbols)),
-        MarketSection(title="China Major Markets", items=fetch_group(cn_symbols)),
-    ]
+    sections: list[MarketSection] = []
+    if api_key:
+        sections.append(MarketSection(title="US Major Markets", items=fetch_group(us_symbols)))
+        sections.append(MarketSection(title="Europe Major Markets", items=fetch_group(eu_symbols)))
 
-    metals = []
-    for metal in ["GOLD", "SILVER"]:
-        item = fetch_alpha_vantage_metal(metal, api_key, sleep_seconds)
-        if item:
-            metals.append(item)
-    if metals:
-        sections.append(MarketSection(title="Gold & Silver", items=metals))
+    china_items = fetch_eastmoney_indices(cn_secids, sleep_seconds)
+    if china_items:
+        sections.append(MarketSection(title="China Major Markets", items=china_items))
+
+    if api_key:
+        metals = []
+        for metal in ["GOLD", "SILVER"]:
+            item = fetch_alpha_vantage_metal(metal, api_key, sleep_seconds)
+            if item:
+                metals.append(item)
+        if metals:
+            sections.append(MarketSection(title="Gold & Silver", items=metals))
 
     crypto = fetch_coingecko_prices()
     if crypto:

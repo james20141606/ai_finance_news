@@ -10,6 +10,7 @@ A twice-daily, bilingual (EN/CN) financial headlines digest with short summaries
 - **Bilingual summaries**: English + Chinese for every item
 - **Curated sources**: Mainstream financial media + macro policy feeds
 - **Email-ready**: Clean, mobile-friendly HTML with a matching plain-text fallback
+- **Market snapshot**: US/EU (Alpha Vantage), China indices (Eastmoney), crypto (CoinGecko), metals
 
 ## How It Works
 
@@ -61,6 +62,7 @@ assets/hero.svg
 
 - GitHub Actions runners are stateless. If you want cross-run dedupe persistence, we can add S3/Redis.
 - You can customize sources in `fin_news_digest/sources.json`.
+- China indices are pulled from Eastmoney (no key). US/EU + metals use Alpha Vantage.
 - Email template lives in `fin_news_digest/templates/email.html`.
 
 ## Customization Ideas
