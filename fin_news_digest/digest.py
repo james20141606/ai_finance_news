@@ -14,6 +14,8 @@ from fin_news_digest.state import filter_sent, load_state, save_state
 from fin_news_digest.translator import TranslatorConfig, build_translator
 from fin_news_digest.utils import configure_logging
 from fin_news_digest.llm_ranker import OpenAIRerankConfig, rerank_items
+from fin_news_digest.market_data import build_market_snapshot
+from fin_news_digest.news_summary import OpenAISummaryConfig, summarize_cn
 
 logger = logging.getLogger(__name__)
 
@@ -76,6 +78,24 @@ def run_digest(edition_label: str) -> None:
     if not sender:
         raise RuntimeError("SMTP_FROM or SMTP_USER must be set")
 
+    summary_cn = None
+    if cfg.openai_summary and cfg.openai_api_key:
+        summary_cn = summarize_cn(
+            ranked[: min(12, len(ranked))],
+            edition_label,
+            OpenAISummaryConfig(
+                api_key=cfg.openai_api_key,
+                model=cfg.openai_model,
+                base_url=cfg.openai_base_url,
+            ),
+        )
+
+    market_snapshot = []
+    if cfg.market_snapshot and cfg.alpha_vantage_api_key:
+        market_snapshot = build_market_snapshot(
+            cfg.alpha_vantage_api_key, cfg.alpha_vantage_sleep_seconds
+        )
+
     send_email_to_each(
         host=cfg.smtp_host,
         port=cfg.smtp_port,
@@ -87,6 +107,8 @@ def run_digest(edition_label: str) -> None:
         recipients=cfg.recipients,
         items=ranked,
         edition_label=edition_label,
+        summary_cn=summary_cn,
+        market_snapshot=market_snapshot,
     )
     Path(cfg.state_file).parent.mkdir(parents=True, exist_ok=True)
     save_state(cfg.state_file, state)

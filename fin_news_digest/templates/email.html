@@ -44,6 +44,38 @@
             </tr>
             <tr>
               <td class="section">
+                {% if summary_cn %}
+                  <div class="section-title">Daily Chinese Outlook</div>
+                  <div class="divider"></div>
+                  <div class="summary" style="font-size:16px;">{{ summary_cn }}</div>
+                  <div class="divider"></div>
+                {% endif %}
+
+                {% if market_snapshot and market_snapshot|length > 0 %}
+                  <div class="section-title">Market Snapshot (Prev Close)</div>
+                  <div class="divider"></div>
+                  {% for section in market_snapshot %}
+                    <div class="source" style="font-size:12px; margin-top:12px;">{{ section.title }}</div>
+                    <table width="100%" role="presentation" style="margin-top:8px; margin-bottom:10px;">
+                      {% for item in section.items %}
+                        <tr>
+                          <td style="padding:8px 0; font-family: Arial, sans-serif; font-size:13px; color:#0f172a;">
+                            <strong>{{ item.name }}</strong>
+                            <span style="color:#64748b;">({{ item.symbol }})</span>
+                          </td>
+                          <td align="right" style="padding:8px 0; font-family: Arial, sans-serif;">
+                            <span style="font-size:18px; font-weight:bold; color:#0f172a;">{{ item.price }}</span>
+                            <span style="font-size:13px; color:{{ item.change_color }}; margin-left:8px;">
+                              {{ item.change }} ({{ item.change_percent }}%)
+                            </span>
+                          </td>
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  {% endfor %}
+                  <div class="divider"></div>
+                {% endif %}
+
                 <div class="section-title">Top Briefing</div>
                 <div class="divider"></div>
                 {% for item in items %}

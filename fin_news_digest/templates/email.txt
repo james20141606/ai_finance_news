@@ -1,6 +1,21 @@
 Global Finance Digest — {{ edition_label }}
 {{ date_str }} | Total highlights: {{ count }}
 
+{% if summary_cn %}
+Daily Chinese Outlook:
+{{ summary_cn }}
+{% endif %}
+
+{% if market_snapshot and market_snapshot|length > 0 %}
+Market Snapshot (Prev Close)
+{% for section in market_snapshot %}
+{{ section.title }}
+{% for item in section.items %}
+- {{ item.name }} ({{ item.symbol }}): {{ item.price }} | {{ item.change }} ({{ item.change_percent }}%)
+{% endfor %}
+{% endfor %}
+{% endif %}
+
 {% for item in items %}
 Source: {{ item.source }}
 EN: {{ item.title_en }}

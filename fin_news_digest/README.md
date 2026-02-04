@@ -39,6 +39,21 @@ Enable LLM-based ranking for better news taste:
 
 The pipeline will first do heuristic ranking, then call the model to re-rank the top candidates.
 
+## Market Snapshot (Prev Close)
+
+Enable a daily market snapshot section with major US / Europe / China indices (ETF proxies), crypto, gold & silver.
+
+- `ALPHA_VANTAGE_API_KEY` (required for market data)
+- `ALPHA_VANTAGE_SLEEP_SECONDS=12` (rate-limit friendly)
+- `MARKET_SNAPSHOT=true`
+
+## Daily Chinese Outlook
+
+Enable a short Chinese summary paragraph at the top:
+
+- `OPENAI_SUMMARY=true`
+- Requires `OPENAI_API_KEY`
+
 ## Notes
 
 - Only headlines + short summaries + links are sent. No full-text content.

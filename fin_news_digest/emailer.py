@@ -7,6 +7,7 @@ from pathlib import Path
 from jinja2 import Template
 
 from fin_news_digest.models import NewsItem
+from fin_news_digest.market_data import MarketSection
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +23,8 @@ def build_message(
     recipients: list[str],
     items: list[NewsItem],
     edition_label: str,
+    summary_cn: str | None = None,
+    market_snapshot: list[MarketSection] | None = None,
 ) -> EmailMessage:
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     context = {
@@ -29,6 +32,8 @@ def build_message(
         "edition_label": edition_label,
         "date_str": date_str,
         "count": len(items),
+        "summary_cn": summary_cn,
+        "market_snapshot": market_snapshot or [],
     }
     text_body = _render_template("fin_news_digest/templates/email.txt", context)
     html_body = _render_template("fin_news_digest/templates/email.html", context)
@@ -70,6 +75,8 @@ def send_email_to_each(
     recipients: list[str],
     items: list[NewsItem],
     edition_label: str,
+    summary_cn: str | None = None,
+    market_snapshot: list[MarketSection] | None = None,
 ) -> None:
     logger.info("Sending individualized emails to %s recipients", len(recipients))
     with smtplib.SMTP(host, port, timeout=30) as server:
@@ -84,5 +91,7 @@ def send_email_to_each(
                 recipients=[recipient],
                 items=items,
                 edition_label=edition_label,
+                summary_cn=summary_cn,
+                market_snapshot=market_snapshot,
             )
             server.send_message(message)

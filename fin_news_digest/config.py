@@ -41,6 +41,17 @@ class Config:
     translate_api_key: str
     translate_sleep_seconds: float
 
+    openai_api_key: str
+    openai_model: str
+    openai_base_url: str
+    openai_rerank: bool
+    openai_candidates: int
+    openai_summary: bool
+
+    alpha_vantage_api_key: str
+    alpha_vantage_sleep_seconds: float
+    market_snapshot: bool
+
     lookback_hours: int
     state_ttl_hours: int
     max_items: int
@@ -93,6 +104,30 @@ def load_config() -> Config:
         translate_endpoint=_env("TRANSLATE_ENDPOINT", "FIN_TRANSLATE_ENDPOINT", mail_fin),
         translate_api_key=_env("TRANSLATE_API_KEY", "FIN_TRANSLATE_API_KEY", mail_fin),
         translate_sleep_seconds=_get_float(os.getenv("TRANSLATE_SLEEP_SECONDS"), 1.0),
+        openai_api_key=_env("OPENAI_API_KEY", "FIN_OPENAI_API_KEY", mail_fin),
+        openai_model=_env("OPENAI_MODEL", "FIN_OPENAI_MODEL", mail_fin)
+        or "gpt-5-mini",
+        openai_base_url=_env("OPENAI_BASE_URL", "FIN_OPENAI_BASE_URL", mail_fin)
+        or "https://api.openai.com/v1",
+        openai_rerank=_get_bool(
+            _env("OPENAI_RERANK", "FIN_OPENAI_RERANK", mail_fin), False
+        ),
+        openai_candidates=_get_int(
+            _env("OPENAI_CANDIDATES", "FIN_OPENAI_CANDIDATES", mail_fin), 50
+        ),
+        openai_summary=_get_bool(
+            _env("OPENAI_SUMMARY", "FIN_OPENAI_SUMMARY", mail_fin), True
+        ),
+        alpha_vantage_api_key=_env(
+            "ALPHA_VANTAGE_API_KEY", "FIN_ALPHA_VANTAGE_API_KEY", mail_fin
+        ),
+        alpha_vantage_sleep_seconds=_get_float(
+            _env("ALPHA_VANTAGE_SLEEP_SECONDS", "FIN_ALPHA_VANTAGE_SLEEP_SECONDS", mail_fin),
+            12.0,
+        ),
+        market_snapshot=_get_bool(
+            _env("MARKET_SNAPSHOT", "FIN_MARKET_SNAPSHOT", mail_fin), True
+        ),
         lookback_hours=_get_int(os.getenv("LOOKBACK_HOURS"), 36),
         state_ttl_hours=_get_int(os.getenv("STATE_TTL_HOURS"), 72),
         max_items=_get_int(os.getenv("MAX_ITEMS"), 40),
