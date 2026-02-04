@@ -57,3 +57,32 @@ def send_email(
         if user:
             server.login(user, password)
         server.send_message(message)
+
+
+def send_email_to_each(
+    host: str,
+    port: int,
+    use_tls: bool,
+    user: str,
+    password: str,
+    subject: str,
+    sender: str,
+    recipients: list[str],
+    items: list[NewsItem],
+    edition_label: str,
+) -> None:
+    logger.info("Sending individualized emails to %s recipients", len(recipients))
+    with smtplib.SMTP(host, port, timeout=30) as server:
+        if use_tls:
+            server.starttls()
+        if user:
+            server.login(user, password)
+        for recipient in recipients:
+            message = build_message(
+                subject=subject,
+                sender=sender,
+                recipients=[recipient],
+                items=items,
+                edition_label=edition_label,
+            )
+            server.send_message(message)

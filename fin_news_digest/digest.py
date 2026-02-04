@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 from fin_news_digest.config import load_config
 from fin_news_digest.dedupe import dedupe_items, filter_recent, rank_items
-from fin_news_digest.emailer import build_message, send_email
+from fin_news_digest.emailer import build_message, send_email, send_email_to_each
 from fin_news_digest.enrich import add_bilingual_fields
 from fin_news_digest.fetcher import fetch_sources
 from fin_news_digest.source_loader import load_sources
@@ -59,20 +59,17 @@ def run_digest(edition_label: str) -> None:
     if not sender:
         raise RuntimeError("SMTP_FROM or SMTP_USER must be set")
 
-    message = build_message(
-        subject=_subject_for(edition_label),
-        sender=sender,
-        recipients=cfg.recipients,
-        items=ranked,
-        edition_label=edition_label,
-    )
-    send_email(
+    send_email_to_each(
         host=cfg.smtp_host,
         port=cfg.smtp_port,
         use_tls=cfg.smtp_use_tls,
         user=cfg.smtp_user,
         password=cfg.smtp_pass,
-        message=message,
+        subject=_subject_for(edition_label),
+        sender=sender,
+        recipients=cfg.recipients,
+        items=ranked,
+        edition_label=edition_label,
     )
     Path(cfg.state_file).parent.mkdir(parents=True, exist_ok=True)
     save_state(cfg.state_file, state)
