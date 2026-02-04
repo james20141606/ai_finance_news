@@ -13,6 +13,7 @@ from fin_news_digest.source_loader import load_sources
 from fin_news_digest.state import filter_sent, load_state, save_state
 from fin_news_digest.translator import TranslatorConfig, build_translator
 from fin_news_digest.utils import configure_logging
+from fin_news_digest.llm_ranker import OpenAIRerankConfig, rerank_items
 
 logger = logging.getLogger(__name__)
 
@@ -40,7 +41,23 @@ def run_digest(edition_label: str) -> None:
     state = load_state(cfg.state_file)
     fresh, state = filter_sent(deduped, state, cfg.state_ttl_hours)
 
-    ranked = rank_items(fresh, cfg.max_items, edition_label)
+    heuristic_ranked = rank_items(fresh, cfg.max_items, edition_label)
+
+    ranked = heuristic_ranked
+    if cfg.openai_rerank and cfg.openai_api_key:
+        candidates = rank_items(fresh, cfg.openai_candidates, edition_label)
+        reranked = rerank_items(
+            candidates,
+            edition_label,
+            OpenAIRerankConfig(
+                api_key=cfg.openai_api_key,
+                model=cfg.openai_model,
+                base_url=cfg.openai_base_url,
+                candidates=cfg.openai_candidates,
+            ),
+        )
+        if reranked:
+            ranked = reranked[: cfg.max_items]
     if not ranked:
         logger.warning("No items to send for %s", edition_label)
         return

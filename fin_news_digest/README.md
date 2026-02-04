@@ -28,6 +28,17 @@ Set `TRANSLATE_PROVIDER` to:
 - `libretranslate` (use `TRANSLATE_ENDPOINT` and optional `TRANSLATE_API_KEY`)
 - `none` (no translation)
 
+## Optional: LLM Re-Rank (OpenAI)
+
+Enable LLM-based ranking for better news taste:
+
+- `OPENAI_API_KEY` (required)
+- `OPENAI_MODEL` (default: `gpt-5-mini`)
+- `OPENAI_RERANK=true`
+- `OPENAI_CANDIDATES=50` (cost control)
+
+The pipeline will first do heuristic ranking, then call the model to re-rank the top candidates.
+
 ## Notes
 
 - Only headlines + short summaries + links are sent. No full-text content.

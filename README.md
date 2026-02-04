@@ -32,6 +32,10 @@ FIN_SMTP_PASS=YOUR_16_CHAR_APP_PASSWORD
 FIN_SMTP_FROM=Global Finance Digest <your_email@gmail.com>
 FIN_SMTP_USE_TLS=true
 FIN_TRANSLATE_PROVIDER=mymemory
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+OPENAI_MODEL=gpt-5-mini
+OPENAI_RERANK=true
+OPENAI_CANDIDATES=50
 ```
 
 3. Run the workflow: **Actions → Financial Headlines Digest → Run workflow**
