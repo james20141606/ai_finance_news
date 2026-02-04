@@ -91,9 +91,9 @@ def run_digest(edition_label: str) -> None:
         )
 
     market_snapshot = []
-    if cfg.market_snapshot and cfg.alpha_vantage_api_key:
+    if cfg.market_snapshot:
         market_snapshot = build_market_snapshot(
-            cfg.alpha_vantage_api_key, cfg.alpha_vantage_sleep_seconds
+            cfg.alpha_vantage_api_key or "", cfg.alpha_vantage_sleep_seconds
         )
 
     send_email_to_each(
