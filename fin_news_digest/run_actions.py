@@ -11,13 +11,17 @@ if str(PROJECT_ROOT) not in sys.path:
 from fin_news_digest.digest import run_digest
 
 
+_WINDOW_MINUTES = 20
+
+
 def _should_run(tz_name: str) -> bool:
     now = datetime.now(ZoneInfo(tz_name))
-    return now.hour == 8 and 0 <= now.minute <= 5
+    return now.hour == 8 and 0 <= now.minute <= _WINDOW_MINUTES
 
 
 def main() -> None:
     if os.getenv("FORCE_SEND", "").strip().lower() in {"1", "true", "yes", "y"}:
+        print("FORCE_SEND enabled: sending both editions.")
         run_digest("NY 08:00")
         run_digest("BJ 08:00")
         return
