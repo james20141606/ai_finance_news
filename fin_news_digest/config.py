@@ -40,6 +40,10 @@ class Config:
     translate_endpoint: str
     translate_api_key: str
     translate_sleep_seconds: float
+    translate_max_retries: int
+    translate_backoff_base_seconds: float
+    translate_backoff_max_seconds: float
+    translate_cache_max_entries: int
 
     openai_api_key: str
     openai_model: str
@@ -106,6 +110,28 @@ def load_config() -> Config:
         translate_endpoint=_env("TRANSLATE_ENDPOINT", "FIN_TRANSLATE_ENDPOINT", mail_fin),
         translate_api_key=_env("TRANSLATE_API_KEY", "FIN_TRANSLATE_API_KEY", mail_fin),
         translate_sleep_seconds=_get_float(os.getenv("TRANSLATE_SLEEP_SECONDS"), 1.0),
+        translate_max_retries=_get_int(
+            _env("TRANSLATE_MAX_RETRIES", "FIN_TRANSLATE_MAX_RETRIES", mail_fin), 2
+        ),
+        translate_backoff_base_seconds=_get_float(
+            _env(
+                "TRANSLATE_BACKOFF_BASE_SECONDS",
+                "FIN_TRANSLATE_BACKOFF_BASE_SECONDS",
+                mail_fin,
+            ),
+            1.5,
+        ),
+        translate_backoff_max_seconds=_get_float(
+            _env(
+                "TRANSLATE_BACKOFF_MAX_SECONDS",
+                "FIN_TRANSLATE_BACKOFF_MAX_SECONDS",
+                mail_fin,
+            ),
+            20.0,
+        ),
+        translate_cache_max_entries=_get_int(
+            _env("TRANSLATE_CACHE_MAX", "FIN_TRANSLATE_CACHE_MAX", mail_fin), 2048
+        ),
         openai_api_key=_env("OPENAI_API_KEY", "FIN_OPENAI_API_KEY", mail_fin),
         openai_model=_env("OPENAI_MODEL", "FIN_OPENAI_MODEL", mail_fin)
         or "gpt-5-mini",

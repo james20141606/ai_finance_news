@@ -88,6 +88,10 @@ def run_digest(edition_label: str) -> None:
             endpoint=cfg.translate_endpoint,
             api_key=cfg.translate_api_key,
             sleep_seconds=cfg.translate_sleep_seconds,
+            max_retries=cfg.translate_max_retries,
+            backoff_base_seconds=cfg.translate_backoff_base_seconds,
+            backoff_max_seconds=cfg.translate_backoff_max_seconds,
+            cache_max_entries=cfg.translate_cache_max_entries,
         )
     )
     add_bilingual_fields(ranked, translator)
