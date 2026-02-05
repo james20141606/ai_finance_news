@@ -50,7 +50,32 @@ class TranslationCache:
             self._data.popitem(last=False)
 
 
+@dataclass
+class TranslationStats:
+    translate_calls: int = 0
+    cache_hits: int = 0
+    fallbacks: int = 0
+    api_requests: int = 0
+
+
 _TRANSLATION_CACHE = TranslationCache(2048)
+_TRANSLATION_STATS = TranslationStats()
+
+
+def reset_translation_stats() -> None:
+    _TRANSLATION_STATS.translate_calls = 0
+    _TRANSLATION_STATS.cache_hits = 0
+    _TRANSLATION_STATS.fallbacks = 0
+    _TRANSLATION_STATS.api_requests = 0
+
+
+def get_translation_stats() -> TranslationStats:
+    return TranslationStats(
+        translate_calls=_TRANSLATION_STATS.translate_calls,
+        cache_hits=_TRANSLATION_STATS.cache_hits,
+        fallbacks=_TRANSLATION_STATS.fallbacks,
+        api_requests=_TRANSLATION_STATS.api_requests,
+    )
 
 
 def _cache_key(
@@ -84,6 +109,7 @@ def _request_with_retries(
     attempt = 0
     while True:
         try:
+            _TRANSLATION_STATS.api_requests += 1
             resp = request_fn()
         except requests.RequestException as exc:
             if attempt >= max_retries:
@@ -175,11 +201,13 @@ class LibreTranslateTranslator(BaseTranslator):
             return text
         if not text:
             return text
+        _TRANSLATION_STATS.translate_calls += 1
         cache_key = _cache_key(
             self.provider_label, self.endpoint, source_lang, target_lang, text
         )
         cached = _TRANSLATION_CACHE.get(cache_key)
         if cached is not _MISSING:
+            _TRANSLATION_STATS.cache_hits += 1
             return cached
         payload = {
             "q": text,
@@ -201,6 +229,7 @@ class LibreTranslateTranslator(BaseTranslator):
             self.backoff_max_seconds,
         )
         if resp is None:
+            _TRANSLATION_STATS.fallbacks += 1
             result = text
         else:
             try:
@@ -210,6 +239,7 @@ class LibreTranslateTranslator(BaseTranslator):
                     "Translation response from %s was not valid JSON. Returning original text.",
                     self.provider_label,
                 )
+                _TRANSLATION_STATS.fallbacks += 1
                 result = text
             else:
                 result = data.get("translatedText", text) or text
@@ -235,6 +265,7 @@ class MyMemoryTranslator(BaseTranslator):
     def translate(self, text: str, source_lang: str, target_lang: str) -> str:
         if not text:
             return text
+        _TRANSLATION_STATS.translate_calls += 1
         cache_key = _cache_key(
             self.provider_label,
             "https://api.mymemory.translated.net/get",
@@ -244,6 +275,7 @@ class MyMemoryTranslator(BaseTranslator):
         )
         cached = _TRANSLATION_CACHE.get(cache_key)
         if cached is not _MISSING:
+            _TRANSLATION_STATS.cache_hits += 1
             return cached
         params = {
             "q": text,
@@ -263,6 +295,7 @@ class MyMemoryTranslator(BaseTranslator):
             self.backoff_max_seconds,
         )
         if resp is None:
+            _TRANSLATION_STATS.fallbacks += 1
             result = text
         else:
             try:
@@ -272,6 +305,7 @@ class MyMemoryTranslator(BaseTranslator):
                     "Translation response from %s was not valid JSON. Returning original text.",
                     self.provider_label,
                 )
+                _TRANSLATION_STATS.fallbacks += 1
                 result = text
             else:
                 result = data.get("responseData", {}).get("translatedText", text) or text

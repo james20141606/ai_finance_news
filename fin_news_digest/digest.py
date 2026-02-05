@@ -11,7 +11,12 @@ from fin_news_digest.enrich import add_bilingual_fields
 from fin_news_digest.fetcher import fetch_sources
 from fin_news_digest.source_loader import load_sources
 from fin_news_digest.state import filter_sent, load_state, save_state
-from fin_news_digest.translator import TranslatorConfig, build_translator
+from fin_news_digest.translator import (
+    TranslatorConfig,
+    build_translator,
+    get_translation_stats,
+    reset_translation_stats,
+)
 from fin_news_digest.utils import configure_logging
 from fin_news_digest.llm_ranker import OpenAIRerankConfig, rerank_items
 from fin_news_digest.market_data import build_market_snapshot
@@ -82,6 +87,7 @@ def run_digest(edition_label: str) -> None:
         logger.warning("No items to send for %s", edition_label)
         return
 
+    reset_translation_stats()
     translator = build_translator(
         TranslatorConfig(
             provider=cfg.translate_provider,
@@ -95,6 +101,20 @@ def run_digest(edition_label: str) -> None:
         )
     )
     add_bilingual_fields(ranked, translator)
+    stats = get_translation_stats()
+    if stats.translate_calls:
+        cache_hit_rate = stats.cache_hits / stats.translate_calls * 100
+        logger.info(
+            "Translation stats for %s: calls=%s, cache_hits=%s (%.1f%%), fallbacks=%s, api_requests=%s",
+            edition_label,
+            stats.translate_calls,
+            stats.cache_hits,
+            cache_hit_rate,
+            stats.fallbacks,
+            stats.api_requests,
+        )
+    else:
+        logger.info("Translation stats for %s: no translation calls", edition_label)
 
     sender = cfg.smtp_from or cfg.smtp_user
     if not sender:
