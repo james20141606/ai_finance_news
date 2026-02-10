@@ -11,7 +11,7 @@ Market Snapshot (Prev Close)
 {% for section in market_snapshot %}
 {{ section.title }}
 {% for item in section.items %}
-- {{ item.name }} ({{ item.symbol }}): {{ item.price }} | {{ item.change }} ({{ item.change_percent }}%)
+- {{ item.name }} ({{ item.symbol }}): {{ "%.2f"|format(item.price) if item.price is not none else "N/A" }} | {{ "%+.2f"|format(item.change) if item.change is not none else "N/A" }} ({{ "%+.2f"|format(item.change_percent) if item.change_percent is not none else "N/A" }}%)
 {% endfor %}
 {% endfor %}
 {% endif %}

@@ -22,6 +22,14 @@ class MarketItem:
     as_of: str
     change_color: str
 
+    def __post_init__(self) -> None:
+        if self.price is not None:
+            self.price = round(self.price, 2)
+        if self.change is not None:
+            self.change = round(self.change, 2)
+        if self.change_percent is not None:
+            self.change_percent = round(self.change_percent, 2)
+
 
 @dataclass
 class MarketSection:
