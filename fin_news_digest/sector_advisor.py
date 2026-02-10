@@ -86,35 +86,57 @@ def generate_recommendations(
     cfg: AdvisorConfig,
 ) -> str | None:
     if not cfg.api_key:
+        logger.info("Sector advisor skipped: no API key")
         return None
     if not sector_rankings and not news_items:
+        logger.info("Sector advisor skipped: no sector data or news items")
         return None
 
     prompt = _build_prompt(sector_rankings, news_items, edition_label)
-    payload = {
-        "model": cfg.model,
-        "messages": [
-            {"role": "system", "content": "You output JSON only."},
-            {"role": "user", "content": prompt},
-        ],
-        "response_format": _response_json(),
-    }
+    logger.info(
+        "Sector advisor: sending prompt (%d chars, %d sectors, %d news items)",
+        len(prompt),
+        sum(len(r.items) for r in sector_rankings),
+        len(news_items),
+    )
 
-    url = f"{cfg.base_url.rstrip('/')}/chat/completions"
-    headers = {
-        "Authorization": f"Bearer {cfg.api_key}",
-        "Content-Type": "application/json",
-    }
+    # Try structured JSON output first, fall back to plain text
+    for use_structured in (True, False):
+        payload = {
+            "model": cfg.model,
+            "messages": [
+                {"role": "system", "content": "You output JSON only."},
+                {"role": "user", "content": prompt},
+            ],
+        }
+        if use_structured:
+            payload["response_format"] = _response_json()
 
-    try:
-        resp = requests.post(url, headers=headers, data=json.dumps(payload), timeout=90)
-        resp.raise_for_status()
-        data = resp.json()
-        content = data["choices"][0]["message"]["content"]
-        result = json.loads(content)
-        recommendation = result.get("recommendation")
-        if recommendation:
-            return recommendation.strip()
-    except Exception as exc:
-        logger.warning("Sector advisor LLM failed: %s", exc)
+        url = f"{cfg.base_url.rstrip('/')}/chat/completions"
+        headers = {
+            "Authorization": f"Bearer {cfg.api_key}",
+            "Content-Type": "application/json",
+        }
+
+        try:
+            resp = requests.post(url, headers=headers, data=json.dumps(payload), timeout=90)
+            resp.raise_for_status()
+            data = resp.json()
+            content = data["choices"][0]["message"]["content"]
+            # Try parsing as JSON
+            try:
+                result = json.loads(content)
+                recommendation = result.get("recommendation", "")
+            except json.JSONDecodeError:
+                recommendation = content
+            if recommendation and recommendation.strip():
+                logger.info("Sector advisor: generated %d char recommendation", len(recommendation))
+                return recommendation.strip()
+        except Exception as exc:
+            mode = "structured" if use_structured else "plain"
+            logger.warning("Sector advisor LLM failed (%s mode): %s", mode, exc)
+            if use_structured:
+                logger.info("Sector advisor: retrying without structured output...")
+                continue
+            return None
     return None
