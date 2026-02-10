@@ -51,6 +51,13 @@
                   <div class="divider"></div>
                 {% endif %}
 
+                {% if sector_recommendation %}
+                  <div class="section-title">Daily Sector & Stock Picks 每日板块与个股推荐</div>
+                  <div class="divider"></div>
+                  <div class="summary" style="font-size:15px; background:#f0fdf4; padding:14px 16px; border-radius:8px; border-left:4px solid #16a34a;">{{ sector_recommendation }}</div>
+                  <div class="divider"></div>
+                {% endif %}
+
                 {% if market_snapshot and market_snapshot|length > 0 %}
                   <div class="section-title">Market Snapshot (Prev Close)</div>
                   <div class="divider"></div>
@@ -72,6 +79,28 @@
                                 N/A
                               {% endif %}
                             </span>
+                          </td>
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  {% endfor %}
+                  <div class="divider"></div>
+                {% endif %}
+
+                {% if sector_rankings and sector_rankings|length > 0 %}
+                  <div class="section-title">Sector Rankings 板块排名</div>
+                  <div class="divider"></div>
+                  {% for ranking in sector_rankings %}
+                    <div class="source" style="font-size:12px; margin-top:12px;">{{ ranking.title }}</div>
+                    <table width="100%" role="presentation" style="margin-top:8px; margin-bottom:10px;">
+                      {% for item in ranking.items %}
+                        <tr>
+                          <td style="padding:5px 0; font-family: Arial, sans-serif; font-size:13px; color:#0f172a;">
+                            <span style="color:#64748b; font-size:12px;">{{ loop.index }}.</span>
+                            <strong>{{ item.name }}</strong>
+                          </td>
+                          <td align="right" style="padding:5px 0; font-family: Arial, sans-serif; font-size:15px; font-weight:bold; color:{{ item.change_color }};">
+                            {{ "%+.2f"|format(item.change_percent) }}%
                           </td>
                         </tr>
                       {% endfor %}
