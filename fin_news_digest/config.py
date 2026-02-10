@@ -55,6 +55,9 @@ class Config:
     alpha_vantage_api_key: str
     alpha_vantage_sleep_seconds: float
     market_snapshot: bool
+    sector_ranking: bool
+    sector_top_n: int
+    sector_advisor: bool
     min_items: int
     fallback_lookback_hours: int
 
@@ -155,6 +158,15 @@ def load_config() -> Config:
         ),
         market_snapshot=_get_bool(
             _env("MARKET_SNAPSHOT", "FIN_MARKET_SNAPSHOT", mail_fin), True
+        ),
+        sector_ranking=_get_bool(
+            _env("SECTOR_RANKING", "FIN_SECTOR_RANKING", mail_fin), True
+        ),
+        sector_top_n=_get_int(
+            _env("SECTOR_TOP_N", "FIN_SECTOR_TOP_N", mail_fin), 5
+        ),
+        sector_advisor=_get_bool(
+            _env("SECTOR_ADVISOR", "FIN_SECTOR_ADVISOR", mail_fin), True
         ),
         min_items=_get_int(
             _env("MIN_ITEMS", "FIN_MIN_ITEMS", mail_fin), 6

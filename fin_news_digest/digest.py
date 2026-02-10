@@ -21,6 +21,8 @@ from fin_news_digest.utils import configure_logging
 from fin_news_digest.llm_ranker import OpenAIRerankConfig, rerank_items
 from fin_news_digest.market_data import build_market_snapshot
 from fin_news_digest.news_summary import OpenAISummaryConfig, summarize_cn
+from fin_news_digest.sector_data import build_sector_rankings
+from fin_news_digest.sector_advisor import AdvisorConfig, generate_recommendations
 
 logger = logging.getLogger(__name__)
 
@@ -138,6 +140,26 @@ def run_digest(edition_label: str) -> None:
             cfg.alpha_vantage_api_key or "", cfg.alpha_vantage_sleep_seconds
         )
 
+    sector_rankings = []
+    if cfg.sector_ranking:
+        sector_rankings = build_sector_rankings(
+            top_n=cfg.sector_top_n,
+            sleep_seconds=cfg.alpha_vantage_sleep_seconds,
+        )
+
+    sector_recommendation = None
+    if cfg.sector_advisor and cfg.openai_api_key:
+        sector_recommendation = generate_recommendations(
+            sector_rankings=sector_rankings,
+            news_items=ranked[:15],
+            edition_label=edition_label,
+            cfg=AdvisorConfig(
+                api_key=cfg.openai_api_key,
+                model=cfg.openai_model,
+                base_url=cfg.openai_base_url,
+            ),
+        )
+
     send_email_to_each(
         host=cfg.smtp_host,
         port=cfg.smtp_port,
@@ -151,6 +173,8 @@ def run_digest(edition_label: str) -> None:
         edition_label=edition_label,
         summary_cn=summary_cn,
         market_snapshot=market_snapshot,
+        sector_rankings=sector_rankings,
+        sector_recommendation=sector_recommendation,
     )
     Path(cfg.state_file).parent.mkdir(parents=True, exist_ok=True)
     save_state(cfg.state_file, state)

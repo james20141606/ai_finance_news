@@ -8,6 +8,7 @@ from jinja2 import Template
 
 from fin_news_digest.models import NewsItem
 from fin_news_digest.market_data import MarketSection
+from fin_news_digest.sector_data import SectorRanking
 
 logger = logging.getLogger(__name__)
 
@@ -25,6 +26,8 @@ def build_message(
     edition_label: str,
     summary_cn: str | None = None,
     market_snapshot: list[MarketSection] | None = None,
+    sector_rankings: list[SectorRanking] | None = None,
+    sector_recommendation: str | None = None,
 ) -> EmailMessage:
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     context = {
@@ -34,6 +37,8 @@ def build_message(
         "count": len(items),
         "summary_cn": summary_cn,
         "market_snapshot": market_snapshot or [],
+        "sector_rankings": sector_rankings or [],
+        "sector_recommendation": sector_recommendation,
     }
     text_body = _render_template("fin_news_digest/templates/email.txt", context)
     html_body = _render_template("fin_news_digest/templates/email.html", context)
@@ -77,6 +82,8 @@ def send_email_to_each(
     edition_label: str,
     summary_cn: str | None = None,
     market_snapshot: list[MarketSection] | None = None,
+    sector_rankings: list[SectorRanking] | None = None,
+    sector_recommendation: str | None = None,
 ) -> None:
     logger.info("Sending individualized emails to %s recipients", len(recipients))
     with smtplib.SMTP(host, port, timeout=30) as server:
@@ -93,5 +100,7 @@ def send_email_to_each(
                 edition_label=edition_label,
                 summary_cn=summary_cn,
                 market_snapshot=market_snapshot,
+                sector_rankings=sector_rankings,
+                sector_recommendation=sector_recommendation,
             )
             server.send_message(message)
