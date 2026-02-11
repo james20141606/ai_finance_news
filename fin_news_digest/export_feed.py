@@ -4,15 +4,17 @@ Export the latest finance digest as a JSON feed file.
 Usage:
     python -m fin_news_digest.export_feed [--output path/to/news-feed.json]
 
-This generates a JSON file suitable for rendering in a web page.
-It fetches, deduplicates, and ranks items the same way the email digest does,
-but outputs JSON instead of sending an email.
+Architecture:
+    - news-feed.json contains an "editions" array
+    - Each pipeline run APPENDS a new edition (not overwrite)
+    - Editions are kept for up to 90 days (configurable)
+    - The blog news page displays all editions, newest first
 """
 
 import json
 import logging
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -35,6 +37,33 @@ from fin_news_digest.translator import (
 from fin_news_digest.utils import configure_logging
 
 logger = logging.getLogger(__name__)
+
+KEEP_DAYS = 90  # Keep editions for 90 days
+
+
+def _load_existing_feed(path: str) -> dict:
+    """Load existing feed file, return empty structure if not found."""
+    p = Path(path)
+    if not p.exists():
+        return {"editions": []}
+    try:
+        data = json.loads(p.read_text(encoding="utf-8"))
+        # Handle old single-edition format: migrate to editions array
+        if "editions" not in data and "items" in data:
+            return {"editions": [data]}
+        return data
+    except (json.JSONDecodeError, KeyError):
+        return {"editions": []}
+
+
+def _prune_old_editions(feed: dict, keep_days: int) -> dict:
+    """Remove editions older than keep_days."""
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=keep_days)).isoformat()
+    feed["editions"] = [
+        e for e in feed["editions"]
+        if e.get("updated_at", "") >= cutoff
+    ]
+    return feed
 
 
 def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web") -> None:
@@ -59,10 +88,7 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
     ranked = rank_items(fresh, cfg.max_items, edition_label)
 
     if not ranked:
-        logger.warning("No items to export")
-        # Write empty feed
-        feed = {"updated_at": datetime.now(timezone.utc).isoformat(), "items": []}
-        Path(output_path).write_text(json.dumps(feed, ensure_ascii=False, indent=2))
+        logger.warning("No items to export for this edition")
         return
 
     # Enrich with translations
@@ -123,9 +149,9 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
             ),
         )
 
-    # Build JSON feed
+    # Build this edition
     now = datetime.now(timezone.utc)
-    feed = {
+    edition = {
         "updated_at": now.isoformat(),
         "edition_label": edition_label,
         "summary_cn": summary_cn,
@@ -179,10 +205,96 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
         ],
     }
 
+    # Load existing feed, append new edition, prune old ones
+    feed = _load_existing_feed(output_path)
+    feed["editions"].append(edition)
+    feed = _prune_old_editions(feed, KEEP_DAYS)
+
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    Path(output_path).write_text(json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8")
+    Path(output_path).write_text(
+        json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     save_state(cfg.state_file, state)
-    logger.info("Exported %d items to %s", len(ranked), output_path)
+    logger.info(
+        "Exported %d items as edition '%s'. Total editions: %d",
+        len(ranked), edition_label, len(feed["editions"]),
+    )
+
+    # Generate RSS feed alongside JSON
+    rss_path = str(Path(output_path).with_suffix(".xml"))
+    _generate_rss(feed, rss_path)
+
+
+def _generate_rss(feed: dict, rss_path: str) -> None:
+    """Generate RSS XML from the editions feed."""
+    from xml.etree.ElementTree import Element, SubElement, tostring
+
+    rss = Element("rss", version="2.0")
+    rss.set("xmlns:atom", "http://www.w3.org/2005/Atom")
+    channel = SubElement(rss, "channel")
+    SubElement(channel, "title").text = "WonderLand Finance News"
+    SubElement(channel, "link").text = "https://www.cmwonderland.com/news/"
+    SubElement(channel, "description").text = (
+        "Global financial headlines, updated twice daily."
+    )
+    SubElement(channel, "language").text = "en-us"
+
+    # Self-referencing atom link for RSS readers
+    atom_link = SubElement(channel, "{http://www.w3.org/2005/Atom}link")
+    atom_link.set("href", "https://raw.githubusercontent.com/james20141606/ai_finance_news/main/news-feed.xml")
+    atom_link.set("rel", "self")
+    atom_link.set("type", "application/rss+xml")
+
+    editions = feed.get("editions", [])
+    # Sort newest first, take recent editions
+    editions_sorted = sorted(
+        editions, key=lambda e: e.get("updated_at", ""), reverse=True
+    )
+
+    for edition in editions_sorted[:10]:
+        updated_at = edition.get("updated_at", "")
+        label = edition.get("edition_label", "Edition")
+
+        # Add summary as an item if present
+        if edition.get("summary_cn"):
+            item_el = SubElement(channel, "item")
+            SubElement(item_el, "title").text = f"[{label}] Daily Outlook"
+            SubElement(item_el, "description").text = edition["summary_cn"]
+            SubElement(item_el, "pubDate").text = updated_at
+            SubElement(item_el, "guid", isPermaLink="false").text = (
+                f"outlook-{updated_at}"
+            )
+
+        # Add news items
+        for news in edition.get("items", []):
+            item_el = SubElement(channel, "item")
+            title = news.get("title_en") or news.get("title", "")
+            title_zh = news.get("title_zh", "")
+            if title_zh:
+                title = f"{title} | {title_zh}"
+            SubElement(item_el, "title").text = title
+
+            desc_parts = []
+            if news.get("summary_en"):
+                desc_parts.append(news["summary_en"])
+            if news.get("summary_zh"):
+                desc_parts.append(news["summary_zh"])
+            SubElement(item_el, "description").text = "\n\n".join(desc_parts)
+
+            if news.get("link"):
+                SubElement(item_el, "link").text = news["link"]
+            if news.get("published"):
+                SubElement(item_el, "pubDate").text = news["published"]
+            SubElement(item_el, "guid", isPermaLink="false").text = (
+                news.get("link", "") or f"news-{updated_at}-{title[:50]}"
+            )
+            if news.get("source"):
+                SubElement(item_el, "source", url="").text = news["source"]
+
+    xml_str = tostring(rss, encoding="unicode", xml_declaration=False)
+    xml_out = '<?xml version="1.0" encoding="UTF-8"?>\n' + xml_str
+    Path(rss_path).write_text(xml_out, encoding="utf-8")
+    logger.info("Generated RSS feed: %s", rss_path)
 
 
 if __name__ == "__main__":
