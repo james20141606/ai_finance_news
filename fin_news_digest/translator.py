@@ -261,11 +261,19 @@ class MyMemoryTranslator(BaseTranslator):
         self.backoff_base_seconds = backoff_base_seconds
         self.backoff_max_seconds = backoff_max_seconds
         self.provider_label = "mymemory"
+        self._consecutive_failures = 0
+        self._disabled = False
 
     def translate(self, text: str, source_lang: str, target_lang: str) -> str:
         if not text:
             return text
         _TRANSLATION_STATS.translate_calls += 1
+
+        # If API has been rate-limited repeatedly, skip all further requests
+        if self._disabled:
+            _TRANSLATION_STATS.fallbacks += 1
+            return text
+
         cache_key = _cache_key(
             self.provider_label,
             "https://api.mymemory.translated.net/get",
@@ -296,6 +304,14 @@ class MyMemoryTranslator(BaseTranslator):
         )
         if resp is None:
             _TRANSLATION_STATS.fallbacks += 1
+            self._consecutive_failures += 1
+            if self._consecutive_failures >= 3:
+                logger.warning(
+                    "MyMemory API failed %d times consecutively. "
+                    "Disabling translation for remaining items.",
+                    self._consecutive_failures,
+                )
+                self._disabled = True
             result = text
         else:
             try:
@@ -309,6 +325,7 @@ class MyMemoryTranslator(BaseTranslator):
                 result = text
             else:
                 result = data.get("responseData", {}).get("translatedText", text) or text
+                self._consecutive_failures = 0  # Reset on success
             time.sleep(self.sleep_seconds)
         _TRANSLATION_CACHE.set(cache_key, result)
         return result
