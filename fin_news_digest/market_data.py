@@ -327,10 +327,11 @@ def build_market_snapshot(
     api_key: str,
     sleep_seconds: float,
 ) -> list[MarketSection]:
-    # Stooq (US/EU + metals ETFs, no API key) + Eastmoney (China indices) + CoinGecko (crypto)
-    us_symbols = [("SPY.US", "S&P 500"), ("QQQ.US", "Nasdaq 100"), ("DIA.US", "Dow Jones")]
-    eu_symbols = [("VGK.US", "Europe"), ("FEZ.US", "Euro Stoxx 50"), ("EWU.US", "UK FTSE")]
-    metal_symbols = [("XAUUSD", "Gold (oz)"), ("XAGUSD", "Silver (oz)")]
+    # Stooq (actual indices, no API key) + Eastmoney (China indices) + CoinGecko (crypto)
+    us_symbols = [("^SPX", "S&P 500", "USD"), ("^NDQ", "Nasdaq 100", "USD"), ("^DJI", "Dow Jones", "USD")]
+    eu_symbols = [("^UKX", "FTSE 100", "GBP"), ("^DAX", "DAX", "EUR"), ("^CAC", "CAC 40", "EUR")]
+    asia_symbols = [("^NKX", "Nikkei 225", "JPY"), ("^HSI", "Hang Seng", "HKD")]
+    metal_symbols = [("XAUUSD", "Gold (oz)", "USD"), ("XAGUSD", "Silver (oz)", "USD")]
     cn_secids = [
         ("1.000001", "SSE Composite 上证指数"),
         ("0.399001", "SZSE Component 深证成指"),
@@ -338,9 +339,9 @@ def build_market_snapshot(
         ("1.000300", "CSI 300 沪深300"),
     ]
 
-    def fetch_group_stooq(symbols: list[tuple[str, str]], currency: str) -> list[MarketItem]:
+    def fetch_group_stooq(symbols: list[tuple[str, str, str]]) -> list[MarketItem]:
         results = []
-        for symbol, label in symbols:
+        for symbol, label, currency in symbols:
             item = fetch_stooq_daily(symbol, label, currency, sleep_seconds)
             if item:
                 item.name = _format_name(symbol, label)
@@ -349,17 +350,21 @@ def build_market_snapshot(
 
     sections: list[MarketSection] = []
     sections.append(
-        MarketSection(title="US Major Markets", items=fetch_group_stooq(us_symbols, "USD"))
+        MarketSection(title="US Markets", items=fetch_group_stooq(us_symbols))
     )
     sections.append(
-        MarketSection(title="Europe Major Markets", items=fetch_group_stooq(eu_symbols, "USD"))
+        MarketSection(title="Europe Markets", items=fetch_group_stooq(eu_symbols))
     )
+
+    asia_items = fetch_group_stooq(asia_symbols)
+    if asia_items:
+        sections.append(MarketSection(title="Asia Markets", items=asia_items))
 
     china_items = fetch_eastmoney_indices(cn_secids, sleep_seconds)
     if china_items:
-        sections.append(MarketSection(title="China Major Markets", items=china_items))
+        sections.append(MarketSection(title="China Markets", items=china_items))
 
-    metals = fetch_group_stooq(metal_symbols, "USD")
+    metals = fetch_group_stooq(metal_symbols)
     if metals:
         sections.append(MarketSection(title="Gold & Silver", items=metals))
 
