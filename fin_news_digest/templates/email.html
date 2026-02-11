@@ -51,6 +51,13 @@
                   <div class="divider"></div>
                 {% endif %}
 
+                {% if market_hotspots_cn %}
+                  <div class="section-title" style="color:#92400e;">每日市场热点 / Market Hotspots</div>
+                  <div class="divider"></div>
+                  <div class="summary" style="font-size:15px; background:#fffbeb; padding:14px 16px; border-radius:8px; border-left:4px solid #f59e0b; white-space:pre-line;">{{ market_hotspots_cn }}</div>
+                  <div class="divider"></div>
+                {% endif %}
+
                 {% if sector_recommendation %}
                   <div class="section-title">Daily Sector & Stock Picks 每日板块与个股推荐</div>
                   <div class="divider"></div>
@@ -83,6 +90,28 @@
                         </tr>
                       {% endfor %}
                     </table>
+                  {% endfor %}
+                  <div class="divider"></div>
+                {% endif %}
+
+                {% if social_groups and social_groups|length > 0 %}
+                  <div class="section-title" style="color:#6d28d9;">社媒热议 / Social Media Buzz</div>
+                  <div class="divider"></div>
+                  {% if social_summary_cn %}
+                    <div class="summary" style="font-size:15px; background:#f5f3ff; padding:14px 16px; border-radius:8px; border-left:4px solid #8b5cf6; margin-bottom:14px; white-space:pre-line;">{{ social_summary_cn }}</div>
+                  {% endif %}
+                  {% for group in social_groups %}
+                    <div class="source" style="font-size:12px; margin-top:12px; color:#6d28d9;">{{ group.platform }}</div>
+                    {% for item in group.items[:5] %}
+                      <div style="padding:10px 14px; border:1px solid #e9e5f5; border-left:4px solid #8b5cf6; background:#faf8ff; border-radius:8px; margin:8px 0;">
+                        <div style="font-family:Arial,sans-serif; font-size:12px; color:#64748b;">{{ item.source }}</div>
+                        <div style="font-family:'Georgia','PingFang SC',serif; font-size:15px; color:#0f172a; margin-top:4px;">{{ item.title_en or item.title }}</div>
+                        {% if item.title_zh and item.title_zh != item.title %}
+                          <div style="font-family:'PingFang SC','Microsoft YaHei',sans-serif; font-size:14px; color:#475569; margin-top:2px;">{{ item.title_zh }}</div>
+                        {% endif %}
+                        <a href="{{ item.link }}" style="font-family:Arial,sans-serif; font-size:12px; color:#8b5cf6; text-decoration:none; margin-top:4px; display:inline-block;">Read &rarr;</a>
+                      </div>
+                    {% endfor %}
                   {% endfor %}
                   <div class="divider"></div>
                 {% endif %}

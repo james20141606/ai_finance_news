@@ -205,7 +205,8 @@ def fetch_alpha_vantage_metal(
 def fetch_coingecko_prices() -> list[MarketItem]:
     url = (
         "https://api.coingecko.com/api/v3/simple/price"
-        "?ids=bitcoin,ethereum&vs_currencies=usd"
+        "?ids=bitcoin,ethereum,solana,binancecoin,ripple,dogecoin,cardano,avalanche-2,polkadot"
+        "&vs_currencies=usd"
         "&include_24hr_change=true&include_last_updated_at=true"
     )
     resp = requests.get(url, timeout=20)
@@ -213,7 +214,17 @@ def fetch_coingecko_prices() -> list[MarketItem]:
     data = resp.json()
 
     items = []
-    for coin_id, name in [("bitcoin", "BTC"), ("ethereum", "ETH")]:
+    for coin_id, name in [
+        ("bitcoin", "BTC"),
+        ("ethereum", "ETH"),
+        ("solana", "SOL"),
+        ("binancecoin", "BNB"),
+        ("ripple", "XRP"),
+        ("dogecoin", "DOGE"),
+        ("cardano", "ADA"),
+        ("avalanche-2", "AVAX"),
+        ("polkadot", "DOT"),
+    ]:
         info = data.get(coin_id, {})
         price = _parse_float(info.get("usd"))
         change_pct = _parse_float(info.get("usd_24h_change"))
@@ -354,6 +365,6 @@ def build_market_snapshot(
 
     crypto = fetch_coingecko_prices()
     if crypto:
-        sections.append(MarketSection(title="Crypto", items=crypto))
+        sections.append(MarketSection(title="Crypto / \u6570\u5b57\u8d27\u5e01", items=crypto))
 
     return sections

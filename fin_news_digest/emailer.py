@@ -9,6 +9,7 @@ from jinja2 import Template
 from fin_news_digest.models import NewsItem
 from fin_news_digest.market_data import MarketSection
 from fin_news_digest.sector_data import SectorRanking
+from fin_news_digest.social_media import SocialMediaGroup
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +29,9 @@ def build_message(
     market_snapshot: list[MarketSection] | None = None,
     sector_rankings: list[SectorRanking] | None = None,
     sector_recommendation: str | None = None,
+    social_groups: list[SocialMediaGroup] | None = None,
+    social_summary_cn: str | None = None,
+    market_hotspots_cn: str | None = None,
 ) -> EmailMessage:
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     context = {
@@ -39,6 +43,9 @@ def build_message(
         "market_snapshot": market_snapshot or [],
         "sector_rankings": sector_rankings or [],
         "sector_recommendation": sector_recommendation,
+        "social_groups": social_groups or [],
+        "social_summary_cn": social_summary_cn,
+        "market_hotspots_cn": market_hotspots_cn,
     }
     text_body = _render_template("fin_news_digest/templates/email.txt", context)
     html_body = _render_template("fin_news_digest/templates/email.html", context)
@@ -84,6 +91,9 @@ def send_email_to_each(
     market_snapshot: list[MarketSection] | None = None,
     sector_rankings: list[SectorRanking] | None = None,
     sector_recommendation: str | None = None,
+    social_groups: list[SocialMediaGroup] | None = None,
+    social_summary_cn: str | None = None,
+    market_hotspots_cn: str | None = None,
 ) -> None:
     logger.info("Sending individualized emails to %s recipients", len(recipients))
     with smtplib.SMTP(host, port, timeout=30) as server:
@@ -102,5 +112,8 @@ def send_email_to_each(
                 market_snapshot=market_snapshot,
                 sector_rankings=sector_rankings,
                 sector_recommendation=sector_recommendation,
+                social_groups=social_groups,
+                social_summary_cn=social_summary_cn,
+                market_hotspots_cn=market_hotspots_cn,
             )
             server.send_message(message)

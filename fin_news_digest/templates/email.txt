@@ -6,6 +6,11 @@ Daily Chinese Outlook:
 {{ summary_cn }}
 {% endif %}
 
+{% if market_hotspots_cn %}
+每日市场热点 / Market Hotspots:
+{{ market_hotspots_cn }}
+{% endif %}
+
 {% if sector_recommendation %}
 Daily Sector & Stock Picks:
 {{ sector_recommendation }}
@@ -17,6 +22,21 @@ Market Snapshot (Prev Close)
 {{ section.title }}
 {% for item in section.items %}
 - {{ item.name }} ({{ item.symbol }}): {{ "%.2f"|format(item.price) if item.price is not none else "N/A" }} | {{ "%+.2f"|format(item.change) if item.change is not none else "N/A" }} ({{ "%+.2f"|format(item.change_percent) if item.change_percent is not none else "N/A" }}%)
+{% endfor %}
+{% endfor %}
+{% endif %}
+
+{% if social_groups and social_groups|length > 0 %}
+社媒热议 / Social Media Buzz
+{% if social_summary_cn %}
+{{ social_summary_cn }}
+{% endif %}
+{% for group in social_groups %}
+
+{{ group.platform }}:
+{% for item in group.items[:5] %}
+- [{{ item.source }}] {{ item.title_en or item.title }}
+  {{ item.link }}
 {% endfor %}
 {% endfor %}
 {% endif %}

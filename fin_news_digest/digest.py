@@ -23,6 +23,9 @@ from fin_news_digest.market_data import build_market_snapshot
 from fin_news_digest.news_summary import OpenAISummaryConfig, summarize_cn
 from fin_news_digest.sector_data import build_sector_rankings
 from fin_news_digest.sector_advisor import AdvisorConfig, generate_recommendations
+from fin_news_digest.social_media import SocialMediaGroup, extract_social_media
+from fin_news_digest.social_summary import SocialSummaryConfig, summarize_social_cn
+from fin_news_digest.market_hotspots import HotspotsConfig, generate_market_hotspots
 
 logger = logging.getLogger(__name__)
 
@@ -118,6 +121,23 @@ def run_digest(edition_label: str) -> None:
     else:
         logger.info("Translation stats for %s: no translation calls", edition_label)
 
+    # Extract social media groups
+    social_groups: list[SocialMediaGroup] = []
+    if cfg.social_media_section:
+        social_groups = extract_social_media(ranked)
+
+    # Generate social media summary
+    social_summary_cn = None
+    if cfg.social_media_summary and cfg.openai_api_key and social_groups:
+        social_summary_cn = summarize_social_cn(
+            social_groups,
+            SocialSummaryConfig(
+                api_key=cfg.openai_api_key,
+                model=cfg.openai_model,
+                base_url=cfg.openai_base_url,
+            ),
+        )
+
     sender = cfg.smtp_from or cfg.smtp_user
     if not sender:
         raise RuntimeError("SMTP_FROM or SMTP_USER must be set")
@@ -160,6 +180,19 @@ def run_digest(edition_label: str) -> None:
             ),
         )
 
+    # Generate market hotspots
+    market_hotspots_cn = None
+    if cfg.market_hotspots and cfg.openai_api_key:
+        market_hotspots_cn = generate_market_hotspots(
+            news_items=ranked[:25],
+            edition_label=edition_label,
+            cfg=HotspotsConfig(
+                api_key=cfg.openai_api_key,
+                model=cfg.openai_model,
+                base_url=cfg.openai_base_url,
+            ),
+        )
+
     send_email_to_each(
         host=cfg.smtp_host,
         port=cfg.smtp_port,
@@ -175,6 +208,9 @@ def run_digest(edition_label: str) -> None:
         market_snapshot=market_snapshot,
         sector_rankings=sector_rankings,
         sector_recommendation=sector_recommendation,
+        social_groups=social_groups or None,
+        social_summary_cn=social_summary_cn,
+        market_hotspots_cn=market_hotspots_cn,
     )
     Path(cfg.state_file).parent.mkdir(parents=True, exist_ok=True)
     save_state(cfg.state_file, state)

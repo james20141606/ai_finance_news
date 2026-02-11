@@ -27,6 +27,9 @@ from fin_news_digest.market_data import build_market_snapshot
 from fin_news_digest.news_summary import OpenAISummaryConfig, summarize_cn
 from fin_news_digest.sector_data import build_sector_rankings
 from fin_news_digest.sector_advisor import AdvisorConfig, generate_recommendations
+from fin_news_digest.social_media import extract_social_media
+from fin_news_digest.social_summary import SocialSummaryConfig, summarize_social_cn
+from fin_news_digest.market_hotspots import HotspotsConfig, generate_market_hotspots
 from fin_news_digest.source_loader import load_sources
 from fin_news_digest.state import filter_sent, load_state, save_state
 from fin_news_digest.translator import (
@@ -149,12 +152,44 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
             ),
         )
 
+    # Optional: Social media extraction
+    social_groups = []
+    if cfg.social_media_section:
+        social_groups = extract_social_media(ranked)
+
+    # Optional: Social media summary
+    social_summary_cn = None
+    if cfg.social_media_summary and cfg.openai_api_key and social_groups:
+        social_summary_cn = summarize_social_cn(
+            social_groups,
+            SocialSummaryConfig(
+                api_key=cfg.openai_api_key,
+                model=cfg.openai_model,
+                base_url=cfg.openai_base_url,
+            ),
+        )
+
+    # Optional: Market hotspots
+    market_hotspots_cn = None
+    if cfg.market_hotspots and cfg.openai_api_key:
+        market_hotspots_cn = generate_market_hotspots(
+            news_items=ranked[:25],
+            edition_label=edition_label,
+            cfg=HotspotsConfig(
+                api_key=cfg.openai_api_key,
+                model=cfg.openai_model,
+                base_url=cfg.openai_base_url,
+            ),
+        )
+
     # Build this edition
     now = datetime.now(timezone.utc)
     edition = {
         "updated_at": now.isoformat(),
         "edition_label": edition_label,
         "summary_cn": summary_cn,
+        "market_hotspots_cn": market_hotspots_cn,
+        "social_summary_cn": social_summary_cn,
         "sector_recommendation": sector_recommendation,
         "market_snapshot": [
             {
@@ -200,8 +235,26 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
                 "source": item.source,
                 "language": item.language,
                 "priority": item.priority,
+                "source_category": item.source_category,
             }
             for item in ranked
+        ],
+        "social_media": [
+            {
+                "platform": group.platform,
+                "platform_key": group.platform_key,
+                "items": [
+                    {
+                        "title": item.title,
+                        "title_en": item.title_en,
+                        "title_zh": item.title_zh,
+                        "link": item.link,
+                        "source": item.source,
+                    }
+                    for item in group.items[:5]
+                ],
+            }
+            for group in social_groups
         ],
     }
 

@@ -58,6 +58,9 @@ class Config:
     sector_ranking: bool
     sector_top_n: int
     sector_advisor: bool
+    social_media_section: bool
+    social_media_summary: bool
+    market_hotspots: bool
     min_items: int
     fallback_lookback_hours: int
 
@@ -167,6 +170,15 @@ def load_config() -> Config:
         ),
         sector_advisor=_get_bool(
             _env("SECTOR_ADVISOR", "FIN_SECTOR_ADVISOR", mail_fin), True
+        ),
+        social_media_section=_get_bool(
+            _env("SOCIAL_MEDIA_SECTION", "FIN_SOCIAL_MEDIA_SECTION", mail_fin), True
+        ),
+        social_media_summary=_get_bool(
+            _env("SOCIAL_MEDIA_SUMMARY", "FIN_SOCIAL_MEDIA_SUMMARY", mail_fin), True
+        ),
+        market_hotspots=_get_bool(
+            _env("MARKET_HOTSPOTS", "FIN_MARKET_HOTSPOTS", mail_fin), True
         ),
         min_items=_get_int(
             _env("MIN_ITEMS", "FIN_MIN_ITEMS", mail_fin), 6

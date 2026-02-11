@@ -10,6 +10,7 @@ class Source:
     url: str
     language: str
     priority: int
+    category: str = "news"
 
 
 def load_sources(path: str) -> list[Source]:
@@ -23,6 +24,7 @@ def load_sources(path: str) -> list[Source]:
                 url=item["url"],
                 language=item.get("lang", "en"),
                 priority=int(item.get("priority", 1)),
+                category=item.get("category", "news"),
             )
         )
     return sources

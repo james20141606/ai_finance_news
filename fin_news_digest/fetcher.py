@@ -50,6 +50,7 @@ def fetch_sources(sources: Iterable[Source]) -> list[NewsItem]:
                     source=source.name,
                     language=source.language,
                     priority=source.priority,
+                    source_category=source.category,
                 )
             )
     return items

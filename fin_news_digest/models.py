@@ -11,6 +11,7 @@ class NewsItem:
     source: str
     language: str
     priority: int
+    source_category: str = "news"
 
     title_en: str | None = None
     title_zh: str | None = None
