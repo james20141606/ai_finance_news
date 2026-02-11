@@ -31,7 +31,6 @@ from fin_news_digest.social_media import extract_social_media
 from fin_news_digest.social_summary import SocialSummaryConfig, summarize_social_cn
 from fin_news_digest.market_hotspots import HotspotsConfig, generate_market_hotspots
 from fin_news_digest.source_loader import load_sources
-from fin_news_digest.state import filter_sent, load_state, save_state
 from fin_news_digest.translator import (
     TranslatorConfig,
     build_translator,
@@ -79,16 +78,9 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
     recent_items = filter_recent(raw_items, cfg.lookback_hours)
     deduped = dedupe_items(recent_items)
 
-    # Use state to avoid duplicates across runs
-    state = load_state(cfg.state_file)
-    fresh, state = filter_sent(deduped, state, cfg.state_ttl_hours)
-
-    if len(fresh) < cfg.min_items and cfg.fallback_lookback_hours > cfg.lookback_hours:
-        recent_items = filter_recent(raw_items, cfg.fallback_lookback_hours)
-        deduped = dedupe_items(recent_items)
-        fresh, state = filter_sent(deduped, state, cfg.state_ttl_hours)
-
-    ranked = rank_items(fresh, cfg.max_items, edition_label)
+    # For feed export, do NOT filter by sent state — we want all recent items
+    # regardless of whether they were already emailed.
+    ranked = rank_items(deduped, cfg.max_items, edition_label)
 
     if not ranked:
         logger.warning("No items to export for this edition")
@@ -267,7 +259,6 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
     Path(output_path).write_text(
         json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    save_state(cfg.state_file, state)
     logger.info(
         "Exported %d items as edition '%s'. Total editions: %d",
         len(ranked), edition_label, len(feed["editions"]),
