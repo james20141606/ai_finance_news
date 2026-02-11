@@ -117,7 +117,7 @@
                 {% endif %}
 
                 {% if sector_rankings and sector_rankings|length > 0 %}
-                  <div class="section-title">Sector Rankings 板块排名</div>
+                  <div class="section-title">Sector Rankings 板块排名 (Today)</div>
                   <div class="divider"></div>
                   {% for ranking in sector_rankings %}
                     <div class="source" style="font-size:12px; margin-top:12px;">{{ ranking.title }}</div>
@@ -130,6 +130,36 @@
                           </td>
                           <td align="right" style="padding:5px 0; font-family: Arial, sans-serif; font-size:15px; font-weight:bold; color:{{ item.change_color }};">
                             {{ "%+.2f"|format(item.change_percent) }}%
+                          </td>
+                        </tr>
+                      {% endfor %}
+                    </table>
+                  {% endfor %}
+                  <div class="divider"></div>
+                {% endif %}
+
+                {% if weekly_sector_rankings and weekly_sector_rankings|length > 0 %}
+                  <div class="section-title">Weekly Sector Trends 板块周趋势 (5-Day)</div>
+                  <div class="divider"></div>
+                  {% for ranking in weekly_sector_rankings %}
+                    <div class="source" style="font-size:12px; margin-top:12px;">{{ ranking.title }}</div>
+                    <table width="100%" role="presentation" style="margin-top:8px; margin-bottom:10px;">
+                      <tr style="border-bottom:1px solid #e2e8f0;">
+                        <td style="padding:4px 0; font-family: Arial, sans-serif; font-size:10px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px;">Sector</td>
+                        <td align="right" style="padding:4px 0; font-family: Arial, sans-serif; font-size:10px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px;">1d</td>
+                        <td align="right" style="padding:4px 0; font-family: Arial, sans-serif; font-size:10px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px;">5d</td>
+                      </tr>
+                      {% for item in ranking.items %}
+                        <tr>
+                          <td style="padding:5px 0; font-family: Arial, sans-serif; font-size:13px; color:#0f172a;">
+                            <span style="color:#64748b; font-size:12px;">{{ loop.index }}.</span>
+                            <strong>{{ item.name }}</strong>
+                          </td>
+                          <td align="right" style="padding:5px 0; font-family: Arial, sans-serif; font-size:12px; color:{{ item.change_color }};">
+                            {{ "%+.2f"|format(item.change_percent) }}%
+                          </td>
+                          <td align="right" style="padding:5px 0; font-family: Arial, sans-serif; font-size:15px; font-weight:bold; color:{{ item.weekly_change_color }};">
+                            {% if item.weekly_change_percent is not none %}{{ "%+.2f"|format(item.weekly_change_percent) }}%{% else %}—{% endif %}
                           </td>
                         </tr>
                       {% endfor %}

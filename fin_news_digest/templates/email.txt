@@ -42,11 +42,21 @@ Market Snapshot (Prev Close)
 {% endif %}
 
 {% if sector_rankings and sector_rankings|length > 0 %}
-Sector Rankings:
+Sector Rankings (Today):
 {% for ranking in sector_rankings %}
 {{ ranking.title }}
 {% for item in ranking.items %}
   {{ loop.index }}. {{ item.name }}  {{ "%+.2f"|format(item.change_percent) }}%
+{% endfor %}
+{% endfor %}
+{% endif %}
+
+{% if weekly_sector_rankings and weekly_sector_rankings|length > 0 %}
+Weekly Sector Trends (5-Day):
+{% for ranking in weekly_sector_rankings %}
+{{ ranking.title }}
+{% for item in ranking.items %}
+  {{ loop.index }}. {{ item.name }}  1d: {{ "%+.2f"|format(item.change_percent) }}%  5d: {% if item.weekly_change_percent is not none %}{{ "%+.2f"|format(item.weekly_change_percent) }}%{% else %}—{% endif %}
 {% endfor %}
 {% endfor %}
 {% endif %}

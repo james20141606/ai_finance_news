@@ -161,8 +161,9 @@ def run_digest(edition_label: str) -> None:
         )
 
     sector_rankings = []
+    weekly_sector_rankings = []
     if cfg.sector_ranking:
-        sector_rankings, _weekly = build_sector_rankings(
+        sector_rankings, weekly_sector_rankings = build_sector_rankings(
             top_n=cfg.sector_top_n,
             sleep_seconds=cfg.alpha_vantage_sleep_seconds,
         )
@@ -207,6 +208,7 @@ def run_digest(edition_label: str) -> None:
         summary_cn=summary_cn,
         market_snapshot=market_snapshot,
         sector_rankings=sector_rankings,
+        weekly_sector_rankings=weekly_sector_rankings,
         sector_recommendation=sector_recommendation,
         social_groups=social_groups or None,
         social_summary_cn=social_summary_cn,
