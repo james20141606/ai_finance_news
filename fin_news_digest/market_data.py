@@ -330,7 +330,7 @@ def build_market_snapshot(
     # Stooq (US/EU + metals ETFs, no API key) + Eastmoney (China indices) + CoinGecko (crypto)
     us_symbols = [("SPY.US", "S&P 500"), ("QQQ.US", "Nasdaq 100"), ("DIA.US", "Dow Jones")]
     eu_symbols = [("VGK.US", "Europe"), ("FEZ.US", "Euro Stoxx 50"), ("EWU.US", "UK FTSE")]
-    metal_symbols = [("GLD.US", "Gold"), ("SLV.US", "Silver")]
+    metal_symbols = [("XAUUSD", "Gold (oz)"), ("XAGUSD", "Silver (oz)")]
     cn_secids = [
         ("1.000001", "SSE Composite 上证指数"),
         ("0.399001", "SZSE Component 深证成指"),
