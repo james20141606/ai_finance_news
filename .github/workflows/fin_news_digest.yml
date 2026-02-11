@@ -60,6 +60,8 @@ jobs:
           git push
 
       - name: Trigger blog rebuild
-        if: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        if: ${{ env.VERCEL_DEPLOY_HOOK != '' }}
         run: |
-          curl -s -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}" || true
+          curl -s -X POST "$VERCEL_DEPLOY_HOOK" || true
