@@ -1,7 +1,7 @@
 import logging
 import time
-from dataclasses import dataclass
-from datetime import datetime
+from dataclasses import dataclass, field
+from datetime import datetime, timedelta
 from typing import Any
 
 import requests
@@ -38,9 +38,14 @@ class SectorItem:
     code: str
     change_percent: float
     change_color: str
+    weekly_change_percent: float | None = None
+    weekly_change_color: str = "#64748b"
 
     def __post_init__(self) -> None:
         self.change_percent = round(self.change_percent, 2)
+        if self.weekly_change_percent is not None:
+            self.weekly_change_percent = round(self.weekly_change_percent, 2)
+            self.weekly_change_color = _change_color(self.weekly_change_percent)
 
 
 @dataclass
@@ -117,6 +122,98 @@ def fetch_cn_concept_sectors(top_n: int = 5) -> SectorRanking:
 
 
 # ---------------------------------------------------------------------------
+# A-share weekly sector data via Eastmoney kline API
+# ---------------------------------------------------------------------------
+
+def _fetch_eastmoney_sector_weekly(
+    fs: str,
+    top_n: int,
+    sleep_seconds: float = 0.3,
+) -> list[SectorItem]:
+    """Fetch top A-share sectors, then compute 5-day change from kline API."""
+    # Get top sectors by daily change first (wider pool to find weekly movers)
+    pool = _fetch_eastmoney_sector_list(fs, top_n * 4)
+    if not pool:
+        return []
+
+    # Also fetch top losers to get a balanced view
+    losers = _fetch_eastmoney_sector_list(fs, top_n * 2, descending=False)
+    seen = {item.code for item in pool}
+    for item in losers:
+        if item.code not in seen:
+            pool.append(item)
+            seen.add(item.code)
+
+    beg = (datetime.now() - timedelta(days=12)).strftime("%Y%m%d")
+    end = datetime.now().strftime("%Y%m%d")
+
+    weekly_items: list[SectorItem] = []
+    for item in pool:
+        try:
+            url = (
+                "https://push2his.eastmoney.com/api/qt/stock/kline/get"
+                f"?secid=90.{item.code}&fields1=f1&fields2=f51,f53"
+                f"&klt=101&fqt=1&beg={beg}&end={end}"
+            )
+            resp = requests.get(url, headers={"User-Agent": _UA}, timeout=15)
+            resp.raise_for_status()
+            klines = (resp.json().get("data") or {}).get("klines") or []
+            if len(klines) < 2:
+                continue
+
+            # kline format: "date,open,close,..." — we requested f51(date),f53(close)
+            # Parse the last close and the close from ~5 trading days ago
+            closes = []
+            for k in klines:
+                parts = k.split(",")
+                c = _parse_float(parts[1]) if len(parts) > 1 else None
+                if c is not None:
+                    closes.append(c)
+
+            if len(closes) < 2:
+                continue
+
+            latest_close = closes[-1]
+            # Use close from 5 trading days ago, or earliest available
+            ref_idx = max(0, len(closes) - 6)
+            ref_close = closes[ref_idx]
+
+            if ref_close == 0:
+                continue
+
+            weekly_pct = (latest_close - ref_close) / ref_close * 100
+            weekly_items.append(
+                SectorItem(
+                    name=item.name,
+                    code=item.code,
+                    change_percent=item.change_percent,
+                    change_color=item.change_color,
+                    weekly_change_percent=weekly_pct,
+                    weekly_change_color=_change_color(weekly_pct),
+                )
+            )
+        except Exception as exc:
+            logger.warning("Eastmoney kline failed for %s: %s", item.code, exc)
+
+        if sleep_seconds > 0:
+            time.sleep(sleep_seconds)
+
+    # Sort by weekly change descending
+    weekly_items.sort(key=lambda x: x.weekly_change_percent or 0, reverse=True)
+    return weekly_items
+
+
+def fetch_cn_industry_sectors_weekly(top_n: int = 5) -> SectorRanking:
+    items = _fetch_eastmoney_sector_weekly("m:90+t:2", top_n)
+    return SectorRanking(title="A-Share Industry 行业板块 (Weekly)", items=items[:top_n])
+
+
+def fetch_cn_concept_sectors_weekly(top_n: int = 5) -> SectorRanking:
+    items = _fetch_eastmoney_sector_weekly("m:90+t:3", top_n)
+    return SectorRanking(title="A-Share Concept 概念板块 (Weekly)", items=items[:top_n])
+
+
+# ---------------------------------------------------------------------------
 # US sector ETFs via Stooq
 # ---------------------------------------------------------------------------
 
@@ -135,12 +232,12 @@ _US_SECTOR_ETFS: list[tuple[str, str]] = [
 ]
 
 
-def fetch_us_sector_etfs(sleep_seconds: float = 1.0) -> SectorRanking:
-    """Fetch all 11 SPDR sector ETFs from Stooq and rank by change%."""
+def fetch_us_sector_etfs(sleep_seconds: float = 1.0) -> tuple[SectorRanking, SectorRanking]:
+    """Fetch all 11 SPDR sector ETFs from Stooq. Returns (daily, weekly) rankings."""
     import csv
     import io
 
-    items: list[SectorItem] = []
+    daily_items: list[SectorItem] = []
     for symbol, label in _US_SECTOR_ETFS:
         try:
             url = f"https://stooq.com/q/d/l/?s={symbol.lower()}&i=d"
@@ -164,12 +261,23 @@ def fetch_us_sector_etfs(sleep_seconds: float = 1.0) -> SectorRanking:
                 continue
 
             change_pct = (price - prev_price) / prev_price * 100
-            items.append(
+
+            # Weekly: compare to 5 trading days ago
+            weekly_pct = None
+            ref_idx = max(0, len(rows) - 6)
+            ref_price = _parse_float(rows[ref_idx].get("Close"))
+            if ref_price and ref_price > 0:
+                weekly_pct = (price - ref_price) / ref_price * 100
+
+            display_name = f"{label} ({symbol.replace('.US', '')})"
+            daily_items.append(
                 SectorItem(
-                    name=f"{label} ({symbol.replace('.US', '')})",
+                    name=display_name,
                     code=symbol,
                     change_percent=change_pct,
                     change_color=_change_color(change_pct),
+                    weekly_change_percent=weekly_pct,
+                    weekly_change_color=_change_color(weekly_pct),
                 )
             )
         except Exception as exc:
@@ -178,8 +286,13 @@ def fetch_us_sector_etfs(sleep_seconds: float = 1.0) -> SectorRanking:
         if sleep_seconds > 0:
             time.sleep(sleep_seconds)
 
-    items.sort(key=lambda x: x.change_percent, reverse=True)
-    return SectorRanking(title="US Sector ETFs", items=items)
+    daily_sorted = sorted(daily_items, key=lambda x: x.change_percent, reverse=True)
+    weekly_sorted = sorted(daily_items, key=lambda x: x.weekly_change_percent or 0, reverse=True)
+
+    return (
+        SectorRanking(title="US Sector ETFs", items=daily_sorted),
+        SectorRanking(title="US Sector ETFs (Weekly)", items=weekly_sorted),
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -189,19 +302,31 @@ def fetch_us_sector_etfs(sleep_seconds: float = 1.0) -> SectorRanking:
 def build_sector_rankings(
     top_n: int = 5,
     sleep_seconds: float = 1.0,
-) -> list[SectorRanking]:
-    rankings: list[SectorRanking] = []
+) -> tuple[list[SectorRanking], list[SectorRanking]]:
+    """Returns (daily_rankings, weekly_rankings)."""
+    daily: list[SectorRanking] = []
+    weekly: list[SectorRanking] = []
 
-    us = fetch_us_sector_etfs(sleep_seconds)
-    if us.items:
-        rankings.append(us)
+    us_daily, us_weekly = fetch_us_sector_etfs(sleep_seconds)
+    if us_daily.items:
+        daily.append(us_daily)
+    if us_weekly.items:
+        weekly.append(us_weekly)
 
     cn_industry = fetch_cn_industry_sectors(top_n)
     if cn_industry.items:
-        rankings.append(cn_industry)
+        daily.append(cn_industry)
 
     cn_concept = fetch_cn_concept_sectors(top_n)
     if cn_concept.items:
-        rankings.append(cn_concept)
+        daily.append(cn_concept)
 
-    return rankings
+    cn_industry_w = fetch_cn_industry_sectors_weekly(top_n)
+    if cn_industry_w.items:
+        weekly.append(cn_industry_w)
+
+    cn_concept_w = fetch_cn_concept_sectors_weekly(top_n)
+    if cn_concept_w.items:
+        weekly.append(cn_concept_w)
+
+    return daily, weekly

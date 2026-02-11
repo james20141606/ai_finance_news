@@ -124,8 +124,9 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
 
     # Optional: Sector rankings
     sector_rankings = []
+    weekly_sector_rankings = []
     if cfg.sector_ranking:
-        sector_rankings = build_sector_rankings(
+        sector_rankings, weekly_sector_rankings = build_sector_rankings(
             top_n=cfg.sector_top_n,
             sleep_seconds=cfg.alpha_vantage_sleep_seconds,
         )
@@ -214,6 +215,22 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
                 ],
             }
             for ranking in sector_rankings
+        ],
+        "weekly_sector_rankings": [
+            {
+                "title": ranking.title,
+                "items": [
+                    {
+                        "name": item.name,
+                        "change_percent": item.change_percent,
+                        "change_color": item.change_color,
+                        "weekly_change_percent": item.weekly_change_percent,
+                        "weekly_change_color": item.weekly_change_color,
+                    }
+                    for item in ranking.items
+                ],
+            }
+            for ranking in weekly_sector_rankings
         ],
         "items": [
             {

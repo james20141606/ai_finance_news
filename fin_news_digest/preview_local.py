@@ -49,7 +49,7 @@ def main() -> None:
 
     sector_rankings = []
     if cfg.sector_ranking:
-        sector_rankings = build_sector_rankings(
+        sector_rankings, _weekly = build_sector_rankings(
             top_n=cfg.sector_top_n,
             sleep_seconds=cfg.alpha_vantage_sleep_seconds,
         )
