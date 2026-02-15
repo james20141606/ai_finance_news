@@ -3,8 +3,7 @@ name: Financial Headlines Digest
 on:
   schedule:
     - cron: "0 0 * * *"   # 08:00 Asia/Shanghai
-    - cron: "0 12 * * *"  # 08:00 America/New_York during DST
-    - cron: "0 13 * * *"  # 08:00 America/New_York during Standard Time
+    - cron: "0 13 * * *"  # 08:00 America/New_York (EST); 09:00 during DST
   workflow_dispatch: {}
 
 jobs:
