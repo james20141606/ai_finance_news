@@ -3,12 +3,16 @@ from datetime import datetime, timezone
 from typing import Iterable
 
 import feedparser
+import requests
 
 from fin_news_digest.models import NewsItem
 from fin_news_digest.source_loader import Source
 from fin_news_digest.utils import strip_html, truncate
 
 logger = logging.getLogger(__name__)
+
+_FETCH_TIMEOUT_SECONDS = 20
+_FETCH_UA = "Mozilla/5.0 (compatible; ai-finance-news/1.0; +https://github.com/james20141606/ai_finance_news)"
 
 
 def _parse_datetime(entry: dict) -> datetime:
@@ -31,7 +35,21 @@ def fetch_sources(sources: Iterable[Source]) -> list[NewsItem]:
     items: list[NewsItem] = []
     for source in sources:
         logger.info("Fetching %s", source.name)
-        feed = feedparser.parse(source.url)
+        try:
+            resp = requests.get(
+                source.url,
+                timeout=_FETCH_TIMEOUT_SECONDS,
+                headers={
+                    "User-Agent": _FETCH_UA,
+                    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.8",
+                },
+            )
+            resp.raise_for_status()
+            feed = feedparser.parse(resp.content)
+        except Exception as exc:
+            logger.warning("Fetch failed for %s (%s): %s", source.name, source.url, exc)
+            continue
+
         if feed.bozo:
             logger.warning("Feed parse issue for %s: %s", source.name, feed.bozo_exception)
         for entry in feed.entries:
