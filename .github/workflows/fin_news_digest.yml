@@ -4,7 +4,16 @@ on:
   schedule:
     - cron: "0 0 * * *"   # 08:00 Asia/Shanghai
     - cron: "0 13 * * *"  # 08:00 America/New_York (EST); 09:00 during DST
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: "Optional: NY or BJ. Leave empty to send both editions."
+        required: false
+        default: ""
+
+concurrency:
+  group: fin-news-digest-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   send-digest:
@@ -34,9 +43,23 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' }}
         env:
           MAIL_FIN: ${{ secrets.MAIL_FIN }}
-          FORCE_SEND: "true"
+          MANUAL_EDITION: ${{ github.event.inputs.edition }}
         run: |
-          python -m fin_news_digest.run_actions
+          if [ -n "${MANUAL_EDITION}" ]; then
+            edition="$(echo "${MANUAL_EDITION}" | tr '[:lower:]' '[:upper:]')"
+            if [ "${edition}" != "NY" ] && [ "${edition}" != "BJ" ]; then
+              echo "Invalid manual edition: ${MANUAL_EDITION}. Use NY or BJ."
+              exit 1
+            fi
+            echo "Manual run: single edition ${edition}"
+            export SCHEDULED_RUN="true"
+            export SCHEDULED_EDITION="${edition}"
+            python -m fin_news_digest.run_actions
+          else
+            echo "Manual run: both editions"
+            export FORCE_SEND="true"
+            python -m fin_news_digest.run_actions
+          fi
 
       - name: Run digest (schedule)
         if: ${{ github.event_name == 'schedule' }}
