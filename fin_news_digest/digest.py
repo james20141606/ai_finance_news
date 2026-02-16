@@ -1,5 +1,5 @@
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -26,6 +26,7 @@ from fin_news_digest.sector_advisor import AdvisorConfig, generate_recommendatio
 from fin_news_digest.social_media import SocialMediaGroup, extract_social_media
 from fin_news_digest.social_summary import SocialSummaryConfig, summarize_social_cn
 from fin_news_digest.market_hotspots import HotspotsConfig, generate_market_hotspots
+from fin_news_digest.export_feed import append_edition_to_feed, build_edition_payload
 
 logger = logging.getLogger(__name__)
 
@@ -214,5 +215,27 @@ def run_digest(edition_label: str) -> None:
         social_summary_cn=social_summary_cn,
         market_hotspots_cn=market_hotspots_cn,
     )
+
+    # Persist this successfully sent edition to feed storage so
+    # web timeline stays in sync with email delivery.
+    edition = build_edition_payload(
+        edition_label=edition_label,
+        items=ranked,
+        summary_cn=summary_cn,
+        market_hotspots_cn=market_hotspots_cn,
+        social_summary_cn=social_summary_cn,
+        sector_recommendation=sector_recommendation,
+        market_snapshot=market_snapshot,
+        sector_rankings=sector_rankings,
+        weekly_sector_rankings=weekly_sector_rankings,
+        social_groups=social_groups,
+        updated_at=datetime.now(timezone.utc),
+    )
+    total_editions = append_edition_to_feed(edition, output_path="news-feed.json")
+    logger.info(
+        "Appended feed edition '%s' with %d items. Total editions now: %d",
+        edition_label, len(ranked), total_editions,
+    )
+
     Path(cfg.state_file).parent.mkdir(parents=True, exist_ok=True)
     save_state(cfg.state_file, state)

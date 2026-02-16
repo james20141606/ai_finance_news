@@ -16,6 +16,7 @@ import logging
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from typing import Any
 
 from dotenv import load_dotenv
 
@@ -66,6 +67,144 @@ def _prune_old_editions(feed: dict, keep_days: int) -> dict:
         if e.get("updated_at", "") >= cutoff
     ]
     return feed
+
+
+def build_edition_payload(
+    *,
+    edition_label: str,
+    items: list[Any],
+    summary_cn: str | None = None,
+    market_hotspots_cn: str | None = None,
+    social_summary_cn: str | None = None,
+    sector_recommendation: str | None = None,
+    market_snapshot: list[Any] | None = None,
+    sector_rankings: list[Any] | None = None,
+    weekly_sector_rankings: list[Any] | None = None,
+    social_groups: list[Any] | None = None,
+    updated_at: datetime | str | None = None,
+) -> dict:
+    """Build one feed edition payload from already-computed digest artifacts."""
+    if isinstance(updated_at, datetime):
+        timestamp = updated_at.isoformat()
+    elif isinstance(updated_at, str) and updated_at:
+        timestamp = updated_at
+    else:
+        timestamp = datetime.now(timezone.utc).isoformat()
+
+    market_snapshot = market_snapshot or []
+    sector_rankings = sector_rankings or []
+    weekly_sector_rankings = weekly_sector_rankings or []
+    social_groups = social_groups or []
+
+    return {
+        "updated_at": timestamp,
+        "edition_label": edition_label,
+        "summary_cn": summary_cn,
+        "market_hotspots_cn": market_hotspots_cn,
+        "social_summary_cn": social_summary_cn,
+        "sector_recommendation": sector_recommendation,
+        "market_snapshot": [
+            {
+                "title": section.title,
+                "items": [
+                    {
+                        "name": item.name,
+                        "symbol": item.symbol,
+                        "price": item.price,
+                        "change": item.change,
+                        "change_percent": item.change_percent,
+                        "currency": item.currency,
+                        "change_color": item.change_color,
+                    }
+                    for item in section.items
+                ],
+            }
+            for section in market_snapshot
+        ],
+        "sector_rankings": [
+            {
+                "title": ranking.title,
+                "items": [
+                    {
+                        "name": item.name,
+                        "change_percent": item.change_percent,
+                        "change_color": item.change_color,
+                    }
+                    for item in ranking.items
+                ],
+            }
+            for ranking in sector_rankings
+        ],
+        "weekly_sector_rankings": [
+            {
+                "title": ranking.title,
+                "items": [
+                    {
+                        "name": item.name,
+                        "change_percent": item.change_percent,
+                        "change_color": item.change_color,
+                        "weekly_change_percent": item.weekly_change_percent,
+                        "weekly_change_color": item.weekly_change_color,
+                    }
+                    for item in ranking.items
+                ],
+            }
+            for ranking in weekly_sector_rankings
+        ],
+        "items": [
+            {
+                "title": item.title,
+                "title_en": item.title_en,
+                "title_zh": item.title_zh,
+                "link": item.link,
+                "published": item.published.isoformat() if item.published else None,
+                "summary_en": item.summary_en,
+                "summary_zh": item.summary_zh,
+                "source": item.source,
+                "language": item.language,
+                "priority": item.priority,
+                "source_category": item.source_category,
+            }
+            for item in items
+        ],
+        "social_media": [
+            {
+                "platform": group.platform,
+                "platform_key": group.platform_key,
+                "items": [
+                    {
+                        "title": item.title,
+                        "title_en": item.title_en,
+                        "title_zh": item.title_zh,
+                        "link": item.link,
+                        "source": item.source,
+                    }
+                    for item in group.items[:5]
+                ],
+            }
+            for group in social_groups
+        ],
+    }
+
+
+def append_edition_to_feed(
+    edition: dict,
+    output_path: str = "news-feed.json",
+    keep_days: int = KEEP_DAYS,
+) -> int:
+    """Append one edition to feed storage and regenerate RSS."""
+    feed = _load_existing_feed(output_path)
+    feed["editions"].append(edition)
+    feed = _prune_old_editions(feed, keep_days)
+
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(output_path).write_text(
+        json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    rss_path = str(Path(output_path).with_suffix(".xml"))
+    _generate_rss(feed, rss_path)
+    return len(feed["editions"])
 
 
 def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web") -> None:
@@ -175,115 +314,24 @@ def export_feed(output_path: str = "news-feed.json", edition_label: str = "Web")
             ),
         )
 
-    # Build this edition
-    now = datetime.now(timezone.utc)
-    edition = {
-        "updated_at": now.isoformat(),
-        "edition_label": edition_label,
-        "summary_cn": summary_cn,
-        "market_hotspots_cn": market_hotspots_cn,
-        "social_summary_cn": social_summary_cn,
-        "sector_recommendation": sector_recommendation,
-        "market_snapshot": [
-            {
-                "title": section.title,
-                "items": [
-                    {
-                        "name": item.name,
-                        "symbol": item.symbol,
-                        "price": item.price,
-                        "change": item.change,
-                        "change_percent": item.change_percent,
-                        "currency": item.currency,
-                        "change_color": item.change_color,
-                    }
-                    for item in section.items
-                ],
-            }
-            for section in market_snapshot
-        ],
-        "sector_rankings": [
-            {
-                "title": ranking.title,
-                "items": [
-                    {
-                        "name": item.name,
-                        "change_percent": item.change_percent,
-                        "change_color": item.change_color,
-                    }
-                    for item in ranking.items
-                ],
-            }
-            for ranking in sector_rankings
-        ],
-        "weekly_sector_rankings": [
-            {
-                "title": ranking.title,
-                "items": [
-                    {
-                        "name": item.name,
-                        "change_percent": item.change_percent,
-                        "change_color": item.change_color,
-                        "weekly_change_percent": item.weekly_change_percent,
-                        "weekly_change_color": item.weekly_change_color,
-                    }
-                    for item in ranking.items
-                ],
-            }
-            for ranking in weekly_sector_rankings
-        ],
-        "items": [
-            {
-                "title": item.title,
-                "title_en": item.title_en,
-                "title_zh": item.title_zh,
-                "link": item.link,
-                "published": item.published.isoformat() if item.published else None,
-                "summary_en": item.summary_en,
-                "summary_zh": item.summary_zh,
-                "source": item.source,
-                "language": item.language,
-                "priority": item.priority,
-                "source_category": item.source_category,
-            }
-            for item in ranked
-        ],
-        "social_media": [
-            {
-                "platform": group.platform,
-                "platform_key": group.platform_key,
-                "items": [
-                    {
-                        "title": item.title,
-                        "title_en": item.title_en,
-                        "title_zh": item.title_zh,
-                        "link": item.link,
-                        "source": item.source,
-                    }
-                    for item in group.items[:5]
-                ],
-            }
-            for group in social_groups
-        ],
-    }
-
-    # Load existing feed, append new edition, prune old ones
-    feed = _load_existing_feed(output_path)
-    feed["editions"].append(edition)
-    feed = _prune_old_editions(feed, KEEP_DAYS)
-
-    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    Path(output_path).write_text(
-        json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8"
+    edition = build_edition_payload(
+        edition_label=edition_label,
+        items=ranked,
+        summary_cn=summary_cn,
+        market_hotspots_cn=market_hotspots_cn,
+        social_summary_cn=social_summary_cn,
+        sector_recommendation=sector_recommendation,
+        market_snapshot=market_snapshot,
+        sector_rankings=sector_rankings,
+        weekly_sector_rankings=weekly_sector_rankings,
+        social_groups=social_groups,
     )
+
+    total_editions = append_edition_to_feed(edition, output_path=output_path, keep_days=KEEP_DAYS)
     logger.info(
         "Exported %d items as edition '%s'. Total editions: %d",
-        len(ranked), edition_label, len(feed["editions"]),
+        len(ranked), edition_label, total_editions,
     )
-
-    # Generate RSS feed alongside JSON
-    rss_path = str(Path(output_path).with_suffix(".xml"))
-    _generate_rss(feed, rss_path)
 
 
 def _generate_rss(feed: dict, rss_path: str) -> None:
