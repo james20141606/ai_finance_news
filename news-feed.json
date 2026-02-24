@@ -19479,6 +19479,936 @@
         }
       ],
       "social_media": []
+    },
+    {
+      "updated_at": "2026-02-24T14:13:11.941985+00:00",
+      "edition_label": "NY 08:00",
+      "summary_cn": null,
+      "market_hotspots_cn": null,
+      "social_summary_cn": null,
+      "sector_recommendation": null,
+      "market_snapshot": [
+        {
+          "title": "US Markets",
+          "items": [
+            {
+              "name": "S&P 500",
+              "symbol": "^SPX",
+              "price": 6837.75,
+              "change": -71.76,
+              "change_percent": -1.04,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Nasdaq 100",
+              "symbol": "^NDQ",
+              "price": 22627.27,
+              "change": -258.8,
+              "change_percent": -1.13,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Dow Jones",
+              "symbol": "^DJI",
+              "price": 48804.06,
+              "change": -821.91,
+              "change_percent": -1.66,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "Europe Markets",
+          "items": [
+            {
+              "name": "FTSE 100",
+              "symbol": "^UKX",
+              "price": 10706.8,
+              "change": 22.06,
+              "change_percent": 0.21,
+              "currency": "GBP",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "DAX",
+              "symbol": "^DAX",
+              "price": 24970.05,
+              "change": -21.92,
+              "change_percent": -0.09,
+              "currency": "EUR",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "CAC 40",
+              "symbol": "^CAC",
+              "price": 8515.37,
+              "change": 18.2,
+              "change_percent": 0.21,
+              "currency": "EUR",
+              "change_color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "title": "Asia Markets",
+          "items": [
+            {
+              "name": "Nikkei 225",
+              "symbol": "^NKX",
+              "price": 57321.09,
+              "change": 495.39,
+              "change_percent": 0.87,
+              "currency": "JPY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Hang Seng",
+              "symbol": "^HSI",
+              "price": 26590.32,
+              "change": -491.59,
+              "change_percent": -1.82,
+              "currency": "HKD",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "China Markets",
+          "items": [
+            {
+              "name": "SSE Composite 上证指数",
+              "symbol": "SH000001",
+              "price": 4117.41,
+              "change": 35.34,
+              "change_percent": 0.87,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "SZSE Component 深证成指",
+              "symbol": "SZ399001",
+              "price": 14291.57,
+              "change": 191.38,
+              "change_percent": 1.36,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "ChiNext 创业板指",
+              "symbol": "SZ399006",
+              "price": 3308.26,
+              "change": 32.3,
+              "change_percent": 0.99,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "CSI 300 沪深300",
+              "symbol": "SH000300",
+              "price": 4707.54,
+              "change": 47.13,
+              "change_percent": 1.01,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "title": "Gold & Silver",
+          "items": [
+            {
+              "name": "Gold (oz)",
+              "symbol": "XAUUSD",
+              "price": 5121.44,
+              "change": -106.16,
+              "change_percent": -2.03,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Silver (oz)",
+              "symbol": "XAGUSD",
+              "price": 86.01,
+              "change": -2.19,
+              "change_percent": -2.48,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "Crypto / 数字货币",
+          "items": [
+            {
+              "name": "BTC",
+              "symbol": "BTC",
+              "price": 62931.0,
+              "change": -3090.92,
+              "change_percent": -4.91,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ETH",
+              "symbol": "ETH",
+              "price": 1814.61,
+              "change": -101.28,
+              "change_percent": -5.58,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "SOL",
+              "symbol": "SOL",
+              "price": 76.46,
+              "change": -3.95,
+              "change_percent": -5.17,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "BNB",
+              "symbol": "BNB",
+              "price": 580.98,
+              "change": -28.04,
+              "change_percent": -4.83,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "XRP",
+              "symbol": "XRP",
+              "price": 1.33,
+              "change": -0.07,
+              "change_percent": -5.02,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOGE",
+              "symbol": "DOGE",
+              "price": 0.09,
+              "change": -0.01,
+              "change_percent": -6.37,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ADA",
+              "symbol": "ADA",
+              "price": 0.26,
+              "change": -0.02,
+              "change_percent": -6.12,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "AVAX",
+              "symbol": "AVAX",
+              "price": 8.25,
+              "change": -0.42,
+              "change_percent": -5.08,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOT",
+              "symbol": "DOT",
+              "price": 1.23,
+              "change": -0.06,
+              "change_percent": -5.27,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            }
+          ]
+        }
+      ],
+      "sector_rankings": [
+        {
+          "title": "US Sector ETFs",
+          "items": [
+            {
+              "name": "Consumer Staples (XLP)",
+              "change_percent": 1.23,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Healthcare (XLV)",
+              "change_percent": 1.1,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Utilities (XLU)",
+              "change_percent": 0.76,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Energy (XLE)",
+              "change_percent": 0.49,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Real Estate (XLRE)",
+              "change_percent": 0.11,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Materials (XLB)",
+              "change_percent": 0.0,
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Communication (XLC)",
+              "change_percent": -1.23,
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Industrial (XLI)",
+              "change_percent": -1.35,
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Technology (XLK)",
+              "change_percent": -1.68,
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Consumer Disc. (XLY)",
+              "change_percent": -2.09,
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Financial (XLF)",
+              "change_percent": -3.35,
+              "change_color": "#dc2626"
+            }
+          ]
+        }
+      ],
+      "weekly_sector_rankings": [
+        {
+          "title": "US Sector ETFs (Weekly)",
+          "items": [
+            {
+              "name": "Energy (XLE)",
+              "change_percent": 0.49,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 1.47,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Communication (XLC)",
+              "change_percent": -1.23,
+              "change_color": "#dc2626",
+              "weekly_change_percent": 0.68,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Healthcare (XLV)",
+              "change_percent": 1.1,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 0.55,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Utilities (XLU)",
+              "change_percent": 0.76,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 0.39,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Industrial (XLI)",
+              "change_percent": -1.35,
+              "change_color": "#dc2626",
+              "weekly_change_percent": 0.38,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Real Estate (XLRE)",
+              "change_percent": 0.11,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 0.25,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Consumer Staples (XLP)",
+              "change_percent": 1.23,
+              "change_color": "#16a34a",
+              "weekly_change_percent": -0.6,
+              "weekly_change_color": "#dc2626"
+            },
+            {
+              "name": "Materials (XLB)",
+              "change_percent": 0.0,
+              "change_color": "#64748b",
+              "weekly_change_percent": -0.66,
+              "weekly_change_color": "#dc2626"
+            },
+            {
+              "name": "Technology (XLK)",
+              "change_percent": -1.68,
+              "change_color": "#dc2626",
+              "weekly_change_percent": -0.75,
+              "weekly_change_color": "#dc2626"
+            },
+            {
+              "name": "Consumer Disc. (XLY)",
+              "change_percent": -2.09,
+              "change_color": "#dc2626",
+              "weekly_change_percent": -1.02,
+              "weekly_change_color": "#dc2626"
+            },
+            {
+              "name": "Financial (XLF)",
+              "change_percent": -3.35,
+              "change_color": "#dc2626",
+              "weekly_change_percent": -1.78,
+              "weekly_change_color": "#dc2626"
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "title": "Corporate America’s Growing Quest for Tariff Refunds",
+          "title_en": "Corporate America’s Growing Quest for Tariff Refunds",
+          "title_zh": "美国企业对关税退税的追求与日俱增",
+          "link": "https://www.nytimes.com/2026/02/24/business/dealbook/fex-tariff-refund.html",
+          "published": "2026-02-24T13:43:09+00:00",
+          "summary_en": "Thousands of companies are expected to follow FedEx’ in suing the government to recoup levy payments, after the Supreme Court overturned the tariffs.",
+          "summary_zh": "在最高法院推翻关税后，预计数千家公司将跟随联邦快递起诉政府收回税款。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "The Looming Taiwan Chip Disaster That Silicon Valley Has Long Ignored",
+          "title_en": "The Looming Taiwan Chip Disaster That Silicon Valley Has Long Ignored",
+          "title_zh": "硅谷长期忽视的迫在眉睫的台湾芯片灾难",
+          "link": "https://www.nytimes.com/2026/02/24/technology/taiwan-china-chips-silicon-valley-tsmc.html",
+          "published": "2026-02-24T13:31:15+00:00",
+          "summary_en": "If China invades Taiwan and cuts off its chip exports to American companies, the tech industry and the U.S. economy would be crippled.",
+          "summary_zh": "如果中国入侵台湾并切断对美国公司的芯片出口，科技产业和美国经济将陷入瘫痪。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Top Fed Official Sees Little Effect on Rate Outlook From Supreme Court’s Tariff Ruling",
+          "title_en": "Top Fed Official Sees Little Effect on Rate Outlook From Supreme Court’s Tariff Ruling",
+          "title_zh": "美联储高级官员认为最高法院的关税裁决对利率前景影响不大",
+          "link": "https://www.nytimes.com/2026/02/23/business/economy/waller-fed-supreme-court-tariffs-rates.html",
+          "published": "2026-02-23T19:06:42+00:00",
+          "summary_en": "Christopher J. Waller, a Federal Reserve governor, said he would support a pause in rate cuts in March if the labor market continued to show signs of stabilizing.",
+          "summary_zh": "美联储理事克里斯托弗· J ·沃勒(Christopher J. Waller)表示，如果劳动力市场继续显示出企稳迹象，他将支持在3月暂停降息。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "US probably shed jobs last year, top Federal Reserve official says",
+          "title_en": "US probably shed jobs last year, top Federal Reserve official says",
+          "title_zh": "美联储高级官员表示，美国去年可能裁员",
+          "link": "https://www.ft.com/content/85363ca5-80f6-48a2-89fd-8751bff3e463",
+          "published": "2026-02-23T14:39:11+00:00",
+          "summary_en": "Christopher Waller says he would back March rate cut if there are further signs of weakening in the labour market",
+          "summary_zh": "克里斯托弗·沃勒（ Christopher Waller ）表示，如果劳动力市场出现进一步疲软的迹象，他将支持3月降息",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "From dabblers to day traders, individual investors' impact on Wall Street grows",
+          "title_en": "From dabblers to day traders, individual investors' impact on Wall Street grows",
+          "title_zh": "从涉足者到日内交易者，个人投资者对华尔街的影响越来越大",
+          "link": "https://finance.yahoo.com/news/dabblers-day-traders-small-investors-030702058.html?.tsrc=rss",
+          "published": "2026-02-23T03:07:02+00:00",
+          "summary_en": "For years, individual investors were dismissed by some on Wall Street as “dumb money.” An analysis of where individual investors put their money last year shows they outperformed two of the most popular, professionally managed index funds, SPY and QQQ, whose goal is to mirror the performance of the S&P 500 and Nasdaq 100, respectively. “I personally want to…",
+          "summary_zh": "多年来，华尔街的一些人将个人投资者视为“愚蠢的钱”。“对个人投资者去年投入资金的分析显示，他们的表现优于两只最受欢迎、管理最专业的指数基金SPY和QQQ ，其目标是分别反映标准普尔500指数和纳斯达克100指数的表现。“我个人想……",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Exchange-Traded Funds Mixed, Equity Futures Higher Pre-Bell Tuesday Amid AI Disruption Fears",
+          "title_en": "Exchange-Traded Funds Mixed, Equity Futures Higher Pre-Bell Tuesday Amid AI Disruption Fears",
+          "title_zh": "交易所交易基金好坏参半，人工智能中断担忧导致股票期货周二上市前走高",
+          "link": "https://finance.yahoo.com/news/exchange-traded-funds-mixed-equity-135252418.html?.tsrc=rss",
+          "published": "2026-02-24T13:52:52+00:00",
+          "summary_en": "The broad market exchange-traded fund SPDR S&P 500 ETF Trust (SPY) was down 0.02% and the actively t",
+          "summary_zh": "广义市场交易所交易基金SPDR S&P 500 ETF Trust (SPY)下跌0.02% ，",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Shein founder emerges from shadows to hail Chinese roots",
+          "title_en": "Shein founder emerges from shadows to hail Chinese roots",
+          "title_zh": "SHEIN创始人从阴影中走出来，为中国根源欢呼",
+          "link": "https://www.ft.com/content/76976a62-44cf-4e45-8d26-b19db5283831",
+          "published": "2026-02-24T12:53:05+00:00",
+          "summary_en": "Xu Yangtian says help from Communist Party and regional province was vital to fast-fashion retailer",
+          "summary_zh": "徐洋天表示，共产党和地区省份的帮助对快时尚零售商至关重要",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Will AI-driven productivity growth allow the Fed to lower rates?",
+          "title_en": "Will AI-driven productivity growth allow the Fed to lower rates?",
+          "title_zh": "人工智能驱动的生产率增长是否会让美联储降低利率？",
+          "link": "https://www.ft.com/content/7fa0a049-9d65-41ad-83e3-1f38fd8938fd",
+          "published": "2026-02-24T12:30:08+00:00",
+          "summary_en": "Theory and data allow us to spin different narratives",
+          "summary_zh": "理论和数据使我们能够旋转不同的叙事",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Donald Trump’s state of mind is a global risk",
+          "title_en": "Donald Trump’s state of mind is a global risk",
+          "title_zh": "唐纳德·特朗普的心态是一个全球性的风险",
+          "link": "https://www.ft.com/content/8802f7de-8458-4c86-90d3-8080df928ec1",
+          "published": "2026-02-24T12:21:22+00:00",
+          "summary_en": "A cabinet of sycophants makes an already erratic US president a greater threat",
+          "summary_zh": "一群挑逗者使本已不稳定的美国总统成为更大的威胁",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Meta agrees multibillion-dollar chip deal with AMD",
+          "title_en": "Meta agrees multibillion-dollar chip deal with AMD",
+          "title_zh": "Meta同意与AMD达成数十亿美元的芯片交易",
+          "link": "https://www.ft.com/content/76b40c38-cece-4df7-a0f8-3783eacd7b97",
+          "published": "2026-02-24T12:00:09+00:00",
+          "summary_en": "Shares in US chipmaker surge as deal paves way for social media giant to take a stake in the group",
+          "summary_zh": "随着交易为社交媒体巨头收购该集团股份铺平了道路，美国芯片制造商的股票激增",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "France cuts off government access to US envoy Charles Kushner after snub",
+          "title_en": "France cuts off government access to US envoy Charles Kushner after snub",
+          "title_zh": "法国在冷落后切断了政府与美国特使查尔斯·库什纳的接触",
+          "link": "https://www.ft.com/content/6a71acd2-7146-4c4b-a172-f070b907cf96",
+          "published": "2026-02-24T11:13:14+00:00",
+          "summary_en": "Ambassador ignored summons to appear at foreign ministry",
+          "summary_zh": "大使无视出庭外交部的传票",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "‘Crisis of his own making’: Trump weighs another war with Iran",
+          "title_en": "‘Crisis of his own making’: Trump weighs another war with Iran",
+          "title_zh": "“他自己制造的危机” ：特朗普权衡与伊朗的另一场战争",
+          "link": "https://www.ft.com/content/0408deca-ecca-49ab-bff6-985ef83897ce",
+          "published": "2026-02-24T05:00:29+00:00",
+          "summary_en": "The US military build-up was designed to coerce Tehran — but has failed",
+          "summary_zh": "美国的军事集结旨在胁迫德黑兰—但失败了",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Takaichi plans Japanese ‘Cfius’ to tighten economic security",
+          "title_en": "Takaichi plans Japanese ‘Cfius’ to tighten economic security",
+          "title_zh": "Takaichi计划日本“CFIUS”以加强经济安全",
+          "link": "https://www.ft.com/content/7ac1cfeb-fad1-465c-86f6-e28380addee5",
+          "published": "2026-02-24T05:00:19+00:00",
+          "summary_en": "Foreign investment agency modelled on US intended to guard sensitive industries against China",
+          "summary_zh": "仿照美国的外国投资机构旨在保护敏感行业免受中国的影响",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Trump’s global tariff takes effect at 10%",
+          "title_en": "Trump’s global tariff takes effect at 10%",
+          "title_zh": "特朗普的全球关税以10%生效",
+          "link": "https://www.ft.com/content/61c2e6d6-5e82-471d-b189-3d57d53407ae",
+          "published": "2026-02-24T03:53:26+00:00",
+          "summary_en": "US president had said he would raise levy to 15%",
+          "summary_zh": "美国总统曾表示，他将把征税提高到15%",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Fed seeks feedback on proposal critics say could end Operation Chokepoint 2.0",
+          "title_en": "Fed seeks feedback on proposal critics say could end Operation Chokepoint 2.0",
+          "title_zh": "美联储征求对提案的反馈意见，批评者称提案可能会结束Operation Chokepoint 2.0",
+          "link": "https://cointelegraph.com/news/fed-seeks-feedback-chokepoint-2-0-ending-proposal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-02-24T03:33:00+00:00",
+          "summary_en": "The US Federal Reserve is seeking feedback over the next 60 days on a proposal that could address concerns about crypto-related debanking.",
+          "summary_zh": "美联储正在寻求在未来60天内就一项提案提供反馈，该提案可能解决对加密相关银行业务的担忧。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "U.K., Australia and Others Worse Off Under Trump’s New Tariffs",
+          "title_en": "U.K., Australia and Others Worse Off Under Trump’s New Tariffs",
+          "title_zh": "英国、澳大利亚和其他国家因特朗普的新关税而变得更糟",
+          "link": "https://www.nytimes.com/2026/02/23/business/uk-australia-trump-tariffs.html",
+          "published": "2026-02-24T02:52:20+00:00",
+          "summary_en": "Many important U.S. trading partners are facing higher duties after President Trump, reacting to a Supreme Court setback, set the rate on a new set of global tariffs at 15 percent.",
+          "summary_zh": "在特朗普总统对最高法院的挫折做出反应后，许多重要的美国贸易伙伴面临更高的关税，将一套新的全球关税税率定为15%。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "FedEx sues US government, seeking ‘full refund’ over Trump tariffs",
+          "title_en": "FedEx sues US government, seeking ‘full refund’ over Trump tariffs",
+          "title_zh": "联邦快递起诉美国政府，寻求特朗普关税的“全额退款”",
+          "link": "https://www.theguardian.com/us-news/2026/feb/23/fedex-lawsuit-trump-tariffs",
+          "published": "2026-02-24T01:54:20+00:00",
+          "summary_en": "Firm does not specify amount but seeks reimbursement after supreme court ruled against president last week FedEx sued the US government on Monday, seeking a refund for the tariffs imposed by Donald Trump that were deemed illegal by the US supreme court last week. The lawsuit marks the first attempt by a major company to receive reimbursement of their share…",
+          "summary_zh": "公司没有具体说明金额，但在最高法院上周对总统作出裁决后，联邦快递周一起诉美国政府，要求退还唐纳德特朗普上周被美国最高法院视为非法的关税。这起诉讼标志着一家大公司首次尝试获得其股份的补偿……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "FedEx Sues for Refund of Trump Tariffs Rejected by Supreme Court",
+          "title_en": "FedEx Sues for Refund of Trump Tariffs Rejected by Supreme Court",
+          "title_zh": "联邦快递要求退还特朗普关税被最高法院驳回",
+          "link": "https://www.nytimes.com/2026/02/23/business/fedex-lawsuit-tariffs-refund.html",
+          "published": "2026-02-24T01:39:26+00:00",
+          "summary_en": "The company, which did not specify how much it was seeking, is expected to be one of many demanding compensation for levies ruled unlawful.",
+          "summary_zh": "该公司没有具体说明其寻求多少，预计将成为众多要求赔偿被裁定为非法征税的公司之一。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "US tariff strike-down creates new trade dilemmas for India",
+          "title_en": "US tariff strike-down creates new trade dilemmas for India",
+          "title_zh": "美国关税罢工给印度带来新的贸易困境",
+          "link": "https://www.ft.com/content/15bf625e-47d7-4859-8970-26c0498b65ff",
+          "published": "2026-02-24T01:30:04+00:00",
+          "summary_en": "Also in this newsletter: the bulldozers are coming to Great Nicobar",
+          "summary_zh": "同样在这份通讯中：推土机来到大尼科巴",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "FedEx sues for Trump tariff refund",
+          "title_en": "FedEx sues for Trump tariff refund",
+          "title_zh": "联邦快递起诉特朗普关税退税",
+          "link": "https://www.bbc.com/news/articles/cly83r1njjro?at_medium=RSS&at_campaign=rss",
+          "published": "2026-02-24T01:18:27+00:00",
+          "summary_en": "The US Supreme Court ruling that the US president overstepped when imposing levies paved the way for firms to seek a refund.",
+          "summary_zh": "美国最高法院裁定，美国总统在征收关税时越权，为公司寻求退税铺平了道路。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "FedEx sues Trump administration for tariff refunds",
+          "title_en": "FedEx sues Trump administration for tariff refunds",
+          "title_zh": "联邦快递起诉特朗普政府退还关税",
+          "link": "https://www.ft.com/content/c7d06532-df3f-4819-9844-71a2adc09875",
+          "published": "2026-02-24T00:48:29+00:00",
+          "summary_en": "Shipping company first big US group to file suit over levies since Supreme Court deemed them illegal",
+          "summary_zh": "自最高法院认定征税非法以来，航运公司首次就征税提起诉讼",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Supreme Court Considers Fate of Docks and Other Assets Seized by Cuba in 1960",
+          "title_en": "Supreme Court Considers Fate of Docks and Other Assets Seized by Cuba in 1960",
+          "title_zh": "最高法院考虑1960年古巴扣押的码头和其他资产的命运",
+          "link": "https://www.nytimes.com/2026/02/23/us/politics/supreme-court-cuba-cruise-docks.html",
+          "published": "2026-02-23T20:19:46+00:00",
+          "summary_en": "Amid rising tensions with Cuba, the Trump administration is backing lawsuits that would allow Americans to get compensation for property confiscated by Fidel Castro’s regime.",
+          "summary_zh": "在与古巴的紧张局势加剧的情况下，特朗普政府支持诉讼，允许美国人获得菲德尔·卡斯特罗政权没收财产的赔偿。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Binance Employees Find $1.7 Billion in Crypto Was Sent to Iranian Entities",
+          "title_en": "Binance Employees Find $1.7 Billion in Crypto Was Sent to Iranian Entities",
+          "title_zh": "币安员工发现$ 17亿加密货币被发送给伊朗实体",
+          "link": "https://www.nytimes.com/2026/02/23/technology/binance-employees-iran-firings.html",
+          "published": "2026-02-23T20:15:13+00:00",
+          "summary_en": "Binance pledged to crack down on crime. But internal investigators at the world’s largest crypto exchange continued to find evidence of potential legal violations on the platform.",
+          "summary_zh": "币安承诺打击犯罪。但这家全球最大的加密货币交易所的内部调查人员继续在该平台上发现潜在违法行为的证据。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Real Estate Stocks Rise: Realty Income (O) & Simon Property (SPG) Lead Last Week’s Winners",
+          "title_en": "Real Estate Stocks Rise: Realty Income (O) & Simon Property (SPG) Lead Last Week’s Winners",
+          "title_zh": "房地产股上涨：上周房地产收入（ O ）和西蒙地产（ SPG ）领先",
+          "link": "https://247wallst.com/investing/2026/02/23/real-estate-stocks-rise-realty-income-o-simon-property-spg-lead-last-weeks-winners/?.tsrc=rss",
+          "published": "2026-02-23T19:06:59+00:00",
+          "summary_en": "Markets have started the week on rocky footing. The Dow Jones is off 1.3% as of 1:45 p.m. ET in Monday trading, but real estate stocks are holding in relatively well. Looking at last week, real estate stocks had a quietly constructive week while the broader market barely moved. The S&P 500, as tracked by SPY, ... Real Estate Stocks Rise: Realty Income (O) &…",
+          "summary_zh": "本周市场已经开始步履蹒跚。截至美国东部时间周一下午1:45 ，道琼斯指数下跌1.3% ，但房地产股持仓相对较好。回顾上周，房地产股经历了一个悄然乐观的一周，而更广泛的市场几乎没有变化。SPY跟踪的标准普尔500指数……房地产股上涨：房地产收入（ O ）和……",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "No 10 says ‘nothing off the table’ over new US tariffs as UK could be among worst hit",
+          "title_en": "No 10 says ‘nothing off the table’ over new US tariffs as UK could be among worst hit",
+          "title_zh": "没有10个国家对美国的新关税表示“无可奈何” ，因为英国可能是受影响最严重的国家之一",
+          "link": "https://www.bbc.com/news/articles/cx2rv212wwyo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-02-23T18:34:22+00:00",
+          "summary_en": "Downing Street says discussions are ongoing following US President Donald Trump's announcement of a 15% global tariffs.",
+          "summary_zh": "唐宁街表示，在美国总统唐纳德·特朗普宣布征收15%的全球关税后，讨论仍在进行中。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Stock markets stumble as global trade faces more Trump tariff uncertainty",
+          "title_en": "Stock markets stumble as global trade faces more Trump tariff uncertainty",
+          "title_zh": "随着全球贸易面临更多特朗普关税不确定性，股市跌跌撞撞",
+          "link": "https://www.theguardian.com/us-news/2026/feb/23/stock-markets-stumble-global-trade-trump-tariff-uncertaintytariff-uncertainty",
+          "published": "2026-02-23T17:35:36+00:00",
+          "summary_en": "US president’s international trade war spooks investors, with drops in US share prices after European losses Trump threatens ‘obnoxious’ tariffs as UK and EU seek clarity on trade deals Stock markets stumbled on Monday as Donald Trump pushed ahead with fresh tariffs on the US’s trading partners despite a supreme court strike-down and growing opposition from…",
+          "summary_zh": "美国总统的国际贸易战吓坏了投资者，在欧洲损失之后，特朗普威胁要对美国股价征收“令人讨厌的”关税，因为英国和欧盟周一寻求澄清贸易协议股市跌跌撞撞，唐纳德特朗普推动对美国贸易伙伴征收新的关税，尽管最高法院进行了罢工，并遭到了越来越多的反对。",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Stocks Drop as Traders Digest the Reality of Trump’s Potential Tariff Plans",
+          "title_en": "Stocks Drop as Traders Digest the Reality of Trump’s Potential Tariff Plans",
+          "title_zh": "随着交易员消化特朗普潜在关税计划的现实，股市下跌",
+          "link": "https://www.reddit.com/r/investing/comments/1rcmf15/stocks_drop_as_traders_digest_the_reality_of/",
+          "published": "2026-02-23T16:40:22+00:00",
+          "summary_en": "Markets opened lower today as investors began to realize that new U.S. tariffs could be far more complex and punitive than initially expected. After Trump signaled increases from 10% to 15%, analysts started factoring in a patchwork of Section 122, 301, and 232 measures that could target everything from automobiles to semiconductors. S&P 500 futures are dow…",
+          "summary_zh": "由于投资者开始意识到新的美国关税可能比最初预期的更加复杂和惩罚性，市场今天开盘走低。在特朗普发出从10%增加到15%的信号后，分析师开始考虑第122、301和232条措施的拼凑，这些措施可以针对从汽车到半导体的所有领域。标准普尔500指数期货指数…",
+          "source": "Reddit r/investing",
+          "language": "en",
+          "priority": 2,
+          "source_category": "reddit"
+        },
+        {
+          "title": "Stocks slip and gold gains as global trade faces new Trump tariff threat",
+          "title_en": "Stocks slip and gold gains as global trade faces new Trump tariff threat",
+          "title_zh": "随着全球贸易面临新的特朗普关税威胁，股市下跌和黄金上涨",
+          "link": "https://www.ft.com/content/46199805-8572-4cc2-84c2-8db7f6621769",
+          "published": "2026-02-23T15:08:42+00:00",
+          "summary_en": "Dollar dips after US president imposes 15% duty following Supreme Court decision to strike down previous policy",
+          "summary_zh": "在最高法院决定推翻先前的政策后，美国总统征收15 ％的关税后美元贬值",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Tariff Turmoil Returns to Global Markets",
+          "title_en": "Tariff Turmoil Returns to Global Markets",
+          "title_zh": "关税动荡重返全球市场",
+          "link": "https://www.nytimes.com/2026/02/23/business/dealbook/tariffs-trump-markets.html",
+          "published": "2026-02-23T13:59:53+00:00",
+          "summary_en": "Businesses and U.S. trade partners are again grappling with the uncertainty of President Trump’s trade war, even as he imposes new levies.",
+          "summary_zh": "企业和美国贸易伙伴再次努力应对特朗普总统贸易战的不确定性，尽管他征收了新的关税。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Exchange-Traded Funds, Equity Futures Lower Pre-Bell Monday Amid Renewed Trade Doubts",
+          "title_en": "Exchange-Traded Funds, Equity Futures Lower Pre-Bell Monday Amid Renewed Trade Doubts",
+          "title_zh": "交易所交易基金、股票期货周一在交易疑虑重燃之际下跌",
+          "link": "https://finance.yahoo.com/news/exchange-traded-funds-equity-futures-135031238.html?.tsrc=rss",
+          "published": "2026-02-23T13:50:31+00:00",
+          "summary_en": "The broad market exchange-traded fund SPDR S&P 500 ETF Trust (SPY) was down 0.5%, and the actively t",
+          "summary_zh": "广义市场交易所交易基金SPDR S&P 500 ETF Trust (SPY)下跌0.5% ，",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "7 S&P 500 Stocks Gain The Most After Trump Tariffs Are Slapped Down",
+          "title_en": "7 S&P 500 Stocks Gain The Most After Trump Tariffs Are Slapped Down",
+          "title_zh": "7特朗普关税下调后，标准普尔500指数股票涨幅最大",
+          "link": "https://finance.yahoo.com/m/1d3eb42b-6006-393d-b951-378ddb998793/7-s%26p-500-stocks-gain-the.html?.tsrc=rss",
+          "published": "2026-02-23T13:00:17+00:00",
+          "summary_en": "Who benefits from the Supreme Count slapping down President Donald Trump's protectionist tariffs? Investors quickly looked for the winners.",
+          "summary_zh": "谁受益于最高伯爵削减唐纳德·特朗普总统的保护主义关税？投资者很快就找到了赢家。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "The Supreme Court sends tariffs on a turbulent descent",
+          "title_en": "The Supreme Court sends tariffs on a turbulent descent",
+          "title_zh": "最高法院对动荡的血统征收关税",
+          "link": "https://www.ft.com/content/51f74834-6570-4a4d-bfe9-c9c8c4bb174f",
+          "published": "2026-02-23T12:36:06+00:00",
+          "summary_en": "America’s trading partners and US Congress have a chance to claw back some control",
+          "summary_zh": "美国的贸易伙伴和美国国会有机会夺回一些控制权",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Homeownership Is Out of Reach for Many Americans, Despite a Buyer’s Market",
+          "title_en": "Homeownership Is Out of Reach for Many Americans, Despite a Buyer’s Market",
+          "title_zh": "尽管存在买家市场，但许多美国人仍无法获得房屋所有权",
+          "link": "https://www.nytimes.com/2026/02/23/business/home-buying-market-real-estate-economy.html",
+          "published": "2026-02-23T10:02:46+00:00",
+          "summary_en": "A growing split between low-to-middle-income families and wealthy households is changing who has access to homeownership now.",
+          "summary_zh": "中低收入家庭和富裕家庭之间的差距越来越大，现在谁可以获得房屋所有权正在发生变化。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Stock Market Today: Dow Rises After Market Sell-Off; AMD Surges On Meta Deal (Live Coverage)",
+          "title_en": "Stock Market Today: Dow Rises After Market Sell-Off; AMD Surges On Meta Deal (Live Coverage)",
+          "title_zh": "今日股市：道琼斯指数在市场抛售后上涨； AMD Meta交易激增（实时报道）",
+          "link": "https://finance.yahoo.com/m/74649302-e0f3-3f1b-b191-9ab300a68f5a/stock-market-today%3A-dow-rises.html?.tsrc=rss",
+          "published": "2026-02-24T13:45:59+00:00",
+          "summary_en": "Stock Market Today: The Dow Jones index bounced modestly Tuesday after Monday's stock market sell-off. AMD surges on its Meta deal.",
+          "summary_zh": "今日股市：周一股市抛售后，道琼斯指数周二小幅反弹。AMD的Meta交易激增。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Paramount Revises Its Bid for Warner Bros. Discovery",
+          "title_en": "Paramount Revises Its Bid for Warner Bros. Discovery",
+          "title_zh": "派拉蒙修改其对Warner Bros. Discovery的出价",
+          "link": "https://www.nytimes.com/2026/02/24/business/paramount-warner-bros-discovery.html",
+          "published": "2026-02-24T13:36:04+00:00",
+          "summary_en": "Netflix, Warner Bros. Discovery’s preferred acquirer, now has four days to counter Paramount’s revised offer.",
+          "summary_zh": "作为华纳兄弟Discovery的首选收购方， Netflix现在有四天的时间来反驳派拉蒙的修订报价。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Meta Announces Major Chips-for-Stock Deal With AMD",
+          "title_en": "Meta Announces Major Chips-for-Stock Deal With AMD",
+          "title_zh": "Meta宣布与AMD达成主要的芯片库存交易",
+          "link": "https://www.nytimes.com/2026/02/24/business/meta-amd-chips-ai.html",
+          "published": "2026-02-24T13:28:48+00:00",
+          "summary_en": "The multibillion-dollar deal is AMD’s latest move to catch up to Nvidia in the lucrative world of selling artificial intelligence chips.",
+          "summary_zh": "这笔价值数十亿美元的交易是AMD在利润丰厚的人工智能芯片销售领域赶上英伟达的最新举措。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Reform vows to overhaul pension schemes for new local government workers",
+          "title_en": "Reform vows to overhaul pension schemes for new local government workers",
+          "title_zh": "改革誓言全面改革新任地方政府工作人员的养老金计划",
+          "link": "https://www.bbc.com/news/articles/c875edj1qeno?at_medium=RSS&at_campaign=rss",
+          "published": "2026-02-24T12:36:13+00:00",
+          "summary_en": "Reform plans to end more generous defined benefit pension schemes for new local government workers if it wins office.",
+          "summary_zh": "改革计划，如果新任地方政府工作人员上任，将终止更慷慨的固定福利养老金计划。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "FirstFT: Zelenskyy urges US to see through Russia’s ‘games’",
+          "title_en": "FirstFT: Zelenskyy urges US to see through Russia’s ‘games’",
+          "title_zh": "FirstFT ： Zelenskyy敦促我们看透俄罗斯的“游戏”",
+          "link": "https://www.ft.com/content/14b705bc-052a-4761-a233-ba6b92c62928",
+          "published": "2026-02-24T10:58:56+00:00",
+          "summary_en": "Also in today’s newsletter: Trump administration implements new 10% tariff, and Moody’s raises questions about AI data centre accounting",
+          "summary_zh": "同样在今天的通讯中：特朗普政府实施新的10 ％关税，穆迪提出了有关人工智能数据中心会计的问题",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "‘We’re losing accessibility’: America says goodbye to the mass-market paperback",
+          "title_en": "‘We’re losing accessibility’: America says goodbye to the mass-market paperback",
+          "title_zh": "“我们正在失去可访问性” ：美国告别大众市场平装书",
+          "link": "https://www.theguardian.com/books/2026/feb/24/america-says-goodbye-paperback",
+          "published": "2026-02-24T10:03:10+00:00",
+          "summary_en": "The so-called ‘pocket book’ sold in supermarkets is being phased out across the US, the latest sign of an ongoing shift in how people are choosing to read Shelly Romero has early memories of going to her local supermarket and picking pulp fiction off the shelves. “We were very working class; my mom was working two jobs sometimes,” she recalls. “The appeal o…",
+          "summary_zh": "在超市出售的所谓“口袋书”正在美国逐步淘汰，这是人们选择阅读雪莉·罗梅罗（ Shelly Romero ）的方式正在发生变化的最新迹象，她很早就想去当地的超市，从货架上挑选纸浆小说。她回忆说： “我们是非常工人阶级；我妈妈有时会做两份工作。” “呼吁……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "I.R.S. Tactics Against Meta Open a New Front in the Corporate Tax Fight",
+          "title_en": "I.R.S. Tactics Against Meta Open a New Front in the Corporate Tax Fight",
+          "title_zh": "国税局针对Meta的策略在企业税收斗争中开辟了新战线",
+          "link": "https://www.nytimes.com/2026/02/24/business/irs-meta-corporate-taxes.html",
+          "published": "2026-02-24T10:00:35+00:00",
+          "summary_en": "The agency is using real-world profit data to challenge how big companies value offshore intellectual property.",
+          "summary_zh": "该机构正在使用真实世界的利润数据来挑战大公司如何重视离岸知识产权。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        }
+      ],
+      "social_media": [
+        {
+          "platform": "Reddit",
+          "platform_key": "reddit",
+          "items": [
+            {
+              "title": "Stocks Drop as Traders Digest the Reality of Trump’s Potential Tariff Plans",
+              "title_en": "Stocks Drop as Traders Digest the Reality of Trump’s Potential Tariff Plans",
+              "title_zh": "随着交易员消化特朗普潜在关税计划的现实，股市下跌",
+              "link": "https://www.reddit.com/r/investing/comments/1rcmf15/stocks_drop_as_traders_digest_the_reality_of/",
+              "source": "Reddit r/investing"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
