@@ -28400,6 +28400,941 @@
           ]
         }
       ]
+    },
+    {
+      "updated_at": "2026-03-02T02:14:40.115525+00:00",
+      "edition_label": "BJ 08:00",
+      "summary_cn": null,
+      "market_hotspots_cn": null,
+      "social_summary_cn": null,
+      "sector_recommendation": null,
+      "market_snapshot": [
+        {
+          "title": "US Markets",
+          "items": [
+            {
+              "name": "S&P 500",
+              "symbol": "^SPX",
+              "price": 6878.88,
+              "change": -29.98,
+              "change_percent": -0.43,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Nasdaq 100",
+              "symbol": "^NDQ",
+              "price": 22668.21,
+              "change": -210.17,
+              "change_percent": -0.92,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Dow Jones",
+              "symbol": "^DJI",
+              "price": 48977.92,
+              "change": -521.28,
+              "change_percent": -1.05,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "Europe Markets",
+          "items": [
+            {
+              "name": "FTSE 100",
+              "symbol": "^UKX",
+              "price": 10910.55,
+              "change": 63.85,
+              "change_percent": 0.59,
+              "currency": "GBP",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "DAX",
+              "symbol": "^DAX",
+              "price": 25284.26,
+              "change": -4.76,
+              "change_percent": -0.02,
+              "currency": "EUR",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "CAC 40",
+              "symbol": "^CAC",
+              "price": 8580.75,
+              "change": -40.18,
+              "change_percent": -0.47,
+              "currency": "EUR",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "Asia Markets",
+          "items": [
+            {
+              "name": "Nikkei 225",
+              "symbol": "^NKX",
+              "price": 57985.68,
+              "change": -864.59,
+              "change_percent": -1.47,
+              "currency": "JPY",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Hang Seng",
+              "symbol": "^HSI",
+              "price": 25994.53,
+              "change": -636.01,
+              "change_percent": -2.39,
+              "currency": "HKD",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "China Markets",
+          "items": [
+            {
+              "name": "SSE Composite 上证指数",
+              "symbol": "SH000001",
+              "price": 4143.86,
+              "change": -19.02,
+              "change_percent": -0.46,
+              "currency": "CNY",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "SZSE Component 深证成指",
+              "symbol": "SZ399001",
+              "price": 14346.43,
+              "change": -148.66,
+              "change_percent": -1.03,
+              "currency": "CNY",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ChiNext 创业板指",
+              "symbol": "SZ399006",
+              "price": 3272.92,
+              "change": -37.38,
+              "change_percent": -1.13,
+              "currency": "CNY",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "CSI 300 沪深300",
+              "symbol": "SH000300",
+              "price": 4681.87,
+              "change": -28.78,
+              "change_percent": -0.61,
+              "currency": "CNY",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "Gold & Silver",
+          "items": [
+            {
+              "name": "Gold (oz)",
+              "symbol": "XAUUSD",
+              "price": 5326.6,
+              "change": 62.77,
+              "change_percent": 1.19,
+              "currency": "USD",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Silver (oz)",
+              "symbol": "XAGUSD",
+              "price": 92.54,
+              "change": -1.28,
+              "change_percent": -1.36,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "Crypto / 数字货币",
+          "items": [
+            {
+              "name": "BTC",
+              "symbol": "BTC",
+              "price": 66140.0,
+              "change": -1677.92,
+              "change_percent": -2.54,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ETH",
+              "symbol": "ETH",
+              "price": 1949.63,
+              "change": -85.25,
+              "change_percent": -4.37,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "SOL",
+              "symbol": "SOL",
+              "price": 84.06,
+              "change": -3.66,
+              "change_percent": -4.35,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "BNB",
+              "symbol": "BNB",
+              "price": 619.82,
+              "change": -9.78,
+              "change_percent": -1.58,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "XRP",
+              "symbol": "XRP",
+              "price": 1.36,
+              "change": -0.06,
+              "change_percent": -4.18,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOGE",
+              "symbol": "DOGE",
+              "price": 0.09,
+              "change": -0.0,
+              "change_percent": -4.31,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ADA",
+              "symbol": "ADA",
+              "price": 0.28,
+              "change": -0.01,
+              "change_percent": -5.15,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "AVAX",
+              "symbol": "AVAX",
+              "price": 9.07,
+              "change": -0.3,
+              "change_percent": -3.29,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOT",
+              "symbol": "DOT",
+              "price": 1.57,
+              "change": -0.07,
+              "change_percent": -4.71,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            }
+          ]
+        }
+      ],
+      "sector_rankings": [
+        {
+          "title": "US Sector ETFs",
+          "items": [
+            {
+              "name": "Healthcare (XLV)",
+              "change_percent": 1.77,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Energy (XLE)",
+              "change_percent": 1.58,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Consumer Staples (XLP)",
+              "change_percent": 1.29,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Utilities (XLU)",
+              "change_percent": 1.17,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Communication (XLC)",
+              "change_percent": 1.14,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Materials (XLB)",
+              "change_percent": 0.77,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Real Estate (XLRE)",
+              "change_percent": 0.48,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Industrial (XLI)",
+              "change_percent": 0.25,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "Consumer Disc. (XLY)",
+              "change_percent": -0.16,
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Technology (XLK)",
+              "change_percent": -1.6,
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "Financial (XLF)",
+              "change_percent": -2.04,
+              "change_color": "#dc2626"
+            }
+          ]
+        }
+      ],
+      "weekly_sector_rankings": [
+        {
+          "title": "US Sector ETFs (Weekly)",
+          "items": [
+            {
+              "name": "Utilities (XLU)",
+              "change_percent": 1.17,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 3.02,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Consumer Staples (XLP)",
+              "change_percent": 1.29,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 2.41,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Healthcare (XLV)",
+              "change_percent": 1.77,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 2.16,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Energy (XLE)",
+              "change_percent": 1.58,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 1.9,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Communication (XLC)",
+              "change_percent": 1.14,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 1.07,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Materials (XLB)",
+              "change_percent": 0.77,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 0.85,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Real Estate (XLRE)",
+              "change_percent": 0.48,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 0.64,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "Industrial (XLI)",
+              "change_percent": 0.25,
+              "change_color": "#16a34a",
+              "weekly_change_percent": -0.05,
+              "weekly_change_color": "#dc2626"
+            },
+            {
+              "name": "Consumer Disc. (XLY)",
+              "change_percent": -0.16,
+              "change_color": "#dc2626",
+              "weekly_change_percent": -0.5,
+              "weekly_change_color": "#dc2626"
+            },
+            {
+              "name": "Technology (XLK)",
+              "change_percent": -1.6,
+              "change_color": "#dc2626",
+              "weekly_change_percent": -1.5,
+              "weekly_change_color": "#dc2626"
+            },
+            {
+              "name": "Financial (XLF)",
+              "change_percent": -2.04,
+              "change_color": "#dc2626",
+              "weekly_change_percent": -2.02,
+              "weekly_change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "A-Share Industry 行业板块 (Weekly)",
+          "items": [
+            {
+              "name": "油气及炼化工程",
+              "change_percent": 10.68,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 14.63,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "军工电子Ⅲ",
+              "change_percent": 3.15,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 6.78,
+              "weekly_change_color": "#16a34a"
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "title": "Oil Prices Jump After Iran Attack",
+          "title_en": "Oil Prices Jump After Iran Attack",
+          "title_zh": "伊朗袭击后油价飙升",
+          "link": "https://www.nytimes.com/2026/03/01/business/energy-environment/iran-war-oil-prices.html",
+          "published": "2026-03-02T02:03:40+00:00",
+          "summary_en": "How long prices remain high will depend on what the United States, Israel and Iran do next.",
+          "summary_zh": "价格保持高位多久将取决于美国、以色列和伊朗接下来的行动。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Starmer will let US use UK bases for attacks on Iranian missile sites",
+          "title_en": "Starmer will let US use UK bases for attacks on Iranian missile sites",
+          "title_zh": "Starmer将允许美国使用英国基地攻击伊朗导弹基地",
+          "link": "https://www.ft.com/content/b988499b-1a89-4e56-b0cf-19d5a8ac7111",
+          "published": "2026-03-01T23:40:38+00:00",
+          "summary_en": "British premier gives green light to Washington to utilise facilities including Diego Garcia",
+          "summary_zh": "英国首相为华盛顿利用包括迪戈加西亚在内的设施开绿灯",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Investors Brace for Stock Market’s Reaction to U.S.-Israel Attack on Iran",
+          "title_en": "Investors Brace for Stock Market’s Reaction to U.S.-Israel Attack on Iran",
+          "title_zh": "投资者为股市对美国-以色列袭击伊朗的反应做好准备",
+          "link": "https://www.nytimes.com/2026/03/01/business/stock-market-iran-war-fallout.html",
+          "published": "2026-03-01T23:33:02+00:00",
+          "summary_en": "Wall Street has largely shrugged off geopolitical upheaval in recent years. But the United States’ war against Iran comes at a more precarious time for the stock market.",
+          "summary_zh": "近年来，华尔街在很大程度上摆脱了地缘政治动荡。但美国对伊朗的战争正值股市更加不稳定的时期。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Oil surges in wake of US-Israeli attacks on Iran",
+          "title_en": "Oil surges in wake of US-Israeli attacks on Iran",
+          "title_zh": "美国-以色列袭击伊朗后石油激增",
+          "link": "https://www.ft.com/content/91cae073-71db-46ea-a950-62b17faf1882",
+          "published": "2026-03-01T23:05:12+00:00",
+          "summary_en": "US stock index futures slip while gold rises as conflict escalates",
+          "summary_zh": "随着冲突升级，美国股指期货下跌，而黄金上涨",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "China’s National People’s Congress set for high-tech and low growth",
+          "title_en": "China’s National People’s Congress set for high-tech and low growth",
+          "title_zh": "中国全国人民代表大会确立高科技和低增长",
+          "link": "https://www.ft.com/content/57061fe1-9236-437a-b2c4-28b0ab92f726",
+          "published": "2026-03-01T18:15:02+00:00",
+          "summary_en": "Plus, British chancellor Rachel Reeves likely to play it safe in her Spring Statement",
+          "summary_zh": "此外，英国首相雷切尔·里夫斯（ Rachel Reeves ）可能会在春季声明中谨慎行事",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Inside Tehran: an eerie quiet is punctuated by explosions and people fleeing",
+          "title_en": "Inside Tehran: an eerie quiet is punctuated by explosions and people fleeing",
+          "title_zh": "德黑兰内部：令人毛骨悚然的宁静中充斥着爆炸和逃离的人们",
+          "link": "https://www.ft.com/content/c093bdf4-10e0-4e67-9cce-2409b9f9ff15",
+          "published": "2026-03-01T18:10:02+00:00",
+          "summary_en": "A dispatch from the Iranian capital, where the prevailing mood is one of fear and shock",
+          "summary_zh": "来自伊朗首都的调度，那里的普遍情绪是恐惧和震惊",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Air travel heavily disrupted following Iranian strikes",
+          "title_en": "Air travel heavily disrupted following Iranian strikes",
+          "title_zh": "伊朗罢工后空中旅行严重中断",
+          "link": "https://www.ft.com/content/5fcfaf76-54e6-41f1-860b-0ca6c6380395",
+          "published": "2026-03-01T17:02:42+00:00",
+          "summary_en": "Tens of thousands of travellers left stranded while businesses ask staff to work from home",
+          "summary_zh": "成千上万的旅行者因企业要求员工在家工作而滞留",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Military briefing: Iran’s new retaliation strategy",
+          "title_en": "Military briefing: Iran’s new retaliation strategy",
+          "title_zh": "军事简报：伊朗新的报复策略",
+          "link": "https://www.ft.com/content/f2eae858-a5a4-4c49-9526-e1757a2d55e2",
+          "published": "2026-03-01T16:41:46+00:00",
+          "summary_en": "Islamic republic launches constant barrages at Israel while targeting civilian sites around the Gulf",
+          "summary_zh": "伊斯兰共和国不断对以色列发动炮击，同时瞄准海湾周围的民用地点",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "After Khamenei, who rules Iran?",
+          "title_en": "After Khamenei, who rules Iran?",
+          "title_zh": "在哈梅内伊之后，谁统治着伊朗？",
+          "link": "https://www.ft.com/content/6fe57836-7392-471f-875d-293c7f2db7d4",
+          "published": "2026-03-01T16:30:38+00:00",
+          "summary_en": "Under fire from US and Israeli jets, the Islamic republic’s leaders turn to succession",
+          "summary_zh": "在美国和以色列喷气式飞机的攻击下，伊斯兰共和国的领导人转向继承",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Trump’s epic gamble in the Middle East",
+          "title_en": "Trump’s epic gamble in the Middle East",
+          "title_zh": "特朗普在中东的史诗赌博",
+          "link": "https://www.ft.com/content/e71429a4-c69e-4487-94ff-af5394c831c0",
+          "published": "2026-03-01T15:34:39+00:00",
+          "summary_en": "The US president’s goal of regime change augurs immense regional chaos",
+          "summary_zh": "美国总统的政权更迭目标预示着巨大的地区混乱",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "What will war in Iran do to the global economy?",
+          "title_en": "What will war in Iran do to the global economy?",
+          "title_zh": "伊朗战争将对全球经济产生什么影响？",
+          "link": "https://www.ft.com/content/31bfc01b-42a8-45f1-85d3-8f973595a456",
+          "published": "2026-03-01T12:50:11+00:00",
+          "summary_en": "Conflict has exposed how much growth depends on energy supplies through the Strait of Hormuz",
+          "summary_zh": "冲突暴露了霍尔木兹海峡对能源供应的依赖程度",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Trump has no realistic plan for Iran’s future",
+          "title_en": "Trump has no realistic plan for Iran’s future",
+          "title_zh": "特朗普对伊朗的未来没有现实的计划",
+          "link": "https://www.ft.com/content/437130e7-ed4e-4919-8bf3-ac38c2eed6af",
+          "published": "2026-03-01T12:45:42+00:00",
+          "summary_en": "The US president has not understood the lessons of past wars for regime change in Iraq and Afghanistan",
+          "summary_zh": "美国总统还没有理解过去战争对伊拉克和阿富汗政权更迭的教训",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Are ‘Bossware’ Tools Tracking You?",
+          "title_en": "Are ‘Bossware’ Tools Tracking You?",
+          "title_zh": "“Bossware”工具是否在跟踪您？",
+          "link": "https://www.nytimes.com/2026/03/01/business/bossware-work-surveillance-tools.html",
+          "published": "2026-03-01T10:01:22+00:00",
+          "summary_en": "In recent years, the technologies used to surveil workers have become more sophisticated and widespread.",
+          "summary_zh": "近年来，用于监控工人的技术变得更加复杂和广泛。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Kickstarter’s C.E.O. on Running a Fully Remote Company With a Four-Day Workweek",
+          "title_en": "Kickstarter’s C.E.O. on Running a Fully Remote Company With a Four-Day Workweek",
+          "title_zh": "Kickstarter首席执行官谈每周工作四天的全远程公司运营",
+          "link": "https://www.nytimes.com/2026/03/01/business/kickstarter-everette-taylor-interview-remote-four-day-workweek.html",
+          "published": "2026-03-01T10:01:13+00:00",
+          "summary_en": "Everette Taylor took over Kickstarter at a low moment for the crowdfunding pioneer, which made its name with small projects but now attracts major multinationals and celebrities.",
+          "summary_zh": "埃弗雷特·泰勒（ Everette Taylor ）在众筹先驱的低谷时期接管了Kickstarter ，该公司以小型项目而闻名，但现在吸引了大型跨国公司和名人。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "40 Years and 10,000 Broadcasts In, They’re Still Live on Air",
+          "title_en": "40 Years and 10,000 Broadcasts In, They’re Still Live on Air",
+          "title_zh": "40年， 10000次直播，仍在直播中",
+          "link": "https://www.nytimes.com/2026/03/01/business/media/anchors-rick-ardon-susannah-carr-perth-australia.html",
+          "published": "2026-03-01T05:01:20+00:00",
+          "summary_en": "Rick Ardon and Susannah Carr have been delivering the news together in Western Australia since 1985 — a Guinness World Record.",
+          "summary_zh": "自1985年以来， Rick Ardon和Susannah Carr一直在西澳大利亚州共同发布新闻--吉尼斯世界纪录。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Oil Shipments in Persian Gulf Already Disrupted by Iran Attack",
+          "title_en": "Oil Shipments in Persian Gulf Already Disrupted by Iran Attack",
+          "title_zh": "波斯湾的石油运输已经因伊朗袭击而中断",
+          "link": "https://www.nytimes.com/2026/02/28/business/energy-environment/oil-gas-iran-attack.html",
+          "published": "2026-02-28T23:21:34+00:00",
+          "summary_en": "Tankers have begun to steer clear of the region and the Strait of Hormuz, threatening to push up energy prices.",
+          "summary_zh": "油轮已经开始避开该地区和霍尔木兹海峡，威胁要推高能源价格。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Warner Bros. Employees Glum About Prospect of Paramount Ownership",
+          "title_en": "Warner Bros. Employees Glum About Prospect of Paramount Ownership",
+          "title_zh": "华纳兄弟员工对最高所有权的前景感到沮丧",
+          "link": "https://www.nytimes.com/2026/02/28/business/warner-bros-paramount-reaction.html",
+          "published": "2026-02-28T18:58:36+00:00",
+          "summary_en": "Employees at the company had started to warm to the idea of Netflix as its corporate owner. Now they face the prospect of major cuts under Paramount.",
+          "summary_zh": "该公司的员工已经开始热衷于Netflix作为公司所有者的想法。现在，他们面临着派拉蒙大幅削减的前景。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Overlooked No More: Bobby Garnett, ‘Godfather’ of Vintage Dealers",
+          "title_en": "Overlooked No More: Bobby Garnett, ‘Godfather’ of Vintage Dealers",
+          "title_zh": "不再被忽视： Bobby Garnett ，复古经销商的“教父”",
+          "link": "https://www.nytimes.com/2026/02/27/obituaries/bobby-garnett-overlooked.html",
+          "published": "2026-02-28T16:42:38+00:00",
+          "summary_en": "His store, Bobby From Boston, transformed the way vintage men’s wear is sold, serving as a model for a generation of retailers.",
+          "summary_zh": "他的商店Bobby From Boston改变了复古男装的销售方式，成为一代零售商的典范。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Lloyd Blankfein on Trump, Epstein and Life After Goldman Sachs",
+          "title_en": "Lloyd Blankfein on Trump, Epstein and Life After Goldman Sachs",
+          "title_zh": "劳埃德·布兰克费恩谈特朗普、爱泼斯坦和高盛之后的生活",
+          "link": "https://www.nytimes.com/2026/02/28/business/dealbook/lloyd-blankfein-book.html",
+          "published": "2026-02-28T16:26:42+00:00",
+          "summary_en": "In a wide-ranging interview with Andrew Ross Sorkin, Goldman’s former C.E.O. discussed his life and new memoir.",
+          "summary_zh": "在接受安德鲁·罗斯·索尔金（ Andrew Ross Sorkin ）的广泛采访时，高盛的前首席执行官讨论了他的生活和新回忆录。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Berkshire Hathaway Posts a Drop in Earnings in Buffett’s Last Year",
+          "title_en": "Berkshire Hathaway Posts a Drop in Earnings in Buffett’s Last Year",
+          "title_zh": "伯克希尔哈撒韦公司去年在巴菲特的收入下降",
+          "link": "https://www.nytimes.com/2026/02/28/business/dealbook/berkshire-hathaway-earnings-gregory-abel-warren-buffett.html",
+          "published": "2026-02-28T14:59:19+00:00",
+          "summary_en": "In his first report as C.E.O., Gregory Abel, stuck to a straight commentary rather than Warren Buffett’s folksy tone. The lower earnings were largely driven by declines in the insurance business.",
+          "summary_zh": "在他担任首席执行官的第一份报告中，格雷戈里·阿贝尔（ Gregory Abel ）坚持直截了当的评论，而不是沃伦·巴菲特（ Warren Buffett ）那种俗气的语气。较低的收益主要是由于保险业务的下滑。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Oil prices jump after ships attacked near Strait of Hormuz",
+          "title_en": "Oil prices jump after ships attacked near Strait of Hormuz",
+          "title_zh": "霍尔木兹海峡附近船只遇袭油价飙升",
+          "link": "https://www.bbc.com/news/articles/c75evve6l63o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-03-02T00:36:19+00:00",
+          "summary_en": "Experts have warned that a prolonged conflict could push global energy prices even higher.",
+          "summary_zh": "专家警告称，旷日持久的冲突可能会推高全球能源价格。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Consultation on social media ban for under-16s to begin",
+          "title_en": "Consultation on social media ban for under-16s to begin",
+          "title_zh": "开始就16岁以下儿童的社交媒体禁令进行磋商",
+          "link": "https://www.bbc.com/news/articles/cvg3vjkx9d7o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-03-01T22:35:18+00:00",
+          "summary_en": "Discussions over what measures to implement to protect children's wellbeing will last for three months.",
+          "summary_zh": "关于采取哪些措施保护儿童福祉的讨论将持续三个月。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Flights cancelled and new travel warnings issued after Iran strikes",
+          "title_en": "Flights cancelled and new travel warnings issued after Iran strikes",
+          "title_zh": "伊朗罢工后取消航班并发出新的旅行警告",
+          "link": "https://www.bbc.com/news/articles/c0rjpr575g9o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-03-01T18:05:14+00:00",
+          "summary_en": "BA and Virgin Atlantic are among major airlines to ground services to the Middle East in light of the attacks.",
+          "summary_zh": "鉴于袭击事件，英国航空公司和维珍大西洋航空是前往中东地面服务的主要航空公司之一。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Britain’s rising tax on ambition",
+          "title_en": "Britain’s rising tax on ambition",
+          "title_zh": "英国对雄心壮志加税",
+          "link": "https://www.ft.com/content/19c6803e-962d-47fa-8c8d-00fbf1eb9dcb",
+          "published": "2026-03-01T12:00:10+00:00",
+          "summary_en": "The country’s tax system and rising costs sap the returns to hard work",
+          "summary_zh": "该国的税收制度和不断上升的成本削弱了辛勤工作的回报",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Will US payrolls strengthen the case for rate cuts?",
+          "title_en": "Will US payrolls strengthen the case for rate cuts?",
+          "title_zh": "美国的就业岗位是否会加强降息的理由？",
+          "link": "https://www.ft.com/content/2487f357-daf2-44ed-8e2a-42287c221598",
+          "published": "2026-03-01T12:00:10+00:00",
+          "summary_en": "Market Questions is the FT’s guide to the week ahead",
+          "summary_zh": "“市场问题”是英国《金融时报》对未来一周的指南",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "A firm hiring blind staff went bust - but its mission lives on",
+          "title_en": "A firm hiring blind staff went bust - but its mission lives on",
+          "title_zh": "一家雇用盲人员工的公司破产了-但其使命仍然存在",
+          "link": "https://www.bbc.com/news/articles/cpd8jpn0np1o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-03-01T09:56:50+00:00",
+          "summary_en": "The business had been running for over 150 years before it collapsed, so one former employee took matters into her own hands.",
+          "summary_zh": "这家企业在倒闭前已经运营了150多年，所以一名前雇员自己处理事情。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Could a huge data centre revitalise Ayrshire - or ruin it?",
+          "title_en": "Could a huge data centre revitalise Ayrshire - or ruin it?",
+          "title_zh": "一个庞大的数据中心能否振兴艾尔郡，还是毁了它？",
+          "link": "https://www.bbc.com/news/articles/c2d1ny161yyo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-03-01T09:25:25+00:00",
+          "summary_en": "Controversial proposals to turn land near HMP Kilmarnock into a technology hub are being advanced by energy company ILI Group.",
+          "summary_zh": "能源公司ILI集团正在提出有争议的提案，将HMP Kilmarnock附近的土地变成技术中心。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Rescue centre sees rise in abandoned cat families",
+          "title_en": "Rescue centre sees rise in abandoned cat families",
+          "title_zh": "救援中心看到被遗弃的猫科动物家庭数量增加",
+          "link": "https://www.bbc.com/news/articles/cwygprp50yqo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-03-01T08:52:59+00:00",
+          "summary_en": "Yorkshire Cat Rescue in Haworth says it paid £282,000 in vet bills in 2025 and rescued 925 animals.",
+          "summary_zh": "Haworth的Yorkshire Cat Rescue表示，它在2025年支付了282,000 £的兽医账单，并救出了925只动物。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "X to label paid promotions but prohibits crypto promos in EU, UK",
+          "title_en": "X to label paid promotions but prohibits crypto promos in EU, UK",
+          "title_zh": "X为付费促销贴上标签，但在英国欧盟禁止加密促销",
+          "link": "https://cointelegraph.com/news/x-lifts-crypto-promo-ban-for-paid-partnerships?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-02T00:37:08+00:00",
+          "summary_en": "X head of product, Nikita Bier, says the paid promotions tag aims to encourage people to build their businesses on X while being transparent with their fan base.",
+          "summary_zh": "X产品负责人Nikita Bier表示，付费促销标签旨在鼓励人们在X上建立业务，同时对他们的粉丝群保持透明。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Kalshi founder provides update on Iran's Khamenei market carveout",
+          "title_en": "Kalshi founder provides update on Iran's Khamenei market carveout",
+          "title_zh": "Kalshi创始人提供有关伊朗哈梅内伊市场划分的最新信息",
+          "link": "https://cointelegraph.com/news/kalshi-founder-khamenei-market-carveout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T21:17:03+00:00",
+          "summary_en": "The prediction platform said it would reimburse users and resolve markets to the last-traded price before the death of the Iranian leader was confirmed.",
+          "summary_zh": "该预测平台表示，在确认伊朗领导人死亡之前，它将向用户提供补偿，并将市场解决到最后交易的价格。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Bitcoin undervalued relative to gold signals potential rally: Analyst",
+          "title_en": "Bitcoin undervalued relative to gold signals potential rally: Analyst",
+          "title_zh": "比特币相对于黄金被低估标志着潜在的反弹：分析师",
+          "link": "https://cointelegraph.com/news/bitcoin-undervalued-gold-potential-rally?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T18:54:23+00:00",
+          "summary_en": "Gold has become \"overextended\" after climbing to more than $5,247 per ounce, according to Jan3 CEO and Bitcoin advocate Samson Mow.",
+          "summary_zh": "根据Jan3首席执行官兼比特币倡导者Samson Mow的说法，黄金在攀升至每盎司超过5,247 $后变得“过度扩张”。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Strategy boosts monthly STRC preferred dividend to 11.5% for March 2026",
+          "title_en": "Strategy boosts monthly STRC preferred dividend to 11.5% for March 2026",
+          "title_zh": "策略将2026年3月的每月STRC首选股息提高到11.5%",
+          "link": "https://cointelegraph.com/news/strategy-raises-strc-dividend-11-50?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T17:06:53+00:00",
+          "summary_en": "The 25-basis-point the latest monthly adjustment of STRC's dividend and comes amid a sharp downturn in the crypto markets and macroeconomic uncertainty.",
+          "summary_zh": "这25个基点是STRC股息的最新月度调整，并且是在加密市场急剧下滑和宏观经济不确定性的情况下进行的。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Bitcoin traders eye Iran reactions as oil sparks US 5% inflation forecast",
+          "title_en": "Bitcoin traders eye Iran reactions as oil sparks US 5% inflation forecast",
+          "title_zh": "比特币交易员关注伊朗的反应，因为石油引发了美国5 ％的通胀预测",
+          "link": "https://cointelegraph.com/news/bitcoin-traders-eye-iran-reactions-oil-sparks-us-5-inflation-forecast?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T15:42:03+00:00",
+          "summary_en": "Bitcoin avoided a fresh breakdown around major geopolitical events in the Middle East, with BTC price targets now including $74,000 next.",
+          "summary_zh": "比特币避免了围绕中东重大地缘政治事件的新一轮崩溃，比特币的价格目标现在包括下一个74,000 $。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Here’s what happened in crypto today",
+          "title_en": "Here’s what happened in crypto today",
+          "title_zh": "以下是今天加密货币发生的事情",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T12:59:09+00:00",
+          "summary_en": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, NFTs, Web3 and crypto regulation.",
+          "summary_zh": "需要知道今天加密货币发生了什么？以下是影响比特币价格、区块链、DeFi、NFT、Web3和加密监管的日常趋势和事件的最新消息。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Tokenized gold drives weekend price signals while CME futures are closed",
+          "title_en": "Tokenized gold drives weekend price signals while CME futures are closed",
+          "title_zh": "代币化黄金推动周末价格信号，而芝加哥商品交易所期货收盘",
+          "link": "https://cointelegraph.com/news/tokenized-gold-weekend-price-discovery-cme-closed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T11:48:52+00:00",
+          "summary_en": "Tokenized gold markets like PAXG and XAUt now handle nearly all gold price discovery when CME futures shut for the weekend.",
+          "summary_zh": "PAXG和XAUt等代币化黄金市场现在在CME期货周末收盘时处理几乎所有的黄金价格发现。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "US military used Anthropic in Iran strike despite ban order by Trump: WSJ",
+          "title_en": "US military used Anthropic in Iran strike despite ban order by Trump: WSJ",
+          "title_zh": "尽管特朗普下达了禁令，但美国军方在伊朗使用了Anthropic罢工：华尔街",
+          "link": "https://cointelegraph.com/news/us-military-used-anthropic-ai-iran-strike-trump-ban?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T10:03:38+00:00",
+          "summary_en": "The US military reportedly relied on Anthropic’s Claude AI for intelligence analysis and targeting during an Iran strike hours after Trump ordered a ban on the company’s systems.",
+          "summary_zh": "据报道，在特朗普下令禁止该公司系统的几个小时后，美国军方在伊朗罢工期间依靠Anthropic的Claude AI进行情报分析和定位。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "6 Polymarket traders net $1M on US-Iran strike, spark insider fears: Report",
+          "title_en": "6 Polymarket traders net $1M on US-Iran strike, spark insider fears: Report",
+          "title_zh": "6名Polymarket交易员因美国-伊朗罢工净赚100万$ ，引发业内人士担忧：报告",
+          "link": "https://cointelegraph.com/news/polymarket-traders-1m-us-iran-strike-insider-trading-concerns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T07:16:30+00:00",
+          "summary_en": "The newly created Polymarket wallets placed bets on the timing of a US strike against Iran, buying shares hours before the first explosions were reported in Tehran.",
+          "summary_zh": "新创建的Polymarket钱包押注美国对伊朗发动罢工的时机，在德黑兰爆发第一起爆炸事件前几个小时买入股票。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Bitcoin recovers to $68K following death of Iranian Supreme Leader",
+          "title_en": "Bitcoin recovers to $68K following death of Iranian Supreme Leader",
+          "title_zh": "伊朗最高领袖去世后，比特币恢复到6.8万美元（ $ 68K ）",
+          "link": "https://cointelegraph.com/news/bitcoin-recovers-to-68k-following-reported-death-of-iranian-supreme-leader?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T04:58:31+00:00",
+          "summary_en": "Crypto markets stabilized after geopolitical shockwaves from US-Israeli air strikes on Iran rattled risk assets.",
+          "summary_zh": "在美以空袭伊朗引发的地缘政治冲击波扰乱了风险资产后，加密货币市场趋于稳定。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Ethereum smart accounts are finally coming ‘within a year’ — Vitalik Buterin",
+          "title_en": "Ethereum smart accounts are finally coming ‘within a year’ — Vitalik Buterin",
+          "title_zh": "以太坊智能账户终于在“一年内”问世— Vitalik Buterin",
+          "link": "https://cointelegraph.com/news/ethereum-smart-accounts-are-finally-coming-within-a-year-says-vitalik?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-03-01T02:54:03+00:00",
+          "summary_en": "Removing intermediaries with account abstraction is a “core principle of non-ugly cypherpunk Ethereum,” said Buterin.",
+          "summary_zh": "Buterin说，通过账户抽象删除中介机构是“非丑陋密码朋克以太坊的核心原则”。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Anthropic CEO responds to Pentagon order prohibiting military use",
+          "title_en": "Anthropic CEO responds to Pentagon order prohibiting military use",
+          "title_zh": "Anthropic首席执行官回应五角大楼禁止军事用途的命令",
+          "link": "https://cointelegraph.com/news/anthropic-ceo-responds-pentagon-order-restrict-military?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-02-28T21:48:33+00:00",
+          "summary_en": "The company was the first to deploy its AI models on classified US military cloud networks, according to Anthropic CEO Dario Amodei.",
+          "summary_zh": "根据Anthropic首席执行官Dario Amodei的说法，该公司是第一家在美国军事云网络上部署人工智能模型的公司。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        }
+      ],
+      "social_media": []
     }
   ]
 }
