@@ -1,1707 +1,6 @@
 {
   "editions": [
     {
-      "updated_at": "2026-02-11T17:37:37.950159+00:00",
-      "edition_label": "Web",
-      "summary_cn": null,
-      "market_hotspots_cn": null,
-      "social_summary_cn": null,
-      "sector_recommendation": null,
-      "market_snapshot": [
-        {
-          "title": "US Major Markets",
-          "items": [
-            {
-              "name": "S&P 500",
-              "symbol": "SPY.US",
-              "price": 692.87,
-              "change": 0.75,
-              "change_percent": 0.11,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Nasdaq 100",
-              "symbol": "QQQ.US",
-              "price": 611.89,
-              "change": 0.42,
-              "change_percent": 0.07,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Dow Jones",
-              "symbol": "DIA.US",
-              "price": 501.82,
-              "change": -0.08,
-              "change_percent": -0.02,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            }
-          ]
-        },
-        {
-          "title": "Europe Major Markets",
-          "items": [
-            {
-              "name": "Europe",
-              "symbol": "VGK.US",
-              "price": 89.42,
-              "change": 0.2,
-              "change_percent": 0.22,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Euro Stoxx 50",
-              "symbol": "FEZ.US",
-              "price": 68.28,
-              "change": 0.1,
-              "change_percent": 0.15,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "UK FTSE",
-              "symbol": "EWU.US",
-              "price": 47.41,
-              "change": 0.67,
-              "change_percent": 1.44,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            }
-          ]
-        },
-        {
-          "title": "China Major Markets",
-          "items": [
-            {
-              "name": "SSE Composite 上证指数",
-              "symbol": "SH000001",
-              "price": 4131.99,
-              "change": 3.62,
-              "change_percent": 0.09,
-              "currency": "CNY",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "SZSE Component 深证成指",
-              "symbol": "SZ399001",
-              "price": 14160.93,
-              "change": -49.7,
-              "change_percent": -0.35,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ChiNext 创业板指",
-              "symbol": "SZ399006",
-              "price": 3284.74,
-              "change": -35.8,
-              "change_percent": -1.08,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "CSI 300 沪深300",
-              "symbol": "SH000300",
-              "price": 4713.82,
-              "change": -10.48,
-              "change_percent": -0.22,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            }
-          ]
-        },
-        {
-          "title": "Gold & Silver",
-          "items": [
-            {
-              "name": "Gold",
-              "symbol": "GLD.US",
-              "price": 467.28,
-              "change": 4.88,
-              "change_percent": 1.06,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Silver",
-              "symbol": "SLV.US",
-              "price": 76.18,
-              "change": 2.77,
-              "change_percent": 3.77,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            }
-          ]
-        },
-        {
-          "title": "Crypto / 数字货币",
-          "items": [
-            {
-              "name": "BTC",
-              "symbol": "BTC",
-              "price": 66720.0,
-              "change": -2921.5,
-              "change_percent": -4.38,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ETH",
-              "symbol": "ETH",
-              "price": 1934.32,
-              "change": -91.46,
-              "change_percent": -4.73,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "SOL",
-              "symbol": "SOL",
-              "price": 79.67,
-              "change": -4.71,
-              "change_percent": -5.91,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "BNB",
-              "symbol": "BNB",
-              "price": 602.1,
-              "change": -19.36,
-              "change_percent": -3.22,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "XRP",
-              "symbol": "XRP",
-              "price": 1.37,
-              "change": -0.05,
-              "change_percent": -3.36,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "DOGE",
-              "symbol": "DOGE",
-              "price": 0.09,
-              "change": -0.0,
-              "change_percent": -3.65,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ADA",
-              "symbol": "ADA",
-              "price": 0.26,
-              "change": -0.01,
-              "change_percent": -3.09,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "AVAX",
-              "symbol": "AVAX",
-              "price": 8.65,
-              "change": -0.15,
-              "change_percent": -1.78,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "DOT",
-              "symbol": "DOT",
-              "price": 1.26,
-              "change": -0.02,
-              "change_percent": -1.89,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            }
-          ]
-        }
-      ],
-      "sector_rankings": [
-        {
-          "title": "US Sector ETFs",
-          "items": [
-            {
-              "name": "Energy (XLE)",
-              "change_percent": 2.62,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Consumer Staples (XLP)",
-              "change_percent": 1.53,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Materials (XLB)",
-              "change_percent": 1.07,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Industrial (XLI)",
-              "change_percent": 0.8,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Utilities (XLU)",
-              "change_percent": 0.59,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Healthcare (XLV)",
-              "change_percent": 0.39,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Real Estate (XLRE)",
-              "change_percent": 0.27,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Technology (XLK)",
-              "change_percent": 0.21,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Consumer Disc. (XLY)",
-              "change_percent": -0.81,
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "Communication (XLC)",
-              "change_percent": -0.81,
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "Financial (XLF)",
-              "change_percent": -1.11,
-              "change_color": "#dc2626"
-            }
-          ]
-        }
-      ],
-      "items": [
-        {
-          "title": "What to know about the better-than-expected report.",
-          "title_en": "What to know about the better-than-expected report.",
-          "title_zh": "What to know about the better-than-expected report.",
-          "link": "https://www.nytimes.com/live/2026/02/11/business/jobs-report-economy/what-to-know-about-the-better-than-expected-report",
-          "published": "2026-02-11T17:06:24+00:00",
-          "summary_en": "What to know about the better-than-expected report.",
-          "summary_zh": "What to know about the better-than-expected report.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "After a Year of Sluggish Hiring, 2026 Is Off to a Stronger Start",
-          "title_en": "After a Year of Sluggish Hiring, 2026 Is Off to a Stronger Start",
-          "title_zh": "After a Year of Sluggish Hiring, 2026 Is Off to a Stronger Start",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/after-a-year-of-sluggish-hiring-2026-could-be-off-to-a-stronger-start.html",
-          "published": "2026-02-11T17:04:56+00:00",
-          "summary_en": "The economy added substantially more jobs than expected last month, as more people entered the labor force and wages grew.",
-          "summary_zh": "The economy added substantially more jobs than expected last month, as more people entered the labor force and wages grew.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Kalshi and Polymarket Create New Competition for Professional Economists",
-          "title_en": "Kalshi and Polymarket Create New Competition for Professional Economists",
-          "title_zh": "Kalshi and Polymarket Create New Competition for Professional Economists",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/forecasts-prediction-markets-economy.html",
-          "published": "2026-02-11T16:49:37+00:00",
-          "summary_en": "Economists have noticed that betting markets like Kalshi and Polymarket are pretty good at predicting not just political events but economic data, too.",
-          "summary_zh": "Economists have noticed that betting markets like Kalshi and Polymarket are pretty good at predicting not just political events but economic data, too.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Job Growth Was Overstated, New Data Shows",
-          "title_en": "Job Growth Was Overstated, New Data Shows",
-          "title_zh": "Job Growth Was Overstated, New Data Shows",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/january-jobs-report-revisions.html",
-          "published": "2026-02-11T16:33:15+00:00",
-          "summary_en": "Annual revisions show that employers added far fewer jobs in 2024 and 2025 than previously estimated.",
-          "summary_zh": "Annual revisions show that employers added far fewer jobs in 2024 and 2025 than previously estimated.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "US takes military action against drone incursion in Texas",
-          "title_en": "US takes military action against drone incursion in Texas",
-          "title_zh": "US takes military action against drone incursion in Texas",
-          "link": "https://www.ft.com/content/21efd8b4-0c93-4446-867b-2d0455e9586b",
-          "published": "2026-02-11T16:30:11+00:00",
-          "summary_en": "Officials say airspace around southern town of El Paso was temporarily closed due to aerial activity from Mexican cartels",
-          "summary_zh": "Officials say airspace around southern town of El Paso was temporarily closed due to aerial activity from Mexican cartels",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Easing Unemployment Supports Fed Extending Pause on Rate Cuts",
-          "title_en": "Easing Unemployment Supports Fed Extending Pause on Rate Cuts",
-          "title_zh": "Easing Unemployment Supports Fed Extending Pause on Rate Cuts",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/fed-jobs-rates.html",
-          "published": "2026-02-11T15:16:07+00:00",
-          "summary_en": "January’s jobs data, released on Wednesday, bolstered expectations that the Federal Reserve will hold interest rates steady for longer than previously expected.",
-          "summary_zh": "January’s jobs data, released on Wednesday, bolstered expectations that the Federal Reserve will hold interest rates steady for longer than previously expected.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Susquehanna-backed crypto lender BlockFills halts client withdrawals",
-          "title_en": "Susquehanna-backed crypto lender BlockFills halts client withdrawals",
-          "title_zh": "Susquehanna-backed crypto lender BlockFills halts client withdrawals",
-          "link": "https://www.ft.com/content/73e506f4-6b58-4c38-9198-110e845f48b2",
-          "published": "2026-02-11T15:02:03+00:00",
-          "summary_en": "Move comes during period of sustained volatility in digital asset markets",
-          "summary_zh": "Move comes during period of sustained volatility in digital asset markets",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Federal Debt to Hit Record Levels, Budget Office Warns",
-          "title_en": "Federal Debt to Hit Record Levels, Budget Office Warns",
-          "title_zh": "Federal Debt to Hit Record Levels, Budget Office Warns",
-          "link": "https://www.nytimes.com/2026/02/11/business/federal-debt-record-levels-budget-office.html",
-          "published": "2026-02-11T15:00:07+00:00",
-          "summary_en": "President Trump has reshaped the country’s economic policies, but the outlook for the budget remains dire.",
-          "summary_zh": "President Trump has reshaped the country’s economic policies, but the outlook for the budget remains dire.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "US economy far outstrips expectations to add 130,000 jobs in January",
-          "title_en": "US economy far outstrips expectations to add 130,000 jobs in January",
-          "title_zh": "US economy far outstrips expectations to add 130,000 jobs in January",
-          "link": "https://www.ft.com/content/a369333a-41b5-4e55-8e6e-cb04bb0f2e9f",
-          "published": "2026-02-11T14:54:57+00:00",
-          "summary_en": "Figure points to improvement in labour market following string of bleak data",
-          "summary_zh": "Figure points to improvement in labour market following string of bleak data",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "How the Ultra-Rich Travel",
-          "title_en": "How the Ultra-Rich Travel",
-          "title_zh": "How the Ultra-Rich Travel",
-          "link": "https://www.nytimes.com/2026/02/11/travel/luxury-travel-agency-advisers-wealth.html",
-          "published": "2026-02-11T14:41:30+00:00",
-          "summary_en": "Inside the arms race to satisfy travelers for whom exclusivity is everything and money is no object.",
-          "summary_zh": "Inside the arms race to satisfy travelers for whom exclusivity is everything and money is no object.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump Wants to Revive Shipping. Investors Are Slow to Back Him.",
-          "title_en": "Trump Wants to Revive Shipping. Investors Are Slow to Back Him.",
-          "title_zh": "Trump Wants to Revive Shipping. Investors Are Slow to Back Him.",
-          "link": "https://www.nytimes.com/2026/02/11/business/trump-shipping-investors.html",
-          "published": "2026-02-11T13:48:41+00:00",
-          "summary_en": "A French logistics behemoth promised $20 billion for the United States, but a year into President Trump’s second term, only a fraction of the money has arrived.",
-          "summary_zh": "A French logistics behemoth promised $20 billion for the United States, but a year into President Trump’s second term, only a fraction of the money has arrived.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Switzerland to vote on plan to cap population at 10mn",
-          "title_en": "Switzerland to vote on plan to cap population at 10mn",
-          "title_zh": "Switzerland to vote on plan to cap population at 10mn",
-          "link": "https://www.ft.com/content/675538b9-2a7b-4296-aad9-2a930e61f369",
-          "published": "2026-02-11T13:36:23+00:00",
-          "summary_en": "Country has 9.1mn permanent residents and experts fear the move will limit companies’ access to foreign talent",
-          "summary_zh": "Country has 9.1mn permanent residents and experts fear the move will limit companies’ access to foreign talent",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Wall St. and Washington Brace for a Big Jobs Report",
-          "title_en": "Wall St. and Washington Brace for a Big Jobs Report",
-          "title_zh": "Wall St. and Washington Brace for a Big Jobs Report",
-          "link": "https://www.nytimes.com/2026/02/11/business/dealbook/wall-street-washington-jobs.html",
-          "published": "2026-02-11T12:46:37+00:00",
-          "summary_en": "A hiring slowdown and fears about artificial intelligence have investors on edge, and some in the Trump administration on the defensive.",
-          "summary_zh": "A hiring slowdown and fears about artificial intelligence have investors on edge, and some in the Trump administration on the defensive.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "title_en": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "title_zh": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "link": "https://www.nytimes.com/live/2026/02/11/business/jobs-report-economy/trump-plans-to-nominate-a-data-nerd-to-lead-bureau-of-labor-statistics",
-          "published": "2026-02-11T12:45:02+00:00",
-          "summary_en": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "summary_zh": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "What Executives Are Saying About the ‘K-Shaped’ Economy",
-          "title_en": "What Executives Are Saying About the ‘K-Shaped’ Economy",
-          "title_zh": "What Executives Are Saying About the ‘K-Shaped’ Economy",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/k-shaped-economy.html",
-          "published": "2026-02-11T12:06:47+00:00",
-          "summary_en": "Leaders across industries from airlines to packaged foods have said a growing divide between lower-income and wealthy consumers is changing their businesses.",
-          "summary_zh": "Leaders across industries from airlines to packaged foods have said a growing divide between lower-income and wealthy consumers is changing their businesses.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "How Did Pat McGrath Cosmetics Go From Billion-Dollar Brand to Bankruptcy?",
-          "title_en": "How Did Pat McGrath Cosmetics Go From Billion-Dollar Brand to Bankruptcy?",
-          "title_zh": "How Did Pat McGrath Cosmetics Go From Billion-Dollar Brand to Bankruptcy?",
-          "link": "https://www.nytimes.com/2026/02/11/style/pat-mcgrath-cosmetics-bankruptcy.html",
-          "published": "2026-02-11T10:01:18+00:00",
-          "summary_en": "The makeup artist Pat McGrath was a favorite of Taylor Swift, Kim Kardashian and Madonna. Then she became a billion-dollar brand.",
-          "summary_zh": "The makeup artist Pat McGrath was a favorite of Taylor Swift, Kim Kardashian and Madonna. Then she became a billion-dollar brand.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump Decries a ‘Nation of Renters’ but His New Policy Promotes One",
-          "title_en": "Trump Decries a ‘Nation of Renters’ but His New Policy Promotes One",
-          "title_zh": "Trump Decries a ‘Nation of Renters’ but His New Policy Promotes One",
-          "link": "https://www.nytimes.com/2026/02/11/business/built-to-rent-investors-trump.html",
-          "published": "2026-02-11T10:00:32+00:00",
-          "summary_en": "President Trump’s recently announced executive order that would bar big investors from acquiring single-family homes includes an exemption that allows them to build homes for rent.",
-          "summary_zh": "President Trump’s recently announced executive order that would bar big investors from acquiring single-family homes includes an exemption that allows them to build homes for rent.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Why are fertility rates collapsing? Gender roles",
-          "title_en": "Why are fertility rates collapsing? Gender roles",
-          "title_zh": "Why are fertility rates collapsing? Gender roles",
-          "link": "https://www.ft.com/content/e1a7fd72-9790-498e-a4ef-9380f5da1e9e",
-          "published": "2026-02-11T05:00:32+00:00",
-          "summary_en": "A big part of female graduates’ decision to have children depends on how they expect their husbands to behave",
-          "summary_zh": "A big part of female graduates’ decision to have children depends on how they expect their husbands to behave",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Ping! The WhatsApps that should have been an email",
-          "title_en": "Ping! The WhatsApps that should have been an email",
-          "title_zh": "Ping! The WhatsApps that should have been an email",
-          "link": "https://www.ft.com/content/6d3ec9ed-248c-4cc5-9834-e0a0db533c6e",
-          "published": "2026-02-11T05:00:21+00:00",
-          "summary_en": "If your instant message requires immediate attention, fine. But many don’t — they’re just inconsiderate",
-          "summary_zh": "If your instant message requires immediate attention, fine. But many don’t — they’re just inconsiderate",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Dassault: the defence group blocking the €100bn Franco-German jet project",
-          "title_en": "Dassault: the defence group blocking the €100bn Franco-German jet project",
-          "title_zh": "Dassault: the defence group blocking the €100bn Franco-German jet project",
-          "link": "https://www.ft.com/content/3735b710-92b7-4390-99e6-b13e4cff2dee",
-          "published": "2026-02-11T05:00:12+00:00",
-          "summary_en": "The fate of FCAS hangs on whether French President Emmanuel Macron can get the contractor to bend",
-          "summary_zh": "The fate of FCAS hangs on whether French President Emmanuel Macron can get the contractor to bend",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "F.D.A. Refuses to Review Moderna Flu Vaccine",
-          "title_en": "F.D.A. Refuses to Review Moderna Flu Vaccine",
-          "title_zh": "F.D.A. Refuses to Review Moderna Flu Vaccine",
-          "link": "https://www.nytimes.com/2026/02/10/health/fda-moderna-mrna-flu-vaccine.html",
-          "published": "2026-02-11T02:49:48+00:00",
-          "summary_en": "The vaccine maker’s shots involve the successful Covid vaccines’ RNA technology. Health Secretary Robert F. Kennedy Jr. has broadly rejected it, canceling millions of dollars in research projects.",
-          "summary_zh": "The vaccine maker’s shots involve the successful Covid vaccines’ RNA technology. Health Secretary Robert F. Kennedy Jr. has broadly rejected it, canceling millions of dollars in research projects.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Ford Says Electric Vehicle Losses Will Continue for 3 More Years",
-          "title_en": "Ford Says Electric Vehicle Losses Will Continue for 3 More Years",
-          "title_zh": "Ford Says Electric Vehicle Losses Will Continue for 3 More Years",
-          "link": "https://www.nytimes.com/2026/02/10/business/ford-earnings-electric-vehicles.html",
-          "published": "2026-02-11T02:34:59+00:00",
-          "summary_en": "Ford Motor reported a big loss for 2025 because of its troubled electric vehicle division, which it has significantly scaled back.",
-          "summary_zh": "Ford Motor reported a big loss for 2025 because of its troubled electric vehicle division, which it has significantly scaled back.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "The Whiskey World Is Reeling, but Uncle Nearest Has Bigger Troubles",
-          "title_en": "The Whiskey World Is Reeling, but Uncle Nearest Has Bigger Troubles",
-          "title_zh": "The Whiskey World Is Reeling, but Uncle Nearest Has Bigger Troubles",
-          "link": "https://www.nytimes.com/2026/02/10/dining/drinks/uncle-nearest-whiskey.html",
-          "published": "2026-02-11T01:22:09+00:00",
-          "summary_en": "A new report paints a grim financial picture of Uncle Nearest, a high-profile brand named for an enslaved distiller. But its founder disputes the findings.",
-          "summary_zh": "A new report paints a grim financial picture of Uncle Nearest, a high-profile brand named for an enslaved distiller. But its founder disputes the findings.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Co-founders of Musk’s xAI join exodus from start-up’s tech team",
-          "title_en": "Co-founders of Musk’s xAI join exodus from start-up’s tech team",
-          "title_zh": "Co-founders of Musk’s xAI join exodus from start-up’s tech team",
-          "link": "https://www.ft.com/content/3d4a9683-b70a-4953-b21b-b3ea07d693a3",
-          "published": "2026-02-11T00:33:12+00:00",
-          "summary_en": "Jimmy Ba will be the sixth member of the founding team to depart",
-          "summary_zh": "Jimmy Ba will be the sixth member of the founding team to depart",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "NLRB Dismisses Case Brought by Fired SpaceX Employees",
-          "title_en": "NLRB Dismisses Case Brought by Fired SpaceX Employees",
-          "title_zh": "NLRB Dismisses Case Brought by Fired SpaceX Employees",
-          "link": "https://www.nytimes.com/2026/02/10/business/spacex-nlrb-labor-elon-musk.html",
-          "published": "2026-02-10T20:57:05+00:00",
-          "summary_en": "The National Labor Relations Board, having accused the company of unfair retaliation in 2024, now says it has no jurisdiction over Elon Musk’s space company.",
-          "summary_zh": "The National Labor Relations Board, having accused the company of unfair retaliation in 2024, now says it has no jurisdiction over Elon Musk’s space company.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Epstein Files Reveal Efforts to Build Ties With Russian Officials, Including Putin",
-          "title_en": "Epstein Files Reveal Efforts to Build Ties With Russian Officials, Including Putin",
-          "title_zh": "Epstein Files Reveal Efforts to Build Ties With Russian Officials, Including Putin",
-          "link": "https://www.nytimes.com/2026/02/10/business/epstein-files-russia-putin.html",
-          "published": "2026-02-10T19:29:38+00:00",
-          "summary_en": "New documents detail Jeffrey Epstein’s efforts to foster strategic, sometimes reciprocal relationships with Russian officials.",
-          "summary_zh": "New documents detail Jeffrey Epstein’s efforts to foster strategic, sometimes reciprocal relationships with Russian officials.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Epstein Directed Aide to Obtain Hidden Video Cameras",
-          "title_en": "Epstein Directed Aide to Obtain Hidden Video Cameras",
-          "title_zh": "Epstein Directed Aide to Obtain Hidden Video Cameras",
-          "link": "https://www.nytimes.com/2026/02/10/us/epstein-hidden-cameras.html",
-          "published": "2026-02-10T17:29:23+00:00",
-          "summary_en": "“I’m installing them into Kleenex boxes now,” the aide replied in the 2014 email exchange.",
-          "summary_zh": "“I’m installing them into Kleenex boxes now,” the aide replied in the 2014 email exchange.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Operator of Eddie Bauer Stores Files for Bankruptcy",
-          "title_en": "Operator of Eddie Bauer Stores Files for Bankruptcy",
-          "title_zh": "Operator of Eddie Bauer Stores Files for Bankruptcy",
-          "link": "https://www.nytimes.com/2026/02/10/business/eddie-bauer-bankruptcy.html",
-          "published": "2026-02-10T17:14:19+00:00",
-          "summary_en": "The company that operates the brand’s retail stores cited a shift in consumer preferences, rising inflation and elevated tariffs.",
-          "summary_zh": "The company that operates the brand’s retail stores cited a shift in consumer preferences, rising inflation and elevated tariffs.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Ahead of Jobs Report, White House Seeks to Downplay Any Slowdown",
-          "title_en": "Ahead of Jobs Report, White House Seeks to Downplay Any Slowdown",
-          "title_zh": "Ahead of Jobs Report, White House Seeks to Downplay Any Slowdown",
-          "link": "https://www.nytimes.com/2026/02/10/us/politics/white-house-jobs.html",
-          "published": "2026-02-10T17:12:19+00:00",
-          "summary_en": "President Trump’s top aides have argued in recent days that the economy is strong, even if new data on Wednesday show sluggish hiring.",
-          "summary_zh": "President Trump’s top aides have argued in recent days that the economy is strong, even if new data on Wednesday show sluggish hiring.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Watch: A Conversation With Anna Wintour and Her U.S. Vogue Successor, Chloe Malle",
-          "title_en": "Watch: A Conversation With Anna Wintour and Her U.S. Vogue Successor, Chloe Malle",
-          "title_zh": "Watch: A Conversation With Anna Wintour and Her U.S. Vogue Successor, Chloe Malle",
-          "link": "https://www.nytimes.com/2026/02/10/business/media/anna-wintour-chloe-malle-vogue-interview.html",
-          "published": "2026-02-10T15:40:55+00:00",
-          "summary_en": "In their first joint interview, Ms. Malle spoke about filling the shoes of Ms. Wintour, who urged people to “get over comparisons.”",
-          "summary_zh": "In their first joint interview, Ms. Malle spoke about filling the shoes of Ms. Wintour, who urged people to “get over comparisons.”",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Lutnick, Wasserman and Others Caught Up in Epstein Files",
-          "title_en": "Lutnick, Wasserman and Others Caught Up in Epstein Files",
-          "title_zh": "Lutnick, Wasserman and Others Caught Up in Epstein Files",
-          "link": "https://www.nytimes.com/2026/02/10/business/dealbook/epstein-lutnick-wasserman-starmer.html",
-          "published": "2026-02-10T15:25:01+00:00",
-          "summary_en": "Commerce Secretary Howard Lutnick and Casey Wasserman, the entertainment mogul, are among those facing blowback amid the release of files related to Jeffrey Epstein.",
-          "summary_zh": "Commerce Secretary Howard Lutnick and Casey Wasserman, the entertainment mogul, are among those facing blowback amid the release of files related to Jeffrey Epstein.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "BP Suspends Share Buybacks as Profit Slumps",
-          "title_en": "BP Suspends Share Buybacks as Profit Slumps",
-          "title_zh": "BP Suspends Share Buybacks as Profit Slumps",
-          "link": "https://www.nytimes.com/2026/02/10/business/bp-oil-energy-buybacks.html",
-          "published": "2026-02-10T12:05:24+00:00",
-          "summary_en": "The British energy giant said it would put money toward new oil and gas opportunities ahead of the arrival of its new chief executive, Meg O’Neill.",
-          "summary_zh": "The British energy giant said it would put money toward new oil and gas opportunities ahead of the arrival of its new chief executive, Meg O’Neill.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump’s policies will add $1.4tn to US deficit over next decade, CBO says",
-          "title_en": "Trump’s policies will add $1.4tn to US deficit over next decade, CBO says",
-          "title_zh": "Trump’s policies will add $1.4tn to US deficit over next decade, CBO says",
-          "link": "https://www.ft.com/content/03a1bfe8-528a-4ac9-b586-05b1d9733d42",
-          "published": "2026-02-11T17:16:18+00:00",
-          "summary_en": "Congressional watchdog warns that Washington’s public finances are ‘not sustainable’",
-          "summary_zh": "Congressional watchdog warns that Washington’s public finances are ‘not sustainable’",
-          "source": "Financial Times Global Economy",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Lloyds Banking Group to close another 95 branches",
-          "title_en": "Lloyds Banking Group to close another 95 branches",
-          "title_zh": "Lloyds Banking Group to close another 95 branches",
-          "link": "https://www.bbc.com/news/articles/cy4wgpkkzq0o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-02-11T17:08:22+00:00",
-          "summary_en": "The closures have been announced days after Santander said it would shut branches.",
-          "summary_zh": "The closures have been announced days after Santander said it would shut branches.",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Would you pay £7.50 for a pint of Guinness?",
-          "title_en": "Would you pay £7.50 for a pint of Guinness?",
-          "title_zh": "Would you pay £7.50 for a pint of Guinness?",
-          "link": "https://www.bbc.com/news/articles/cp8rmdyjj78o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-02-11T17:04:36+00:00",
-          "summary_en": "A Market Rasen pub asks customers about the cost of Guinness ahead of a price increase in April.",
-          "summary_zh": "A Market Rasen pub asks customers about the cost of Guinness ahead of a price increase in April.",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Stock Market Today: Dow Wobbles After Jobs Jolt; Vertiv Booms As These Health Care Stocks Jam (Live Coverage)",
-          "title_en": "Stock Market Today: Dow Wobbles After Jobs Jolt; Vertiv Booms As These Health Care Stocks Jam (Live Coverage)",
-          "title_zh": "Stock Market Today: Dow Wobbles After Jobs Jolt; Vertiv Booms As These Health Care Stocks Jam (Live Coverage)",
-          "link": "https://finance.yahoo.com/m/fb9c2099-1ec4-30d7-b65c-60bf920a9fce/stock-market-today%3A-dow.html?.tsrc=rss",
-          "published": "2026-02-11T16:39:52+00:00",
-          "summary_en": "Stock Market Today: The Dow Jones index gives up gains made Wednesday after a surprise January jobs report. Astera and Robinhood plunge on earnings.",
-          "summary_zh": "Stock Market Today: The Dow Jones index gives up gains made Wednesday after a surprise January jobs report. Astera and Robinhood plunge on earnings.",
-          "source": "Yahoo Finance (SPY)",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "US added 130,000 jobs in January, surpassing expectations as 2025 growth is slashed",
-          "title_en": "US added 130,000 jobs in January, surpassing expectations as 2025 growth is slashed",
-          "title_zh": "US added 130,000 jobs in January, surpassing expectations as 2025 growth is slashed",
-          "link": "https://www.theguardian.com/business/2026/feb/11/delayed-us-january-jobs-report",
-          "published": "2026-02-11T16:13:58+00:00",
-          "summary_en": "Unemployment rate was 4.3% in January with gains 13,000 less than the 143,000 jobs added a year ago, report shows The US jobs market added 130,000 jobs in January, according to a highly anticipated labor market report released on Wednesday, a surge of job growth after months of fatigue in the labor market. The unemployment rate was 4.3% in January, a slight…",
-          "summary_zh": "Unemployment rate was 4.3% in January with gains 13,000 less than the 143,000 jobs added a year ago, report shows The US jobs market added 130,000 jobs in January, according to a highly anticipated labor market report released on Wednesday, a surge of job growth after months of fatigue in the labor market. The unemployment rate was 4.3% in January, a slight…",
-          "source": "The Guardian Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Reeves pushes for Britain to speed up closer ties with EU",
-          "title_en": "Reeves pushes for Britain to speed up closer ties with EU",
-          "title_zh": "Reeves pushes for Britain to speed up closer ties with EU",
-          "link": "https://www.ft.com/content/98e57c0e-3050-40d0-92c4-f245d0f29496",
-          "published": "2026-02-11T15:53:05+00:00",
-          "summary_en": "UK chancellor set to reassure business about reintegration drive after days of political turmoil",
-          "summary_zh": "UK chancellor set to reassure business about reintegration drive after days of political turmoil",
-          "source": "Financial Times Global Economy",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Serial rail fare evader fined £3,600 over 112 unpaid tickets",
-          "title_en": "Serial rail fare evader fined £3,600 over 112 unpaid tickets",
-          "title_zh": "Serial rail fare evader fined £3,600 over 112 unpaid tickets",
-          "link": "https://www.bbc.com/news/articles/cvg3lzp0zl7o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-02-11T15:07:25+00:00",
-          "summary_en": "Charles Brohiri travelled without buying a ticket on 112 train journeys over a period of nearly two years.",
-          "summary_zh": "Charles Brohiri travelled without buying a ticket on 112 train journeys over a period of nearly two years.",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "'Fear and alienation': Senior Co-op staff complain of 'toxic' culture at the top",
-          "title_en": "'Fear and alienation': Senior Co-op staff complain of 'toxic' culture at the top",
-          "title_zh": "'Fear and alienation': Senior Co-op staff complain of 'toxic' culture at the top",
-          "link": "https://www.bbc.com/news/articles/crrnkpyqdzyo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-02-11T14:59:01+00:00",
-          "summary_en": "Lawyers for the Co-op said they do not believe the complaints represent the broader views of staff",
-          "summary_zh": "Lawyers for the Co-op said they do not believe the complaints represent the broader views of staff",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        }
-      ],
-      "social_media": []
-    },
-    {
-      "updated_at": "2026-02-11T18:35:39.452074+00:00",
-      "edition_label": "Web",
-      "summary_cn": null,
-      "market_hotspots_cn": null,
-      "social_summary_cn": null,
-      "sector_recommendation": null,
-      "market_snapshot": [
-        {
-          "title": "US Markets",
-          "items": [
-            {
-              "name": "S&P 500",
-              "symbol": "^SPX",
-              "price": 6948.94,
-              "change": 7.13,
-              "change_percent": 0.1,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Nasdaq 100",
-              "symbol": "^NDQ",
-              "price": 23082.47,
-              "change": -20.0,
-              "change_percent": -0.09,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "Dow Jones",
-              "symbol": "^DJI",
-              "price": 50110.75,
-              "change": -77.39,
-              "change_percent": -0.15,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            }
-          ]
-        },
-        {
-          "title": "Europe Markets",
-          "items": [
-            {
-              "name": "FTSE 100",
-              "symbol": "^UKX",
-              "price": 10472.1,
-              "change": 118.26,
-              "change_percent": 1.14,
-              "currency": "GBP",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "DAX",
-              "symbol": "^DAX",
-              "price": 24880.41,
-              "change": -107.44,
-              "change_percent": -0.43,
-              "currency": "EUR",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "CAC 40",
-              "symbol": "^CAC",
-              "price": 8313.24,
-              "change": -14.64,
-              "change_percent": -0.18,
-              "currency": "EUR",
-              "change_color": "#dc2626"
-            }
-          ]
-        },
-        {
-          "title": "Asia Markets",
-          "items": [
-            {
-              "name": "Nikkei 225",
-              "symbol": "^NKX",
-              "price": 57650.54,
-              "change": 1286.6,
-              "change_percent": 2.28,
-              "currency": "JPY",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Hang Seng",
-              "symbol": "^HSI",
-              "price": 27266.38,
-              "change": 83.23,
-              "change_percent": 0.31,
-              "currency": "HKD",
-              "change_color": "#16a34a"
-            }
-          ]
-        },
-        {
-          "title": "China Markets",
-          "items": [
-            {
-              "name": "SSE Composite 上证指数",
-              "symbol": "SH000001",
-              "price": 4131.99,
-              "change": 3.62,
-              "change_percent": 0.09,
-              "currency": "CNY",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "SZSE Component 深证成指",
-              "symbol": "SZ399001",
-              "price": 14160.93,
-              "change": -49.7,
-              "change_percent": -0.35,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ChiNext 创业板指",
-              "symbol": "SZ399006",
-              "price": 3284.74,
-              "change": -35.8,
-              "change_percent": -1.08,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "CSI 300 沪深300",
-              "symbol": "SH000300",
-              "price": 4713.82,
-              "change": -10.48,
-              "change_percent": -0.22,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            }
-          ]
-        },
-        {
-          "title": "Gold & Silver",
-          "items": [
-            {
-              "name": "Gold (oz)",
-              "symbol": "XAUUSD",
-              "price": 5075.47,
-              "change": 49.99,
-              "change_percent": 0.99,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Silver (oz)",
-              "symbol": "XAGUSD",
-              "price": 84.3,
-              "change": 3.51,
-              "change_percent": 4.34,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            }
-          ]
-        },
-        {
-          "title": "Crypto / 数字货币",
-          "items": [
-            {
-              "name": "BTC",
-              "symbol": "BTC",
-              "price": 66833.0,
-              "change": -1959.42,
-              "change_percent": -2.93,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ETH",
-              "symbol": "ETH",
-              "price": 1935.24,
-              "change": -69.59,
-              "change_percent": -3.6,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "SOL",
-              "symbol": "SOL",
-              "price": 79.54,
-              "change": -3.77,
-              "change_percent": -4.74,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "BNB",
-              "symbol": "BNB",
-              "price": 607.23,
-              "change": -9.49,
-              "change_percent": -1.56,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "XRP",
-              "symbol": "XRP",
-              "price": 1.38,
-              "change": -0.02,
-              "change_percent": -1.79,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "DOGE",
-              "symbol": "DOGE",
-              "price": 0.09,
-              "change": -0.0,
-              "change_percent": -2.4,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ADA",
-              "symbol": "ADA",
-              "price": 0.26,
-              "change": -0.0,
-              "change_percent": -1.42,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "AVAX",
-              "symbol": "AVAX",
-              "price": 8.69,
-              "change": -0.03,
-              "change_percent": -0.4,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "DOT",
-              "symbol": "DOT",
-              "price": 1.26,
-              "change": -0.01,
-              "change_percent": -1.04,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            }
-          ]
-        }
-      ],
-      "sector_rankings": [
-        {
-          "title": "US Sector ETFs",
-          "items": [
-            {
-              "name": "Energy (XLE)",
-              "change_percent": 2.51,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Consumer Staples (XLP)",
-              "change_percent": 1.47,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Materials (XLB)",
-              "change_percent": 0.78,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Utilities (XLU)",
-              "change_percent": 0.61,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Industrial (XLI)",
-              "change_percent": 0.51,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Healthcare (XLV)",
-              "change_percent": 0.44,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Technology (XLK)",
-              "change_percent": 0.25,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Real Estate (XLRE)",
-              "change_percent": 0.04,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "Consumer Disc. (XLY)",
-              "change_percent": -0.75,
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "Communication (XLC)",
-              "change_percent": -0.89,
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "Financial (XLF)",
-              "change_percent": -1.26,
-              "change_color": "#dc2626"
-            }
-          ]
-        },
-        {
-          "title": "A-Share Industry Sectors 行业板块",
-          "items": [
-            {
-              "name": "玻璃玻纤",
-              "change_percent": 4.68,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "能源金属",
-              "change_percent": 4.23,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "小金属",
-              "change_percent": 3.25,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "贵金属",
-              "change_percent": 1.96,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "化纤行业",
-              "change_percent": 1.94,
-              "change_color": "#16a34a"
-            }
-          ]
-        },
-        {
-          "title": "A-Share Concept Sectors 概念板块",
-          "items": [
-            {
-              "name": "昨日连板_含一字",
-              "change_percent": 3.15,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "稀缺资源",
-              "change_percent": 2.53,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "小金属概念",
-              "change_percent": 2.3,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "锂矿概念",
-              "change_percent": 2.06,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "VPN",
-              "change_percent": 1.96,
-              "change_color": "#16a34a"
-            }
-          ]
-        }
-      ],
-      "items": [
-        {
-          "title": "Kraft Heinz Reverses Course on Company Split as Sales Continue to Slide",
-          "title_en": "Kraft Heinz Reverses Course on Company Split as Sales Continue to Slide",
-          "title_zh": "Kraft Heinz Reverses Course on Company Split as Sales Continue to Slide",
-          "link": "https://www.nytimes.com/2026/02/11/business/kraft-heinz-sales-prices-cahillane.html",
-          "published": "2026-02-11T18:14:27+00:00",
-          "summary_en": "The company’s new C.E.O. said he saw opportunities to fix and grow the food giant — and cut prices for consumers.",
-          "summary_zh": "The company’s new C.E.O. said he saw opportunities to fix and grow the food giant — and cut prices for consumers.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Easing Unemployment Supports Fed Extending Pause on Rate Cuts",
-          "title_en": "Easing Unemployment Supports Fed Extending Pause on Rate Cuts",
-          "title_zh": "Easing Unemployment Supports Fed Extending Pause on Rate Cuts",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/fed-jobs-rates.html",
-          "published": "2026-02-11T17:51:45+00:00",
-          "summary_en": "January’s jobs data, released on Wednesday, bolstered expectations that the Federal Reserve will hold interest rates steady for longer than previously expected.",
-          "summary_zh": "January’s jobs data, released on Wednesday, bolstered expectations that the Federal Reserve will hold interest rates steady for longer than previously expected.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "US economy far outstrips expectations to add 130,000 jobs in January",
-          "title_en": "US economy far outstrips expectations to add 130,000 jobs in January",
-          "title_zh": "US economy far outstrips expectations to add 130,000 jobs in January",
-          "link": "https://www.ft.com/content/a369333a-41b5-4e55-8e6e-cb04bb0f2e9f",
-          "published": "2026-02-11T17:46:00+00:00",
-          "summary_en": "Figure points to improvement in labour market following string of bleak data",
-          "summary_zh": "Figure points to improvement in labour market following string of bleak data",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump’s policies will add $1.4tn to US deficit over next decade, CBO says",
-          "title_en": "Trump’s policies will add $1.4tn to US deficit over next decade, CBO says",
-          "title_zh": "Trump’s policies will add $1.4tn to US deficit over next decade, CBO says",
-          "link": "https://www.ft.com/content/03a1bfe8-528a-4ac9-b586-05b1d9733d42",
-          "published": "2026-02-11T17:16:18+00:00",
-          "summary_en": "Congressional watchdog warns that Washington’s public finances are ‘not sustainable’",
-          "summary_zh": "Congressional watchdog warns that Washington’s public finances are ‘not sustainable’",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "What to know about the better-than-expected report.",
-          "title_en": "What to know about the better-than-expected report.",
-          "title_zh": "What to know about the better-than-expected report.",
-          "link": "https://www.nytimes.com/live/2026/02/11/business/jobs-report-economy/what-to-know-about-the-better-than-expected-report",
-          "published": "2026-02-11T17:06:24+00:00",
-          "summary_en": "What to know about the better-than-expected report.",
-          "summary_zh": "What to know about the better-than-expected report.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "After a Year of Sluggish Hiring, 2026 Is Off to a Stronger Start",
-          "title_en": "After a Year of Sluggish Hiring, 2026 Is Off to a Stronger Start",
-          "title_zh": "After a Year of Sluggish Hiring, 2026 Is Off to a Stronger Start",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/after-a-year-of-sluggish-hiring-2026-could-be-off-to-a-stronger-start.html",
-          "published": "2026-02-11T17:04:56+00:00",
-          "summary_en": "The economy added substantially more jobs than expected last month, as more people entered the labor force and wages grew.",
-          "summary_zh": "The economy added substantially more jobs than expected last month, as more people entered the labor force and wages grew.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Kalshi and Polymarket Create New Competition for Professional Economists",
-          "title_en": "Kalshi and Polymarket Create New Competition for Professional Economists",
-          "title_zh": "Kalshi and Polymarket Create New Competition for Professional Economists",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/forecasts-prediction-markets-economy.html",
-          "published": "2026-02-11T16:49:37+00:00",
-          "summary_en": "Economists have noticed that betting markets like Kalshi and Polymarket are pretty good at predicting not just political events but economic data, too.",
-          "summary_zh": "Economists have noticed that betting markets like Kalshi and Polymarket are pretty good at predicting not just political events but economic data, too.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Job Growth Was Overstated, New Data Shows",
-          "title_en": "Job Growth Was Overstated, New Data Shows",
-          "title_zh": "Job Growth Was Overstated, New Data Shows",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/january-jobs-report-revisions.html",
-          "published": "2026-02-11T16:33:15+00:00",
-          "summary_en": "Annual revisions show that employers added far fewer jobs in 2024 and 2025 than previously estimated.",
-          "summary_zh": "Annual revisions show that employers added far fewer jobs in 2024 and 2025 than previously estimated.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "US takes military action against drone incursion in Texas",
-          "title_en": "US takes military action against drone incursion in Texas",
-          "title_zh": "US takes military action against drone incursion in Texas",
-          "link": "https://www.ft.com/content/21efd8b4-0c93-4446-867b-2d0455e9586b",
-          "published": "2026-02-11T16:30:11+00:00",
-          "summary_en": "Officials say airspace around southern town of El Paso was temporarily closed due to aerial activity from Mexican cartels",
-          "summary_zh": "Officials say airspace around southern town of El Paso was temporarily closed due to aerial activity from Mexican cartels",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Susquehanna-backed crypto lender BlockFills halts client withdrawals",
-          "title_en": "Susquehanna-backed crypto lender BlockFills halts client withdrawals",
-          "title_zh": "Susquehanna-backed crypto lender BlockFills halts client withdrawals",
-          "link": "https://www.ft.com/content/73e506f4-6b58-4c38-9198-110e845f48b2",
-          "published": "2026-02-11T15:02:03+00:00",
-          "summary_en": "Move comes during period of sustained volatility in digital asset markets",
-          "summary_zh": "Move comes during period of sustained volatility in digital asset markets",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Federal Debt to Hit Record Levels, Budget Office Warns",
-          "title_en": "Federal Debt to Hit Record Levels, Budget Office Warns",
-          "title_zh": "Federal Debt to Hit Record Levels, Budget Office Warns",
-          "link": "https://www.nytimes.com/2026/02/11/business/federal-debt-record-levels-budget-office.html",
-          "published": "2026-02-11T15:00:07+00:00",
-          "summary_en": "President Trump has reshaped the country’s economic policies, but the outlook for the budget remains dire.",
-          "summary_zh": "President Trump has reshaped the country’s economic policies, but the outlook for the budget remains dire.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "How to fall in love with AI",
-          "title_en": "How to fall in love with AI",
-          "title_zh": "How to fall in love with AI",
-          "link": "https://www.ft.com/content/6db38f23-b68c-4408-be51-7d88bfd1aac1",
-          "published": "2026-02-11T14:41:36+00:00",
-          "summary_en": "Our new podcast series examines the rise of artificial intimacy",
-          "summary_zh": "Our new podcast series examines the rise of artificial intimacy",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "How the Ultra-Rich Travel",
-          "title_en": "How the Ultra-Rich Travel",
-          "title_zh": "How the Ultra-Rich Travel",
-          "link": "https://www.nytimes.com/2026/02/11/travel/luxury-travel-agency-advisers-wealth.html",
-          "published": "2026-02-11T14:41:30+00:00",
-          "summary_en": "Inside the arms race to satisfy travelers for whom exclusivity is everything and money is no object.",
-          "summary_zh": "Inside the arms race to satisfy travelers for whom exclusivity is everything and money is no object.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump Wants to Revive Shipping. Investors Are Slow to Back Him.",
-          "title_en": "Trump Wants to Revive Shipping. Investors Are Slow to Back Him.",
-          "title_zh": "Trump Wants to Revive Shipping. Investors Are Slow to Back Him.",
-          "link": "https://www.nytimes.com/2026/02/11/business/trump-shipping-investors.html",
-          "published": "2026-02-11T13:48:41+00:00",
-          "summary_en": "A French logistics behemoth promised $20 billion for the United States, but a year into President Trump’s second term, only a fraction of the money has arrived.",
-          "summary_zh": "A French logistics behemoth promised $20 billion for the United States, but a year into President Trump’s second term, only a fraction of the money has arrived.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Switzerland to vote on plan to cap population at 10mn",
-          "title_en": "Switzerland to vote on plan to cap population at 10mn",
-          "title_zh": "Switzerland to vote on plan to cap population at 10mn",
-          "link": "https://www.ft.com/content/675538b9-2a7b-4296-aad9-2a930e61f369",
-          "published": "2026-02-11T13:36:23+00:00",
-          "summary_en": "Country has 9.1mn permanent residents and experts fear the move will limit companies’ access to foreign talent",
-          "summary_zh": "Country has 9.1mn permanent residents and experts fear the move will limit companies’ access to foreign talent",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Wall St. and Washington Brace for a Big Jobs Report",
-          "title_en": "Wall St. and Washington Brace for a Big Jobs Report",
-          "title_zh": "Wall St. and Washington Brace for a Big Jobs Report",
-          "link": "https://www.nytimes.com/2026/02/11/business/dealbook/wall-street-washington-jobs.html",
-          "published": "2026-02-11T12:46:37+00:00",
-          "summary_en": "A hiring slowdown and fears about artificial intelligence have investors on edge, and some in the Trump administration on the defensive.",
-          "summary_zh": "A hiring slowdown and fears about artificial intelligence have investors on edge, and some in the Trump administration on the defensive.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "title_en": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "title_zh": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "link": "https://www.nytimes.com/live/2026/02/11/business/jobs-report-economy/trump-plans-to-nominate-a-data-nerd-to-lead-bureau-of-labor-statistics",
-          "published": "2026-02-11T12:45:02+00:00",
-          "summary_en": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "summary_zh": "Trump plans to nominate a ‘data nerd’ to lead Bureau of Labor Statistics.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "What Executives Are Saying About the ‘K-Shaped’ Economy",
-          "title_en": "What Executives Are Saying About the ‘K-Shaped’ Economy",
-          "title_zh": "What Executives Are Saying About the ‘K-Shaped’ Economy",
-          "link": "https://www.nytimes.com/2026/02/11/business/economy/k-shaped-economy.html",
-          "published": "2026-02-11T12:06:47+00:00",
-          "summary_en": "Leaders across industries from airlines to packaged foods have said a growing divide between lower-income and wealthy consumers is changing their businesses.",
-          "summary_zh": "Leaders across industries from airlines to packaged foods have said a growing divide between lower-income and wealthy consumers is changing their businesses.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "How Did Pat McGrath Cosmetics Go From Billion-Dollar Brand to Bankruptcy?",
-          "title_en": "How Did Pat McGrath Cosmetics Go From Billion-Dollar Brand to Bankruptcy?",
-          "title_zh": "How Did Pat McGrath Cosmetics Go From Billion-Dollar Brand to Bankruptcy?",
-          "link": "https://www.nytimes.com/2026/02/11/style/pat-mcgrath-cosmetics-bankruptcy.html",
-          "published": "2026-02-11T10:01:18+00:00",
-          "summary_en": "The makeup artist Pat McGrath was a favorite of Taylor Swift, Kim Kardashian and Madonna. Then she became a billion-dollar brand.",
-          "summary_zh": "The makeup artist Pat McGrath was a favorite of Taylor Swift, Kim Kardashian and Madonna. Then she became a billion-dollar brand.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump Decries a ‘Nation of Renters’ but His New Policy Promotes One",
-          "title_en": "Trump Decries a ‘Nation of Renters’ but His New Policy Promotes One",
-          "title_zh": "Trump Decries a ‘Nation of Renters’ but His New Policy Promotes One",
-          "link": "https://www.nytimes.com/2026/02/11/business/built-to-rent-investors-trump.html",
-          "published": "2026-02-11T10:00:32+00:00",
-          "summary_en": "President Trump’s recently announced executive order that would bar big investors from acquiring single-family homes includes an exemption that allows them to build homes for rent.",
-          "summary_zh": "President Trump’s recently announced executive order that would bar big investors from acquiring single-family homes includes an exemption that allows them to build homes for rent.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Why are fertility rates collapsing? Gender roles",
-          "title_en": "Why are fertility rates collapsing? Gender roles",
-          "title_zh": "Why are fertility rates collapsing? Gender roles",
-          "link": "https://www.ft.com/content/e1a7fd72-9790-498e-a4ef-9380f5da1e9e",
-          "published": "2026-02-11T05:00:32+00:00",
-          "summary_en": "A big part of female graduates’ decision to have children depends on how they expect their husbands to behave",
-          "summary_zh": "A big part of female graduates’ decision to have children depends on how they expect their husbands to behave",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Ping! The WhatsApps that should have been an email",
-          "title_en": "Ping! The WhatsApps that should have been an email",
-          "title_zh": "Ping! The WhatsApps that should have been an email",
-          "link": "https://www.ft.com/content/6d3ec9ed-248c-4cc5-9834-e0a0db533c6e",
-          "published": "2026-02-11T05:00:21+00:00",
-          "summary_en": "If your instant message requires immediate attention, fine. But many don’t — they’re just inconsiderate",
-          "summary_zh": "If your instant message requires immediate attention, fine. But many don’t — they’re just inconsiderate",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Dassault: the defence group blocking the €100bn Franco-German jet project",
-          "title_en": "Dassault: the defence group blocking the €100bn Franco-German jet project",
-          "title_zh": "Dassault: the defence group blocking the €100bn Franco-German jet project",
-          "link": "https://www.ft.com/content/3735b710-92b7-4390-99e6-b13e4cff2dee",
-          "published": "2026-02-11T05:00:12+00:00",
-          "summary_en": "The fate of FCAS hangs on whether French President Emmanuel Macron can get the contractor to bend",
-          "summary_zh": "The fate of FCAS hangs on whether French President Emmanuel Macron can get the contractor to bend",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "F.D.A. Refuses to Review Moderna Flu Vaccine",
-          "title_en": "F.D.A. Refuses to Review Moderna Flu Vaccine",
-          "title_zh": "F.D.A. Refuses to Review Moderna Flu Vaccine",
-          "link": "https://www.nytimes.com/2026/02/10/health/fda-moderna-mrna-flu-vaccine.html",
-          "published": "2026-02-11T02:49:48+00:00",
-          "summary_en": "The vaccine maker’s shots involve the successful Covid vaccines’ RNA technology. Health Secretary Robert F. Kennedy Jr. has broadly rejected it, canceling millions of dollars in research projects.",
-          "summary_zh": "The vaccine maker’s shots involve the successful Covid vaccines’ RNA technology. Health Secretary Robert F. Kennedy Jr. has broadly rejected it, canceling millions of dollars in research projects.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Ford Says Electric Vehicle Losses Will Continue for 3 More Years",
-          "title_en": "Ford Says Electric Vehicle Losses Will Continue for 3 More Years",
-          "title_zh": "Ford Says Electric Vehicle Losses Will Continue for 3 More Years",
-          "link": "https://www.nytimes.com/2026/02/10/business/ford-earnings-electric-vehicles.html",
-          "published": "2026-02-11T02:34:59+00:00",
-          "summary_en": "Ford Motor reported a big loss for 2025 because of its troubled electric vehicle division, which it has significantly scaled back.",
-          "summary_zh": "Ford Motor reported a big loss for 2025 because of its troubled electric vehicle division, which it has significantly scaled back.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "The Whiskey World Is Reeling, but Uncle Nearest Has Bigger Troubles",
-          "title_en": "The Whiskey World Is Reeling, but Uncle Nearest Has Bigger Troubles",
-          "title_zh": "The Whiskey World Is Reeling, but Uncle Nearest Has Bigger Troubles",
-          "link": "https://www.nytimes.com/2026/02/10/dining/drinks/uncle-nearest-whiskey.html",
-          "published": "2026-02-11T01:22:09+00:00",
-          "summary_en": "A new report paints a grim financial picture of Uncle Nearest, a high-profile brand named for an enslaved distiller. But its founder disputes the findings.",
-          "summary_zh": "A new report paints a grim financial picture of Uncle Nearest, a high-profile brand named for an enslaved distiller. But its founder disputes the findings.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Co-founders of Musk’s xAI join exodus from start-up’s tech team",
-          "title_en": "Co-founders of Musk’s xAI join exodus from start-up’s tech team",
-          "title_zh": "Co-founders of Musk’s xAI join exodus from start-up’s tech team",
-          "link": "https://www.ft.com/content/3d4a9683-b70a-4953-b21b-b3ea07d693a3",
-          "published": "2026-02-11T00:33:12+00:00",
-          "summary_en": "Jimmy Ba will be the sixth member of the founding team to depart",
-          "summary_zh": "Jimmy Ba will be the sixth member of the founding team to depart",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "NLRB Dismisses Case Brought by Fired SpaceX Employees",
-          "title_en": "NLRB Dismisses Case Brought by Fired SpaceX Employees",
-          "title_zh": "NLRB Dismisses Case Brought by Fired SpaceX Employees",
-          "link": "https://www.nytimes.com/2026/02/10/business/spacex-nlrb-labor-elon-musk.html",
-          "published": "2026-02-10T20:57:05+00:00",
-          "summary_en": "The National Labor Relations Board, having accused the company of unfair retaliation in 2024, now says it has no jurisdiction over Elon Musk’s space company.",
-          "summary_zh": "The National Labor Relations Board, having accused the company of unfair retaliation in 2024, now says it has no jurisdiction over Elon Musk’s space company.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Epstein Files Reveal Efforts to Build Ties With Russian Officials, Including Putin",
-          "title_en": "Epstein Files Reveal Efforts to Build Ties With Russian Officials, Including Putin",
-          "title_zh": "Epstein Files Reveal Efforts to Build Ties With Russian Officials, Including Putin",
-          "link": "https://www.nytimes.com/2026/02/10/business/epstein-files-russia-putin.html",
-          "published": "2026-02-10T19:29:38+00:00",
-          "summary_en": "New documents detail Jeffrey Epstein’s efforts to foster strategic, sometimes reciprocal relationships with Russian officials.",
-          "summary_zh": "New documents detail Jeffrey Epstein’s efforts to foster strategic, sometimes reciprocal relationships with Russian officials.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Epstein Directed Aide to Obtain Hidden Video Cameras",
-          "title_en": "Epstein Directed Aide to Obtain Hidden Video Cameras",
-          "title_zh": "Epstein Directed Aide to Obtain Hidden Video Cameras",
-          "link": "https://www.nytimes.com/2026/02/10/us/epstein-hidden-cameras.html",
-          "published": "2026-02-10T17:29:23+00:00",
-          "summary_en": "“I’m installing them into Kleenex boxes now,” the aide replied in the 2014 email exchange.",
-          "summary_zh": "“I’m installing them into Kleenex boxes now,” the aide replied in the 2014 email exchange.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Operator of Eddie Bauer Stores Files for Bankruptcy",
-          "title_en": "Operator of Eddie Bauer Stores Files for Bankruptcy",
-          "title_zh": "Operator of Eddie Bauer Stores Files for Bankruptcy",
-          "link": "https://www.nytimes.com/2026/02/10/business/eddie-bauer-bankruptcy.html",
-          "published": "2026-02-10T17:14:19+00:00",
-          "summary_en": "The company that operates the brand’s retail stores cited a shift in consumer preferences, rising inflation and elevated tariffs.",
-          "summary_zh": "The company that operates the brand’s retail stores cited a shift in consumer preferences, rising inflation and elevated tariffs.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Ahead of Jobs Report, White House Seeks to Downplay Any Slowdown",
-          "title_en": "Ahead of Jobs Report, White House Seeks to Downplay Any Slowdown",
-          "title_zh": "Ahead of Jobs Report, White House Seeks to Downplay Any Slowdown",
-          "link": "https://www.nytimes.com/2026/02/10/us/politics/white-house-jobs.html",
-          "published": "2026-02-10T17:12:19+00:00",
-          "summary_en": "President Trump’s top aides have argued in recent days that the economy is strong, even if new data on Wednesday show sluggish hiring.",
-          "summary_zh": "President Trump’s top aides have argued in recent days that the economy is strong, even if new data on Wednesday show sluggish hiring.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Watch: A Conversation With Anna Wintour and Her U.S. Vogue Successor, Chloe Malle",
-          "title_en": "Watch: A Conversation With Anna Wintour and Her U.S. Vogue Successor, Chloe Malle",
-          "title_zh": "Watch: A Conversation With Anna Wintour and Her U.S. Vogue Successor, Chloe Malle",
-          "link": "https://www.nytimes.com/2026/02/10/business/media/anna-wintour-chloe-malle-vogue-interview.html",
-          "published": "2026-02-10T15:40:55+00:00",
-          "summary_en": "In their first joint interview, Ms. Malle spoke about filling the shoes of Ms. Wintour, who urged people to “get over comparisons.”",
-          "summary_zh": "In their first joint interview, Ms. Malle spoke about filling the shoes of Ms. Wintour, who urged people to “get over comparisons.”",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Lutnick, Wasserman and Others Caught Up in Epstein Files",
-          "title_en": "Lutnick, Wasserman and Others Caught Up in Epstein Files",
-          "title_zh": "Lutnick, Wasserman and Others Caught Up in Epstein Files",
-          "link": "https://www.nytimes.com/2026/02/10/business/dealbook/epstein-lutnick-wasserman-starmer.html",
-          "published": "2026-02-10T15:25:01+00:00",
-          "summary_en": "Commerce Secretary Howard Lutnick and Casey Wasserman, the entertainment mogul, are among those facing blowback amid the release of files related to Jeffrey Epstein.",
-          "summary_zh": "Commerce Secretary Howard Lutnick and Casey Wasserman, the entertainment mogul, are among those facing blowback amid the release of files related to Jeffrey Epstein.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "BP Suspends Share Buybacks as Profit Slumps",
-          "title_en": "BP Suspends Share Buybacks as Profit Slumps",
-          "title_zh": "BP Suspends Share Buybacks as Profit Slumps",
-          "link": "https://www.nytimes.com/2026/02/10/business/bp-oil-energy-buybacks.html",
-          "published": "2026-02-10T12:05:24+00:00",
-          "summary_en": "The British energy giant said it would put money toward new oil and gas opportunities ahead of the arrival of its new chief executive, Meg O’Neill.",
-          "summary_zh": "The British energy giant said it would put money toward new oil and gas opportunities ahead of the arrival of its new chief executive, Meg O’Neill.",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "How to deploy ‘Buy European’ rules",
-          "title_en": "How to deploy ‘Buy European’ rules",
-          "title_zh": "How to deploy ‘Buy European’ rules",
-          "link": "https://www.ft.com/content/ebb6457e-f03b-4968-834e-d44676abdca4",
-          "published": "2026-02-11T18:15:39+00:00",
-          "summary_en": "They should be a scalpel, not a sledgehammer",
-          "summary_zh": "They should be a scalpel, not a sledgehammer",
-          "source": "Financial Times Global Economy",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Instagram head questioned in social media addiction trial",
-          "title_en": "Instagram head questioned in social media addiction trial",
-          "title_zh": "Instagram head questioned in social media addiction trial",
-          "link": "https://www.bbc.com/news/articles/cn71mgmzljlo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-02-11T18:00:40+00:00",
-          "summary_en": "Instagram's longtime lead Adam Mosseri arrived on Wednesday at a courtroom in Los Angeles.",
-          "summary_zh": "Instagram's longtime lead Adam Mosseri arrived on Wednesday at a courtroom in Los Angeles.",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Lloyds Banking Group to close another 95 branches",
-          "title_en": "Lloyds Banking Group to close another 95 branches",
-          "title_zh": "Lloyds Banking Group to close another 95 branches",
-          "link": "https://www.bbc.com/news/articles/cy4wgpkkzq0o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-02-11T17:08:22+00:00",
-          "summary_en": "The closures have been announced days after Santander said it would shut branches.",
-          "summary_zh": "The closures have been announced days after Santander said it would shut branches.",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Would you pay £7.50 for a pint of Guinness?",
-          "title_en": "Would you pay £7.50 for a pint of Guinness?",
-          "title_zh": "Would you pay £7.50 for a pint of Guinness?",
-          "link": "https://www.bbc.com/news/articles/cp8rmdyjj78o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-02-11T17:04:36+00:00",
-          "summary_en": "A Market Rasen pub asks customers about the cost of Guinness ahead of a price increase in April.",
-          "summary_zh": "A Market Rasen pub asks customers about the cost of Guinness ahead of a price increase in April.",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "US added 130,000 jobs in January, surpassing expectations as 2025 growth is slashed",
-          "title_en": "US added 130,000 jobs in January, surpassing expectations as 2025 growth is slashed",
-          "title_zh": "US added 130,000 jobs in January, surpassing expectations as 2025 growth is slashed",
-          "link": "https://www.theguardian.com/business/2026/feb/11/delayed-us-january-jobs-report",
-          "published": "2026-02-11T16:13:58+00:00",
-          "summary_en": "Unemployment rate was 4.3% in January with gains 13,000 less than the 143,000 jobs added a year ago, report shows The US jobs market added 130,000 jobs in January, according to a highly anticipated labor market report released on Wednesday, a surge of job growth after months of fatigue in the labor market. The unemployment rate was 4.3% in January, a slight…",
-          "summary_zh": "Unemployment rate was 4.3% in January with gains 13,000 less than the 143,000 jobs added a year ago, report shows The US jobs market added 130,000 jobs in January, according to a highly anticipated labor market report released on Wednesday, a surge of job growth after months of fatigue in the labor market. The unemployment rate was 4.3% in January, a slight…",
-          "source": "The Guardian Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        }
-      ],
-      "social_media": []
-    },
-    {
       "updated_at": "2026-02-13T13:28:22.084379+00:00",
       "edition_label": "Web",
       "summary_cn": null,
@@ -140224,6 +138523,880 @@
           "published": "2026-05-12T14:41:13+00:00",
           "summary_en": "What to know about the report.",
           "summary_zh": "关于报告的须知事项。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        }
+      ],
+      "social_media": []
+    },
+    {
+      "updated_at": "2026-05-13T03:31:21.753856+00:00",
+      "edition_label": "BJ 08:00",
+      "summary_cn": null,
+      "market_hotspots_cn": null,
+      "social_summary_cn": null,
+      "sector_recommendation": null,
+      "market_snapshot": [
+        {
+          "title": "US Markets",
+          "items": [
+            {
+              "name": "S&P 500",
+              "symbol": "^SPX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Nasdaq 100",
+              "symbol": "^NDQ",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Dow Jones",
+              "symbol": "^DJI",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "Europe Markets",
+          "items": [
+            {
+              "name": "FTSE 100",
+              "symbol": "^UKX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "GBP",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "DAX",
+              "symbol": "^DAX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "EUR",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "CAC 40",
+              "symbol": "^CAC",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "EUR",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "Asia Markets",
+          "items": [
+            {
+              "name": "Nikkei 225",
+              "symbol": "^NKX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "JPY",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Hang Seng",
+              "symbol": "^HSI",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "HKD",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "China Markets",
+          "items": [
+            {
+              "name": "SSE Composite 上证指数",
+              "symbol": "SH000001",
+              "price": 4217.98,
+              "change": 3.49,
+              "change_percent": 0.08,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "SZSE Component 深证成指",
+              "symbol": "SZ399001",
+              "price": 15881.14,
+              "change": 56.22,
+              "change_percent": 0.36,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "ChiNext 创业板指",
+              "symbol": "SZ399006",
+              "price": 3946.64,
+              "change": 11.76,
+              "change_percent": 0.3,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "CSI 300 沪深300",
+              "symbol": "SH000300",
+              "price": 4947.6,
+              "change": -0.45,
+              "change_percent": -0.01,
+              "currency": "CNY",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "Gold & Silver",
+          "items": [
+            {
+              "name": "Gold (oz)",
+              "symbol": "XAUUSD",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Silver (oz)",
+              "symbol": "XAGUSD",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "Crypto / 数字货币",
+          "items": [
+            {
+              "name": "BTC",
+              "symbol": "BTC",
+              "price": 81059.0,
+              "change": -100.48,
+              "change_percent": -0.12,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ETH",
+              "symbol": "ETH",
+              "price": 2297.42,
+              "change": -13.9,
+              "change_percent": -0.61,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "SOL",
+              "symbol": "SOL",
+              "price": 95.22,
+              "change": -0.95,
+              "change_percent": -1.0,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "BNB",
+              "symbol": "BNB",
+              "price": 680.6,
+              "change": 17.85,
+              "change_percent": 2.62,
+              "currency": "USD",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "XRP",
+              "symbol": "XRP",
+              "price": 1.45,
+              "change": -0.01,
+              "change_percent": -0.79,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOGE",
+              "symbol": "DOGE",
+              "price": 0.11,
+              "change": 0.0,
+              "change_percent": 0.99,
+              "currency": "USD",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "ADA",
+              "symbol": "ADA",
+              "price": 0.27,
+              "change": -0.0,
+              "change_percent": -1.5,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "AVAX",
+              "symbol": "AVAX",
+              "price": 9.99,
+              "change": -0.06,
+              "change_percent": -0.57,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOT",
+              "symbol": "DOT",
+              "price": 1.38,
+              "change": 0.03,
+              "change_percent": 2.25,
+              "currency": "USD",
+              "change_color": "#16a34a"
+            }
+          ]
+        }
+      ],
+      "sector_rankings": [
+        {
+          "title": "A-Share Industry Sectors 行业板块",
+          "items": [
+            {
+              "name": "综合电力设备商",
+              "change_percent": 6.44,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "钨",
+              "change_percent": 5.0,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "其他电源设备Ⅲ",
+              "change_percent": 4.83,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "其他电源设备Ⅱ",
+              "change_percent": 4.59,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "输变电设备",
+              "change_percent": 4.52,
+              "change_color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "title": "A-Share Concept Sectors 概念板块",
+          "items": [
+            {
+              "name": "举牌",
+              "change_percent": 4.76,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "昨日首板",
+              "change_percent": 4.01,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "昨日涨停_含一字",
+              "change_percent": 3.72,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "昨日连板_含一字",
+              "change_percent": 3.5,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "昨日打二板以上表现",
+              "change_percent": 3.43,
+              "change_color": "#16a34a"
+            }
+          ]
+        }
+      ],
+      "weekly_sector_rankings": [
+        {
+          "title": "A-Share Industry 行业板块 (Weekly)",
+          "items": [
+            {
+              "name": "火力发电",
+              "change_percent": 3.19,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 10.42,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "其他电源设备Ⅲ",
+              "change_percent": 4.85,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 10.13,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "光伏发电",
+              "change_percent": 4.07,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 9.14,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "线缆部件及其他",
+              "change_percent": 2.69,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 9.07,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "输变电设备",
+              "change_percent": 4.52,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 8.57,
+              "weekly_change_color": "#16a34a"
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "title": "China Seeks A.I. Independence, Weakening Trump’s Leverage",
+          "title_en": "China Seeks A.I. Independence, Weakening Trump’s Leverage",
+          "title_zh": "中国寻求人工智能独立，削弱特朗普的影响力",
+          "link": "https://www.nytimes.com/2026/05/12/business/china-semiconductor-ai-deepseek.html",
+          "published": "2026-05-12T05:36:10+00:00",
+          "summary_en": "Before this week’s U.S.-Chinese summit, Beijing reached a milestone in its quest for technological self-sufficiency.",
+          "summary_zh": "在本周的美中峰会之前，北京在寻求技术自给自足方面达到了一个里程碑。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Will Chinese companies still move to Singapore after Manus crackdown?",
+          "title_en": "Will Chinese companies still move to Singapore after Manus crackdown?",
+          "title_zh": "在马努斯镇压之后，中国公司还会搬到新加坡吗？",
+          "link": "https://www.ft.com/content/8774ab60-e94e-4386-b8f9-e89caaa5d11f",
+          "published": "2026-05-13T03:14:35+00:00",
+          "summary_en": "Beijing’s move to block takeover of AI start-up with headquarters in city-state challenges sustainability of ‘Singapore washing’",
+          "summary_zh": "北京阻止将总部设在城邦的人工智能初创企业收购的举动挑战了“新加坡洗”的可持续性",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "China Increasingly Views Trump’s America as an Empire in Decline",
+          "title_en": "China Increasingly Views Trump’s America as an Empire in Decline",
+          "title_zh": "中国越来越多地将特朗普的美国视为衰落中的帝国",
+          "link": "https://www.nytimes.com/2026/05/12/business/china-trump-xi-decline.html",
+          "published": "2026-05-12T17:00:33+00:00",
+          "summary_en": "For decades, many Chinese viewed the United States with a mix of admiration, envy and resentment. President Trump’s volatile second term shattered that image.",
+          "summary_zh": "几十年来，许多中国人对美国充满了钦佩、嫉妒和怨恨。特朗普总统动荡的第二个任期打破了这一形象。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Elon Musk and Tim Cook among CEOs joining Trump on China trip",
+          "title_en": "Elon Musk and Tim Cook among CEOs joining Trump on China trip",
+          "title_zh": "埃隆·马斯克（ Elon Musk ）和蒂姆·库克（ Tim Cook ）等首席执行官",
+          "link": "https://www.bbc.com/news/articles/c5yx757w048o?at_medium=RSS&at_campaign=rss",
+          "published": "2026-05-13T02:52:26+00:00",
+          "summary_en": "A total of 17 US executives are set to join the president on his visit, where he will meet his Chinese counterpart Xi Jinping.",
+          "summary_zh": "共有17名美国高管将与总统一起访问，届时他将与中国国家主席习近平会面。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Trump’s plan to discuss Taiwan arms sales with Xi rattles Asian allies",
+          "title_en": "Trump’s plan to discuss Taiwan arms sales with Xi rattles Asian allies",
+          "title_zh": "特朗普与习近平讨论台湾军售的计划令亚洲盟友震惊",
+          "link": "https://www.ft.com/content/156bf437-b5a8-40de-98c5-1ffe47d88b70",
+          "published": "2026-05-13T02:01:14+00:00",
+          "summary_en": "Negotiations with Beijing on weapons exports to Taipei would break long US precedent",
+          "summary_zh": "与北京就向台北出口武器进行谈判将打破美国长期以来的先例",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "China’s big tech groups miss out on AI stock market frenzy",
+          "title_en": "China’s big tech groups miss out on AI stock market frenzy",
+          "title_zh": "中国大型科技集团错过了人工智能股票市场的狂热",
+          "link": "https://www.ft.com/content/cba72e03-e47d-4d59-b59b-7dc4259b1265",
+          "published": "2026-05-12T21:00:04+00:00",
+          "summary_en": "Tencent and Alibaba left behind as investors focus on pure AI plays",
+          "summary_zh": "腾讯和阿里巴巴被抛在后面，因为投资者专注于纯粹的人工智能游戏",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "China Sought Access to Anthropic’s Newest A.I. The Answer Was No.",
+          "title_en": "China Sought Access to Anthropic’s Newest A.I. The Answer Was No.",
+          "title_zh": "中国寻求获得Anthropic最新的人工智能。答案是否定的。",
+          "link": "https://www.nytimes.com/2026/05/12/us/politics/china-ai-anthropic-openai-mythos-chatgpt.html",
+          "published": "2026-05-12T15:36:08+00:00",
+          "summary_en": "The latest artificial intelligence models from Anthropic and OpenAI are extending the United States’ lead over China and intensifying the rivalry between the countries.",
+          "summary_zh": "来自Anthropic和OpenAI的最新人工智能模型正在扩大美国对中国的领先地位，并加剧两国之间的竞争。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "China should stop hoarding food and fertiliser, says former World Bank chief",
+          "title_en": "China should stop hoarding food and fertiliser, says former World Bank chief",
+          "title_zh": "世界银行前行长表示，中国应停止囤积粮食和化肥",
+          "link": "https://www.bbc.com/news/articles/cwy2rnyg50zo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-05-12T08:30:52+00:00",
+          "summary_en": "David Malpass also said that Beijing's claim to be a developing nation was no longer credible.",
+          "summary_zh": "大卫·马尔帕斯（ David Malpass ）还表示，北京声称自己是发展中国家的说法不再可信。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "How the U.S. Is Trying to Ensure the Dollar’s Dominance During Economic Turmoil",
+          "title_en": "How the U.S. Is Trying to Ensure the Dollar’s Dominance During Economic Turmoil",
+          "title_zh": "美国如何在经济动荡期间努力确保美元的主导地位",
+          "link": "https://www.nytimes.com/2026/05/11/business/dollar-dominance-renminbi-china.html",
+          "published": "2026-05-11T18:24:59+00:00",
+          "summary_en": "As the government has been devising plans to keep the dollar dominant, China has been making its own moves to increase global influence of the renminbi.",
+          "summary_zh": "由于政府一直在制定保持美元主导地位的计划，中国一直在采取自己的行动来增加人民币的全球影响力。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "1MDB financier Jho Low asks Trump for a pardon",
+          "title_en": "1MDB financier Jho Low asks Trump for a pardon",
+          "title_zh": "1MDB金融家刘特佐请求特朗普赦免",
+          "link": "https://www.ft.com/content/86010fcd-8161-49dd-a267-1e08eb919911",
+          "published": "2026-05-13T01:28:50+00:00",
+          "summary_en": "Alleged mastermind behind multibillion-dollar scandal appears in US filing that lists pardon requests",
+          "summary_zh": "据称数十亿美元丑闻的幕后策划者出现在列出赦免请求的美国文件中",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Justice Dept. Officials Consider Settling Trump Suit Against I.R.S.",
+          "title_en": "Justice Dept. Officials Consider Settling Trump Suit Against I.R.S.",
+          "title_zh": "司法部官员考虑解决针对国税局的特朗普诉讼",
+          "link": "https://www.nytimes.com/2026/05/12/business/trump-suit-irs.html",
+          "published": "2026-05-13T01:02:07+00:00",
+          "summary_en": "One of the settlement terms under review is for the I.R.S. to drop any audits of the president, his family members and businesses.",
+          "summary_zh": "正在审查的结算条款之一是，国税局可以放弃对总统、其家人和企业的任何审计。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Marty Makary, Trump’s F.D.A. Commissioner, Resigns After Weeks of Pressure",
+          "title_en": "Marty Makary, Trump’s F.D.A. Commissioner, Resigns After Weeks of Pressure",
+          "title_zh": "特朗普的FDA专员马蒂·马卡里（ Marty Makary ）在数周的压力下辞职",
+          "link": "https://www.nytimes.com/2026/05/12/us/politics/trump-fires-fda-commissioner-makary.html",
+          "published": "2026-05-13T00:00:11+00:00",
+          "summary_en": "The agency’s top food official will step in to the role after Dr. Makary privately said he opposed the administration decision to approve flavored vapes.",
+          "summary_zh": "在马卡里博士私下表示反对政府决定批准调味蒸汽后，该机构的最高食品官员将接任这一职务。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "FirstFT: China’s tech giants miss out on AI stock market rally",
+          "title_en": "FirstFT: China’s tech giants miss out on AI stock market rally",
+          "title_zh": "FirstFT ：中国科技巨头错过了人工智能股市的反弹",
+          "link": "https://www.ft.com/content/6571c130-dc4f-4448-a732-007a888e1605",
+          "published": "2026-05-12T21:44:14+00:00",
+          "summary_en": "Also in today’s newsletter: US Treasury secretary meets Japanese PM, and Sam Altman testifies in OpenAI trial",
+          "summary_zh": "同样在今天的通讯中：美国财政部长会见日本首相， Sam Altman在OpenAI审判中作证",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Starmer clings to power after four ministers resign",
+          "title_en": "Starmer clings to power after four ministers resign",
+          "title_zh": "四名部长辞职后，斯塔默执掌权力",
+          "link": "https://www.ft.com/content/87c4bea0-421f-4cdc-b5b5-98221a9142f5",
+          "published": "2026-05-12T21:43:12+00:00",
+          "summary_en": "PM due to hold crunch meeting with health secretary Wes Streeting after challenging rivals to launch leadership bids",
+          "summary_zh": "在挑战竞争对手发起领导力竞标后， PM将与卫生部长Wes Streeting举行紧缩会议",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Conan O’Brien Will Return as Oscars Host",
+          "title_en": "Conan O’Brien Will Return as Oscars Host",
+          "title_zh": "柯南·奥布莱恩将重返奥斯卡颁奖典礼",
+          "link": "https://www.nytimes.com/2026/05/12/business/media/conan-obrien-oscars-host-2027.html",
+          "published": "2026-05-12T20:47:09+00:00",
+          "summary_en": "It will be the first time anyone has done the job for three straight years since Billy Crystal in the early 1990s.",
+          "summary_zh": "这将是自20世纪90年代初比利·克里斯托（ Billy Crystal ）以来首次连续三年完成这项工作。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Inflation Jumps as War-Driven Energy Costs Drive Up Prices",
+          "title_en": "Inflation Jumps as War-Driven Energy Costs Drive Up Prices",
+          "title_zh": "由于战争驱动的能源成本推高价格，通货膨胀率上升",
+          "link": "https://www.nytimes.com/2026/05/12/business/oil-prices-rise-us-iran.html",
+          "published": "2026-05-12T20:20:20+00:00",
+          "summary_en": "President Trump has declared the cease-fire on “life support,” and investors are taking a cautious approach as the economic effects of the war become more apparent.",
+          "summary_zh": "特朗普总统已宣布“生命支持”停火，随着战争的经济影响变得更加明显，投资者正在采取谨慎态度。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Why Your Life Is Now on Subscriptions",
+          "title_en": "Why Your Life Is Now on Subscriptions",
+          "title_zh": "为什么您的生活现在需要订阅",
+          "link": "https://www.nytimes.com/2026/05/12/business/subscriptions-products-services.html",
+          "published": "2026-05-12T19:58:37+00:00",
+          "summary_en": "As companies look to build cash flow and loyalty, everything from heated car seats to earthworm deliveries can become a recurring charge on your credit card.",
+          "summary_zh": "随着公司希望建立现金流和忠诚度，从加热的汽车座椅到蚯蚓派送，一切都可能成为信用卡上的经常性费用。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Musk made ‘hair-raising’ demands for control of OpenAI, Altman testifies",
+          "title_en": "Musk made ‘hair-raising’ demands for control of OpenAI, Altman testifies",
+          "title_zh": "奥特曼作证说，马斯克对控制OpenAI提出了“发型”要求",
+          "link": "https://www.ft.com/content/e3341337-a598-49f3-9593-f2f326e048ae",
+          "published": "2026-05-12T19:13:09+00:00",
+          "summary_en": "Start-up’s CEO takes the stand in legal battle with billionaire",
+          "summary_zh": "初创公司首席执行官在与亿万富翁的法律斗争中站出来",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "How Do Two London Luxury Hotels Compare? Testing the Chancery Rosewood and Raffles at the OWO.",
+          "title_en": "How Do Two London Luxury Hotels Compare? Testing the Chancery Rosewood and Raffles at the OWO.",
+          "title_zh": "如何比较两家伦敦豪华酒店？在OWO上测试Chancery Rosewood和Raffles。",
+          "link": "https://www.nytimes.com/2026/05/12/travel/luxury-hotels-london-chancery-rosewood-raffles-owo.html",
+          "published": "2026-05-12T19:04:25+00:00",
+          "summary_en": "Raffles at the OWO and the Chancery Rosewood recently opened in landmarks once teeming with generals, diplomats and spies. Both promise pampering and a dash of history. Do they deliver?",
+          "summary_zh": "OWO和Chancery Rosewood的莱佛士最近在曾经充满将军、外交官和间谍的地标性建筑中开业。两者都承诺呵护和一段历史。他们提供派送服务吗？",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Tomato Prices Soar as War, Tariffs and Weather Affect a Popular Crop",
+          "title_en": "Tomato Prices Soar as War, Tariffs and Weather Affect a Popular Crop",
+          "title_zh": "随着战争、关税和天气影响流行作物，番茄价格飙升",
+          "link": "https://www.nytimes.com/2026/05/12/business/inflation-tomatoes-prices.html",
+          "published": "2026-05-12T18:52:12+00:00",
+          "summary_en": "Tomato prices surged nearly 40 percent in April, the Consumer Price Index showed.",
+          "summary_zh": "消费者价格指数显示， 4月份番茄价格飙升近40%。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "EBay, the Old-School E-Commerce Site, Finds Its Place in Modern Retail",
+          "title_en": "EBay, the Old-School E-Commerce Site, Finds Its Place in Modern Retail",
+          "title_zh": "老派电子商务网站eBay在现代零售业中占有一席之地",
+          "link": "https://www.nytimes.com/2026/05/12/business/ebay-gamestop-auction-turnaround.html",
+          "published": "2026-05-12T18:08:17+00:00",
+          "summary_en": "The online marketplace has remade itself by focusing on collectibles and other high-end goods — and attracted an unwelcome takeover bid from GameStop.",
+          "summary_zh": "这个在线市场通过专注于收藏品和其他高端商品来重塑自己，并吸引了GameStop的不受欢迎的收购要约。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Stellantis and Ford turn to partnerships to tackle Europe woes",
+          "title_en": "Stellantis and Ford turn to partnerships to tackle Europe woes",
+          "title_zh": "Stellantis和福特寻求合作伙伴关系以应对欧洲困境",
+          "link": "https://www.ft.com/content/585e96cc-3ac5-4132-a112-3da75bdb984f",
+          "published": "2026-05-12T17:33:45+00:00",
+          "summary_en": "Carmakers seek tie-ups with Chinese groups and traditional rivals to secure scale and technology",
+          "summary_zh": "汽车制造商寻求与中国集团和传统竞争对手合作，以确保规模和技术",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Blue Owl retail fundraising evaporates amid private credit concerns",
+          "title_en": "Blue Owl retail fundraising evaporates amid private credit concerns",
+          "title_zh": "由于私人信贷问题， Blue Owl零售筹款活动蒸发",
+          "link": "https://www.ft.com/content/d04547c7-6315-4998-928d-2708670f4e01",
+          "published": "2026-05-12T17:20:21+00:00",
+          "summary_en": "Fund it operates took in fraction of capital from year-ago level as worries mount over potential surge in loan defaults",
+          "summary_zh": "由于对贷款违约潜在激增的担忧加剧，其运营的基金从去年同期水平获得了部分资本",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "UK borrowing costs surge as Starmer leadership crisis rattles bond markets",
+          "title_en": "UK borrowing costs surge as Starmer leadership crisis rattles bond markets",
+          "title_zh": "随着Starmer领导层危机扰乱债券市场，英国借贷成本激增",
+          "link": "https://www.ft.com/content/4bd1dadd-3a1c-4adf-b255-0b03f7e8c36d",
+          "published": "2026-05-12T16:30:25+00:00",
+          "summary_en": "Thirty-year gilt yield at highest this century as cabinet ministers pressure PM to consider his position",
+          "summary_zh": "随着内阁部长迫使总理考虑他的职位，本世纪30年来最高的镀金收益率",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Joni Lamb, Whose Christian TV Station Went Global, Dies at 65",
+          "title_en": "Joni Lamb, Whose Christian TV Station Went Global, Dies at 65",
+          "title_zh": "基督教电视台走向全球的Joni Lamb去世，享年65岁",
+          "link": "https://www.nytimes.com/2026/05/12/business/media/joni-lamb-dead.html",
+          "published": "2026-05-12T16:15:50+00:00",
+          "summary_en": "She and her husband, Marcus Lamb, founded Daystar Television Network, which reached more than 200 countries and made the couple into televangelism stars.",
+          "summary_zh": "她和她的丈夫马库斯·兰姆（ Marcus Lamb ）创立了Daystar电视网络，该网络覆盖了200多个国家，并使这对夫妇成为电视布道明星。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "EBay Rejects GameStop’s $55 Billion Takeover Bid",
+          "title_en": "EBay Rejects GameStop’s $55 Billion Takeover Bid",
+          "title_zh": "EBay拒绝GameStop 550亿美元的收购要约",
+          "link": "https://www.nytimes.com/2026/05/12/business/ebay-gamestop-takeover.html",
+          "published": "2026-05-12T15:32:32+00:00",
+          "summary_en": "The online marketplace called the cash-and-stock proposal “neither credible nor attractive.”",
+          "summary_zh": "在线市场称现金和股票提案“既不可信也不具吸引力”。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "How Much Power Did Microsoft Have Over OpenAI?",
+          "title_en": "How Much Power Did Microsoft Have Over OpenAI?",
+          "title_zh": "微软在OpenAI上有多大的能力？",
+          "link": "https://www.nytimes.com/2026/05/12/business/dealbook/nadella-microsoft-openai-musk-trial.html",
+          "published": "2026-05-12T14:59:24+00:00",
+          "summary_en": "The technology giant’s chief executive faced a grilling in court over whether it exerted too much control over what was meant to be an A.I. nonprofit.",
+          "summary_zh": "这家科技巨头的首席执行官在法庭上面临质询，质疑它是否对什么是人工智能非营利组织施加了太多控制。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "CPI Shows Inflation Accelerating to 3.8% Annually in April After Weeks of War in Iran",
+          "title_en": "CPI Shows Inflation Accelerating to 3.8% Annually in April After Weeks of War in Iran",
+          "title_zh": "在伊朗战争数周后的4月， CPI显示通货膨胀率每年加速至3.8%",
+          "link": "https://www.nytimes.com/2026/05/12/business/economy/cpi-inflation-report-consumer-prices.html",
+          "published": "2026-05-12T14:41:48+00:00",
+          "summary_en": "The Consumer Price Index rose 3.8% in April from a year earlier as higher energy costs replaced tariffs as the driver of higher prices for Americans.",
+          "summary_zh": "4月份消费者价格指数较上年同期上涨3.8% ，原因是较高的能源成本取代了关税，成为美国人物价上涨的驱动因素。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "What to know about the report.",
+          "title_en": "What to know about the report.",
+          "title_zh": "关于报告的须知事项。",
+          "link": "https://www.nytimes.com/live/2026/05/12/business/inflation-report-cpi/what-to-know-about-the-report",
+          "published": "2026-05-12T14:41:13+00:00",
+          "summary_en": "What to know about the report.",
+          "summary_zh": "关于报告的须知事项。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "How an ‘Impossible’ Idea Led to a Pancreatic Cancer Breakthrough",
+          "title_en": "How an ‘Impossible’ Idea Led to a Pancreatic Cancer Breakthrough",
+          "title_zh": "“不可能”的想法如何导致胰腺癌的突破",
+          "link": "https://www.nytimes.com/2026/05/12/health/pancreatic-cancer-daraxonrasib-kras.html",
+          "published": "2026-05-12T14:34:01+00:00",
+          "summary_en": "The new strategy also holds promise for lung and colon tumors. Here’s how scientists discovered it.",
+          "summary_zh": "新策略也为肺和结肠肿瘤带来了希望。以下是科学家如何发现它的。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "UK Bond Yields Rise With Starmer’s Future as Prime Minister in Doubt",
+          "title_en": "UK Bond Yields Rise With Starmer’s Future as Prime Minister in Doubt",
+          "title_zh": "英国债券收益率上升， Starmer担任首相的未来令人怀疑",
+          "link": "https://www.nytimes.com/2026/05/12/business/britain-bonds-gilts-keir-starmer.html",
+          "published": "2026-05-12T14:18:21+00:00",
+          "summary_en": "The yields on British debt pushed higher as the country’s prime minister, Keir Starmer, confronted a rebellion from members of his party.",
+          "summary_zh": "随着英国首相凯尔·斯塔默(Keir Starmer)遭遇党内成员的叛乱，英国债务收益率上升。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "As Trump Dismisses Iran Truce Plan, World Braces for Lasting Economic Pain",
+          "title_en": "As Trump Dismisses Iran Truce Plan, World Braces for Lasting Economic Pain",
+          "title_zh": "随着特朗普驳回伊朗休战计划，世界为持久的经济痛苦做好准备",
+          "link": "https://www.nytimes.com/2026/05/11/world/middleeast/economic-woes-trump-iran-truce.html",
+          "published": "2026-05-12T11:58:15+00:00",
+          "summary_en": "President Trump said the fragile cease-fire was on “life support,” and India’s leader urged residents to cut back on purchases and travel.",
+          "summary_zh": "特朗普总统表示，脆弱的停火是“生命支持” ，印度领导人敦促居民减少购买和旅行。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Why Americans dread AI",
+          "title_en": "Why Americans dread AI",
+          "title_zh": "为什么美国人害怕人工智能",
+          "link": "https://www.ft.com/content/637f5664-44eb-4527-8369-9eec320cfdf0",
+          "published": "2026-05-12T11:04:25+00:00",
+          "summary_en": "Silicon Valley encourages the view that the technology is unstoppable — and Trump seems to agree",
+          "summary_zh": "硅谷鼓励这种技术不可阻挡的观点—特朗普似乎同意",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "The Iran War Is Taking the Color Out of Japan’s Best-Known Snack Bags",
+          "title_en": "The Iran War Is Taking the Color Out of Japan’s Best-Known Snack Bags",
+          "title_zh": "伊朗战争正在从日本最著名的零食袋中脱颖而出",
+          "link": "https://www.nytimes.com/2026/05/12/world/asia/calbee-japan-bags-iran-war.html",
+          "published": "2026-05-12T10:48:52+00:00",
+          "summary_en": "The food giant Calbee said shortages of naphtha, a crude-oil derivative used in inks, were forcing it to switch to black-and-white packaging for its salty products.",
+          "summary_zh": "食品巨头Calbee表示，油墨中使用的原油衍生物石脑油短缺，迫使它改用黑白包装来包装其咸产品。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "YouTube Plays Matchmaker for Sponsors and Stars",
+          "title_en": "YouTube Plays Matchmaker for Sponsors and Stars",
+          "title_zh": "YouTube扮演赞助商和明星的媒人",
+          "link": "https://www.nytimes.com/2026/05/12/business/media/youtube-creators-advertisers.html",
+          "published": "2026-05-12T09:03:35+00:00",
+          "summary_en": "The company is trying to help streaming influencers, who are increasingly being wooed by competitors like Netflix and TikTok.",
+          "summary_zh": "该公司正试图帮助流媒体网红，他们越来越多地受到Netflix和TikTok等竞争对手的追捧。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Steel Tariffs Are Raising the Price of Canned Foods",
+          "title_en": "Steel Tariffs Are Raising the Price of Canned Foods",
+          "title_zh": "钢铁关税正在提高罐头食品的价格",
+          "link": "https://www.nytimes.com/2026/05/12/business/steel-tariffs-tin-cans-food-prices.html",
+          "published": "2026-05-12T09:01:29+00:00",
+          "summary_en": "The cost to put food in cans remains high because manufacturers must still import steel from overseas. U.S. Steel plans to reopen a tin-plate factory.",
+          "summary_zh": "罐装食品的成本仍然很高，因为制造商仍必须从海外进口钢材。美国钢铁公司计划重新开设一家锡板工厂。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Dua Lipa Sues Samsung Over Use of Her Image on TV Packaging",
+          "title_en": "Dua Lipa Sues Samsung Over Use of Her Image on TV Packaging",
+          "title_zh": "Dua Lipa起诉三星在电视包装上使用她的形象",
+          "link": "https://www.nytimes.com/2026/05/11/us/dua-lipa-samsung-lawsuit.html",
+          "published": "2026-05-12T04:25:20+00:00",
+          "summary_en": "The pop star is suing the electronics giant for more than $15 million, accusing it of using her image without authorization.",
+          "summary_zh": "这位流行歌星正在以超过1500万美元的价格起诉这家电子巨头，指责它未经授权使用她的形象。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "NBC to Turn Wordle Into a TV Game Show, With Savannah Guthrie as Host",
+          "title_en": "NBC to Turn Wordle Into a TV Game Show, With Savannah Guthrie as Host",
+          "title_zh": "NBC将把Wordle变成电视游戏节目，由Savannah Guthrie担任主持人",
+          "link": "https://www.nytimes.com/2026/05/11/business/media/wordle-nbc-savannah-guthrie.html",
+          "published": "2026-05-12T00:27:08+00:00",
+          "summary_en": "The word puzzle published by The New York Times is the inspiration for a game show that will begin airing next year. Jimmy Fallon is a producer.",
+          "summary_zh": "《纽约时报》发布的拼图这个词是明年开始播出的游戏节目的灵感来源。Jimmy Fallon是一名制片人。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Byron Allen Is Buying a Controlling Stake in BuzzFeed",
+          "title_en": "Byron Allen Is Buying a Controlling Stake in BuzzFeed",
+          "title_zh": "拜伦·艾伦（ Byron Allen ）正在购买BuzzFeed的控股权",
+          "link": "https://www.nytimes.com/2026/05/11/business/media/buzzfeed-byron-allen.html",
+          "published": "2026-05-11T22:48:07+00:00",
+          "summary_en": "Jonah Peretti, BuzzFeed’s co-founder 20 years ago, will step down as chief executive and serve as its president of A.I.",
+          "summary_zh": "20年前， BuzzFeed的联合创始人乔纳·佩雷蒂（ Jonah Peretti ）将辞去首席执行官职务，并担任其AI总裁。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Dean Buntrock, Maestro of Waste Management, Dies at 94",
+          "title_en": "Dean Buntrock, Maestro of Waste Management, Dies at 94",
+          "title_zh": "废物管理大师Dean Buntrock去世，享年94岁",
+          "link": "https://www.nytimes.com/2026/05/11/business/dean-buntrock-dead.html",
+          "published": "2026-05-11T20:33:09+00:00",
+          "summary_en": "Anticipating how the environmental movement would affect trash disposal in the United States, he built a 12-truck garbage company into a coast-to-coast behemoth.",
+          "summary_zh": "他预见到环保运动将如何影响美国的垃圾处理，于是将一家12辆卡车的垃圾公司打造成了一个海岸到海岸的庞然大物。",
           "source": "NYTimes Business",
           "language": "en",
           "priority": 5,
