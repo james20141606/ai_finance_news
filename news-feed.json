@@ -1,880 +1,6 @@
 {
   "editions": [
     {
-      "updated_at": "2026-05-13T03:31:21.753856+00:00",
-      "edition_label": "BJ 08:00",
-      "summary_cn": null,
-      "market_hotspots_cn": null,
-      "social_summary_cn": null,
-      "sector_recommendation": null,
-      "market_snapshot": [
-        {
-          "title": "US Markets",
-          "items": [
-            {
-              "name": "S&P 500",
-              "symbol": "^SPX",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "Nasdaq 100",
-              "symbol": "^NDQ",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "Dow Jones",
-              "symbol": "^DJI",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            }
-          ]
-        },
-        {
-          "title": "Europe Markets",
-          "items": [
-            {
-              "name": "FTSE 100",
-              "symbol": "^UKX",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "GBP",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "DAX",
-              "symbol": "^DAX",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "EUR",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "CAC 40",
-              "symbol": "^CAC",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "EUR",
-              "change_color": "#64748b"
-            }
-          ]
-        },
-        {
-          "title": "Asia Markets",
-          "items": [
-            {
-              "name": "Nikkei 225",
-              "symbol": "^NKX",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "JPY",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "Hang Seng",
-              "symbol": "^HSI",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "HKD",
-              "change_color": "#64748b"
-            }
-          ]
-        },
-        {
-          "title": "China Markets",
-          "items": [
-            {
-              "name": "SSE Composite 上证指数",
-              "symbol": "SH000001",
-              "price": 4217.98,
-              "change": 3.49,
-              "change_percent": 0.08,
-              "currency": "CNY",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "SZSE Component 深证成指",
-              "symbol": "SZ399001",
-              "price": 15881.14,
-              "change": 56.22,
-              "change_percent": 0.36,
-              "currency": "CNY",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "ChiNext 创业板指",
-              "symbol": "SZ399006",
-              "price": 3946.64,
-              "change": 11.76,
-              "change_percent": 0.3,
-              "currency": "CNY",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "CSI 300 沪深300",
-              "symbol": "SH000300",
-              "price": 4947.6,
-              "change": -0.45,
-              "change_percent": -0.01,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            }
-          ]
-        },
-        {
-          "title": "Gold & Silver",
-          "items": [
-            {
-              "name": "Gold (oz)",
-              "symbol": "XAUUSD",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "Silver (oz)",
-              "symbol": "XAGUSD",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            }
-          ]
-        },
-        {
-          "title": "Crypto / 数字货币",
-          "items": [
-            {
-              "name": "BTC",
-              "symbol": "BTC",
-              "price": 81059.0,
-              "change": -100.48,
-              "change_percent": -0.12,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ETH",
-              "symbol": "ETH",
-              "price": 2297.42,
-              "change": -13.9,
-              "change_percent": -0.61,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "SOL",
-              "symbol": "SOL",
-              "price": 95.22,
-              "change": -0.95,
-              "change_percent": -1.0,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "BNB",
-              "symbol": "BNB",
-              "price": 680.6,
-              "change": 17.85,
-              "change_percent": 2.62,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "XRP",
-              "symbol": "XRP",
-              "price": 1.45,
-              "change": -0.01,
-              "change_percent": -0.79,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "DOGE",
-              "symbol": "DOGE",
-              "price": 0.11,
-              "change": 0.0,
-              "change_percent": 0.99,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "ADA",
-              "symbol": "ADA",
-              "price": 0.27,
-              "change": -0.0,
-              "change_percent": -1.5,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "AVAX",
-              "symbol": "AVAX",
-              "price": 9.99,
-              "change": -0.06,
-              "change_percent": -0.57,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "DOT",
-              "symbol": "DOT",
-              "price": 1.38,
-              "change": 0.03,
-              "change_percent": 2.25,
-              "currency": "USD",
-              "change_color": "#16a34a"
-            }
-          ]
-        }
-      ],
-      "sector_rankings": [
-        {
-          "title": "A-Share Industry Sectors 行业板块",
-          "items": [
-            {
-              "name": "综合电力设备商",
-              "change_percent": 6.44,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "钨",
-              "change_percent": 5.0,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "其他电源设备Ⅲ",
-              "change_percent": 4.83,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "其他电源设备Ⅱ",
-              "change_percent": 4.59,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "输变电设备",
-              "change_percent": 4.52,
-              "change_color": "#16a34a"
-            }
-          ]
-        },
-        {
-          "title": "A-Share Concept Sectors 概念板块",
-          "items": [
-            {
-              "name": "举牌",
-              "change_percent": 4.76,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "昨日首板",
-              "change_percent": 4.01,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "昨日涨停_含一字",
-              "change_percent": 3.72,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "昨日连板_含一字",
-              "change_percent": 3.5,
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "昨日打二板以上表现",
-              "change_percent": 3.43,
-              "change_color": "#16a34a"
-            }
-          ]
-        }
-      ],
-      "weekly_sector_rankings": [
-        {
-          "title": "A-Share Industry 行业板块 (Weekly)",
-          "items": [
-            {
-              "name": "火力发电",
-              "change_percent": 3.19,
-              "change_color": "#16a34a",
-              "weekly_change_percent": 10.42,
-              "weekly_change_color": "#16a34a"
-            },
-            {
-              "name": "其他电源设备Ⅲ",
-              "change_percent": 4.85,
-              "change_color": "#16a34a",
-              "weekly_change_percent": 10.13,
-              "weekly_change_color": "#16a34a"
-            },
-            {
-              "name": "光伏发电",
-              "change_percent": 4.07,
-              "change_color": "#16a34a",
-              "weekly_change_percent": 9.14,
-              "weekly_change_color": "#16a34a"
-            },
-            {
-              "name": "线缆部件及其他",
-              "change_percent": 2.69,
-              "change_color": "#16a34a",
-              "weekly_change_percent": 9.07,
-              "weekly_change_color": "#16a34a"
-            },
-            {
-              "name": "输变电设备",
-              "change_percent": 4.52,
-              "change_color": "#16a34a",
-              "weekly_change_percent": 8.57,
-              "weekly_change_color": "#16a34a"
-            }
-          ]
-        }
-      ],
-      "items": [
-        {
-          "title": "China Seeks A.I. Independence, Weakening Trump’s Leverage",
-          "title_en": "China Seeks A.I. Independence, Weakening Trump’s Leverage",
-          "title_zh": "中国寻求人工智能独立，削弱特朗普的影响力",
-          "link": "https://www.nytimes.com/2026/05/12/business/china-semiconductor-ai-deepseek.html",
-          "published": "2026-05-12T05:36:10+00:00",
-          "summary_en": "Before this week’s U.S.-Chinese summit, Beijing reached a milestone in its quest for technological self-sufficiency.",
-          "summary_zh": "在本周的美中峰会之前，北京在寻求技术自给自足方面达到了一个里程碑。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Will Chinese companies still move to Singapore after Manus crackdown?",
-          "title_en": "Will Chinese companies still move to Singapore after Manus crackdown?",
-          "title_zh": "在马努斯镇压之后，中国公司还会搬到新加坡吗？",
-          "link": "https://www.ft.com/content/8774ab60-e94e-4386-b8f9-e89caaa5d11f",
-          "published": "2026-05-13T03:14:35+00:00",
-          "summary_en": "Beijing’s move to block takeover of AI start-up with headquarters in city-state challenges sustainability of ‘Singapore washing’",
-          "summary_zh": "北京阻止将总部设在城邦的人工智能初创企业收购的举动挑战了“新加坡洗”的可持续性",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "China Increasingly Views Trump’s America as an Empire in Decline",
-          "title_en": "China Increasingly Views Trump’s America as an Empire in Decline",
-          "title_zh": "中国越来越多地将特朗普的美国视为衰落中的帝国",
-          "link": "https://www.nytimes.com/2026/05/12/business/china-trump-xi-decline.html",
-          "published": "2026-05-12T17:00:33+00:00",
-          "summary_en": "For decades, many Chinese viewed the United States with a mix of admiration, envy and resentment. President Trump’s volatile second term shattered that image.",
-          "summary_zh": "几十年来，许多中国人对美国充满了钦佩、嫉妒和怨恨。特朗普总统动荡的第二个任期打破了这一形象。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Elon Musk and Tim Cook among CEOs joining Trump on China trip",
-          "title_en": "Elon Musk and Tim Cook among CEOs joining Trump on China trip",
-          "title_zh": "埃隆·马斯克（ Elon Musk ）和蒂姆·库克（ Tim Cook ）等首席执行官",
-          "link": "https://www.bbc.com/news/articles/c5yx757w048o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-05-13T02:52:26+00:00",
-          "summary_en": "A total of 17 US executives are set to join the president on his visit, where he will meet his Chinese counterpart Xi Jinping.",
-          "summary_zh": "共有17名美国高管将与总统一起访问，届时他将与中国国家主席习近平会面。",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump’s plan to discuss Taiwan arms sales with Xi rattles Asian allies",
-          "title_en": "Trump’s plan to discuss Taiwan arms sales with Xi rattles Asian allies",
-          "title_zh": "特朗普与习近平讨论台湾军售的计划令亚洲盟友震惊",
-          "link": "https://www.ft.com/content/156bf437-b5a8-40de-98c5-1ffe47d88b70",
-          "published": "2026-05-13T02:01:14+00:00",
-          "summary_en": "Negotiations with Beijing on weapons exports to Taipei would break long US precedent",
-          "summary_zh": "与北京就向台北出口武器进行谈判将打破美国长期以来的先例",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "China’s big tech groups miss out on AI stock market frenzy",
-          "title_en": "China’s big tech groups miss out on AI stock market frenzy",
-          "title_zh": "中国大型科技集团错过了人工智能股票市场的狂热",
-          "link": "https://www.ft.com/content/cba72e03-e47d-4d59-b59b-7dc4259b1265",
-          "published": "2026-05-12T21:00:04+00:00",
-          "summary_en": "Tencent and Alibaba left behind as investors focus on pure AI plays",
-          "summary_zh": "腾讯和阿里巴巴被抛在后面，因为投资者专注于纯粹的人工智能游戏",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "China Sought Access to Anthropic’s Newest A.I. The Answer Was No.",
-          "title_en": "China Sought Access to Anthropic’s Newest A.I. The Answer Was No.",
-          "title_zh": "中国寻求获得Anthropic最新的人工智能。答案是否定的。",
-          "link": "https://www.nytimes.com/2026/05/12/us/politics/china-ai-anthropic-openai-mythos-chatgpt.html",
-          "published": "2026-05-12T15:36:08+00:00",
-          "summary_en": "The latest artificial intelligence models from Anthropic and OpenAI are extending the United States’ lead over China and intensifying the rivalry between the countries.",
-          "summary_zh": "来自Anthropic和OpenAI的最新人工智能模型正在扩大美国对中国的领先地位，并加剧两国之间的竞争。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "China should stop hoarding food and fertiliser, says former World Bank chief",
-          "title_en": "China should stop hoarding food and fertiliser, says former World Bank chief",
-          "title_zh": "世界银行前行长表示，中国应停止囤积粮食和化肥",
-          "link": "https://www.bbc.com/news/articles/cwy2rnyg50zo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-05-12T08:30:52+00:00",
-          "summary_en": "David Malpass also said that Beijing's claim to be a developing nation was no longer credible.",
-          "summary_zh": "大卫·马尔帕斯（ David Malpass ）还表示，北京声称自己是发展中国家的说法不再可信。",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "How the U.S. Is Trying to Ensure the Dollar’s Dominance During Economic Turmoil",
-          "title_en": "How the U.S. Is Trying to Ensure the Dollar’s Dominance During Economic Turmoil",
-          "title_zh": "美国如何在经济动荡期间努力确保美元的主导地位",
-          "link": "https://www.nytimes.com/2026/05/11/business/dollar-dominance-renminbi-china.html",
-          "published": "2026-05-11T18:24:59+00:00",
-          "summary_en": "As the government has been devising plans to keep the dollar dominant, China has been making its own moves to increase global influence of the renminbi.",
-          "summary_zh": "由于政府一直在制定保持美元主导地位的计划，中国一直在采取自己的行动来增加人民币的全球影响力。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "1MDB financier Jho Low asks Trump for a pardon",
-          "title_en": "1MDB financier Jho Low asks Trump for a pardon",
-          "title_zh": "1MDB金融家刘特佐请求特朗普赦免",
-          "link": "https://www.ft.com/content/86010fcd-8161-49dd-a267-1e08eb919911",
-          "published": "2026-05-13T01:28:50+00:00",
-          "summary_en": "Alleged mastermind behind multibillion-dollar scandal appears in US filing that lists pardon requests",
-          "summary_zh": "据称数十亿美元丑闻的幕后策划者出现在列出赦免请求的美国文件中",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Justice Dept. Officials Consider Settling Trump Suit Against I.R.S.",
-          "title_en": "Justice Dept. Officials Consider Settling Trump Suit Against I.R.S.",
-          "title_zh": "司法部官员考虑解决针对国税局的特朗普诉讼",
-          "link": "https://www.nytimes.com/2026/05/12/business/trump-suit-irs.html",
-          "published": "2026-05-13T01:02:07+00:00",
-          "summary_en": "One of the settlement terms under review is for the I.R.S. to drop any audits of the president, his family members and businesses.",
-          "summary_zh": "正在审查的结算条款之一是，国税局可以放弃对总统、其家人和企业的任何审计。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Marty Makary, Trump’s F.D.A. Commissioner, Resigns After Weeks of Pressure",
-          "title_en": "Marty Makary, Trump’s F.D.A. Commissioner, Resigns After Weeks of Pressure",
-          "title_zh": "特朗普的FDA专员马蒂·马卡里（ Marty Makary ）在数周的压力下辞职",
-          "link": "https://www.nytimes.com/2026/05/12/us/politics/trump-fires-fda-commissioner-makary.html",
-          "published": "2026-05-13T00:00:11+00:00",
-          "summary_en": "The agency’s top food official will step in to the role after Dr. Makary privately said he opposed the administration decision to approve flavored vapes.",
-          "summary_zh": "在马卡里博士私下表示反对政府决定批准调味蒸汽后，该机构的最高食品官员将接任这一职务。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "FirstFT: China’s tech giants miss out on AI stock market rally",
-          "title_en": "FirstFT: China’s tech giants miss out on AI stock market rally",
-          "title_zh": "FirstFT ：中国科技巨头错过了人工智能股市的反弹",
-          "link": "https://www.ft.com/content/6571c130-dc4f-4448-a732-007a888e1605",
-          "published": "2026-05-12T21:44:14+00:00",
-          "summary_en": "Also in today’s newsletter: US Treasury secretary meets Japanese PM, and Sam Altman testifies in OpenAI trial",
-          "summary_zh": "同样在今天的通讯中：美国财政部长会见日本首相， Sam Altman在OpenAI审判中作证",
-          "source": "Financial Times Global Economy",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Starmer clings to power after four ministers resign",
-          "title_en": "Starmer clings to power after four ministers resign",
-          "title_zh": "四名部长辞职后，斯塔默执掌权力",
-          "link": "https://www.ft.com/content/87c4bea0-421f-4cdc-b5b5-98221a9142f5",
-          "published": "2026-05-12T21:43:12+00:00",
-          "summary_en": "PM due to hold crunch meeting with health secretary Wes Streeting after challenging rivals to launch leadership bids",
-          "summary_zh": "在挑战竞争对手发起领导力竞标后， PM将与卫生部长Wes Streeting举行紧缩会议",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Conan O’Brien Will Return as Oscars Host",
-          "title_en": "Conan O’Brien Will Return as Oscars Host",
-          "title_zh": "柯南·奥布莱恩将重返奥斯卡颁奖典礼",
-          "link": "https://www.nytimes.com/2026/05/12/business/media/conan-obrien-oscars-host-2027.html",
-          "published": "2026-05-12T20:47:09+00:00",
-          "summary_en": "It will be the first time anyone has done the job for three straight years since Billy Crystal in the early 1990s.",
-          "summary_zh": "这将是自20世纪90年代初比利·克里斯托（ Billy Crystal ）以来首次连续三年完成这项工作。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Inflation Jumps as War-Driven Energy Costs Drive Up Prices",
-          "title_en": "Inflation Jumps as War-Driven Energy Costs Drive Up Prices",
-          "title_zh": "由于战争驱动的能源成本推高价格，通货膨胀率上升",
-          "link": "https://www.nytimes.com/2026/05/12/business/oil-prices-rise-us-iran.html",
-          "published": "2026-05-12T20:20:20+00:00",
-          "summary_en": "President Trump has declared the cease-fire on “life support,” and investors are taking a cautious approach as the economic effects of the war become more apparent.",
-          "summary_zh": "特朗普总统已宣布“生命支持”停火，随着战争的经济影响变得更加明显，投资者正在采取谨慎态度。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Why Your Life Is Now on Subscriptions",
-          "title_en": "Why Your Life Is Now on Subscriptions",
-          "title_zh": "为什么您的生活现在需要订阅",
-          "link": "https://www.nytimes.com/2026/05/12/business/subscriptions-products-services.html",
-          "published": "2026-05-12T19:58:37+00:00",
-          "summary_en": "As companies look to build cash flow and loyalty, everything from heated car seats to earthworm deliveries can become a recurring charge on your credit card.",
-          "summary_zh": "随着公司希望建立现金流和忠诚度，从加热的汽车座椅到蚯蚓派送，一切都可能成为信用卡上的经常性费用。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Musk made ‘hair-raising’ demands for control of OpenAI, Altman testifies",
-          "title_en": "Musk made ‘hair-raising’ demands for control of OpenAI, Altman testifies",
-          "title_zh": "奥特曼作证说，马斯克对控制OpenAI提出了“发型”要求",
-          "link": "https://www.ft.com/content/e3341337-a598-49f3-9593-f2f326e048ae",
-          "published": "2026-05-12T19:13:09+00:00",
-          "summary_en": "Start-up’s CEO takes the stand in legal battle with billionaire",
-          "summary_zh": "初创公司首席执行官在与亿万富翁的法律斗争中站出来",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "How Do Two London Luxury Hotels Compare? Testing the Chancery Rosewood and Raffles at the OWO.",
-          "title_en": "How Do Two London Luxury Hotels Compare? Testing the Chancery Rosewood and Raffles at the OWO.",
-          "title_zh": "如何比较两家伦敦豪华酒店？在OWO上测试Chancery Rosewood和Raffles。",
-          "link": "https://www.nytimes.com/2026/05/12/travel/luxury-hotels-london-chancery-rosewood-raffles-owo.html",
-          "published": "2026-05-12T19:04:25+00:00",
-          "summary_en": "Raffles at the OWO and the Chancery Rosewood recently opened in landmarks once teeming with generals, diplomats and spies. Both promise pampering and a dash of history. Do they deliver?",
-          "summary_zh": "OWO和Chancery Rosewood的莱佛士最近在曾经充满将军、外交官和间谍的地标性建筑中开业。两者都承诺呵护和一段历史。他们提供派送服务吗？",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Tomato Prices Soar as War, Tariffs and Weather Affect a Popular Crop",
-          "title_en": "Tomato Prices Soar as War, Tariffs and Weather Affect a Popular Crop",
-          "title_zh": "随着战争、关税和天气影响流行作物，番茄价格飙升",
-          "link": "https://www.nytimes.com/2026/05/12/business/inflation-tomatoes-prices.html",
-          "published": "2026-05-12T18:52:12+00:00",
-          "summary_en": "Tomato prices surged nearly 40 percent in April, the Consumer Price Index showed.",
-          "summary_zh": "消费者价格指数显示， 4月份番茄价格飙升近40%。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "EBay, the Old-School E-Commerce Site, Finds Its Place in Modern Retail",
-          "title_en": "EBay, the Old-School E-Commerce Site, Finds Its Place in Modern Retail",
-          "title_zh": "老派电子商务网站eBay在现代零售业中占有一席之地",
-          "link": "https://www.nytimes.com/2026/05/12/business/ebay-gamestop-auction-turnaround.html",
-          "published": "2026-05-12T18:08:17+00:00",
-          "summary_en": "The online marketplace has remade itself by focusing on collectibles and other high-end goods — and attracted an unwelcome takeover bid from GameStop.",
-          "summary_zh": "这个在线市场通过专注于收藏品和其他高端商品来重塑自己，并吸引了GameStop的不受欢迎的收购要约。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Stellantis and Ford turn to partnerships to tackle Europe woes",
-          "title_en": "Stellantis and Ford turn to partnerships to tackle Europe woes",
-          "title_zh": "Stellantis和福特寻求合作伙伴关系以应对欧洲困境",
-          "link": "https://www.ft.com/content/585e96cc-3ac5-4132-a112-3da75bdb984f",
-          "published": "2026-05-12T17:33:45+00:00",
-          "summary_en": "Carmakers seek tie-ups with Chinese groups and traditional rivals to secure scale and technology",
-          "summary_zh": "汽车制造商寻求与中国集团和传统竞争对手合作，以确保规模和技术",
-          "source": "Financial Times Global Economy",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Blue Owl retail fundraising evaporates amid private credit concerns",
-          "title_en": "Blue Owl retail fundraising evaporates amid private credit concerns",
-          "title_zh": "由于私人信贷问题， Blue Owl零售筹款活动蒸发",
-          "link": "https://www.ft.com/content/d04547c7-6315-4998-928d-2708670f4e01",
-          "published": "2026-05-12T17:20:21+00:00",
-          "summary_en": "Fund it operates took in fraction of capital from year-ago level as worries mount over potential surge in loan defaults",
-          "summary_zh": "由于对贷款违约潜在激增的担忧加剧，其运营的基金从去年同期水平获得了部分资本",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "UK borrowing costs surge as Starmer leadership crisis rattles bond markets",
-          "title_en": "UK borrowing costs surge as Starmer leadership crisis rattles bond markets",
-          "title_zh": "随着Starmer领导层危机扰乱债券市场，英国借贷成本激增",
-          "link": "https://www.ft.com/content/4bd1dadd-3a1c-4adf-b255-0b03f7e8c36d",
-          "published": "2026-05-12T16:30:25+00:00",
-          "summary_en": "Thirty-year gilt yield at highest this century as cabinet ministers pressure PM to consider his position",
-          "summary_zh": "随着内阁部长迫使总理考虑他的职位，本世纪30年来最高的镀金收益率",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Joni Lamb, Whose Christian TV Station Went Global, Dies at 65",
-          "title_en": "Joni Lamb, Whose Christian TV Station Went Global, Dies at 65",
-          "title_zh": "基督教电视台走向全球的Joni Lamb去世，享年65岁",
-          "link": "https://www.nytimes.com/2026/05/12/business/media/joni-lamb-dead.html",
-          "published": "2026-05-12T16:15:50+00:00",
-          "summary_en": "She and her husband, Marcus Lamb, founded Daystar Television Network, which reached more than 200 countries and made the couple into televangelism stars.",
-          "summary_zh": "她和她的丈夫马库斯·兰姆（ Marcus Lamb ）创立了Daystar电视网络，该网络覆盖了200多个国家，并使这对夫妇成为电视布道明星。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "EBay Rejects GameStop’s $55 Billion Takeover Bid",
-          "title_en": "EBay Rejects GameStop’s $55 Billion Takeover Bid",
-          "title_zh": "EBay拒绝GameStop 550亿美元的收购要约",
-          "link": "https://www.nytimes.com/2026/05/12/business/ebay-gamestop-takeover.html",
-          "published": "2026-05-12T15:32:32+00:00",
-          "summary_en": "The online marketplace called the cash-and-stock proposal “neither credible nor attractive.”",
-          "summary_zh": "在线市场称现金和股票提案“既不可信也不具吸引力”。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "How Much Power Did Microsoft Have Over OpenAI?",
-          "title_en": "How Much Power Did Microsoft Have Over OpenAI?",
-          "title_zh": "微软在OpenAI上有多大的能力？",
-          "link": "https://www.nytimes.com/2026/05/12/business/dealbook/nadella-microsoft-openai-musk-trial.html",
-          "published": "2026-05-12T14:59:24+00:00",
-          "summary_en": "The technology giant’s chief executive faced a grilling in court over whether it exerted too much control over what was meant to be an A.I. nonprofit.",
-          "summary_zh": "这家科技巨头的首席执行官在法庭上面临质询，质疑它是否对什么是人工智能非营利组织施加了太多控制。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "CPI Shows Inflation Accelerating to 3.8% Annually in April After Weeks of War in Iran",
-          "title_en": "CPI Shows Inflation Accelerating to 3.8% Annually in April After Weeks of War in Iran",
-          "title_zh": "在伊朗战争数周后的4月， CPI显示通货膨胀率每年加速至3.8%",
-          "link": "https://www.nytimes.com/2026/05/12/business/economy/cpi-inflation-report-consumer-prices.html",
-          "published": "2026-05-12T14:41:48+00:00",
-          "summary_en": "The Consumer Price Index rose 3.8% in April from a year earlier as higher energy costs replaced tariffs as the driver of higher prices for Americans.",
-          "summary_zh": "4月份消费者价格指数较上年同期上涨3.8% ，原因是较高的能源成本取代了关税，成为美国人物价上涨的驱动因素。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "What to know about the report.",
-          "title_en": "What to know about the report.",
-          "title_zh": "关于报告的须知事项。",
-          "link": "https://www.nytimes.com/live/2026/05/12/business/inflation-report-cpi/what-to-know-about-the-report",
-          "published": "2026-05-12T14:41:13+00:00",
-          "summary_en": "What to know about the report.",
-          "summary_zh": "关于报告的须知事项。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "How an ‘Impossible’ Idea Led to a Pancreatic Cancer Breakthrough",
-          "title_en": "How an ‘Impossible’ Idea Led to a Pancreatic Cancer Breakthrough",
-          "title_zh": "“不可能”的想法如何导致胰腺癌的突破",
-          "link": "https://www.nytimes.com/2026/05/12/health/pancreatic-cancer-daraxonrasib-kras.html",
-          "published": "2026-05-12T14:34:01+00:00",
-          "summary_en": "The new strategy also holds promise for lung and colon tumors. Here’s how scientists discovered it.",
-          "summary_zh": "新策略也为肺和结肠肿瘤带来了希望。以下是科学家如何发现它的。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "UK Bond Yields Rise With Starmer’s Future as Prime Minister in Doubt",
-          "title_en": "UK Bond Yields Rise With Starmer’s Future as Prime Minister in Doubt",
-          "title_zh": "英国债券收益率上升， Starmer担任首相的未来令人怀疑",
-          "link": "https://www.nytimes.com/2026/05/12/business/britain-bonds-gilts-keir-starmer.html",
-          "published": "2026-05-12T14:18:21+00:00",
-          "summary_en": "The yields on British debt pushed higher as the country’s prime minister, Keir Starmer, confronted a rebellion from members of his party.",
-          "summary_zh": "随着英国首相凯尔·斯塔默(Keir Starmer)遭遇党内成员的叛乱，英国债务收益率上升。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "As Trump Dismisses Iran Truce Plan, World Braces for Lasting Economic Pain",
-          "title_en": "As Trump Dismisses Iran Truce Plan, World Braces for Lasting Economic Pain",
-          "title_zh": "随着特朗普驳回伊朗休战计划，世界为持久的经济痛苦做好准备",
-          "link": "https://www.nytimes.com/2026/05/11/world/middleeast/economic-woes-trump-iran-truce.html",
-          "published": "2026-05-12T11:58:15+00:00",
-          "summary_en": "President Trump said the fragile cease-fire was on “life support,” and India’s leader urged residents to cut back on purchases and travel.",
-          "summary_zh": "特朗普总统表示，脆弱的停火是“生命支持” ，印度领导人敦促居民减少购买和旅行。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Why Americans dread AI",
-          "title_en": "Why Americans dread AI",
-          "title_zh": "为什么美国人害怕人工智能",
-          "link": "https://www.ft.com/content/637f5664-44eb-4527-8369-9eec320cfdf0",
-          "published": "2026-05-12T11:04:25+00:00",
-          "summary_en": "Silicon Valley encourages the view that the technology is unstoppable — and Trump seems to agree",
-          "summary_zh": "硅谷鼓励这种技术不可阻挡的观点—特朗普似乎同意",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "The Iran War Is Taking the Color Out of Japan’s Best-Known Snack Bags",
-          "title_en": "The Iran War Is Taking the Color Out of Japan’s Best-Known Snack Bags",
-          "title_zh": "伊朗战争正在从日本最著名的零食袋中脱颖而出",
-          "link": "https://www.nytimes.com/2026/05/12/world/asia/calbee-japan-bags-iran-war.html",
-          "published": "2026-05-12T10:48:52+00:00",
-          "summary_en": "The food giant Calbee said shortages of naphtha, a crude-oil derivative used in inks, were forcing it to switch to black-and-white packaging for its salty products.",
-          "summary_zh": "食品巨头Calbee表示，油墨中使用的原油衍生物石脑油短缺，迫使它改用黑白包装来包装其咸产品。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "YouTube Plays Matchmaker for Sponsors and Stars",
-          "title_en": "YouTube Plays Matchmaker for Sponsors and Stars",
-          "title_zh": "YouTube扮演赞助商和明星的媒人",
-          "link": "https://www.nytimes.com/2026/05/12/business/media/youtube-creators-advertisers.html",
-          "published": "2026-05-12T09:03:35+00:00",
-          "summary_en": "The company is trying to help streaming influencers, who are increasingly being wooed by competitors like Netflix and TikTok.",
-          "summary_zh": "该公司正试图帮助流媒体网红，他们越来越多地受到Netflix和TikTok等竞争对手的追捧。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Steel Tariffs Are Raising the Price of Canned Foods",
-          "title_en": "Steel Tariffs Are Raising the Price of Canned Foods",
-          "title_zh": "钢铁关税正在提高罐头食品的价格",
-          "link": "https://www.nytimes.com/2026/05/12/business/steel-tariffs-tin-cans-food-prices.html",
-          "published": "2026-05-12T09:01:29+00:00",
-          "summary_en": "The cost to put food in cans remains high because manufacturers must still import steel from overseas. U.S. Steel plans to reopen a tin-plate factory.",
-          "summary_zh": "罐装食品的成本仍然很高，因为制造商仍必须从海外进口钢材。美国钢铁公司计划重新开设一家锡板工厂。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Dua Lipa Sues Samsung Over Use of Her Image on TV Packaging",
-          "title_en": "Dua Lipa Sues Samsung Over Use of Her Image on TV Packaging",
-          "title_zh": "Dua Lipa起诉三星在电视包装上使用她的形象",
-          "link": "https://www.nytimes.com/2026/05/11/us/dua-lipa-samsung-lawsuit.html",
-          "published": "2026-05-12T04:25:20+00:00",
-          "summary_en": "The pop star is suing the electronics giant for more than $15 million, accusing it of using her image without authorization.",
-          "summary_zh": "这位流行歌星正在以超过1500万美元的价格起诉这家电子巨头，指责它未经授权使用她的形象。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "NBC to Turn Wordle Into a TV Game Show, With Savannah Guthrie as Host",
-          "title_en": "NBC to Turn Wordle Into a TV Game Show, With Savannah Guthrie as Host",
-          "title_zh": "NBC将把Wordle变成电视游戏节目，由Savannah Guthrie担任主持人",
-          "link": "https://www.nytimes.com/2026/05/11/business/media/wordle-nbc-savannah-guthrie.html",
-          "published": "2026-05-12T00:27:08+00:00",
-          "summary_en": "The word puzzle published by The New York Times is the inspiration for a game show that will begin airing next year. Jimmy Fallon is a producer.",
-          "summary_zh": "《纽约时报》发布的拼图这个词是明年开始播出的游戏节目的灵感来源。Jimmy Fallon是一名制片人。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Byron Allen Is Buying a Controlling Stake in BuzzFeed",
-          "title_en": "Byron Allen Is Buying a Controlling Stake in BuzzFeed",
-          "title_zh": "拜伦·艾伦（ Byron Allen ）正在购买BuzzFeed的控股权",
-          "link": "https://www.nytimes.com/2026/05/11/business/media/buzzfeed-byron-allen.html",
-          "published": "2026-05-11T22:48:07+00:00",
-          "summary_en": "Jonah Peretti, BuzzFeed’s co-founder 20 years ago, will step down as chief executive and serve as its president of A.I.",
-          "summary_zh": "20年前， BuzzFeed的联合创始人乔纳·佩雷蒂（ Jonah Peretti ）将辞去首席执行官职务，并担任其AI总裁。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Dean Buntrock, Maestro of Waste Management, Dies at 94",
-          "title_en": "Dean Buntrock, Maestro of Waste Management, Dies at 94",
-          "title_zh": "废物管理大师Dean Buntrock去世，享年94岁",
-          "link": "https://www.nytimes.com/2026/05/11/business/dean-buntrock-dead.html",
-          "published": "2026-05-11T20:33:09+00:00",
-          "summary_en": "Anticipating how the environmental movement would affect trash disposal in the United States, he built a 12-truck garbage company into a coast-to-coast behemoth.",
-          "summary_zh": "他预见到环保运动将如何影响美国的垃圾处理，于是将一家12辆卡车的垃圾公司打造成了一个海岸到海岸的庞然大物。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        }
-      ],
-      "social_media": []
-    },
-    {
       "updated_at": "2026-05-13T15:44:10.411073+00:00",
       "edition_label": "NY 08:00",
       "summary_cn": null,
@@ -131974,6 +131100,880 @@
           "source": "Yahoo Finance (SPY)",
           "language": "en",
           "priority": 4,
+          "source_category": "news"
+        }
+      ],
+      "social_media": []
+    },
+    {
+      "updated_at": "2026-08-11T14:18:43.253564+00:00",
+      "edition_label": "NY 08:00",
+      "summary_cn": null,
+      "market_hotspots_cn": null,
+      "social_summary_cn": null,
+      "sector_recommendation": null,
+      "market_snapshot": [
+        {
+          "title": "US Markets",
+          "items": [
+            {
+              "name": "S&P 500",
+              "symbol": "^SPX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Nasdaq 100",
+              "symbol": "^NDQ",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Dow Jones",
+              "symbol": "^DJI",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "Europe Markets",
+          "items": [
+            {
+              "name": "FTSE 100",
+              "symbol": "^UKX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "GBP",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "DAX",
+              "symbol": "^DAX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "EUR",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "CAC 40",
+              "symbol": "^CAC",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "EUR",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "Asia Markets",
+          "items": [
+            {
+              "name": "Nikkei 225",
+              "symbol": "^NKX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "JPY",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Hang Seng",
+              "symbol": "^HSI",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "HKD",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "China Markets",
+          "items": [
+            {
+              "name": "SSE Composite 上证指数",
+              "symbol": "SH000001",
+              "price": 3934.09,
+              "change": -32.5,
+              "change_percent": -0.82,
+              "currency": "CNY",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "SZSE Component 深证成指",
+              "symbol": "SZ399001",
+              "price": 14259.44,
+              "change": -57.52,
+              "change_percent": -0.4,
+              "currency": "CNY",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ChiNext 创业板指",
+              "symbol": "SZ399006",
+              "price": 3549.16,
+              "change": 11.95,
+              "change_percent": 0.34,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "CSI 300 沪深300",
+              "symbol": "SH000300",
+              "price": 4663.79,
+              "change": -38.23,
+              "change_percent": -0.81,
+              "currency": "CNY",
+              "change_color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "title": "Gold & Silver",
+          "items": [
+            {
+              "name": "Gold (oz)",
+              "symbol": "XAUUSD",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Silver (oz)",
+              "symbol": "XAGUSD",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "Crypto / 数字货币",
+          "items": [
+            {
+              "name": "BTC",
+              "symbol": "BTC",
+              "price": 64220.0,
+              "change": -441.85,
+              "change_percent": -0.69,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ETH",
+              "symbol": "ETH",
+              "price": 1889.54,
+              "change": -8.86,
+              "change_percent": -0.47,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "SOL",
+              "symbol": "SOL",
+              "price": 76.01,
+              "change": -0.49,
+              "change_percent": -0.64,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "BNB",
+              "symbol": "BNB",
+              "price": 610.71,
+              "change": 10.05,
+              "change_percent": 1.65,
+              "currency": "USD",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "XRP",
+              "symbol": "XRP",
+              "price": 1.01,
+              "change": -0.02,
+              "change_percent": -1.95,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOGE",
+              "symbol": "DOGE",
+              "price": 0.07,
+              "change": 0.0,
+              "change_percent": 1.63,
+              "currency": "USD",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "ADA",
+              "symbol": "ADA",
+              "price": 0.19,
+              "change": -0.01,
+              "change_percent": -4.93,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "AVAX",
+              "symbol": "AVAX",
+              "price": 6.42,
+              "change": -0.13,
+              "change_percent": -2.04,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOT",
+              "symbol": "DOT",
+              "price": 0.79,
+              "change": -0.02,
+              "change_percent": -2.64,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            }
+          ]
+        }
+      ],
+      "sector_rankings": [
+        {
+          "title": "A-Share Industry Sectors 行业板块",
+          "items": [
+            {
+              "name": "纺织鞋类制造",
+              "change_percent": 5.83,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "线下药店",
+              "change_percent": 5.44,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "逆变器",
+              "change_percent": 3.1,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "医疗研发外包",
+              "change_percent": 3.1,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "油气开采Ⅲ",
+              "change_percent": 3.05,
+              "change_color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "title": "A-Share Concept Sectors 概念板块",
+          "items": [
+            {
+              "name": "昨日打二板以上表现",
+              "change_percent": 8.11,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "昨日连板_含一字",
+              "change_percent": 3.22,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "重组蛋白",
+              "change_percent": 2.37,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "MLCC",
+              "change_percent": 2.0,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "CRO",
+              "change_percent": 1.99,
+              "change_color": "#16a34a"
+            }
+          ]
+        }
+      ],
+      "weekly_sector_rankings": [
+        {
+          "title": "A-Share Industry 行业板块 (Weekly)",
+          "items": [
+            {
+              "name": "膜材料",
+              "change_percent": 1.85,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 10.0,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "线下药店",
+              "change_percent": 5.44,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 9.01,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "硅料硅片",
+              "change_percent": 1.99,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 6.26,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "纺织鞋类制造",
+              "change_percent": 5.83,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 5.65,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "逆变器",
+              "change_percent": 3.1,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 4.88,
+              "weekly_change_color": "#16a34a"
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "title": "S&P 500, Nasdaq, Dow Futures Mixed As CPI Countdown Begins: Why INTC, SLS, SPCX, RKLB, ASTS, RIOT, FRMI Stocks Are In Focus",
+          "title_en": "S&P 500, Nasdaq, Dow Futures Mixed As CPI Countdown Begins: Why INTC, SLS, SPCX, RKLB, ASTS, RIOT, FRMI Stocks Are In Focus",
+          "title_zh": "随着CPI倒计时的开始，标准普尔500指数、纳斯达克、道琼斯指数期货混合：为什么INTC、SLS、SPCX、RKLB、ASTS、RIOT、FRMI股票成为焦点",
+          "link": "https://stocktwits.com/news-articles/markets/equity/why-nasdaq-dow-futures-mixed-premarket-cpi-countdown-intc-sls-spcx-rklb-asts-frmi-riot-stocks-focus/cZoZqRXRJQ5?.tsrc=rss",
+          "published": "2026-08-11T08:33:34+00:00",
+          "summary_en": "Retail sentiment on Stocktwits has declined to ‘neutral’ on SPY and ‘extremely bearish’ on QQQ.",
+          "summary_zh": "Stocktwits的零售情绪在间谍方面已降至“中性” ，在QQQ上“极度看跌”。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "S&P500, Nasdaq, Dow Futures Unchanged After Ending Session Mildly Lower As Investors Brace For Key Inflation Data — SPCX, TSLA, INTC, NFLX, PLTR In Focus",
+          "title_en": "S&P500, Nasdaq, Dow Futures Unchanged After Ending Session Mildly Lower As Investors Brace For Key Inflation Data — SPCX, TSLA, INTC, NFLX, PLTR In Focus",
+          "title_zh": "标准普尔500指数、纳斯达克指数、道琼斯指数期货在收盘后保持不变，投资者对关键通胀数据的支持度略有下降—聚焦SPCX、TSLA、INTC、NFLX、PLTR",
+          "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p500-nasdaq-dow-futures-unchanged/cZok3PvRJfL?.tsrc=rss",
+          "published": "2026-08-10T23:02:45+00:00",
+          "summary_en": "Intel’s stock dropped 4%, weighing on the Nasdaq after announcing a $15 billion stock offering.",
+          "summary_zh": "英特尔股价下跌4% ，在宣布150亿美元的股票发行后对纳斯达克构成压力。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "What will Warsh do to favour Main Street over Wall Street?",
+          "title_en": "What will Warsh do to favour Main Street over Wall Street?",
+          "title_zh": "Warsh会采取什么措施来偏袒主街而不是华尔街？",
+          "link": "https://www.ft.com/content/45af4235-1bd1-4734-966a-1f513d25361c",
+          "published": "2026-08-11T04:30:01+00:00",
+          "summary_en": "Evidence is mounting that the divide is rather more difficult to fix than the new Federal Reserve chair had thought",
+          "summary_zh": "越来越多的证据表明，这种分歧比美联储新任主席想象的要难得多。",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "SPY Charges 4.7x More Than Its Own Issuer’s Copy of the Same 500 Stocks",
+          "title_en": "SPY Charges 4.7x More Than Its Own Issuer’s Copy of the Same 500 Stocks",
+          "title_zh": "间谍收取的费用是其发行人相同500只股票的4.7倍",
+          "link": "https://247wallst.com/investing/2026/08/10/spy-charges-4-7x-more-than-its-own-issuers-copy-of-the-same-500-stocks/?.tsrc=rss",
+          "published": "2026-08-10T19:08:42+00:00",
+          "summary_en": "State Street, the issuer of the world's most famous S&P 500 ETF, quietly sells a second version of the same fund at a dramatically lower cost. Before your next contribution lands, here is what the fee structure buried in the fine print actually costs you over time.",
+          "summary_zh": "State Street是世界上最著名的标普500指数ETF的发行人，它悄悄地以极低的成本出售同一只基金的第二个版本。在您的下一笔捐款到位之前，以下是细则中埋藏的费用结构随着时间的推移实际花费的金额。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Flock Cameras Are Dividing U.S. Cities. Here’s What to Know About Them.",
+          "title_en": "Flock Cameras Are Dividing U.S. Cities. Here’s What to Know About Them.",
+          "title_zh": "绒毛相机正在分裂美国城市。以下是关于它们的须知事项。",
+          "link": "https://www.nytimes.com/article/flock-safety-camera-technology.html",
+          "published": "2026-08-11T13:12:48+00:00",
+          "summary_en": "Flock Safety’s automated license plate-reading cameras, used by thousands of law enforcement agencies in the U.S., have drawn intense criticism from civil liberties groups.",
+          "summary_zh": "美国数千个执法机构使用的Flock Safety的自动车牌识别摄像头受到了公民自由团体的强烈批评。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "As Credit Card Debt Mounts, Home Becomes a Piggy Bank",
+          "title_en": "As Credit Card Debt Mounts, Home Becomes a Piggy Bank",
+          "title_zh": "随着信用卡债务的增加，房子变成了一个小猪银行",
+          "link": "https://www.nytimes.com/2026/08/11/business/home-equity-credit-card-debt.html",
+          "published": "2026-08-11T13:02:38+00:00",
+          "summary_en": "A rise in home equity to record levels has led many Americans to refinance their mortgages to pay their bills.",
+          "summary_zh": "房屋净值上升到创纪录的水平，导致许多美国人为抵押贷款再融资以支付账单。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Oil Prices Rise to $90 a Barrel Over U.S.-Iran Stalemate",
+          "title_en": "Oil Prices Rise to $90 a Barrel Over U.S.-Iran Stalemate",
+          "title_zh": "油价因美伊僵局攀升至每桶90 $",
+          "link": "https://www.nytimes.com/2026/08/11/business/oil-prices-iran-war-hormuz.html",
+          "published": "2026-08-11T11:37:46+00:00",
+          "summary_en": "The stalemate over the Iran war hardened and commercial shipping in the Strait of Hormuz continued to dwindle.",
+          "summary_zh": "伊朗战争的僵局加剧，霍尔木兹海峡的商业航运继续减少。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "How to stop Warsh becoming a lame duck",
+          "title_en": "How to stop Warsh becoming a lame duck",
+          "title_zh": "如何阻止Warsh变成跛脚鸭",
+          "link": "https://www.ft.com/content/e4b66f65-ae0d-45cd-aede-8662de3495b1?syn-25a6b1a6=1",
+          "published": "2026-08-11T11:30:05+00:00",
+          "summary_en": "The Federal Reserve chair needs to assert his authority or others will usurp his natural role",
+          "summary_zh": "美联储主席需要维护他的权威，否则其他人将篡夺他的自然角色",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "VYM’s 2.2% Yield Hides $141,000 in Decade-Long Underperformance Versus the S&P 500",
+          "title_en": "VYM’s 2.2% Yield Hides $141,000 in Decade-Long Underperformance Versus the S&P 500",
+          "title_zh": "与标准普尔500指数相比， VYM 2.2%的收益率隐藏了$ 141,000的十年表现不佳",
+          "link": "https://247wallst.com/investing/etf/2026/08/10/vyms-2-2-yield-hides-141000-in-decade-long-underperformance-versus-the-sp-500/?.tsrc=rss",
+          "published": "2026-08-10T22:05:16+00:00",
+          "summary_en": "A retiree who chose VYM for its reliable quarterly deposits may have traded away a surprising fortune without realizing it, and the expense ratio has almost nothing to do with it.",
+          "summary_zh": "选择VYM作为其可靠的季度存款的退休人员可能在没有意识到的情况下交易了一笔意想不到的财富，而费用比率几乎与此无关。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Waymo Is Growing Faster Than Ever. So Are Its ‘Edge Cases.’",
+          "title_en": "Waymo Is Growing Faster Than Ever. So Are Its ‘Edge Cases.’",
+          "title_zh": "Waymo的增长速度比以往任何时候都快。它的“边缘案例”也是如此。",
+          "link": "https://www.nytimes.com/2026/08/10/technology/waymo-expansion-edge-cases.html",
+          "published": "2026-08-10T20:37:37+00:00",
+          "summary_en": "As Waymo deploys more driverless cars to 15 U.S. cities and counting, its vehicles keep encountering new and unexpected situations that they have no script to handle.",
+          "summary_zh": "随着Waymo在美国15个城市部署更多无人驾驶汽车，其车辆不断遇到新的和意想不到的情况，他们没有脚本可以处理。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Boeing to Sell 3 Autonomous Flight Subsidiaries",
+          "title_en": "Boeing to Sell 3 Autonomous Flight Subsidiaries",
+          "title_zh": "波音将出售3家自主飞行子公司",
+          "link": "https://www.nytimes.com/2026/08/10/business/boeing-subsidiaries-sale-archer-aviation.html",
+          "published": "2026-08-10T18:09:38+00:00",
+          "summary_en": "In exchange for the sale to Archer Aviation, which is developing a piloted electric aircraft, Boeing will receive a 16.5 percent stake in Archer.",
+          "summary_zh": "作为出售给正在开发自动驾驶电动飞机的Archer Aviation的交换条件，波音将获得Archer 16.5%的股份。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Trump Shrugs Off A.I. and Data Center Concerns as Voters Grow Anxious",
+          "title_en": "Trump Shrugs Off A.I. and Data Center Concerns as Voters Grow Anxious",
+          "title_zh": "随着选民越来越焦虑，特朗普摆脱了人工智能和数据中心的担忧",
+          "link": "https://www.nytimes.com/2026/08/10/business/trump-artificial-intelligence-data-centers-ai.html",
+          "published": "2026-08-10T15:48:18+00:00",
+          "summary_en": "The president and his top aides have been especially bullish about data centers, despite national blowback against the facilities.",
+          "summary_zh": "总统和他的高级助手特别看好数据中心，尽管国家对这些设施进行了反击。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Markets flip for Fed rate-hike pause into CPI: Five things to know in Bitcoin this week",
+          "title_en": "Markets flip for Fed rate-hike pause into CPI: Five things to know in Bitcoin this week",
+          "title_zh": "市场因美联储加息暂停而转向CPI ：本周比特币需要了解的五件事",
+          "link": "https://cointelegraph.com/markets/markets-drop-september-rate-hike-bet-into-cpi-five-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-08-10T11:13:40+00:00",
+          "summary_en": "Bitcoin spiked to a new August high into Sunday’s weekly close as market participants turned their attention to the next US inflation reports.",
+          "summary_zh": "随着市场参与者将注意力转向下一份美国通胀报告，比特币在周日收盘时飙升至8月新高。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "Oil prices hover near $90 a barrel and gold hits two-month high as Trump makes new demands on Iran – business live",
+          "title_en": "Oil prices hover near $90 a barrel and gold hits two-month high as Trump makes new demands on Iran – business live",
+          "title_zh": "随着特朗普对伊朗提出新的要求，油价徘徊在每桶90 $附近，黄金触及两个月高位–商业直播",
+          "link": "https://www.theguardian.com/business/live/2026/aug/11/oil-prices-rise-gold-hits-two-month-high-trump-makes-new-deal-demands-iran-live-updates",
+          "published": "2026-08-11T14:06:27+00:00",
+          "summary_en": "US president demands compensation for damage incurred by US, complicating standoff with Tehran Oil prices have see-sawed: Brent crude jumped more than 2% to just over $90 a barrel, the highest level since 31 July, but has now dipped 0.3% to $87.53 a barrel. It went higher earlier after a small cargo ship was attacked on Tuesday by Yemen’s Iran-aligned Houth…",
+          "summary_zh": "美国总统要求赔偿美国遭受的损失，这使得与德黑兰油价的对峙变得更加复杂：布伦特原油价格上涨逾2%至略高于每桶90 $ ，为7月31日以来的最高水平，但现在已下跌0.3%至每桶87.53 $。早些时候，一艘小型货船在周二遭到也门与伊朗结盟的Houth的袭击后，价格上涨了。",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "G.M’s ‘Car Guy’ Talks Electrics, China and Nepotism",
+          "title_en": "G.M’s ‘Car Guy’ Talks Electrics, China and Nepotism",
+          "title_zh": "通用汽车的“汽车人”谈电气、中国和裙带关系",
+          "link": "https://www.nytimes.com/2026/08/11/business/general-motors-mark-reuss.html",
+          "published": "2026-08-11T13:54:23+00:00",
+          "summary_en": "Mark Reuss became the automaker’s president seven years ago, ascending to a role his father was fired from decades before. We got the chance to speak with him.",
+          "summary_zh": "七年前，马克·罗伊斯（ Mark Reuss ）成为这家汽车制造商的总裁，他的父亲几十年前就被解雇了。我们有机会与他交谈。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Robots That Walk and Talk Are Coming to Car Factories",
+          "title_en": "Robots That Walk and Talk Are Coming to Car Factories",
+          "title_zh": "步行和交谈的机器人即将来到汽车工厂",
+          "link": "https://www.nytimes.com/2026/08/11/business/humanoid-robots-car-factories.html",
+          "published": "2026-08-11T13:45:34+00:00",
+          "summary_en": "But experts warn they may not deliver the gains in efficiency that proponents claim.",
+          "summary_zh": "但专家警告说，他们可能无法实现支持者声称的效率提升。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "How Social Media Sparked a Refugee Crisis Between Spain and Morocco",
+          "title_en": "How Social Media Sparked a Refugee Crisis Between Spain and Morocco",
+          "title_zh": "社交媒体如何引发西班牙和摩洛哥之间的难民危机",
+          "link": "https://www.nytimes.com/2026/08/11/technology/social-media-ceuta-spain-morocco.html",
+          "published": "2026-08-11T13:23:37+00:00",
+          "summary_en": "A wave of disinformation online contributed to a surge of migrants in the Spanish enclave of Ceuta who were trying to reach Europe, resulting in about 90 deaths.",
+          "summary_zh": "在线虚假信息浪潮导致西班牙飞地休达的移民激增，他们试图到达欧洲，导致约90人死亡。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Exchange-Traded Funds Higher, Equity Futures Mixed Pre-Bell Tuesday Amid Stalled US-Iran Talks",
+          "title_en": "Exchange-Traded Funds Higher, Equity Futures Mixed Pre-Bell Tuesday Amid Stalled US-Iran Talks",
+          "title_zh": "在美伊谈判陷入停滞之际，交易所交易基金走高，股票期货周二上市前表现喜忧参半",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-equity-130332588.html?.tsrc=rss",
+          "published": "2026-08-11T13:03:32+00:00",
+          "summary_en": "The broad market exchange-traded fund SPDR S&P 500 ETF Trust (SPY) was up 0.2% and the actively trad",
+          "summary_zh": "广义市场交易所交易基金SPDR S&P 500 ETF Trust (SPY)上涨0.2% ，",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Democratic socialist leads Wisconsin governor’s race as progressives gain ground",
+          "title_en": "Democratic socialist leads Wisconsin governor’s race as progressives gain ground",
+          "title_zh": "民主社会主义者在威斯康星州州长的竞选中领先，进步人士占据优势",
+          "link": "https://www.ft.com/content/565bd314-0803-40a2-88b3-9070f574d933?syn-25a6b1a6=1",
+          "published": "2026-08-11T13:00:08+00:00",
+          "summary_en": "Some in party establishment think candidate’s views will lead to defeat against Republican in November’s election",
+          "summary_zh": "一些党内人士认为，候选人的观点将导致在11月的选举中击败共和党",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Ari Emanuel’s Company to Acquire 7 Broadway Theaters and 10 in the West End",
+          "title_en": "Ari Emanuel’s Company to Acquire 7 Broadway Theaters and 10 in the West End",
+          "title_zh": "Ari Emanuel的公司将在西区收购7家百老汇剧院和10家",
+          "link": "https://www.nytimes.com/2026/08/11/theater/ari-emanuel-atg-entertainment.html",
+          "published": "2026-08-11T13:00:07+00:00",
+          "summary_en": "The purchase of ATG Entertainment, which operates dozens of venues worldwide, will require regulatory approval.",
+          "summary_zh": "收购在全球运营数十个场馆的ATG Entertainment需要获得监管部门的批准。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Humans cannot remain passengers in the back of the AGI car",
+          "title_en": "Humans cannot remain passengers in the back of the AGI car",
+          "title_zh": "人类不能留在AGI汽车后面的乘客",
+          "link": "https://www.ft.com/content/33094bff-546e-4ac2-a949-af2e9daaa3f0?syn-25a6b1a6=1",
+          "published": "2026-08-11T12:44:32+00:00",
+          "summary_en": "A sense of fatalistic inevitability about the technology’s evolution is triggering something close to despair",
+          "summary_zh": "对技术发展的宿命论必然性的感觉正在引发接近绝望的事情",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "China tightens grip on Europe’s car supply chain",
+          "title_en": "China tightens grip on Europe’s car supply chain",
+          "title_zh": "中国加强对欧洲汽车供应链的控制",
+          "link": "https://www.ft.com/content/9f700b37-ac05-434c-9b70-3a7fe065c87e?syn-25a6b1a6=1",
+          "published": "2026-08-11T12:44:14+00:00",
+          "summary_en": "Acquisitions of local parts makers amid resistance to Chinese exports have worried EU officials",
+          "summary_zh": "在抵制中国出口的情况下收购当地零部件制造商令欧盟官员感到担忧",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "EToro to buy TradeZero as Q2 crypto revenue falls 30%",
+          "title_en": "EToro to buy TradeZero as Q2 crypto revenue falls 30%",
+          "title_zh": "EToro将收购TradeZero ，因第二季度加密货币收入下降30%",
+          "link": "https://cointelegraph.com/markets/etoro-buy-tradezero-crypto-revenue-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-08-11T12:35:00+00:00",
+          "summary_en": "Trading platform eToro will acquire TradeZero as part of its US expansion as it reported crypto-related revenue fell by about 30% compared to the second quarter of 2025.",
+          "summary_zh": "作为其美国扩张的一部分，交易平台eToro将收购TradeZero ，因为它报告说，与2025年第二季度相比，与加密货币相关的收入下降了约30%。",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "SK Hynix Has Suffered Post-IPO as Memory Flags: A Wall Street Pro Remains Sanguine With 160% Returns Predicted",
+          "title_en": "SK Hynix Has Suffered Post-IPO as Memory Flags: A Wall Street Pro Remains Sanguine With 160% Returns Predicted",
+          "title_zh": "SK海力士遭遇首次公开募股后回忆：华尔街专业人士保持乐观，预测回报率为160%",
+          "link": "https://247wallst.com/investing/2026/08/11/sk-hynix-has-suffered-post-ipo-as-memory-flags-a-wall-street-pro-remains-sanguine-with-160-returns-predicted/?.tsrc=rss",
+          "published": "2026-08-11T12:33:40+00:00",
+          "summary_en": "SK Hynix staged one of the largest tech IPOs in history, then promptly handed investors a brutal loss within weeks. Now one Wall Street analyst is betting the selloff created exactly the kind of gap that turns patient buyers into big winners.",
+          "summary_zh": "SK海力士进行了有史以来规模最大的科技股IPO之一，然后在几周内迅速给投资者带来了惨重损失。现在，一位华尔街分析师押注，抛售恰恰造成了将耐心买家变成大赢家的那种差距。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Volatility tumbles as markets shrug off Middle East risks",
+          "title_en": "Volatility tumbles as markets shrug off Middle East risks",
+          "title_zh": "随着市场摆脱中东风险，波动性大幅下降",
+          "link": "https://www.ft.com/content/39fde44e-9a63-401e-8f8e-ddf5d7f512e4?syn-25a6b1a6=1",
+          "published": "2026-08-11T12:20:41+00:00",
+          "summary_en": "Investors warn of complacency as Vix ‘fear gauge’ falls to prewar levels even as oil rises back to about $90 a barrel",
+          "summary_zh": "投资者警告称，尽管油价回升至每桶约90 $ ，但随着Vix “恐慌指数”降至战前水平，投资者仍会感到自满",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "The Perils of Wall St.’s Race to Pour Billions More Into A.I.",
+          "title_en": "The Perils of Wall St.’s Race to Pour Billions More Into A.I.",
+          "title_zh": "华尔街竞相向人工智能投入数十亿美元的危险",
+          "link": "https://www.nytimes.com/2026/08/11/business/dealbook/ai-lending-nvidia-blackrock.html",
+          "published": "2026-08-11T11:59:33+00:00",
+          "summary_en": "Investors including BlackRock have committed an eye-popping amount to lend to the artificial intelligence industry. That enthusiasm isn’t shared by everyone.",
+          "summary_zh": "包括贝莱德在内的投资者已承诺向人工智能行业提供令人眼花缭乱的贷款。并非所有人都有这种热情。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "This Wall Street Pro Makes a Compelling Argument for 70% Gains on NXP Semiconductors Which Cratered Last Month",
+          "title_en": "This Wall Street Pro Makes a Compelling Argument for 70% Gains on NXP Semiconductors Which Cratered Last Month",
+          "title_zh": "这位华尔街专业人士为恩智浦半导体上个月获得的70%收益提出了令人信服的论据",
+          "link": "https://247wallst.com/investing/2026/08/11/this-wall-street-pro-makes-a-compelling-argument-for-70-gains-on-nxp-semiconductors-which-cratered-last-month/?.tsrc=rss",
+          "published": "2026-08-11T11:36:37+00:00",
+          "summary_en": "A top Wall Street analyst slapped a Street-high price target on NXP Semiconductors just as the stock cratered 20% in a single month, and the gap between his conviction and the market's fear has rarely looked this wide in large-cap chips.",
+          "summary_zh": "一位华尔街顶级分析师对恩智浦半导体(NXP Semiconductors)设定了街头高价目标，而该公司股价在一个月内上涨了20% ，他的信念与市场恐惧之间的差距在大盘股芯片中很少显得如此之大。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "HCA workers push for higher pay and more staffing amid billions in profits: ‘I’m struggling’",
+          "title_en": "HCA workers push for higher pay and more staffing amid billions in profits: ‘I’m struggling’",
+          "title_zh": "HCA员工在数十亿美元的利润中推动更高的工资和更多的员工： “我正在挣扎”",
+          "link": "https://www.theguardian.com/us-news/2026/aug/11/union-hca-healthcare-workers-protest",
+          "published": "2026-08-11T11:00:02+00:00",
+          "summary_en": "Largest for-profit hospital system and operator in the US reported $6.8bn in profits, while employees find it difficult to make ends meet Union workers with HCA Healthcare, the largest for-profit hospital system and operator in the US, are holding picket protests across the country as they push for pay and staffing increases in a new contract. The hospital…",
+          "summary_zh": "美国最大的营利性医院系统和运营商报告了68亿美元的利润，而美国最大的营利性医院系统和运营商HCA Healthcare的员工发现很难维持生计，他们正在全国各地举行纠察抗议活动，因为他们要求在新合同中增加工资和人员。这家医院…",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Keel shuts US Bitcoin mining operations as Q2 revenue falls 50%",
+          "title_en": "Keel shuts US Bitcoin mining operations as Q2 revenue falls 50%",
+          "title_zh": "随着第二季度收入下降50% ，龙骨关闭美国比特币挖矿业务",
+          "link": "https://cointelegraph.com/markets/keel-shuts-bitcoin-mining-ai-pivot-revenue-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published": "2026-08-11T09:26:00+00:00",
+          "summary_en": "Keel completed the shutdown of its US Bitcoin mining operations as it pivots toward AI and high-performance computing infrastructure",
+          "summary_zh": "随着龙骨转向人工智能和高性能计算基础设施，龙骨完成了其美国比特币挖矿业务的关闭",
+          "source": "CoinTelegraph",
+          "language": "en",
+          "priority": 3,
+          "source_category": "crypto_news"
+        },
+        {
+          "title": "In a Summer of Climate Misery, Businesses Confront the Need to Adapt",
+          "title_en": "In a Summer of Climate Misery, Businesses Confront the Need to Adapt",
+          "title_zh": "在气候苦难的夏天，企业面临着适应的需要",
+          "link": "https://www.nytimes.com/2026/08/11/business/economy/climate-change-costs-economy-businesses.html",
+          "published": "2026-08-11T09:04:05+00:00",
+          "summary_en": "Repeated heat waves, wildfires, droughts and storms are solidifying the understanding that new investments are unavoidable.",
+          "summary_zh": "反复出现的热浪、野火、干旱和风暴正在巩固人们对新投资不可避免的理解。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Should You Be Dating While Unemployed?",
+          "title_en": "Should You Be Dating While Unemployed?",
+          "title_zh": "你应该在失业时约会吗？",
+          "link": "https://www.nytimes.com/2026/08/11/business/dating-unemployed.html",
+          "published": "2026-08-11T09:02:32+00:00",
+          "summary_en": "If you’re single and unemployed, it may make sense to prioritize job hunting. But that doesn’t have to mean putting your life on pause.",
+          "summary_zh": "如果您是单身和失业者，优先考虑求职可能是有意义的。但这并不一定意味着要暂停你的生活。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Wall Street giants hand Nvidia $500bn to fund boom in AI projects",
+          "title_en": "Wall Street giants hand Nvidia $500bn to fund boom in AI projects",
+          "title_zh": "华尔街巨头向英伟达拨款5000亿美元，以资助人工智能项目的繁荣",
+          "link": "https://www.bbc.co.uk/news/articles/c78gr0jv0mdo?at_medium=RSS&at_campaign=rss",
+          "published": "2026-08-11T08:44:52+00:00",
+          "summary_en": "The money will be used to develop new data centres to house, operate, and cool miles of stacked computer chips that process AI data and actions.",
+          "summary_zh": "这笔资金将用于开发新的数据中心，以容纳、运营和冷却处理人工智能数据和行动的堆叠计算机芯片。",
+          "source": "BBC News Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Nvidia links with Wall Street firms for $500bn AI financing deal",
+          "title_en": "Nvidia links with Wall Street firms for $500bn AI financing deal",
+          "title_zh": "英伟达与华尔街公司达成5000亿美元的人工智能融资协议（ $ 5000亿美元AI financing deal ）",
+          "link": "https://www.theguardian.com/technology/2026/aug/11/nvidia-wall-street-finance-ai-infrastructure",
+          "published": "2026-08-11T08:34:37+00:00",
+          "summary_en": "Apollo, BlackRock, Goldman Sachs and KKR among those working with chipmaker to fund infrastructure Business live – latest updates Nvidia ⁠has struck a deal with six large Wall Street firms to raise ⁠more than $500bn (£370bn) to fund the datacentres, chip factories and power stations needed to fuel the artificial intelligence boom. The Nvidia chief executive…",
+          "summary_zh": "阿波罗(Apollo)、贝莱德(BlackRock)、高盛(Goldman Sachs)和KKR等与芯片制造商合作为基础设施业务提供现场融资的公司--最新更新英伟达(Nvidia)已与六家大型华尔街公司达成协议，筹集超过5000亿美元(3700亿英镑)资金，为推动人工智能繁荣所需的数据中心、芯片工厂和发电站提供资金。英伟达首席执行官……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Delivery drivers to be paid minimum $31.30 an hour across Australia in ‘world-leading’ decision",
+          "title_en": "Delivery drivers to be paid minimum $31.30 an hour across Australia in ‘world-leading’ decision",
+          "title_zh": "在澳大利亚各地，派送员每小时至少可获得$ 31.30的报酬，这是“世界领先”的决定",
+          "link": "https://www.theguardian.com/business/2026/aug/11/delivery-drivers-to-be-paid-minimum-3130-an-hour-across-australia-in-world-leading-decision",
+          "published": "2026-08-11T08:25:41+00:00",
+          "summary_en": "Fair Work Commission issues a new minimum standards order for gig workers to come into effect 17 August Get our breaking news email , free app or daily news podcast Delivery drivers in Australia will be paid a minimum rate of $31.30 (US $22.05/£16.35) an hour and insured for injuries on the job under a landmark agreement approved by the industrial umpire th…",
+          "summary_zh": "公平工作委员会发布新的最低标准命令，要求零工工作者于8月17日生效获取我们的突发新闻电子邮件、免费应用程序或每日新闻播客澳大利亚的送货司机将获得每小时$ 31.30 （ $ 22.05/£ 16.35 ）的最低费率，并根据工业裁判批准的具有里程碑意义的协议为工作中的受伤投保……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Trump warns ditching Infantino would be ‘terrible mistake’",
+          "title_en": "Trump warns ditching Infantino would be ‘terrible mistake’",
+          "title_zh": "特朗普警告说，放弃Infantino将是“可怕的错误”",
+          "link": "https://www.ft.com/content/a2dadec1-173f-40a9-89c0-2cf83f78de2a?syn-25a6b1a6=1",
+          "published": "2026-08-11T08:21:15+00:00",
+          "summary_en": "Comments come as Fifa president faces pressure to resign over private fundraising fiasco",
+          "summary_zh": "国际足联主席面临因私人筹款失败而辞职的压力",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Goldman staff named as suspects in Brazil investigation",
+          "title_en": "Goldman staff named as suspects in Brazil investigation",
+          "title_zh": "高盛员工在巴西调查中被列为嫌疑人",
+          "link": "https://www.ft.com/content/248cdbf4-b047-45d3-b543-a343135132b0?syn-25a6b1a6=1",
+          "published": "2026-08-11T07:47:09+00:00",
+          "summary_en": "Probe concerns shareholder dispute over cancer specialist Oncoclínicas",
+          "summary_zh": "调查涉及股东对癌症专家Oncoclínicas的争议",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "The AI threat to India’s IT jobs machine",
+          "title_en": "The AI threat to India’s IT jobs machine",
+          "title_zh": "人工智能对印度IT就业机器的威胁",
+          "link": "https://www.ft.com/content/dee4bd2c-fbad-4713-9b14-22d441967ce4?syn-25a6b1a6=1",
+          "published": "2026-08-11T04:00:04+00:00",
+          "summary_en": "The country has bet big on tech services but disruption is coming",
+          "summary_zh": "该国在技术服务上下了很大的赌注，但颠覆即将到来",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Maga ignores the many meanings of Mount Rushmore",
+          "title_en": "Maga ignores the many meanings of Mount Rushmore",
+          "title_zh": "MAGA忽略了拉什莫尔山的许多含义",
+          "link": "https://www.ft.com/content/d5abcd42-b3b4-4241-8fd1-1c53217ea81e",
+          "published": "2026-08-11T04:00:04+00:00",
+          "summary_en": "South Dakota’s Black Hills are central to Lakota Nation cosmology and identity",
+          "summary_zh": "南达科他州的黑山是拉科塔国家宇宙学和身份认同的核心",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Wall St. Wants Another Half-Trillion Dollars for the A.I. Boom",
+          "title_en": "Wall St. Wants Another Half-Trillion Dollars for the A.I. Boom",
+          "title_zh": "华尔街希望AI热潮再赚五万亿美元",
+          "link": "https://www.nytimes.com/2026/08/10/business/ai-nvidia-lenders-500-billion.html",
+          "published": "2026-08-10T23:28:13+00:00",
+          "summary_en": "Six giant investment firms announced a $500 billion effort to raise money for customers of Nvidia to pay for computing power.",
+          "summary_zh": "六家大型投资公司宣布了一项5000亿美元的努力，为英伟达的客户筹集资金，以支付计算能力。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Traffic to Trump’s Truth Social Falls Sharply This Summer",
+          "title_en": "Traffic to Trump’s Truth Social Falls Sharply This Summer",
+          "title_zh": "今年夏天，通往特朗普真相社交的流量急剧下降",
+          "link": "https://www.nytimes.com/2026/08/10/business/trump-truth-social-traffic-declines.html",
+          "published": "2026-08-10T22:03:03+00:00",
+          "summary_en": "President Trump’s social media platform has had double-digit declines in visitors in June and July, according to estimates from a widely cited online tracking firm.",
+          "summary_zh": "根据一家被广泛引用的在线跟踪公司的估计，特朗普总统的社交媒体平台在6月和7月的访客数量下降了两位数。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
           "source_category": "news"
         }
       ],
