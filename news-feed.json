@@ -1,778 +1,6 @@
 {
   "editions": [
     {
-      "updated_at": "2026-05-28T03:40:08.299334+00:00",
-      "edition_label": "BJ 08:00",
-      "summary_cn": null,
-      "market_hotspots_cn": null,
-      "social_summary_cn": null,
-      "sector_recommendation": null,
-      "market_snapshot": [
-        {
-          "title": "US Markets",
-          "items": [
-            {
-              "name": "S&P 500",
-              "symbol": "^SPX",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "Nasdaq 100",
-              "symbol": "^NDQ",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "Dow Jones",
-              "symbol": "^DJI",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            }
-          ]
-        },
-        {
-          "title": "Europe Markets",
-          "items": [
-            {
-              "name": "FTSE 100",
-              "symbol": "^UKX",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "GBP",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "DAX",
-              "symbol": "^DAX",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "EUR",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "CAC 40",
-              "symbol": "^CAC",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "EUR",
-              "change_color": "#64748b"
-            }
-          ]
-        },
-        {
-          "title": "Asia Markets",
-          "items": [
-            {
-              "name": "Nikkei 225",
-              "symbol": "^NKX",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "JPY",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "Hang Seng",
-              "symbol": "^HSI",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "HKD",
-              "change_color": "#64748b"
-            }
-          ]
-        },
-        {
-          "title": "China Markets",
-          "items": [
-            {
-              "name": "SSE Composite 上证指数",
-              "symbol": "SH000001",
-              "price": 4087.86,
-              "change": -5.87,
-              "change_percent": -0.14,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "SZSE Component 深证成指",
-              "symbol": "SZ399001",
-              "price": 15695.48,
-              "change": -40.99,
-              "change_percent": -0.26,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ChiNext 创业板指",
-              "symbol": "SZ399006",
-              "price": 4054.21,
-              "change": 8.44,
-              "change_percent": 0.21,
-              "currency": "CNY",
-              "change_color": "#16a34a"
-            },
-            {
-              "name": "CSI 300 沪深300",
-              "symbol": "SH000300",
-              "price": 4881.17,
-              "change": -27.0,
-              "change_percent": -0.55,
-              "currency": "CNY",
-              "change_color": "#dc2626"
-            }
-          ]
-        },
-        {
-          "title": "Gold & Silver",
-          "items": [
-            {
-              "name": "Gold (oz)",
-              "symbol": "XAUUSD",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            },
-            {
-              "name": "Silver (oz)",
-              "symbol": "XAGUSD",
-              "price": null,
-              "change": null,
-              "change_percent": null,
-              "currency": "USD",
-              "change_color": "#64748b"
-            }
-          ]
-        },
-        {
-          "title": "Crypto / 数字货币",
-          "items": [
-            {
-              "name": "BTC",
-              "symbol": "BTC",
-              "price": 73347.0,
-              "change": -2237.65,
-              "change_percent": -3.05,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ETH",
-              "symbol": "ETH",
-              "price": 1983.12,
-              "change": -84.17,
-              "change_percent": -4.24,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "SOL",
-              "symbol": "SOL",
-              "price": 81.08,
-              "change": -2.51,
-              "change_percent": -3.1,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "BNB",
-              "symbol": "BNB",
-              "price": 638.81,
-              "change": -15.62,
-              "change_percent": -2.45,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "XRP",
-              "symbol": "XRP",
-              "price": 1.28,
-              "change": -0.04,
-              "change_percent": -3.34,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "DOGE",
-              "symbol": "DOGE",
-              "price": 0.1,
-              "change": -0.0,
-              "change_percent": -2.57,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "ADA",
-              "symbol": "ADA",
-              "price": 0.23,
-              "change": -0.01,
-              "change_percent": -2.59,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "AVAX",
-              "symbol": "AVAX",
-              "price": 8.93,
-              "change": -0.21,
-              "change_percent": -2.4,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            },
-            {
-              "name": "DOT",
-              "symbol": "DOT",
-              "price": 1.21,
-              "change": -0.05,
-              "change_percent": -4.01,
-              "currency": "USD",
-              "change_color": "#dc2626"
-            }
-          ]
-        }
-      ],
-      "sector_rankings": [],
-      "weekly_sector_rankings": [],
-      "items": [
-        {
-          "title": "Nvidia chief Jensen Huang to join board at prestigious Beijing university",
-          "title_en": "Nvidia chief Jensen Huang to join board at prestigious Beijing university",
-          "title_zh": "英伟达首席执行官Jensen Huang将加入著名的北京大学董事会",
-          "link": "https://www.ft.com/content/1c567fe9-6df9-4313-902c-c8c65782c19e",
-          "published": "2026-05-28T00:15:02+00:00",
-          "summary_en": "Chipmaker boss’s move to join Tim Cook-chaired board underlines push to maintain ties with China",
-          "summary_zh": "芯片制造商老板加入蒂姆·库克（ Tim Cook ）担任董事会主席的举动凸显了与中国保持关系的推动力",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "‘China-maxxing’ helps spur an inbound tourism boom",
-          "title_en": "‘China-maxxing’ helps spur an inbound tourism boom",
-          "title_zh": "“中国麦兴”有助于刺激入境旅游热潮",
-          "link": "https://www.ft.com/content/1b2b88ea-f929-4174-9d6e-30f19e695b07",
-          "published": "2026-05-27T23:01:01+00:00",
-          "summary_en": "Beijing has found an economic win by drawing more international visitors to the country",
-          "summary_zh": "北京通过吸引更多国际游客来到中国，取得了经济上的胜利",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "The world comes to Xi",
-          "title_en": "The world comes to Xi",
-          "title_zh": "世界来到习近平",
-          "link": "https://www.ft.com/content/177fa481-2c79-4815-97fd-f702d94aee82",
-          "published": "2026-05-27T21:00:00+00:00",
-          "summary_en": "Foreign officials have flocked to China’s leader this year, boosting Beijing’s efforts to portray itself as a pillar of stability",
-          "summary_zh": "今年，外国官员纷纷涌向中国领导人，推动了北京将自己描绘成稳定支柱的努力。",
-          "source": "Financial Times Global Economy",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Xi Jinping Quit Smoking. China Still Cannot.",
-          "title_en": "Xi Jinping Quit Smoking. China Still Cannot.",
-          "title_zh": "习近平戒烟。中国仍然不能。",
-          "link": "https://www.nytimes.com/2026/05/27/business/china-smoking-economy.html",
-          "published": "2026-05-27T04:00:09+00:00",
-          "summary_en": "China’s tobacco monopoly has become so financially vital to the government that even its powerful leader has failed to curb the country’s smoking habit.",
-          "summary_zh": "中国的烟草垄断在财政上对政府至关重要，以至于即使是其强大的领导人也未能遏制该国的吸烟习惯。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "US carries out fresh strikes on Iran",
-          "title_en": "US carries out fresh strikes on Iran",
-          "title_zh": "美国对伊朗实施新一轮打击",
-          "link": "https://www.ft.com/content/de9e4ee6-a370-4934-a456-41bd10a60350",
-          "published": "2026-05-28T01:09:30+00:00",
-          "summary_en": "Official says increasingly strained ceasefire continues to hold",
-          "summary_zh": "官员说，日益紧张的停火继续维持",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Google engineer charged with insider trading on Polymarket",
-          "title_en": "Google engineer charged with insider trading on Polymarket",
-          "title_zh": "谷歌工程师被控在Polymarket进行内幕交易",
-          "link": "https://www.ft.com/content/98bb850e-bbcd-40ab-ab07-d08e30f76ed7",
-          "published": "2026-05-27T23:43:11+00:00",
-          "summary_en": "Employee allegedly used account name ‘AlphaRaccoon’ and amassed more than $1mn, charges say",
-          "summary_zh": "指控称，员工涉嫌使用帐户名“AlphaRaccoon”并积累了超过$ 1mn",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Ferrari’s First Electric Car Runs Into Backlash in Italy and Beyond",
-          "title_en": "Ferrari’s First Electric Car Runs Into Backlash in Italy and Beyond",
-          "title_zh": "法拉利首款电动汽车在意大利及其他地区受到强烈反对",
-          "link": "https://www.nytimes.com/2026/05/27/business/ferrari-luce-electric-ev-backlash.html",
-          "published": "2026-05-27T22:04:32+00:00",
-          "summary_en": "Memes mocked the new model, analysts questioned its appeal and investors sold the automaker’s stock. A former Ferrari chairman warned of “the destruction of a legend.”",
-          "summary_zh": "Memes嘲笑新车型，分析师质疑其吸引力，投资者出售了该汽车制造商的股票。一位前法拉利主席警告说， “一个传奇将被摧毁”。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "The world's carmakers are struggling to compete with China",
-          "title_en": "The world's carmakers are struggling to compete with China",
-          "title_zh": "全球汽车制造商正在努力与中国竞争",
-          "link": "https://www.bbc.com/news/articles/c4g8vg72z43o?at_medium=RSS&at_campaign=rss",
-          "published": "2026-05-27T22:00:38+00:00",
-          "summary_en": "The BBC visited China’s EV factories and found they are dominating the ecosystems shaping the global auto industry.",
-          "summary_zh": "英国广播公司访问了中国的电动汽车工厂，发现它们主导着塑造全球汽车行业的生态系统。",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Court Orders Customs Chief to Address Compliance on Refunding Tariffs",
-          "title_en": "Court Orders Customs Chief to Address Compliance on Refunding Tariffs",
-          "title_zh": "法院命令海关关长解决退税合规问题",
-          "link": "https://www.nytimes.com/2026/05/27/us/politics/trade-court-customs-chief-tariff-refunds.html",
-          "published": "2026-05-27T21:46:19+00:00",
-          "summary_en": "The surprising demand to appear at a hearing suggested new concern about the Trump administration’s efforts to repay the full $166 billion owed from illegally imposed tariffs.",
-          "summary_zh": "出人意料地要求出席听证会，这表明人们对特朗普政府偿还非法征收的关税所欠的全部1660 $的努力产生了新的担忧。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Trump says rising economic costs will not force him into Iran deal",
-          "title_en": "Trump says rising economic costs will not force him into Iran deal",
-          "title_zh": "特朗普表示，不断上升的经济成本不会迫使他加入伊朗协议",
-          "link": "https://www.ft.com/content/c79efc18-7c4f-4ff6-8f12-687892b5bd6f",
-          "published": "2026-05-27T21:45:49+00:00",
-          "summary_en": "President’s comments come as hopes of an agreement to end the war push oil prices lower",
-          "summary_zh": "总统的言论是希望达成结束战争的协议，推动油价下跌",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "FirstFT: World leaders flock to China to see Xi Jinping",
-          "title_en": "FirstFT: World leaders flock to China to see Xi Jinping",
-          "title_zh": "FirstFT ：世界各国领导人涌向中国与习近平会面",
-          "link": "https://www.ft.com/content/00482f89-32f0-412e-9366-2e26d4e54e27",
-          "published": "2026-05-27T21:30:39+00:00",
-          "summary_en": "Also in today’s newsletter: Samsung workers set for $400,000 bonus, and Byju’s founder sentenced to jail in Singapore",
-          "summary_zh": "同样在今天的通讯中：三星员工设定$ 400,000奖金， Byju的创始人在新加坡被判入狱",
-          "source": "Financial Times Global Economy",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Go Ask Alice Why Tech Start-Ups Are Spending Big on Hype Videos",
-          "title_en": "Go Ask Alice Why Tech Start-Ups Are Spending Big on Hype Videos",
-          "title_zh": "去问问爱丽丝，为什么科技初创公司在炒作视频上花费很大",
-          "link": "https://www.nytimes.com/2026/05/27/technology/ai-startups-videos-marketing.html",
-          "published": "2026-05-27T21:14:51+00:00",
-          "summary_en": "A Mad Hatter and a giant rabbit sit around a table discussing an A.I. start-up. This is normal behavior around the Bay Area these days.",
-          "summary_zh": "疯帽子和巨型兔子围坐在桌子旁讨论人工智能初创公司。如今，这是湾区周围的正常行为。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Condé Nast Pays Over $400,000 to 3 Journalists Fired Over Protest",
-          "title_en": "Condé Nast Pays Over $400,000 to 3 Journalists Fired Over Protest",
-          "title_zh": "康泰纳仕向3名因抗议而被解雇的记者支付超过$ 400,000",
-          "link": "https://www.nytimes.com/2026/05/27/business/media/conde-nast-fired-journalists-settlement.html",
-          "published": "2026-05-27T21:03:21+00:00",
-          "summary_en": "The former workers were among a group of employees who confronted the company’s head of human resources about layoffs last fall.",
-          "summary_zh": "这些前员工是去年秋天与公司人力资源主管就裁员问题发生冲突的一群员工之一。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Oil Prices Fall as Uneasy Truce Holds Between U.S. and Iran",
-          "title_en": "Oil Prices Fall as Uneasy Truce Holds Between U.S. and Iran",
-          "title_zh": "由于美国和伊朗之间的不安休战，油价下跌",
-          "link": "https://www.nytimes.com/2026/05/27/business/oil-gas-price-iran.html",
-          "published": "2026-05-27T20:32:44+00:00",
-          "summary_en": "Traders are weighing signals that a more lasting agreement may be within reach against recent flare-ups in hostilities.",
-          "summary_zh": "贸易商正在权衡信号，即针对最近爆发的敌对行动，更持久的协议可能触手可及。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "BP’s Former Chairman, Albert Manifold, Disputes How Company Characterized His Dismissal",
-          "title_en": "BP’s Former Chairman, Albert Manifold, Disputes How Company Characterized His Dismissal",
-          "title_zh": "BP前董事长Albert Manifold对公司如何描述他的解雇提出异议",
-          "link": "https://www.nytimes.com/2026/05/27/business/bp-albert-manifold.html",
-          "published": "2026-05-27T19:44:06+00:00",
-          "summary_en": "Albert Manifold, who was abruptly fired less than a year after he was appointed, said he was let go “without explanation.”",
-          "summary_zh": "阿尔伯特·曼菲尔德（ Albert Manifold ）在被任命不到一年后突然被解雇，他说他“没有任何解释”就被解雇了。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "KFF’s Chief Executive to Retire",
-          "title_en": "KFF’s Chief Executive to Retire",
-          "title_zh": "KFF首席执行官退休",
-          "link": "https://www.nytimes.com/2026/05/27/business/media/kff-drew-altman.html",
-          "published": "2026-05-27T19:01:06+00:00",
-          "summary_en": "Drew Altman, who transformed KFF from a little-known family foundation to a major source of U.S. health policy research, will step down at the end of the year.",
-          "summary_zh": "德鲁·奥尔特曼（ Drew Altman ）将KFF从一个鲜为人知的家族基金会转变为美国卫生政策研究的主要来源，将于年底辞职。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Paxton victory gives Democrats new hope in Texas Senate race",
-          "title_en": "Paxton victory gives Democrats new hope in Texas Senate race",
-          "title_zh": "帕克斯顿的胜利给民主党人带来了德克萨斯州参议院竞选的新希望",
-          "link": "https://www.ft.com/content/0ee88169-e048-4c4b-9a47-fd140f3913e8",
-          "published": "2026-05-27T19:00:36+00:00",
-          "summary_en": "Trump-backed candidate may have limited appeal outside the president’s Maga base",
-          "summary_zh": "特朗普支持的候选人在总统MAGA基地之外的吸引力可能有限",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "’60 Minutes’ Journalist Sharyn Alfonsi Loses Deal After Dispute With Bari Weiss",
-          "title_en": "’60 Minutes’ Journalist Sharyn Alfonsi Loses Deal After Dispute With Bari Weiss",
-          "title_zh": "“60分钟”记者Sharyn Alfonsi在与Bari Weiss发生争执后失去交易",
-          "link": "https://www.nytimes.com/2026/05/27/business/media/cbs-sharyn-alfonsi-bari-weiss.html",
-          "published": "2026-05-27T18:37:07+00:00",
-          "summary_en": "Sharyn Alfonsi, whose segment on a brutal Salvadoran prison was pulled abruptly in December, said that CBS News and its top editor, Bari Weiss, had let her contract expire.",
-          "summary_zh": "沙林·阿尔方西（ Sharyn Alfonsi ）去年12月在一所残酷的萨尔瓦多监狱中被突然拉扯，她说哥伦比亚广播公司新闻（ CBS News ）及其首席编辑巴里·韦斯（ Bari Weiss ）让她的合同到期。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Global Supply Shortages Deepen as War Drags On, Risking Jobs and Growth",
-          "title_en": "Global Supply Shortages Deepen as War Drags On, Risking Jobs and Growth",
-          "title_zh": "随着战争的拖延，全球供应短缺加剧，危及就业和增长",
-          "link": "https://www.nytimes.com/2026/05/27/business/hormuz-global-shortages-gas.html",
-          "published": "2026-05-27T18:24:12+00:00",
-          "summary_en": "After three months, the fallout of the closure of the Strait of Hormuz is spreading, with developing countries bearing the brunt of the shortfall.",
-          "summary_zh": "三个月后，霍尔木兹海峡关闭的后果正在蔓延，发展中国家首当其冲。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Fifa subpoenaed over World Cup ticket practices in two US states",
-          "title_en": "Fifa subpoenaed over World Cup ticket practices in two US states",
-          "title_zh": "国际足联因美国两个州的世界杯门票惯例而被传唤",
-          "link": "https://www.ft.com/content/f18c41b8-fd5a-4923-ab5c-fbd3ac519cd7",
-          "published": "2026-05-27T16:07:50+00:00",
-          "summary_en": "New York joins with New Jersey in probe of ‘sky-high prices’ just weeks before tournament kicks off",
-          "summary_zh": "在比赛开始前几周，纽约与新泽西州一起调查“天价”",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Jamie Dimon says JPMorgan could spend up to $20bn on a new acquisition",
-          "title_en": "Jamie Dimon says JPMorgan could spend up to $20bn on a new acquisition",
-          "title_zh": "杰米·戴蒙（ Jamie Dimon ）表示，摩根大通可能会花费高达200亿美元（ $ 200亿）进行新收购",
-          "link": "https://www.ft.com/content/4fbe0b56-1371-4abc-b209-491ece0cc019",
-          "published": "2026-05-27T16:06:52+00:00",
-          "summary_en": "Bank chief executive says Trump administration’s lighter approach to regulation has freed as much as $50bn in excess capital",
-          "summary_zh": "世行首席执行官表示，特朗普政府放松监管已经释放了多达500亿美元的超额资本",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Why Memory Chips Are Dominating the A.I. Rally",
-          "title_en": "Why Memory Chips Are Dominating the A.I. Rally",
-          "title_zh": "为什么内存芯片在AI拉力赛中占据主导地位",
-          "link": "https://www.nytimes.com/2026/05/27/business/dealbook/ai-chips-war-samsung-micron.html",
-          "published": "2026-05-27T15:00:43+00:00",
-          "summary_en": "Three major producers — Micron, Samsung and SK Hynix — are now trillion-dollar companies. Politicians and Wall Street have taken notice.",
-          "summary_zh": "美光(Micron)、三星(Samsung)和SK海力士(SK Hynix)这三家主要生产商现在是价值万亿美元的公司。政界人士和华尔街已经注意到了这一点。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Iran’s ultra-hardliners lash out at deal negotiators",
-          "title_en": "Iran’s ultra-hardliners lash out at deal negotiators",
-          "title_zh": "伊朗超硬派猛烈抨击协议谈判代表",
-          "link": "https://www.ft.com/content/8245ea80-059f-44d2-8e72-8fe1308dd18b",
-          "published": "2026-05-27T14:00:15+00:00",
-          "summary_en": "Influential conservative lawmakers insist Tehran stick to maximalist terms for ending conflict with Washington",
-          "summary_zh": "有影响力的保守派立法者坚持德黑兰坚持最大化的条款来结束与华盛顿的冲突",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Spencer Pratt Wants to Be Mayor. His Fans Want Him to Be Batman.",
-          "title_en": "Spencer Pratt Wants to Be Mayor. His Fans Want Him to Be Batman.",
-          "title_zh": "Spencer Pratt想当市长。他的粉丝希望他成为蝙蝠侠。",
-          "link": "https://www.nytimes.com/2026/05/27/magazine/spencer-pratt-batman-ads-mayor.html",
-          "published": "2026-05-27T13:53:20+00:00",
-          "summary_en": "What an A.I.-generated video of the former reality TV star teaches us about the future of political ads.",
-          "summary_zh": "这位前真人秀明星的人工智能视频教会了我们有关政治广告的未来。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Teachers Union Urges Schools to Curb A.I. Chatbots and Screen Time",
-          "title_en": "Teachers Union Urges Schools to Curb A.I. Chatbots and Screen Time",
-          "title_zh": "教师工会敦促学校遏制人工智能聊天机器人和屏幕时间",
-          "link": "https://www.nytimes.com/2026/05/27/technology/ai-screens-schools-weingarten.html",
-          "published": "2026-05-27T12:58:05+00:00",
-          "summary_en": "The American Federation of Teachers recommended “no screens” at all for those in second grade or younger, and no A.I. chatbots for students in elementary school.",
-          "summary_zh": "美国教师联合会建议二年级或以下的学生“不使用屏幕” ，小学生不使用人工智能聊天机器人。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Samsung Unions Approve Pay Deal That Highlights Inequality of A.I. Age",
-          "title_en": "Samsung Unions Approve Pay Deal That Highlights Inequality of A.I. Age",
-          "title_zh": "三星工会批准突显人工智能年龄不平等的薪酬协议",
-          "link": "https://www.nytimes.com/2026/05/27/world/asia/samsung-ai-profit-bonus-workers.html",
-          "published": "2026-05-27T11:56:50+00:00",
-          "summary_en": "The agreement all but guarantees hefty bonuses for employees in the top-performing chip unit. Other workers say they feel left out.",
-          "summary_zh": "该协议几乎保证了顶级芯片部门员工的高额奖金。其他工人说，他们觉得自己被排斥在外。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Donald E. Newhouse, Low-Profile Heir to a Media Empire, Dies at 96",
-          "title_en": "Donald E. Newhouse, Low-Profile Heir to a Media Empire, Dies at 96",
-          "title_zh": "媒体帝国的低调继承人唐纳德· E ·纽豪斯去世，享年96岁",
-          "link": "https://www.nytimes.com/2026/05/26/business/media/donald-e-newhouse-dead.html",
-          "published": "2026-05-27T10:31:03+00:00",
-          "summary_en": "He ran the newspaper division of Advance Publications, while his older brother, Si, ran the Condé Nast magazine operation.",
-          "summary_zh": "他负责Advance Publications的报纸部门，而他的哥哥Si负责Condé Nast杂志的运营。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Crypto Firms and Automakers Are Looking to Open Banks, at Trump’s Urging",
-          "title_en": "Crypto Firms and Automakers Are Looking to Open Banks, at Trump’s Urging",
-          "title_zh": "在特朗普的敦促下，加密公司和汽车制造商正在寻求开放银行",
-          "link": "https://www.nytimes.com/2026/05/27/business/bank-charters-fintech-crypto.html",
-          "published": "2026-05-27T09:02:15+00:00",
-          "summary_en": "Urged on by the White House and a reduction in regulatory oversight, crypto companies and automakers are among those that have applied for banking charters.",
-          "summary_zh": "在白宫的敦促下，加密公司和汽车制造商也在申请银行特许证。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "A Wellness Cruise for the Overstimulated and Totally Stressed",
-          "title_en": "A Wellness Cruise for the Overstimulated and Totally Stressed",
-          "title_zh": "适合过度刺激和压力过大的人的健康巡航之旅",
-          "link": "https://www.nytimes.com/2026/05/27/travel/explora-journeys-wellness-cruise.html",
-          "published": "2026-05-27T09:01:54+00:00",
-          "summary_en": "Our writer kept an open mind as she signed up for sound baths, face yoga and meditation sessions on a wellness retreat aboard a luxury Mediterranean cruise. But was it all a bit too woo-woo?",
-          "summary_zh": "我们的作者在豪华地中海邮轮上的健康度假胜地注册了音浴、面部瑜伽和冥想课程，并保持了开放的心态。但是这一切是不是有点太woo-woo了？",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Ferrari shares slump after it unveils first fully electric car",
-          "title_en": "Ferrari shares slump after it unveils first fully electric car",
-          "title_zh": "法拉利在推出首款全电动汽车后股价暴跌",
-          "link": "https://www.bbc.com/news/articles/cwy22rddy5no?at_medium=RSS&at_campaign=rss",
-          "published": "2026-05-27T04:02:43+00:00",
-          "summary_en": "The new Luce model has divided opinion on social media, and comes despite intense pressure from Chinese EV makers.",
-          "summary_zh": "新的Luce车型在社交媒体上存在分歧，尽管中国电动汽车制造商施加了巨大压力。",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "How AI threatens the giants of consulting",
-          "title_en": "How AI threatens the giants of consulting",
-          "title_zh": "人工智能如何威胁咨询巨头",
-          "link": "https://www.ft.com/content/d82d2a5c-74ab-4eb9-a658-fd5467e71670",
-          "published": "2026-05-27T04:00:04+00:00",
-          "summary_en": "The technology opens the door for smaller, well-funded challengers to take market share from the Big Four and others",
-          "summary_zh": "这项技术为规模较小、资金充足的挑战者从四大巨头和其他公司手中夺取市场份额打开了大门",
-          "source": "Financial Times Home",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "NASA’s Moon Base Plan Adds Two Rovers for Its Astronauts",
-          "title_en": "NASA’s Moon Base Plan Adds Two Rovers for Its Astronauts",
-          "title_zh": "美国宇航局的月球基地计划为其宇航员增加了两辆漫游车",
-          "link": "https://www.nytimes.com/2026/05/26/science/space/nasa-rovers-moon-base-contracts.html",
-          "published": "2026-05-27T02:11:50+00:00",
-          "summary_en": "The contracts, announced on Tuesday, are part of the space agency’s efforts to establish a moon base.",
-          "summary_zh": "周二宣布的这些合同是航天局建立月球基地努力的一部分。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "You Can’t Stop This Data Center, a Mom Was Told. She Won’t Quit.",
-          "title_en": "You Can’t Stop This Data Center, a Mom Was Told. She Won’t Quit.",
-          "title_zh": "有人告诉一位母亲，你不能停止这个数据中心。她不会放弃的。",
-          "link": "https://www.nytimes.com/2026/05/26/us/data-centers-kassi-solberg.html",
-          "published": "2026-05-26T20:52:24+00:00",
-          "summary_en": "Kassi Solberg has concerns about a proposed complex, the size of 3,800 football fields, near her home. Trust us, the developer says.",
-          "summary_zh": "卡西·索尔伯格（ Kassi Solberg ）对她家附近的3,800个足球场大小的建筑群感到担忧。相信我们，开发人员说。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Global Oil Price Rises After U.S. Strikes in Iran Cloud Peace Deal",
-          "title_en": "Global Oil Price Rises After U.S. Strikes in Iran Cloud Peace Deal",
-          "title_zh": "美国罢工伊朗云和平协议后全球油价上涨",
-          "link": "https://www.nytimes.com/2026/05/26/business/oil-gas-price-iran.html",
-          "published": "2026-05-26T20:10:34+00:00",
-          "summary_en": "Optimism for a resolution to the conflict and the reopening of the Strait of Hormuz was checked after the United States said it had carried out strikes on missile launch sites in Iran.",
-          "summary_zh": "在美国表示对伊朗的导弹发射场进行了打击之后，解决冲突和重新开放霍尔木兹海峡的乐观情绪受到了抑制。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "SpaceX IPO Filing Reveals Favorable Terms for Elon Musk",
-          "title_en": "SpaceX IPO Filing Reveals Favorable Terms for Elon Musk",
-          "title_zh": "SpaceX的IPO申请揭示了Elon Musk的优惠条款",
-          "link": "https://www.nytimes.com/2026/05/26/technology/spacex-elon-musk-pay-board-governance.html",
-          "published": "2026-05-26T18:59:37+00:00",
-          "summary_en": "The ways it set up its board and Mr. Musk’s pay appear to benefit him at the expense of other shareholders, corporate governance experts said.",
-          "summary_zh": "公司治理专家表示，公司设立董事会的方式和马斯克的薪酬似乎使他受益，而牺牲了其他股东的利益。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "OpenRouter, an Exchange for A.I. Models, Raises $113 Million",
-          "title_en": "OpenRouter, an Exchange for A.I. Models, Raises $113 Million",
-          "title_zh": "OpenRouter是人工智能模型的交易所，筹集了1.13亿美元$",
-          "link": "https://www.nytimes.com/2026/05/26/business/dealbook/openrouter-ai-models-fundraising.html",
-          "published": "2026-05-26T18:13:25+00:00",
-          "summary_en": "An investment arm of Alphabet is backing OpenRouter, which helps companies choose among hundreds of models for different software tasks.",
-          "summary_zh": "Alphabet的一家投资部门正在支持OpenRouter ，该公司帮助公司从数百种模型中选择不同的软件任务。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Short Naps, Long Hours: How Autism Clinics Squeeze Medicaid Dollars Out of Preschoolers",
-          "title_en": "Short Naps, Long Hours: How Autism Clinics Squeeze Medicaid Dollars Out of Preschoolers",
-          "title_zh": "短时间午睡，长时间工作：自闭症诊所如何从学龄前儿童身上挤出医疗补助资金",
-          "link": "https://www.nytimes.com/2026/05/23/health/autism-therapy-clinics.html",
-          "published": "2026-05-26T17:45:56+00:00",
-          "summary_en": "The industry has grown rapidly, straining state budgets. A focus on finances has led to overbilling, fraud and even harm.",
-          "summary_zh": "该行业发展迅速，国家预算捉襟见肘。对财务的关注导致了超额计费、欺诈甚至伤害。",
-          "source": "NYTimes Business",
-          "language": "en",
-          "priority": 5,
-          "source_category": "news"
-        },
-        {
-          "title": "Australia sues US giant 3M for $2bn over 'forever chemicals' in firefighting foam",
-          "title_en": "Australia sues US giant 3M for $2bn over 'forever chemicals' in firefighting foam",
-          "title_zh": "澳大利亚就消防泡沫中的“永久化学品”起诉美国巨头3M公司20亿美元$",
-          "link": "https://www.bbc.com/news/articles/c3w2yl3p97qo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-05-28T02:47:19+00:00",
-          "summary_en": "The case centres on contamination caused by PFAS in the foam at dozens of defence sites.",
-          "summary_zh": "该案例集中在数十个防御地点的泡沫中由PFAS造成的污染。",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "S&P 500, Nasdaq, Dow Futures Rise As AI-Driven Tech Rally Overpowers 'Defensive' Iran Strikes: ONDS, NBIS, RCAT, SNOW In Focus",
-          "title_en": "S&P 500, Nasdaq, Dow Futures Rise As AI-Driven Tech Rally Overpowers 'Defensive' Iran Strikes: ONDS, NBIS, RCAT, SNOW In Focus",
-          "title_zh": "标准普尔500指数，纳斯达克，道琼斯期货上涨，因为人工智能驱动的技术集会压倒了“防御性”伊朗罢工： ONDS ， NBIS ， RCAT ， SNOW聚焦",
-          "link": "https://stocktwits.com/news-articles/markets/equity/why-sp500-nasdaq-dow-futures-are-climbing-despite-purely-defensive-us-strikes-in-iran/cZgibqmRerC?.tsrc=rss",
-          "published": "2026-05-28T02:15:41+00:00",
-          "summary_en": "A report from Reuters stated that the U.S. military had launched overnight strikes in Iran, targeting ‌a military site and drones that were viewed as a threat around the Strait of Hormuz.",
-          "summary_zh": "路透社的一份报告称，美国军方在伊朗发动了隔夜罢工，瞄准了霍尔木兹海峡周围被视为威胁的军事基地和无人机。",
-          "source": "Yahoo Finance (SPY)",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        },
-        {
-          "title": "Google worker charged with using internal data to make $1.2m on bets",
-          "title_en": "Google worker charged with using internal data to make $1.2m on bets",
-          "title_zh": "谷歌员工被指控使用内部数据在投注中赚取120万美元",
-          "link": "https://www.bbc.com/news/articles/c052yv259jvo?at_medium=RSS&at_campaign=rss",
-          "published": "2026-05-28T02:14:19+00:00",
-          "summary_en": "The longtime Google employee was charged in New York for allegedly breaking insider trading laws.",
-          "summary_zh": "这名谷歌的长期员工因涉嫌违反内幕交易法而在纽约被起诉。",
-          "source": "BBC News Business",
-          "language": "en",
-          "priority": 4,
-          "source_category": "news"
-        }
-      ],
-      "social_media": []
-    },
-    {
       "updated_at": "2026-05-28T16:52:11.231261+00:00",
       "edition_label": "NY 08:00",
       "summary_cn": null,
@@ -132343,6 +131571,866 @@
           "summary_en": "An arbitrator ordered the newspaper to reinstate Karen Attiah, who was fired after posting about “white men who espouse hatred and violence” following Charlie Kirk’s killing.",
           "summary_zh": "一名仲裁员命令该报恢复Karen Attiah的职务， Karen Attiah在Charlie Kirk被杀后发布了关于“支持仇恨和暴力的白人”的帖子后被解雇。",
           "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        }
+      ],
+      "social_media": []
+    },
+    {
+      "updated_at": "2026-08-26T13:51:55.321924+00:00",
+      "edition_label": "NY 08:00",
+      "summary_cn": null,
+      "market_hotspots_cn": null,
+      "social_summary_cn": null,
+      "sector_recommendation": null,
+      "market_snapshot": [
+        {
+          "title": "US Markets",
+          "items": [
+            {
+              "name": "S&P 500",
+              "symbol": "^SPX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Nasdaq 100",
+              "symbol": "^NDQ",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Dow Jones",
+              "symbol": "^DJI",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "Europe Markets",
+          "items": [
+            {
+              "name": "FTSE 100",
+              "symbol": "^UKX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "GBP",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "DAX",
+              "symbol": "^DAX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "EUR",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "CAC 40",
+              "symbol": "^CAC",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "EUR",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "Asia Markets",
+          "items": [
+            {
+              "name": "Nikkei 225",
+              "symbol": "^NKX",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "JPY",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Hang Seng",
+              "symbol": "^HSI",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "HKD",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "China Markets",
+          "items": [
+            {
+              "name": "SSE Composite 上证指数",
+              "symbol": "SH000001",
+              "price": 3912.52,
+              "change": 23.08,
+              "change_percent": 0.59,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "SZSE Component 深证成指",
+              "symbol": "SZ399001",
+              "price": 13841.33,
+              "change": 95.46,
+              "change_percent": 0.69,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "ChiNext 创业板指",
+              "symbol": "SZ399006",
+              "price": 3414.88,
+              "change": 17.36,
+              "change_percent": 0.51,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "CSI 300 沪深300",
+              "symbol": "SH000300",
+              "price": 4590.79,
+              "change": 38.76,
+              "change_percent": 0.85,
+              "currency": "CNY",
+              "change_color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "title": "Gold & Silver",
+          "items": [
+            {
+              "name": "Gold (oz)",
+              "symbol": "XAUUSD",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            },
+            {
+              "name": "Silver (oz)",
+              "symbol": "XAGUSD",
+              "price": null,
+              "change": null,
+              "change_percent": null,
+              "currency": "USD",
+              "change_color": "#64748b"
+            }
+          ]
+        },
+        {
+          "title": "Crypto / 数字货币",
+          "items": [
+            {
+              "name": "BTC",
+              "symbol": "BTC",
+              "price": 78413.0,
+              "change": -40.98,
+              "change_percent": -0.05,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ETH",
+              "symbol": "ETH",
+              "price": 2456.8,
+              "change": -0.53,
+              "change_percent": -0.02,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "SOL",
+              "symbol": "SOL",
+              "price": 96.64,
+              "change": -0.44,
+              "change_percent": -0.46,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "BNB",
+              "symbol": "BNB",
+              "price": 701.3,
+              "change": 8.89,
+              "change_percent": 1.27,
+              "currency": "USD",
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "XRP",
+              "symbol": "XRP",
+              "price": 1.4,
+              "change": -0.05,
+              "change_percent": -3.9,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOGE",
+              "symbol": "DOGE",
+              "price": 0.09,
+              "change": -0.0,
+              "change_percent": -3.06,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "ADA",
+              "symbol": "ADA",
+              "price": 0.21,
+              "change": -0.01,
+              "change_percent": -2.65,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "AVAX",
+              "symbol": "AVAX",
+              "price": 7.31,
+              "change": -0.13,
+              "change_percent": -1.74,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            },
+            {
+              "name": "DOT",
+              "symbol": "DOT",
+              "price": 0.84,
+              "change": -0.03,
+              "change_percent": -3.25,
+              "currency": "USD",
+              "change_color": "#dc2626"
+            }
+          ]
+        }
+      ],
+      "sector_rankings": [
+        {
+          "title": "A-Share Industry Sectors 行业板块",
+          "items": [
+            {
+              "name": "教育运营及其他",
+              "change_percent": 6.59,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "铜",
+              "change_percent": 5.16,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "疫苗",
+              "change_percent": 4.12,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "粘胶",
+              "change_percent": 3.93,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "钾肥",
+              "change_percent": 3.9,
+              "change_color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "title": "A-Share Concept Sectors 概念板块",
+          "items": [
+            {
+              "name": "昨日打二板以上表现",
+              "change_percent": 5.78,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "昨日连板_含一字",
+              "change_percent": 3.97,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "券商概念",
+              "change_percent": 2.99,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "超导概念",
+              "change_percent": 2.95,
+              "change_color": "#16a34a"
+            },
+            {
+              "name": "昨日连板",
+              "change_percent": 2.92,
+              "change_color": "#16a34a"
+            }
+          ]
+        }
+      ],
+      "weekly_sector_rankings": [
+        {
+          "title": "A-Share Industry 行业板块 (Weekly)",
+          "items": [
+            {
+              "name": "教育运营及其他",
+              "change_percent": 6.59,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 14.83,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "铜",
+              "change_percent": 5.16,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 9.37,
+              "weekly_change_color": "#16a34a"
+            },
+            {
+              "name": "证券Ⅲ",
+              "change_percent": 3.01,
+              "change_color": "#16a34a",
+              "weekly_change_percent": 4.03,
+              "weekly_change_color": "#16a34a"
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "title": "S&P 500, Dow, Nasdaq Futures Rangebound As Investors Await Nvidia Earnings, Key Inflation Reading — MRNA, SPCX, PSKY, OpenAI In Focus",
+          "title_en": "S&P 500, Dow, Nasdaq Futures Rangebound As Investors Await Nvidia Earnings, Key Inflation Reading — MRNA, SPCX, PSKY, OpenAI In Focus",
+          "title_zh": "标准普尔500指数，道琼斯指数，纳斯达克期货区间波动，投资者等待Nvidia盈利，关键通胀读数— MRNA ， SPCX ， PSKY ， OpenAI聚焦",
+          "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-nasdaq-futures-rangebound-as-investors-await-nvidia-earnings/cZYNONDRJom?.tsrc=rss",
+          "published": "2026-08-26T00:02:57+00:00",
+          "summary_en": "Treasury yields declined, as the benchmark 10-year Treasury note yield dropped by over 7 basis points to reach 4.63%.",
+          "summary_zh": "国债收益率下降，基准10年期国债收益率下降超过7个基点，达到4.63%。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "US Treasury’s Scott Bessent ‘will lose’ battle with bond markets, former mentor warns",
+          "title_en": "US Treasury’s Scott Bessent ‘will lose’ battle with bond markets, former mentor warns",
+          "title_zh": "前导师警告称，美国财政部斯科特·贝森特（ Scott Bessent ）与债券市场的斗争“将失败”",
+          "link": "https://www.theguardian.com/business/2026/aug/25/us-treasury-scott-bessent-bond-buying-donald-trump-stanley-druckenmiller",
+          "published": "2026-08-25T09:59:16+00:00",
+          "summary_en": "Trump ally should cut budget deficit rather than try to suppress bond yields, says billionaire Stanley Druckenmiller Scott Bessent’s attempt to calm the bond markets and push down America’s cost of borrowing have attracted a rebuke from the US Treasury secretary’s former mentor. The billionaire investor Stanley Druckenmiller, who worked with Bessent at Geor…",
+          "summary_zh": "特朗普的盟友应该削减预算赤字，而不是试图抑制债券收益率，亿万富翁斯坦利·德鲁肯米勒（ Stanley Druckenmiller ）斯科特·贝森特（ Scott Bessent ）试图平息债券市场并降低美国借贷成本，这引起了美国财政部长前导师的指责。亿万富翁投资者Stanley Druckenmiller曾在Geor与Bessent合作……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Wiped out: US faces surging toilet paper prices amid trade war with Canada",
+          "title_en": "Wiped out: US faces surging toilet paper prices amid trade war with Canada",
+          "title_zh": "消失：在与加拿大的贸易战中，美国面临厕纸价格飙升",
+          "link": "https://www.theguardian.com/us-news/2026/aug/26/paper-product-toilet-paper-tariffs-us-canada",
+          "published": "2026-08-26T10:00:41+00:00",
+          "summary_en": "Paper products among hardest-hit sectors after trade negotiations broke down, with 25-50% tariffs estimated Are you a Canadian boycotting US products? We’d like to hear from you Using the bathroom or having a cry is about to become more expensive for North Americans as the US and Canada enter a full-fledged trade war that threatens to flush away decades of…",
+          "summary_zh": "贸易谈判破裂后，纸制品是受影响最严重的行业之一，估计有25-50%的关税您是加拿大人抵制美国产品吗？我们希望听到您的声音使用卫生间或哭泣对北美人来说将变得更加昂贵，因为美国和加拿大进入了一场全面的贸易战，这场贸易战有可能冲走数十年的……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "‘Honeymoon’s Over’: Warsh Under Pressure as Fed Weighs Raising Rates",
+          "title_en": "‘Honeymoon’s Over’: Warsh Under Pressure as Fed Weighs Raising Rates",
+          "title_zh": "“蜜月结束” ：随着美联储加息， Warsh面临压力",
+          "link": "https://www.nytimes.com/2026/08/26/business/kevin-warsh-federal-reserve-jackson.html",
+          "published": "2026-08-26T09:04:04+00:00",
+          "summary_en": "Kevin M. Warsh is scheduled to deliver his first address at the Federal Reserve’s annual conference in Jackson, Wyo., with U.S. government bond markets on edge and inflation risks resurfacing.",
+          "summary_zh": "凯文·沃什（ Kevin M. Warsh ）计划在怀俄明州杰克逊举行的美联储年度会议上发表他的第一次演讲，美国政府债券市场处于边缘，通胀风险重新浮出水面。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Bessent’s bond intervention puts US Treasury on collision course with Fed",
+          "title_en": "Bessent’s bond intervention puts US Treasury on collision course with Fed",
+          "title_zh": "贝森特的债券干预使美国财政部与美联储发生冲突",
+          "link": "https://www.ft.com/content/a50df99b-0621-44ea-a7c7-c9c685e2eba1?syn-25a6b1a6=1",
+          "published": "2026-08-26T04:00:30+00:00",
+          "summary_en": "Increased purchases of debt threaten to undermine central bank chief Kevin Warsh’s bid to tame inflation",
+          "summary_zh": "购买债务的增加有可能破坏央行行长凯文·沃什（ Kevin Warsh ）遏制通货膨胀的努力",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "PCE Index Shows Inflation Remained Elevated in July Amid High Energy Costs",
+          "title_en": "PCE Index Shows Inflation Remained Elevated in July Amid High Energy Costs",
+          "title_zh": "PCE指数显示，在能源成本高企的情况下， 7月份通货膨胀率仍居高不下",
+          "link": "https://www.nytimes.com/2026/08/26/business/economy/inflation-pce.html",
+          "published": "2026-08-26T13:20:34+00:00",
+          "summary_en": "The Personal Consumption Expenditure index, the Federal Reserve’s preferred inflation tracker, held steady in July.",
+          "summary_zh": "美联储首选的通胀追踪器个人消费支出指数在7月份保持稳定。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Gold, Flights, Cryptocurrency: U.S. Vows to Go After More Than Iran’s Oil",
+          "title_en": "Gold, Flights, Cryptocurrency: U.S. Vows to Go After More Than Iran’s Oil",
+          "title_zh": "黄金、机票、加密货币：美国誓言追求的不仅仅是伊朗的石油",
+          "link": "https://www.nytimes.com/2026/08/25/world/middleeast/iran-us-sanctions-oil-gold.html",
+          "published": "2026-08-26T12:46:05+00:00",
+          "summary_en": "The United States threatened sanctions for any country or entity that engages with Iran’s gold, digital assets, aviation, shipping and tech industries. Here’s why that matters.",
+          "summary_zh": "美国威胁要制裁任何涉及伊朗黄金、数字资产、航空、航运和科技行业的国家或实体。这就是为什么这很重要。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Bessent Faces Credibility Test in Quest to Tame Markets",
+          "title_en": "Bessent Faces Credibility Test in Quest to Tame Markets",
+          "title_zh": "Bessent在寻求驯服市场的过程中面临可信度测试",
+          "link": "https://www.nytimes.com/2026/08/26/business/scott-bessent-economy-markets.html",
+          "published": "2026-08-26T12:14:39+00:00",
+          "summary_en": "The Treasury secretary is confronting the limits of his ability to reshape the economy ahead of midterm elections.",
+          "summary_zh": "财政部长正面临着在中期选举之前重塑经济的能力的局限性。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "FirstFT: US Treasury on collision course with Fed",
+          "title_en": "FirstFT: US Treasury on collision course with Fed",
+          "title_zh": "FirstFT ：美国财政部与美联储的碰撞路线",
+          "link": "https://www.ft.com/content/49f9f010-9ac9-4f6b-8b41-e8d959558785?syn-25a6b1a6=1",
+          "published": "2026-08-26T10:29:26+00:00",
+          "summary_en": "Also in this newsletter: Darline Graham wins South Carolina primary and Bill Gates calls for ‘human reserved’ jobs to protect them from AI",
+          "summary_zh": "同样在这份通讯中：达琳·格雷厄姆赢得南卡罗来纳州初选，比尔·盖茨呼吁“人类保留”的工作，以保护他们免受人工智能的侵害",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Why Are Nasdaq, S&P 500 Futures Slipping Premarket? NVDA, INTU, CRWD, CRM, CRML, SLS Stocks In Focus",
+          "title_en": "Why Are Nasdaq, S&P 500 Futures Slipping Premarket? NVDA, INTU, CRWD, CRM, CRML, SLS Stocks In Focus",
+          "title_zh": "纳斯达克标准普尔500指数期货为何在盘前下跌？ NVDA、INTU、CRWD、CRM、CRML、SLS股票聚焦",
+          "link": "https://stocktwits.com/news-articles/markets/equity/why-nasdaq-sp500-futures-slipping-premarket-nvda-intu-crwd-crm-crml-sls-stocks-in-focus/cZYNY7cRJYJ?.tsrc=rss",
+          "published": "2026-08-26T09:10:36+00:00",
+          "summary_en": "Retail sentiment on Stocktwits remained ‘bearish’ on SPY and QQQ.",
+          "summary_zh": "Stocktwits对间谍和QQQ的零售情绪仍然“看跌”。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Trump’s Canada Tariffs Rely on Untested Law",
+          "title_en": "Trump’s Canada Tariffs Rely on Untested Law",
+          "title_zh": "特朗普的加拿大关税依赖未经检验的法律",
+          "link": "https://www.nytimes.com/2026/08/25/business/trump-canada-tariffs.html",
+          "published": "2026-08-25T16:37:02+00:00",
+          "summary_en": "The president has invoked a long dormant section of law to hit one of America’s closest allies, a move that has troubled courts in the past.",
+          "summary_zh": "总统援引长期休眠的法律条款来打击美国最亲密的盟友之一，此举过去曾困扰过法院。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "The Heat on Treasury Secretary Scott Bessent Grows",
+          "title_en": "The Heat on Treasury Secretary Scott Bessent Grows",
+          "title_zh": "财政部长斯科特·贝森特（ Scott Bessent ）的热度上升",
+          "link": "https://www.nytimes.com/2026/08/25/business/dealbook/bessent-bond-market-druckenmiller.html",
+          "published": "2026-08-25T12:46:40+00:00",
+          "summary_en": "Treasury Secretary Scott Bessent’s plans to intervene in bond markets have drawn widespread criticism, including from a prominent former mentor.",
+          "summary_zh": "财政部长斯科特·贝森特（ Scott Bessent ）干预债券市场的计划引起了广泛的批评，包括一位着名的前导师。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Meta to Pay Up to $17.1 Billion in Landmark Settlement Over Social Media Addiction Claims",
+          "title_en": "Meta to Pay Up to $17.1 Billion in Landmark Settlement Over Social Media Addiction Claims",
+          "title_zh": "Meta将就社交媒体成瘾索赔支付高达171亿美元的具有里程碑意义的和解协议",
+          "link": "https://www.nytimes.com/2026/08/26/technology/meta-settlement-social-media-addiction-lawsuit.html",
+          "published": "2026-08-26T13:34:17+00:00",
+          "summary_en": "The social media giant settled with 47 states, the District of Columbia and U.S. territories, and agreed to make major changes to its products over claims its platforms endangered children.",
+          "summary_zh": "这家社交媒体巨头与47个州，哥伦比亚特区和美国领土达成和解，并同意对其产品进行重大更改，声称其平台危及儿童。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Exchange-Traded Funds Lower, Equity Futures Mixed Pre-Bell Wednesday Amid Inflation Data Release",
+          "title_en": "Exchange-Traded Funds Lower, Equity Futures Mixed Pre-Bell Wednesday Amid Inflation Data Release",
+          "title_zh": "在通胀数据公布之际，交易所交易基金下跌，股票期货周三上市前表现喜忧参半",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-lower-equity-131226701.html?.tsrc=rss",
+          "published": "2026-08-26T13:12:26+00:00",
+          "summary_en": "The broad market exchange-traded fund SPDR S&P 500 ETF Trust (SPY) was down 0.1%, and the actively t",
+          "summary_zh": "广义市场交易所交易基金SPDR S&P 500 ETF Trust (SPY)下跌0.1% ，",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Wall St. Scrutinizes Nvidia’s Deal Machine",
+          "title_en": "Wall St. Scrutinizes Nvidia’s Deal Machine",
+          "title_zh": "华尔街仔细审视英伟达的交易机器",
+          "link": "https://www.nytimes.com/2026/08/26/business/dealbook/nvidia-earnings-ai-investments.html",
+          "published": "2026-08-26T11:48:27+00:00",
+          "summary_en": "Investors are awaiting the chipmaker’s latest quarterly earnings — and are anxious about its huge portfolio of artificial intelligence investments.",
+          "summary_zh": "投资者正在等待这家芯片制造商的最新季度收益，并对其庞大的人工智能投资组合感到担忧。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "The end of Trumpsplaining",
+          "title_en": "The end of Trumpsplaining",
+          "title_zh": "Trumpsplaining的结束",
+          "link": "https://www.ft.com/content/ea6efd7b-83c3-40ed-803a-e86402aa3aeb?syn-25a6b1a6=1",
+          "published": "2026-08-26T11:26:18+00:00",
+          "summary_en": "The pretence that America’s leader is a grand strategist will not survive the Iran fiasco",
+          "summary_zh": "美国领导人是大战略家的借口不会在伊朗的惨败中幸存下来",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Under Threat, Saudi Arabia Reroutes Oil Exports Yet Again",
+          "title_en": "Under Threat, Saudi Arabia Reroutes Oil Exports Yet Again",
+          "title_zh": "在威胁下，沙特阿拉伯再次调整石油出口路线",
+          "link": "https://www.nytimes.com/2026/08/26/business/saudi-oil-houthis-iran.html",
+          "published": "2026-08-26T09:02:55+00:00",
+          "summary_en": "Forced away from the Strait of Hormuz in the Persian Gulf, the Saudis turned to the Red Sea. Now they are relying on a less dangerous but more complicated detour via the Suez Canal.",
+          "summary_zh": "沙特人被迫离开波斯湾的霍尔木兹海峡，转向红海。现在，他们依靠的是一条不那么危险但更复杂的苏伊士运河绕道。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Why today’s markets are not as contradictory as they seem",
+          "title_en": "Why today’s markets are not as contradictory as they seem",
+          "title_zh": "为什么今天的市场没有看起来那么矛盾",
+          "link": "https://www.ft.com/content/c96c25c1-b27c-4c08-a2ba-21821b39dd78?syn-25a6b1a6=1",
+          "published": "2026-08-26T04:00:23+00:00",
+          "summary_en": "What looks like a breakdown in historical correlations may simply reflect a different macroeconomic regime",
+          "summary_zh": "历史相关性的崩溃可能只是反映了不同的宏观经济制度",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Worker Dies After Accident With Plane at Montreal Airport",
+          "title_en": "Worker Dies After Accident With Plane at Montreal Airport",
+          "title_zh": "蒙特利尔机场发生飞机事故，工人死亡",
+          "link": "https://www.nytimes.com/2026/08/25/world/canada/montreal-airport-accident-worker-dead.html",
+          "published": "2026-08-25T23:15:03+00:00",
+          "summary_en": "The Transportation Safety Board of Canada said the episode involved an Airbus A350 operated by French Bee, a French low-cost airline.",
+          "summary_zh": "加拿大运输安全委员会表示，这一事件涉及法国低成本航空公司French Bee运营的空中客车A350。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "SpaceX to Spend $100 Billion on Spaceport in Louisiana",
+          "title_en": "SpaceX to Spend $100 Billion on Spaceport in Louisiana",
+          "title_zh": "SpaceX将在路易斯安那州的太空港上花费1000亿美元$",
+          "link": "https://www.nytimes.com/2026/08/25/technology/spacex-louisiana-spaceport.html",
+          "published": "2026-08-25T21:31:13+00:00",
+          "summary_en": "It would be the rocket company’s second private launch site after Starbase, its headquarters in South Texas.",
+          "summary_zh": "这将是继位于德克萨斯州南部的星际基地之后，这家火箭公司的第二个私人发射场。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "This chart shows exactly why investors should worry about rising yields — even if they don’t own any bonds",
+          "title_en": "This chart shows exactly why investors should worry about rising yields — even if they don’t own any bonds",
+          "title_zh": "这张图表准确显示了为什么投资者应该担心收益率上升—即使他们没有任何债券",
+          "link": "https://www.marketwatch.com/story/this-chart-shows-exactly-why-investors-should-worry-about-rising-yields-even-if-they-dont-own-any-bonds-075b93c0?.tsrc=rss",
+          "published": "2026-08-25T18:58:00+00:00",
+          "summary_en": "Strong earnings growth over the past few quarters has helped lift U.S. stocks into record territory. Now, rising Treasury yields are threatening to temporarily derail the rally.",
+          "summary_zh": "过去几个季度的强劲盈利增长帮助美国股市升至创纪录的水平。现在，美国国债收益率的上升有可能暂时扰乱反弹。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "America’s economic war on Iran has a China problem",
+          "title_en": "America’s economic war on Iran has a China problem",
+          "title_zh": "美国对伊朗的经济战争有中国问题",
+          "link": "https://www.ft.com/content/3bce2d44-0067-455a-9b8d-d5e1a27fbf0a?syn-25a6b1a6=1",
+          "published": "2026-08-25T17:11:09+00:00",
+          "summary_en": "The US cannot fully isolate Tehran unless other trade partners co-operate",
+          "summary_zh": "除非其他贸易伙伴合作，否则美国无法完全孤立德黑兰",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Canada announces retaliatory tariffs on wide range of US goods",
+          "title_en": "Canada announces retaliatory tariffs on wide range of US goods",
+          "title_zh": "加拿大宣布对各种美国商品征收报复性关税",
+          "link": "https://www.theguardian.com/world/2026/aug/25/canada-retaliatory-tariffs-on-range-of-us-goods",
+          "published": "2026-08-25T16:17:44+00:00",
+          "summary_en": "Ottawa’s ‘focused response’ to levies imposed by Donald Trump on Canadian products comes after trade talks collapsed last week US politics live – latest updates Canada has announced it will impose tariffs on a wide range of key American industries including cosmetics, dairy, wood products and outdoor equipment in the coming weeks, as it retaliates roughly “…",
+          "summary_zh": "渥太华对唐纳德·特朗普(Donald Trump)对加拿大产品征收关税的“专注回应”发生在上周美国政治直播贸易谈判破裂之后--加拿大宣布将在未来几周对包括化妆品、乳制品、木制品和户外设备在内的广泛美国关键行业征收关税，因为它大致报复“……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "China Pushes Back After Trump Tightens the Screws on Iran",
+          "title_en": "China Pushes Back After Trump Tightens the Screws on Iran",
+          "title_zh": "在特朗普拧紧对伊朗的螺丝钉后，中国进行了反击",
+          "link": "https://www.nytimes.com/2026/08/25/business/us-bessent-china-iran.html",
+          "published": "2026-08-25T14:59:39+00:00",
+          "summary_en": "The Trump administration risks a clash with Beijing as it tries to cut off Iran’s economic lifelines without upending a fragile U.S.-China truce.",
+          "summary_zh": "特朗普政府冒着与北京发生冲突的风险，因为它试图在不破坏脆弱的美中休战的情况下切断伊朗的经济生命线。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Falling, Falling, Falling: Why One of Wall Street’s Biggest Ratings Agencies Expects Bloom Energy to Explode 70% Higher",
+          "title_en": "Falling, Falling, Falling: Why One of Wall Street’s Biggest Ratings Agencies Expects Bloom Energy to Explode 70% Higher",
+          "title_zh": "下跌，下跌，下跌：为什么华尔街最大的评级机构之一预计Bloom Energy将上涨70 ％",
+          "link": "https://247wallst.com/investing/2026/08/25/falling-falling-falling-why-one-of-wall-streets-biggest-ratings-agencies-expects-bloom-energy-to-explode-70-higher/?.tsrc=rss",
+          "published": "2026-08-25T12:41:36+00:00",
+          "summary_en": "Bloom Energy just posted one of the cleanest quarters in the AI infrastructure space, yet its stock sits 42% below its recent peak. One major Wall Street firm is doubling down with a price target that leaves every analyst on the Street standing alone.",
+          "summary_zh": "Bloom Energy刚刚发布了人工智能基础设施领域最清洁的季度之一，但其股价比最近的峰值低42%。一家大型华尔街公司正在加倍下调价格目标，让街上的每位分析师都独自一人。",
+          "source": "Yahoo Finance (SPY)",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "‘The day I disclose, my career is over’: the journalist facing an $800 daily fine to keep her sources secret",
+          "title_en": "‘The day I disclose, my career is over’: the journalist facing an $800 daily fine to keep her sources secret",
+          "title_zh": "“我披露的那一天，我的职业生涯已经结束” ：这位记者每天面临800 $的罚款，以保密她的消息来源",
+          "link": "https://www.theguardian.com/media/ng-interactive/2026/aug/25/catherine-herridge-journalist-supreme-court",
+          "published": "2026-08-25T11:00:35+00:00",
+          "summary_en": "If Catherine Herridge’s petition to the US supreme court fails, she’ll be on the hook for a daily fine until she discloses her sources – a case unsettling press freedom organizations For 18 days this summer, veteran journalist Catherine Herridge walked to her Washington DC mailbox and dropped off a check for $800. The money was required by law to cover a ju…",
+          "summary_zh": "如果凯瑟琳·赫里奇（ Catherine Herridge ）向美国最高法院提出的请愿失败，她将被处以每日罚款，直到她透露消息来源--这一案件让新闻自由组织感到不安。今年夏天的18天里，资深记者凯瑟琳·赫里奇（ Catherine Herridge ）走到她的华盛顿邮箱，寄出了一张800 $的支票。这笔钱是法律要求的，以支付一个月……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "US grain farmers pummelled as Iran war triggers surge in costs",
+          "title_en": "US grain farmers pummelled as Iran war triggers surge in costs",
+          "title_zh": "随着伊朗战争引发成本激增，美国谷物农民受到打击",
+          "link": "https://www.ft.com/content/acb64e29-a3ce-4282-82b0-6b7b5dd4f63e?syn-25a6b1a6=1",
+          "published": "2026-08-25T04:00:31+00:00",
+          "summary_en": "Middle East conflict adds to strains in America’s heartland months ahead of midterm elections",
+          "summary_zh": "在中期选举前几个月，中东冲突加剧了美国心脏地带的紧张局势",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "US affordability tracker: the data that could decide the 2026 midterm elections",
+          "title_en": "US affordability tracker: the data that could decide the 2026 midterm elections",
+          "title_zh": "美国可负担性追踪器：可能决定2026年中期选举的数据",
+          "link": "https://www.ft.com/content/71dccbca-4a1f-485a-9790-28cc527cdb82?syn-25a6b1a6=1",
+          "published": "2026-08-25T04:00:09+00:00",
+          "summary_en": "The FT is tracking changes to the cost of living that will affect American voters",
+          "summary_zh": "英国《金融时报》正在跟踪影响美国选民的生活成本变化",
+          "source": "Financial Times Global Economy",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade War Unfolds",
+          "title_en": "Trump Threatens New 50% Tariffs on Cars, Trucks and Steel as U.S.-Canada Trade War Unfolds",
+          "title_zh": "随着美国-加拿大贸易战的展开，特朗普威胁对汽车，卡车和钢铁征收新的50 ％关税",
+          "link": "https://www.nytimes.com/2026/08/24/business/economy/trump-canada-tariffs.html",
+          "published": "2026-08-25T03:57:01+00:00",
+          "summary_en": "President Trump vowed to increase tariffs on cars, trucks, auto parts and steel to 50 percent starting Jan. 1, as the countries edged toward a full-blown trade war.",
+          "summary_zh": "特朗普总统誓言从1月1日开始将汽车、卡车、汽车零部件和钢铁的关税提高到50% ，因为这些国家正朝着全面贸易战的方向发展。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Meta to pay up to $16.7bn to settle children’s social media harm case",
+          "title_en": "Meta to pay up to $16.7bn to settle children’s social media harm case",
+          "title_zh": "Meta将支付高达167亿美元$来解决儿童的社交媒体伤害案件",
+          "link": "https://www.ft.com/content/21dcbd96-ee57-445c-a9ba-0938c49b91c0?syn-25a6b1a6=1",
+          "published": "2026-08-26T13:20:22+00:00",
+          "summary_en": "Case relating to alleged failures of child protection was getting under way in California",
+          "summary_zh": "与涉嫌儿童保护失败有关的案件正在加利福尼亚州进行",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Mark Walter’s group insists there is no ‘fire sale’ and ‘no fraud’",
+          "title_en": "Mark Walter’s group insists there is no ‘fire sale’ and ‘no fraud’",
+          "title_zh": "马克·沃尔特（ Mark Walter ）的团队坚称没有“促销”和“欺诈”",
+          "link": "https://www.ft.com/content/70949883-f543-4444-a330-503b8e4c141a?syn-25a6b1a6=1",
+          "published": "2026-08-26T12:59:02+00:00",
+          "summary_en": "TWG Global hits out at ‘multipronged attacks’ on investment empire, which has stakes in high-profile sports teams",
+          "summary_zh": "TWG Global对投资帝国进行“多管齐下的攻击” ，投资帝国与备受瞩目的运动队有关",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Iran war approaching Ukraine-style stalemate, says shipping boss",
+          "title_en": "Iran war approaching Ukraine-style stalemate, says shipping boss",
+          "title_zh": "航运老板表示，伊朗战争接近乌克兰式的僵局",
+          "link": "https://www.ft.com/content/e9b2231e-79b0-40b3-a72e-6c594839e157?syn-25a6b1a6=1",
+          "published": "2026-08-26T12:48:52+00:00",
+          "summary_en": "Freight rates remain at record highs while oil prices fall back on talks between Iran and Oman to reopen the Strait of Hormuz",
+          "summary_zh": "运费仍处于创纪录的高位，而油价因伊朗和阿曼重新开放霍尔木兹海峡的谈判而回落",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Diesel Price Nears Record High, Helping Oil Companies and Hurting Consumers",
+          "title_en": "Diesel Price Nears Record High, Helping Oil Companies and Hurting Consumers",
+          "title_zh": "柴油价格接近创纪录高位，帮助石油公司并伤害消费者",
+          "link": "https://www.nytimes.com/2026/08/26/business/energy-environment/diesel-prices-iran-war-oil.html",
+          "published": "2026-08-26T11:45:16+00:00",
+          "summary_en": "The cost of the fuel, used in farm machinery, trucks and other heavy equipment, has surged because of the war in Iran and Ukrainian attacks on Russian refineries.",
+          "summary_zh": "由于伊朗战争和乌克兰对俄罗斯炼油厂的袭击，用于农业机械、卡车和其他重型设备的燃料成本飙升。",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Bill Gates calls for ‘human-reserved’ jobs in face of AI takeover",
+          "title_en": "Bill Gates calls for ‘human-reserved’ jobs in face of AI takeover",
+          "title_zh": "面对人工智能接管，比尔·盖茨呼吁“人类保留”的工作",
+          "link": "https://www.theguardian.com/technology/2026/aug/26/bill-gates-human-reserved-jobs-ai-takeover",
+          "published": "2026-08-26T10:33:43+00:00",
+          "summary_en": "In 6,000-word essay Microsoft co-founder also expresses concern governments not prepared for technology’s impact Business live – latest updates Bill Gates has called for “human-reserved” jobs in certain sectors to prevent AI replacing them, and expressed concern that governments are not prepared for the impact the technology will have. In a 6,000 word essay…",
+          "summary_zh": "在6000字的文章中，微软联合创始人还表达了对政府没有为技术影响做好准备的担忧商业现场–比尔·盖茨（ Bill Gates ）呼吁在某些行业提供“人为保留”的工作，以防止人工智能取代它们，并表示担心政府没有为技术的影响做好准备。在一篇6000字的文章中……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Harry Styles and the Residencies Taking Over the Music Industry",
+          "title_en": "Harry Styles and the Residencies Taking Over the Music Industry",
+          "title_zh": "Harry Styles和居住地接管音乐产业",
+          "link": "https://www.nytimes.com/2026/08/26/arts/music/harry-styles-residencies-pop-music.html",
+          "published": "2026-08-26T09:02:50+00:00",
+          "summary_en": "Harry Styles’s latest Madison Square Garden takeover is part of a trend that some say transfers the cost of touring to fans.",
+          "summary_zh": "哈里·斯泰尔斯（ Harry Styles ）最近收购麦迪逊广场花园（ Madison Square Garden ）是一种趋势的一部分，有人说这种趋势将旅游费用转嫁给",
+          "source": "NYTimes Business",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "London rollout of robotaxis delayed amid lack of guidance for firms to follow",
+          "title_en": "London rollout of robotaxis delayed amid lack of guidance for firms to follow",
+          "title_zh": "由于缺乏对公司的指导，伦敦机器人出租车推迟推出",
+          "link": "https://www.theguardian.com/technology/2026/aug/26/london-rollout-robotaxis-delayed-uber-wayve",
+          "published": "2026-08-26T08:48:43+00:00",
+          "summary_en": "Uber and Wayve had said they would start trips ‘later this summer’ but launch now looks unlikely this year Business live – latest updates The rollout of robotaxis on the streets of London is unlikely to happen this year, as regulatory and technical hurdles push back the ambitious schedule set out by the UK government. Only weeks ago Uber and London-based Wa…",
+          "summary_zh": "优步和Wayve曾表示，他们将在“今年夏天晚些时候”开始行程，但现在看起来不太可能在今年推出商业直播–最新更新今年不太可能在伦敦街头推出机器人出租车，因为监管和技术障碍推迟了英国政府制定的雄心勃勃的时间表。就在几周前，优步和总部位于伦敦的Wa…",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "Bill Gates calls for ‘human reserved’ jobs to protect labour force from AI",
+          "title_en": "Bill Gates calls for ‘human reserved’ jobs to protect labour force from AI",
+          "title_zh": "比尔·盖茨呼吁提供“人类保留”的工作岗位，以保护劳动力免受人工智能的影响",
+          "link": "https://www.ft.com/content/42c449c6-03f6-4097-9eae-e119447e8aa5?syn-25a6b1a6=1",
+          "published": "2026-08-26T07:01:01+00:00",
+          "summary_en": "Tech billionaire publishes 6,000-word essay warning the technology will usher in ‘one of the most turbulent times in human history’",
+          "summary_zh": "科技亿万富翁发表了6000字的文章，警告这项技术将迎来“人类历史上最动荡的时期之一”",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "Fears grow for fourth rate hike after Australia sees higher-than-expected July inflation",
+          "title_en": "Fears grow for fourth rate hike after Australia sees higher-than-expected July inflation",
+          "title_zh": "在澳大利亚7月通胀高于预期后，对第四次加息的担忧加剧",
+          "link": "https://www.theguardian.com/australia-news/2026/aug/26/fears-grow-for-fourth-rate-hike-after-higher-than-expected-july-inflation-rate",
+          "published": "2026-08-26T06:44:23+00:00",
+          "summary_en": "Bureau of Statistics says CPI was 3.5% in July, casting doubt on Reserve Bank meeting its 2.5% inflation target without further hike Follow our Australia news live blog for latest updates Get our breaking news email , free app or daily news podcast Fears are growing that the Reserve Bank will hit millions of mortgage holders with a fourth rate hike this yea…",
+          "summary_zh": "美国统计局表示， 7月份CPI为3.5% ，令人怀疑储备银行是否能在不进一步加息的情况下实现其2.5%的通胀目标。关注我们的澳大利亚新闻直播博客，了解最新动态。获取我们的突发新闻电子邮件、免费应用程序或每日新闻播客。人们越来越担心储备银行今年将第四次加息，打击数百万抵押贷款持有人……",
+          "source": "The Guardian Business",
+          "language": "en",
+          "priority": 4,
+          "source_category": "news"
+        },
+        {
+          "title": "How chicken conquered the world",
+          "title_en": "How chicken conquered the world",
+          "title_zh": "鸡是如何征服世界的",
+          "link": "https://www.ft.com/content/6cbabfff-c549-42ce-b4a8-4a6535bf165b?syn-25a6b1a6=1",
+          "published": "2026-08-26T04:00:04+00:00",
+          "summary_en": "A global surge in poultry numbers is transforming high streets, diets and landscapes. Is the chicken takeover unstoppable?",
+          "summary_zh": "全球家禽数量的激增正在改变高街、饮食和景观。鸡的收购是不可阻挡的吗？",
+          "source": "Financial Times Home",
+          "language": "en",
+          "priority": 5,
+          "source_category": "news"
+        },
+        {
+          "title": "The bankers cashing in on Italy’s wealth boom",
+          "title_en": "The bankers cashing in on Italy’s wealth boom",
+          "title_zh": "银行家们从意大利的财富繁荣中获利",
+          "link": "https://www.ft.com/content/73134cc3-2ff4-43db-8d49-019bf1abb385?syn-25a6b1a6=1",
+          "published": "2026-08-26T04:00:04+00:00",
+          "summary_en": "Private equity helped create a new generation of wealthy Italians. Private banks are in a bidding war to serve them",
+          "summary_zh": "私募股权帮助创造了新一代富有的意大利人。私人银行正处于为他们服务的竞标战中",
+          "source": "Financial Times Home",
           "language": "en",
           "priority": 5,
           "source_category": "news"
